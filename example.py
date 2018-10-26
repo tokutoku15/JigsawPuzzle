@@ -26,7 +26,9 @@ def main():
     #showImage(canny_img)
     cv2.imwrite("./output/example_result2.png",canny_img)
 
-    #ここから形状解析処理の記述(?)
+    #編のトラッキング
+
+    #DB連携
 
 #画像の表示関数
 def showImage(img):
