@@ -3,7 +3,6 @@
 import cv2
 import numpy
 
-def main():
     #画像の読み込み
     img = cv2.imread("./input/example.png",1)
 
