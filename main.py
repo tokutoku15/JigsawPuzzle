@@ -69,13 +69,7 @@ def main():
             img = imgClip(k,data,mimg)
             
             gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-            # corners = cv2.goodFeaturesToTrack(gray,4,0.01,10)
-            # corners = np.int0(corners)
-            # for i in corners:
-            #     x,y = i.ravel()
-                # cv2.circle(img,(x,y),3,(0,0,255),-1)
-            
-            # cv2.imwrite("./output/Piece/a/" + str(k) + ".jpg", img)
+
     img_pieces.append(img)
     # showImage(img_pieces[0])
 
@@ -158,36 +152,75 @@ def closing(src,kernel):
 
 #Freeman chain code 関数
 def FreemanChainCode(src):
-    #directionリストの作成(それぞれの要素は探索方向(x座標,y座標))
-    direction = [ 3, 2, 1,
-                  4,    0,
-                  5, 6, 7 ]
-    is_found = False #見つかった場合True,見つからなかった場合False
-    vector_list = [] #探索した方向を記録していくリスト
-    Vold = 2
-    Vnew = 0
+    #directionリストの作成(y,x)
+    directions = [
+                [ 0, 1], # 0
+                [-1, 1], # 1
+                [-1, 0], # 2
+                [-1,-1], # 3
+                [ 0,-1], # 4
+                [ 1,-1], # 5
+                [ 1, 0], # 6
+                [ 1, 1]  # 7
+                ]
+    point_is_found = False #見つかった場合True,見つからなかった場合False
+    chain = [] #探索した方向を記録していくリスト
     for y in range(src.shape[0]): #y軸走査
         for x in range(src.shape[1]): #x軸走査
             # print(y,x)
             if src[y,x,0] == 255:
                 print(1)
-                is_found = True
+                point_is_found = True
                 break
-        if is_found == True:
+        if  point_is_found == True:
             break
-
-    print("(x,y)= (",x,y,")")
-    x_temp = x
-    y_temp = y
-    for i in range(8):
-        if i != Vold:
+    
+    # print("(x,y)= (",x,y,")")
+    
+    start_point = (y,x) #最初の地点を記録
+    current_point = start_point
+    direction = 2 #最初の点の上にエッジはない
+    for i in range(len(directions)):
+        if i < direction:
             continue
         else:
-            x_temp = x_temp+Vector[i][0]
-            y_temp = y_temp+Vector[i][1]
-            if src[y_temp,x_temp,0] == 255:
-                Vnew = i
-                vector_list.append(Vnew)
+            new_point = ( current_point[0]+directions[i][0],
+                          current_point[1]+directions[i][1] )
+            if src[new_point[0],new_point[1],0] == 255:
+                current_point = new_point
+                chain.append(i)
+                direction = i
+                print(new_point[0],",",new_point[1],"direction=",direction)
+                break
+
+    count = 0
+    while current_point != start_point:
+        new_direction = (direction + 5) % 8
+        #print("new_direction=",new_direction)
+        dir_range1 = range(new_direction,8)
+        dir_range2 = range(0,new_direction)
+        dirs = []
+        dirs.extend(dir_range1)
+        dirs.extend(dir_range2)
+        for direction in dirs:
+            new_point = ( current_point[0]+directions[direction][0],
+                          current_point[1]+directions[direction][1] )
+            if src[new_point[0],new_point[1],0] == 255:
+                chain.append(direction)
+                current_point = new_point
+                print(new_point[0],",",new_point[1])
+                break
+        if count == 2000: break
+    count += 1
+
+    print(current_point)
+    print(chain)
+    showImage(src)
+    # while current_point != start_point:
+    #     direction = ()
+
+    
+
         
 
 if __name__=='__main__':
