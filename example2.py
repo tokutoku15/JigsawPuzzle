@@ -63,9 +63,10 @@ def Labeling(src):
     data = np.delete(Labels[2],0,0)
     center = np.delete(Labels[3],0,0)
     
-    dst = cv2.cvtColor(src,cv2.COLOR_GRAY2BGR)
-#    dst = src.copy()
+    # dst = cv2.cvtColor(src,cv2.COLOR_GRAY2BGR)
+    dst = src.copy()
 
+    """
     for i in range(LabelNum):
         x0 = data[i][0]
         y0 = data[i][1]
@@ -77,6 +78,7 @@ def Labeling(src):
                     (x1-20,y1+15),
                     cv2.FONT_HERSHEY_PLAIN,
                     1,(0,255,255))
+    """
 #    showImage(dst)
     return dst,data,center
 
