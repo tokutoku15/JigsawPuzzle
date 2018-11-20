@@ -116,6 +116,7 @@ def Labeling(src):
     #showImage(dst)
     return dst,data,center
 
+
 #画像の切り抜き
 def imgClip(id,data,src):
     x0 = data[id][0] - 5
