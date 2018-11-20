@@ -117,7 +117,7 @@ def Corner(data,img):
         
         #showImage(img_binary)
         cv2.imwrite("./output/test_corner/test"+ str(j) +"_corner.png",img_shi)
-    return dst_corner
+return dst_corner
 
 #画像の切り抜き
 def imgClip(id,data,src):
