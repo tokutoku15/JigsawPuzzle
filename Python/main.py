@@ -76,6 +76,7 @@ def main():
     print(p_corners[0][1,0])
     """
     p_chains = []
+    p_points = [] #pointsリストの作成(y,x)
     #directionリストの作成(y,x)
     directions = [
                 [ 0, 1], # 0
@@ -90,7 +91,9 @@ def main():
     
     # p_chains.append(FreemanChainCode(img_pieces[0],directions))            
     for i in range(len(img_pieces)):
-        p_chains.append(FreemanChainCode(img_pieces[i],directions))
+        p_chain,p_point = FreemanChainCode(img_pieces[i],directions)
+        p_chains.append(p_chain)
+        p_point.append(p_points)
     #np.savetxt("./output/CSV/text_numpy_savetext.csv", p_chains, fmt='%s', delimiter=',')
 
 
