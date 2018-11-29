@@ -87,6 +87,8 @@ def main():
                 [ 1, 0], # 6
                 [ 1, 1]  # 7
                 ]
+    
+    # p_chains.append(FreemanChainCode(img_pieces[0],directions))            
     for i in range(len(img_pieces)):
         p_chains.append(FreemanChainCode(img_pieces[i],directions))
     #np.savetxt("./output/CSV/text_numpy_savetext.csv", p_chains, fmt='%s', delimiter=',')
@@ -246,6 +248,7 @@ def CornerDetection(data,img,pnum,img_pieces):
 def FreemanChainCode(src,directions):
     point_is_found = False #見つかった場合True,見つからなかった場合False
     chain = [] #探索した方向を記録していくリスト
+    point = [] #探索した座標を記録していくリスト
     for y in range(src.shape[0]): #y軸走査
         for x in range(src.shape[1]): #x軸走査
             # print(y,x)
@@ -267,6 +270,7 @@ def FreemanChainCode(src,directions):
                           current_point[1]+directions[i][1] )
             if src[new_point[0],new_point[1]] == 255:
                 current_point = new_point
+                point.append(current_point)
                 chain.append(i)
                 direction = i
                 #print(new_point[0],",",new_point[1],"direction=",direction)
@@ -287,16 +291,18 @@ def FreemanChainCode(src,directions):
             if src[new_point[0],new_point[1]] == 255:
                 chain.append(direction)
                 current_point = new_point
+                point.append(current_point)
                 #print(new_point[0],",",new_point[1])
                 break
         if count == 2000: break
-    count += 1
+        count += 1
+
     #print(current_point)
     #print(chain)
     #showImage(src)
     # while current_point != start_point:
     #     direction = ()
-    return chain
+    return chain,point
 
 
 
