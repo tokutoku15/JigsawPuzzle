@@ -1,3 +1,4 @@
+import math
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -11,7 +12,8 @@ def main():
     img_src5 = cv2.imread("./input/81T96.png",1)
     img_src6 = cv2.imread("./input/97T104.png",1)
     images = [img_src1,img_src2,img_src3,img_src4,img_src5,img_src6]
-
+    img_num = 6
+    p_num = 104
     """グレースケール，一度保存できればいい
     for i in range(6):
         img_gray = cv2.cvtColor(images[i],cv2.COLOR_BGR2GRAY)
@@ -22,7 +24,7 @@ def main():
     #二値化
     #Otsu's thresholding after Gaussian filtering
     imgs_binary = [0,0,0,0,0,0]
-    for i in range(6):
+    for i in range(img_num):
         img_gray = cv2.cvtColor(images[i],cv2.COLOR_BGR2GRAY)
         blur = cv2.GaussianBlur(img_gray,(5,5),0)
         ret3,imgs_binary[i] = cv2.threshold(blur,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
@@ -30,7 +32,7 @@ def main():
     
     #ラベリング処理
     imgs_data = [0,0,0,0,0,0]
-    for i in range(6):
+    for i in range(img_num):
         #ラベリング処理(1):大きなノイズもラベリング
         img_color,imgs_data[i] ,center = Labeling(imgs_binary[i])
         #cv2.imwrite("./output/Label/L1_" + str(i+1) + ".png",img_color)
@@ -47,38 +49,52 @@ def main():
         img_color,imgs_data[i],center = Labeling(imgs_binary[i])
         #cv2.imwrite("./output/Label/L2_" + str(i+1) + ".png",img_color)
         #np.savetxt("./output/CSV/after/AfterData"+ str(i+1) +".csv",imgs_data[i],delimiter=',')
-    #ピースデータのまとめ
-    data = imgs_data[0]
-    for i in range(1,6):
-        data = np.append(data,imgs_data[i],axis=0)
-    """
-    np.savetxt("./output/CSV/data.csv",data,delimiter=',')
-    np.save('./output/CSV/data.npy', data)
+    """ピースデータまとめるとき
+    p_data = imgs_data[0]
+    for i in range(1,img_num):
+        p_data = np.append(p_data,imgs_data[i],axis=0)
+    np.savetxt("./output/CSV/data.csv",p_data,delimiter=',')
+    np.save('./output/CSV/data.npy', p_data)
     np.savetxt('./output/Test/binary1.txt',imgs_binary[0])
-    np.savetxt("./output/Test/data.csv",data)
+    np.savetxt("./output/Test/data.csv",p_data)
     """
-    print(len(imgs_data[5]))
+    #メモ,27,83,86,100
+    #処理が終了したピース数
     count = 0
-    for a in range(len(images)):
-        mimg = cv2.cvtColor(imgs_binary[a],cv2.COLOR_GRAY2BGR)
-        count = count + len(imgs_data[a])
-        for k in range(count - len(imgs_data[a]),count):
-            print(k)
-            img = imgClip(k,data,mimg)
-            
-            gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-            corners = cv2.goodFeaturesToTrack(gray,4,0.01,10)
-            corners = np.int0(corners)
-            for i in corners:
-                x,y = i.ravel()
-                cv2.circle(img,(x,y),3,(0,0,255),-1)
-            cv2.imwrite("./output/Piece/a/" + str(k) + ".jpg", img)
-
+    #ピースの画像データ104枚を入れる箱
+    img_pieces = []
+    #ピースのコーナーデータ104つを入れる箱
+    p_corners = CornerDetection(imgs_data[0],imgs_binary[0],0,img_pieces)
+    count = len(imgs_data[0])
+    for i in range(1,len(imgs_data)):
+        p_corners = np.append(p_corners,CornerDetection(imgs_data[i],imgs_binary[i],count,img_pieces),axis=0)
+        count = count + len(imgs_data[i])
+    """
+    #ピース番号，象限，x or y
+    print(type(p_corners))
+    print(p_corners[0])
+    print(p_corners[0][1,0])
+    """
+    p_chains = []
+    #directionリストの作成(y,x)
+    directions = [
+                [ 0, 1], # 0
+                [-1, 1], # 1
+                [-1, 0], # 2
+                [-1,-1], # 3
+                [ 0,-1], # 4
+                [ 1,-1], # 5
+                [ 1, 0], # 6
+                [ 1, 1]  # 7
+                ]
+    for i in range(len(img_pieces)):
+        p_chains.append(FreemanChainCode(img_pieces[i],directions))
+    #np.savetxt("./output/CSV/text_numpy_savetext.csv", p_chains, fmt='%s', delimiter=',')
 
 
 # 画像の表示関数
 def showImage(img):
-    r_img = cv2.resize(img,(600, 750))
+    r_img = cv2.resize(img,(500, 600))
     cv2.imshow("img",r_img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
@@ -116,10 +132,10 @@ def Labeling(src):
 
 #画像の切り抜き
 def imgClip(id,data,src):
-    x0 = data[id][0] - 5
-    y0 = data[id][1] - 5
-    x1 = data[id][0] + data[id][2] +5
-    y1 = data[id][1] + data[id][3] +5
+    x0 = data[id][0] - 15
+    y0 = data[id][1] - 15
+    x1 = data[id][0] + data[id][2] + 15
+    y1 = data[id][1] + data[id][3] + 15
     if len(src.shape) == 3:
         dst = src[y0:y1,x0:x1,:]
     elif len(src.shape) == 2:
@@ -147,6 +163,140 @@ def closing(src,kernel):
     dilate = cv2.erode(dilate,kernel) #白の領域が収縮
     dst = cv2.erode(dilate,kernel) #白の領域が収縮
     return dst
+
+#コーナー検出と各ピースの保存
+#短形データ，二値画像，現在までの処理を終えたピースの番号，ピース画像格納庫
+def CornerDetection(data,img,pnum,img_pieces):    
+    #goodFeaturesToTrackの試行回数
+    S = 13
+    #閾値
+    size = 20
+    #分割数
+    split = len(data)
+    #コーナーの位置指定，二次元座標系の象限（"左上":0,"左下":1,"右下":2,"右上":3）
+    dst_corner = np.zeros((split,4,2))
+    
+    for j in range(split):
+        img_clip = imgClip(j,data,img)
+        img_pieces.append(img_clip)
+        img_shi = cv2.cvtColor(img_clip,cv2.COLOR_GRAY2BGR)
+        
+        X_median = img_shi.shape[0] / 2
+        Y_median = img_shi.shape[0] / 2
+    
+        corners = cv2.goodFeaturesToTrack(img_clip,S,0.01,10)
+        corners = np.int0(corners)
+        
+        count = 0
+        X = np.zeros(S,dtype=np.int64)
+        Y = np.zeros(S,dtype=np.int64)
+        
+        for k in range(S):
+            X[k] = corners[k][0][0]
+            Y[k] = corners[k][0][1]
+        d_min = size
+        for i in corners:
+            if count <= 2:
+                x,y = i.ravel()
+                cv2.circle(img_shi,(x,y),3,(0,0,255),-1)
+                if count == 2:
+                    for l in range(3):
+                        if X[l] <= X_median and Y[l] <= Y_median:
+                            dst_corner[j][0][0] = X[l]
+                            dst_corner[j][0][1] = Y[l]
+                        elif X[l] <= X_median and Y[l] > Y_median:
+                            dst_corner[j][1][0] = X[l]
+                            dst_corner[j][1][1] = Y[l]
+                        elif X[l] > X_median and Y[l] > Y_median:
+                            dst_corner[j][2][0] = X[l]
+                            dst_corner[j][2][1] = Y[l]
+                        elif X[l] > X_median and Y[l] <= Y_median:
+                            dst_corner[j][3][0] = X[l]
+                            dst_corner[j][3][1] = Y[l]
+                    for l in range(4):
+                        if dst_corner[j][l][0] == 0:
+                            check = l
+                            if l == 0:
+                                X_th = dst_corner[j][l+1][0] + (dst_corner[j][l+3][0] - dst_corner[j][l+2][0])
+                                Y_th = dst_corner[j][l+1][1] + (dst_corner[j][l+3][1] - dst_corner[j][l+2][1])
+                            elif l == 1:
+                                X_th = dst_corner[j][l-1][0] + (dst_corner[j][l+1][0] - dst_corner[j][l+2][0])
+                                Y_th = dst_corner[j][l-1][1] + (dst_corner[j][l+1][1] - dst_corner[j][l+2][1])
+                            elif l == 2:
+                                X_th = dst_corner[j][l+1][0] + (dst_corner[j][l-1][0] - dst_corner[j][l-2][0])
+                                Y_th = dst_corner[j][l+1][1] + (dst_corner[j][l-1][1] - dst_corner[j][l-2][1])
+                            else:
+                                X_th = dst_corner[j][l-1][0] + (dst_corner[j][l-3][0] - dst_corner[j][l-2][0])
+                                Y_th = dst_corner[j][l-1][1] + (dst_corner[j][l-3][1] - dst_corner[j][l-2][1])
+            else:
+                x,y = i.ravel() 
+                cv2.circle(img_shi,(int(X_th),int(Y_th)),3,(255,0,0),-1)
+                d = math.sqrt(pow(X_th - x,2) + pow(Y_th - y,2))
+                if d < d_min:
+                    d_min = d
+                    dst_corner[j][check][0] = x
+                    dst_corner[j][check][1] = y
+            count += 1
+        cv2.circle(img_shi,(int(dst_corner[j][check][0]),int(dst_corner[j][check][1])),3,(0,0,255),-1)
+        cv2.imwrite("./output/Piece/Corner/"+ str(pnum + j) +"_corner.png",img_shi)
+    return dst_corner
+
+
+#Freeman chain code 関数
+def FreemanChainCode(src,directions):
+    point_is_found = False #見つかった場合True,見つからなかった場合False
+    chain = [] #探索した方向を記録していくリスト
+    for y in range(src.shape[0]): #y軸走査
+        for x in range(src.shape[1]): #x軸走査
+            # print(y,x)
+            if src[y,x] == 255:
+                #print(1)
+                point_is_found = True
+                break
+        if  point_is_found == True:
+            break
+    # print("(x,y)= (",x,y,")")
+    start_point = (y,x) #最初の地点を記録
+    current_point = start_point
+    direction = 2 #最初の点の上にエッジはない
+    for i in range(len(directions)):
+        if i < direction:
+            continue
+        else:
+            new_point = ( current_point[0]+directions[i][0],
+                          current_point[1]+directions[i][1] )
+            if src[new_point[0],new_point[1]] == 255:
+                current_point = new_point
+                chain.append(i)
+                direction = i
+                #print(new_point[0],",",new_point[1],"direction=",direction)
+                break
+
+    count = 0
+    while current_point != start_point:
+        new_direction = (direction + 5) % 8
+        #print("new_direction=",new_direction)
+        dir_range1 = range(new_direction,8)
+        dir_range2 = range(0,new_direction)
+        dirs = []
+        dirs.extend(dir_range1)
+        dirs.extend(dir_range2)
+        for direction in dirs:
+            new_point = ( current_point[0]+directions[direction][0],
+                          current_point[1]+directions[direction][1] )
+            if src[new_point[0],new_point[1]] == 255:
+                chain.append(direction)
+                current_point = new_point
+                #print(new_point[0],",",new_point[1])
+                break
+        if count == 2000: break
+    count += 1
+    #print(current_point)
+    #print(chain)
+    #showImage(src)
+    # while current_point != start_point:
+    #     direction = ()
+    return chain
 
 
 
