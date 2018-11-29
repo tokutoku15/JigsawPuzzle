@@ -76,16 +76,16 @@ def main():
     print(p_corners[0][1,0])
     """
     p_chains = []
-    p_points = [] #pointsリストの作成(y,x)
-    #directionリストの作成(y,x)
+    p_points = [] #pointsリストの作成(x,y)
+    #directionリストの作成(x,y)
     directions = [
-                [ 0, 1], # 0
-                [-1, 1], # 1
-                [-1, 0], # 2
+                [ 1, 0], # 0
+                [ 1,-1], # 1
+                [ 0,-1], # 2
                 [-1,-1], # 3
-                [ 0,-1], # 4
-                [ 1,-1], # 5
-                [ 1, 0], # 6
+                [-1, 0], # 4
+                [-1, 1], # 5
+                [ 0, 1], # 6
                 [ 1, 1]  # 7
                 ]
     
@@ -93,7 +93,7 @@ def main():
     for i in range(len(img_pieces)):
         p_chain,p_point = FreemanChainCode(img_pieces[i],directions)
         p_chains.append(p_chain)
-        p_point.append(p_points)
+        p_points.append(p_point)
     #np.savetxt("./output/CSV/text_numpy_savetext.csv", p_chains, fmt='%s', delimiter=',')
 
 
@@ -172,7 +172,7 @@ def closing(src,kernel):
 #コーナー検出と各ピースの保存
 #短形データ，二値画像，現在までの処理を終えたピースの番号，ピース画像格納庫
 def CornerDetection(data,img,pnum,img_pieces):    
-    #goodFeaturesToTrackの試行回数
+    #goodFeauresToTrackの試行回数
     S = 13
     #閾値
     size = 20
@@ -262,7 +262,7 @@ def FreemanChainCode(src,directions):
         if  point_is_found == True:
             break
     # print("(x,y)= (",x,y,")")
-    start_point = (y,x) #最初の地点を記録
+    start_point = (x,y) #最初の地点を記録
     current_point = start_point
     direction = 2 #最初の点の上にエッジはない
     for i in range(len(directions)):
@@ -271,7 +271,7 @@ def FreemanChainCode(src,directions):
         else:
             new_point = ( current_point[0]+directions[i][0],
                           current_point[1]+directions[i][1] )
-            if src[new_point[0],new_point[1]] == 255:
+            if src[new_point[1],new_point[0]] == 255:
                 current_point = new_point
                 point.append(current_point)
                 chain.append(i)
@@ -291,7 +291,7 @@ def FreemanChainCode(src,directions):
         for direction in dirs:
             new_point = ( current_point[0]+directions[direction][0],
                           current_point[1]+directions[direction][1] )
-            if src[new_point[0],new_point[1]] == 255:
+            if src[new_point[1],new_point[0]] == 255:
                 chain.append(direction)
                 current_point = new_point
                 point.append(current_point)
@@ -300,7 +300,8 @@ def FreemanChainCode(src,directions):
         if count == 2000: break
         count += 1
 
-    #print(current_point)
+    # print(current_point)
+    # print(point)
     #print(chain)
     #showImage(src)
     # while current_point != start_point:
