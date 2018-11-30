@@ -97,6 +97,7 @@ def main():
     #np.savetxt("./output/CSV/text_numpy_savetext.csv", p_chains, fmt='%s', delimiter=',')
 
 
+
 # 画像の表示関数
 def showImage(img):
     r_img = cv2.resize(img,(500, 600))
@@ -308,7 +309,41 @@ def FreemanChainCode(src,directions):
     #     direction = ()
     return chain,point
 
+def DegreeEquation(distance,point):
+    #対象点の10点前後でcosθを計算する
+    degrees = []
+    for i in range(-distance,len(point)):
+        if i+distance < len(point):
+            point_center = point[i]
+            point_a = point[i-distance]
+            point_b = point[i+distance]
+            #回転方向の計算 Rotate>0なら左回りRotate<0なら右回り
+            Rotate = (point_a[0]-point_center[0])*(point_b[1]-point_center[1])-(point_b[0]-point_center[0])*(point_a[1]-point_center[1])
+            if Rotate < 0:
+                Rotate = -1
+            else:
+                Rotate = 1
+            x = point_center[0]
+            y = point_center[1]
+            #ベクトルa->,b->を計算
+            vector_a = (point_a[0]-x,
+                    point_a[1]-y)
+            vector_b = (point_b[0]-x,
+                    point_b[1]-y)
+            #内積の計算
+            #分母
+            denominator = pow(pow(vector_a[0],2)+pow(vector_a[1],2),1/2)*pow(pow(vector_b[0],2)+pow(vector_b[1],2),1/2)   
+            numerator = vector_a[0]*vector_b[0]+vector_a[1]*vector_b[1]
+            #cosの計算
+            cos = numerator/denominator
+            theta = math.acos(cos)
+            deg = Rotate*math.degrees(theta)
+            degrees.append(deg)
+            print(deg)
 
+    return degrees
+    print("len(deg) = ",len(degrees))
+    print("len(points) = ",len(point))
 
 if __name__=='__main__':
     main()
