@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 import math
 import numpy as np
 import cv2
@@ -12,7 +13,7 @@ def main():
     img_src5 = cv2.imread("./input/81T96.png",1)
     img_src6 = cv2.imread("./input/97T104.png",1)
     images = [img_src1,img_src2,img_src3,img_src4,img_src5,img_src6]
-    img_num = 6
+    img_num = len(images)
     p_num = 104
     """グレースケール，一度保存できればいい
     for i in range(6):
@@ -77,15 +78,15 @@ def main():
     """
     p_chains = []
     p_points = [] #pointsリストの作成(x,y)
-    #directionリストの作成(y,x)
+    #directionリストの作成(x,y)
     directions = [
-                [ 0, 1], # 0
-                [-1, 1], # 1
-                [-1, 0], # 2
+                [ 1, 0], # 0
+                [ 1,-1], # 1
+                [ 0,-1], # 2
                 [-1,-1], # 3
-                [ 0,-1], # 4
-                [ 1,-1], # 5
-                [ 1, 0], # 6
+                [-1, 0], # 4
+                [-1, 1], # 5
+                [ 0, 1], # 6
                 [ 1, 1]  # 7
                 ]
     p_curvature = []
