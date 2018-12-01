@@ -1,4 +1,3 @@
-# -*- coding:utf-8 -*-
 import math
 import numpy as np
 import cv2
@@ -13,7 +12,7 @@ def main():
     img_src5 = cv2.imread("./input/81T96.png",1)
     img_src6 = cv2.imread("./input/97T104.png",1)
     images = [img_src1,img_src2,img_src3,img_src4,img_src5,img_src6]
-    img_num = len(images)
+    img_num = 6
     p_num = 104
     """グレースケール，一度保存できればいい
     for i in range(6):
@@ -70,40 +69,39 @@ def main():
     for i in range(1,len(imgs_data)):
         p_corners = np.append(p_corners,CornerDetection(imgs_data[i],imgs_binary[i],count,img_pieces),axis=0)
         count = count + len(imgs_data[i])
-    # print(p_corners[0])
-
     """
     #ピース番号，象限，x or y
     print(type(p_corners))
     print(p_corners[0])
     print(p_corners[0][1,0])
     """
-    p_chains = [] #chainsリストの作成(directionsの番号と対応)
+    p_chains = []
     p_points = [] #pointsリストの作成(x,y)
-    #directionリストの作成(x,y)
+    #directionリストの作成(y,x)
     directions = [
-                [ 1, 0], # 0
-                [ 1,-1], # 1
-                [ 0,-1], # 2
+                [ 0, 1], # 0
+                [-1, 1], # 1
+                [-1, 0], # 2
                 [-1,-1], # 3
-                [-1, 0], # 4
-                [-1, 1], # 5
-                [ 0, 1], # 6
+                [ 0,-1], # 4
+                [ 1,-1], # 5
+                [ 1, 0], # 6
                 [ 1, 1]  # 7
                 ]
-    
-    # p_chains.append(FreemanChainCode(img_pieces[0],directions))            
+    p_curvature = []
     p_degrees = []
     distance = 50
     for i in range(len(img_pieces)):
         p_chain,p_point = FreemanChainCode(img_pieces[i],directions)
         p_chains.append(p_chain)
         p_points.append(p_point)
+        p_curvature.append(calcCurvature(img_pieces[i],p_point))
         degree = DegreeEquation(distance,p_point)
         p_degrees.append(degree)
-    #np.savetxt("./output/CSV/text_numpy_savetext.csv", p_chains, fmt='%s', delimiter=',')
+    
     p_edge_list = []
     p_rough_list = []
+    
     for Number in range(len(img_pieces)):
         print("image No.",Number)
         edge_list = corner_dividing(p_corners[Number],p_points[Number],p_degrees[Number])
@@ -111,11 +109,21 @@ def main():
         rough_list = judge_roughness(p_edge_list[Number])
         p_rough_list.append(rough_list)
         print("\n")
-    # showImage(img_pieces[0])
+    """
+    #曲率(curvature)とFreemanChainCodeの情報をcsvファイルに出力したいとき．
+    p_c_list = []
+    for i in range(len(img_pieces)):
+        p_c_list.append(p_curvature[i].tolist())
+    np.savetxt("./output/CSV/curvature.csv", p_c_list, fmt='%s',delimiter=',')
+    np.savetxt("./output/CSV/FreemanChainCode.csv", p_chains, fmt='%s', delimiter=',')
+    """
+    #showImage(img_pieces[0])
+
 
 # 画像の表示関数
 def showImage(img):
-    cv2.imshow("img",img)
+    r_img = cv2.resize(img,(500, 600))
+    cv2.imshow("img",r_img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
@@ -187,7 +195,7 @@ def closing(src,kernel):
 #コーナー検出と各ピースの保存
 #短形データ，二値画像，現在までの処理を終えたピースの番号，ピース画像格納庫
 def CornerDetection(data,img,pnum,img_pieces):    
-    #goodFeauresToTrackの試行回数
+    #goodFeaturesToTrackの試行回数
     S = 13
     #閾値
     size = 20
@@ -258,8 +266,9 @@ def CornerDetection(data,img,pnum,img_pieces):
                     dst_corner[j][check][1] = y
             count += 1
         cv2.circle(img_shi,(int(dst_corner[j][check][0]),int(dst_corner[j][check][1])),3,(0,0,255),-1)
-        # cv2.imwrite("./output/Piece/Corner/"+ str(pnum + j) +"_corner.png",img_shi)
+        cv2.imwrite("./output/Piece/Corner/"+ str(pnum + j) +"_corner.png",img_shi)
     return dst_corner
+
 
 
 #Freeman chain code 関数
@@ -314,7 +323,6 @@ def FreemanChainCode(src,directions):
                 break
         if count == 2000: break
         count += 1
-
     # print(current_point)
     # print(point)
     #print(chain)
@@ -322,6 +330,7 @@ def FreemanChainCode(src,directions):
     # while current_point != start_point:
     #     direction = ()
     return chain,point
+
 
 def DegreeEquation(distance,point):
     #対象点の10点前後でcosθを計算する
@@ -475,6 +484,41 @@ def judge_roughness(edge_list):
             print("直線")
             rough_list.append(0)
     return rough_list
+
+
+
+def calcCurvature(img_b,p_point):
+    #ガウシアン
+    img = cv2.GaussianBlur(img_b, ksize=(5,5), sigmaX=1.3)
+    #水平の微分(縦方向の検出)
+    xkernel = np.array([[-1, 0, 1],
+                    [-2, 0, 2],
+                    [-1, 0, 1]])
+    fx = cv2.filter2D(img, -1, xkernel)
+    fxx = cv2.filter2D(fx, -1, xkernel)
+    #垂直(鉛直方向の検出)
+    ykernel = np.array([[-1, -2, -1],
+                   [0, 0, 0],
+                   [1, 2, 1]])
+    fy = cv2.filter2D(img, -1, ykernel)
+    fyy = cv2.filter2D(fy, -1, ykernel)
+    #斜
+    fxy = cv2.filter2D(fx, -1, ykernel)
+    fyx = cv2.filter2D(fy, -1, xkernel)
+    fxyyx = cv2.add(fxy / 2 , fyx / 2)
+    dst = np.zeros(len(p_point))
+    j = 0
+    for i in p_point:
+        #cは座標を転置して参照しやすいように
+        c = (i[1],i[0])
+        numerator = int(fxx[c]) + int(fyy[c]) + int(fxx[c])*math.pow(fy[c],2.0) + int(fyy[c])*math.pow(fx[c],2.0) - 2*int(fx[c])*int(fy[c])*int(fxyyx[c])
+        denominator = float(2*(1 + math.pow(fx[c],2.0) + math.pow(fy[c],2.0)))
+        dst[j] = round(numerator / denominator , 8)
+        j = j+1
+    return dst
+
+
+
 
 if __name__=='__main__':
     main()
