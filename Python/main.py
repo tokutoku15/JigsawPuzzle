@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 import math
 import numpy as np
 import cv2
@@ -12,7 +13,7 @@ def main():
     img_src5 = cv2.imread("./input/81T96.png",1)
     img_src6 = cv2.imread("./input/97T104.png",1)
     images = [img_src1,img_src2,img_src3,img_src4,img_src5,img_src6]
-    img_num = 6
+    img_num = len(images)
     p_num = 104
     """グレースケール，一度保存できればいい
     for i in range(6):
@@ -69,13 +70,15 @@ def main():
     for i in range(1,len(imgs_data)):
         p_corners = np.append(p_corners,CornerDetection(imgs_data[i],imgs_binary[i],count,img_pieces),axis=0)
         count = count + len(imgs_data[i])
+    # print(p_corners[0])
+
     """
     #ピース番号，象限，x or y
     print(type(p_corners))
     print(p_corners[0])
     print(p_corners[0][1,0])
     """
-    p_chains = []
+    p_chains = [] #chainsリストの作成(directionsの番号と対応)
     p_points = [] #pointsリストの作成(x,y)
     #directionリストの作成(x,y)
     directions = [
@@ -90,18 +93,103 @@ def main():
                 ]
     
     # p_chains.append(FreemanChainCode(img_pieces[0],directions))            
+    p_degrees = []
+    distance = 50
     for i in range(len(img_pieces)):
         p_chain,p_point = FreemanChainCode(img_pieces[i],directions)
         p_chains.append(p_chain)
         p_points.append(p_point)
+        degree = DegreeEquation(distance,p_point)
+        p_degrees.append(degree)
     #np.savetxt("./output/CSV/text_numpy_savetext.csv", p_chains, fmt='%s', delimiter=',')
+    p_edge_list = []
+    for Number in range(len(img_pieces)): 
+        # for i in range(len(degrees[Number])):
+        #     print("Number = ",Number)
+        #     print("(",p_points[Number][i][0],",",p_points[Number][i][1],")=",degrees[Number][i-distance])
+        print("\nimage No:",Number)
+        p_edge_list = corner_dividing(p_corners[Number],p_points[Number],p_degrees[Number])
+    showImage(img_pieces[0])
 
+#コーナー間で辺の情報を分ける関数
+def corner_dividing(corners,points,degrees):
+    #cornersがnparray型なのでリストに変換
+    corners_list = []
+    corners_num = len(corners)
+    for i in range(corners_num):
+        corners_list.append((corners[i][0],corners[i][1]))
+    print(corners_list)
+    #(0,0)の点をリストから削除する
+    zero = (0,0)
+    if zero in corners_list:
+        corners_list.remove(zero)
+    corners_num = len(corners_list)
+    
+    # if len(corners_list) == 3:
+    #     print("len(corners) = 3")
+    # elif len(corners_list) == 4:
+    #     print("len(corners) = 4")
+    # else:
+    #     print("len(corners) = ",len(corners_list))
+
+    #相似度を計算してコーナー点の近似点を探す
+    point_num = len(points)
+    for i in range(corners_num):
+        if corners_list[i] in points:
+            continue
+        else:
+            subtract = ( points[0][0]-corners_list[i][0],
+                         points[0][1]-corners_list[i][1] )
+            min_similarity = pow(subtract[0]*subtract[0]
+                                +subtract[1]*subtract[1] , 1/2)
+            near_point = points[0]
+            for j in range(1,point_num):
+                subtract = ( points[j][0]-corners_list[i][0],
+                             points[j][1]-corners_list[i][1] )
+                simmilarity = pow(subtract[0]*subtract[0]
+                                 +subtract[1]*subtract[1] , 1/2)
+                if min_similarity > simmilarity:
+                    min_similarity = simmilarity
+                    near_point = points[j]
+            corners_list[i] = near_point
+    #デバッグ用
+    corner_index_list = []
+    for i in range(len(corners_list)):
+        if corners_list[i] in points:
+            print(corners_list[i],"in points[",points.index(corners_list[i]),"]")
+            corner_index_list.append(points.index(corners_list[i]))
+    #コーナー間の辺を分割・記録
+    record_index = min(corner_index_list)
+    temp_record_index = corner_index_list.index(record_index)
+    print("temp = ",temp_record_index)
+    print("points_length = ",point_num)
+    edge = []
+    edge_list = []
+    print("corner_index_list = ",corner_index_list)
+    for i in range(point_num):
+        index = (i+record_index)%point_num
+        if i < point_num-1:
+            if index != corner_index_list[(temp_record_index+1)%len(corner_index_list)]:
+                edge.append(degrees[index])
+            elif index == corner_index_list[(temp_record_index+1)%len(corner_index_list)]:
+                print(edge)
+                print("len(edge)=",len(edge))
+                edge_list.append(edge)
+                edge.clear()
+                temp_record_index = (temp_record_index+1)%len(corner_index_list)
+                edge.append(degrees[index])
+        else:
+            edge.append(degrees[index])
+            print(edge)
+            print("len(edge)=",len(edge))
+
+    print("process finish.")
+    return edge_list
 
 
 # 画像の表示関数
 def showImage(img):
-    r_img = cv2.resize(img,(500, 600))
-    cv2.imshow("img",r_img)
+    cv2.imshow("img",img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
@@ -244,7 +332,7 @@ def CornerDetection(data,img,pnum,img_pieces):
                     dst_corner[j][check][1] = y
             count += 1
         cv2.circle(img_shi,(int(dst_corner[j][check][0]),int(dst_corner[j][check][1])),3,(0,0,255),-1)
-        cv2.imwrite("./output/Piece/Corner/"+ str(pnum + j) +"_corner.png",img_shi)
+        # cv2.imwrite("./output/Piece/Corner/"+ str(pnum + j) +"_corner.png",img_shi)
     return dst_corner
 
 
@@ -311,39 +399,52 @@ def FreemanChainCode(src,directions):
 
 def DegreeEquation(distance,point):
     #対象点の10点前後でcosθを計算する
-    degrees = []
-    for i in range(-distance,len(point)):
-        if i+distance < len(point):
-            point_center = point[i]
-            point_a = point[i-distance]
-            point_b = point[i+distance]
-            #回転方向の計算 Rotate>0なら左回りRotate<0なら右回り
-            Rotate = (point_a[0]-point_center[0])*(point_b[1]-point_center[1])-(point_b[0]-point_center[0])*(point_a[1]-point_center[1])
-            if Rotate < 0:
-                Rotate = -1
-            else:
-                Rotate = 1
-            x = point_center[0]
-            y = point_center[1]
-            #ベクトルa->,b->を計算
-            vector_a = (point_a[0]-x,
-                    point_a[1]-y)
-            vector_b = (point_b[0]-x,
-                    point_b[1]-y)
-            #内積の計算
-            #分母
-            denominator = pow(pow(vector_a[0],2)+pow(vector_a[1],2),1/2)*pow(pow(vector_b[0],2)+pow(vector_b[1],2),1/2)   
-            numerator = vector_a[0]*vector_b[0]+vector_a[1]*vector_b[1]
-            #cosの計算
-            cos = numerator/denominator
-            theta = math.acos(cos)
-            deg = Rotate*math.degrees(theta)
-            degrees.append(deg)
-            print(deg)
+    degree = []
+    point_temp = []
+    for i in range(2):
+        point_temp.extend(point)
+    # print(point_temp)
+    # print(len(point))
+    for i in range(len(point)):
+   
+        point_center = point_temp[i]
+        point_a = point_temp[i-distance]
+        point_b = point_temp[i+distance]
+        #回転方向の計算 Rotate>0なら左回りRotate<0なら右回り
+        Rotate = (point_a[0]-point_center[0])*(point_b[1]-point_center[1])-(point_b[0]-point_center[0])*(point_a[1]-point_center[1])
+        if Rotate < 0:
+            Rotate = -1
+        elif Rotate > 0:
+            Rotate = 1
 
-    return degrees
-    print("len(deg) = ",len(degrees))
-    print("len(points) = ",len(point))
+        x = point_center[0]
+        y = point_center[1]
+        #ベクトルa->,b->を計算
+        vector_a = (point_a[0]-x,
+                point_a[1]-y)
+        vector_b = (point_b[0]-x,
+                point_b[1]-y)
+        #内積の計算
+        #分母
+        denominator = pow(pow(vector_a[0],2)+pow(vector_a[1],2),0.5)*pow(pow(vector_b[0],2)+pow(vector_b[1],2),0.5)   
+        #分子
+        numerator = vector_a[0]*vector_b[0]+vector_a[1]*vector_b[1]
+        #cosの計算
+        cos = clean_cos(numerator/denominator)
+        theta = math.acos(cos)
+        deg = Rotate*math.degrees(theta)
+        degree.append(deg)
+        # print("center = ",point_center," a = ",point_a," b = ",point_b)
+        # print("cos = ",cos,"theta = ",theta,"deg = ",deg,"degree=",degree[i])
+        # print("denominator=",denominator,",numerator=",numerator,"\n")
+    # print("len(deg) = ",len(degrees))
+    # print("len(points) = ",len(point))
+    # print(degree)
+    return degree
+
+# DegreeEquationのacos外れ値を定義内に調整する関数
+def clean_cos(cos_angle): 
+    return min(1,max(cos_angle,-1)) 
 
 if __name__=='__main__':
     main()
