@@ -102,13 +102,14 @@ def main():
         degree = DegreeEquation(distance,p_point)
         p_degrees.append(degree)
     #np.savetxt("./output/CSV/text_numpy_savetext.csv", p_chains, fmt='%s', delimiter=',')
-    edge_list = []
     p_edge_list = []
+    p_rough_list = []
     for Number in range(len(img_pieces)):
         print("image No.",Number)
         edge_list = corner_dividing(p_corners[Number],p_points[Number],p_degrees[Number])
         p_edge_list.append(edge_list)
-        judge_roughness(p_edge_list[Number])
+        rough_list = judge_roughness(p_edge_list[Number])
+        p_rough_list.append(rough_list)
         print("\n")
     # showImage(img_pieces[0])
 
@@ -452,18 +453,28 @@ def corner_dividing(corners,points,degrees):
 
 #辺それぞれが凹凸か判定する関数
 def judge_roughness(edge_list):
+    '''
+    roughリストの作成
+    1...凸/ -1...凹/ 0...直線
+    '''
+    rough_list = []
     for i in range(len(edge_list)):
         # print(edge_list[i])
         print(edge_list[i][len(edge_list[i])//2])
-        if abs(edge_list[i][len(edge_list[i])//2]) < 160:
+        if abs(edge_list[i][len(edge_list[i])//2]) < 170:
             if edge_list[i][len(edge_list[i])//2] > 10:
                 print("凸")
+                rough_list.append(1)
             elif edge_list[i][len(edge_list[i])//2] < -10:
                 print("凹")
+                rough_list.append(-1)
             else:
                 print("直線")
+                rough_list.append(0)
         else:
             print("直線")
+            rough_list.append(0)
+    return rough_list
 
 if __name__=='__main__':
     main()
