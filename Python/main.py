@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 import math
 import numpy as np
 import cv2
@@ -12,7 +13,7 @@ def main():
     img_src5 = cv2.imread("./input/81T96.png",1)
     img_src6 = cv2.imread("./input/97T104.png",1)
     images = [img_src1,img_src2,img_src3,img_src4,img_src5,img_src6]
-    img_num = 6
+    img_num = len(images)
     p_num = 104
     """グレースケール，一度保存できればいい
     for i in range(6):
@@ -76,20 +77,48 @@ def main():
     print(p_corners[0][1,0])
     """
     p_chains = []
-    #directionリストの作成(y,x)
+    p_points = [] #pointsリストの作成(x,y)
+    #directionリストの作成(x,y)
     directions = [
-                [ 0, 1], # 0
-                [-1, 1], # 1
-                [-1, 0], # 2
+                [ 1, 0], # 0
+                [ 1,-1], # 1
+                [ 0,-1], # 2
                 [-1,-1], # 3
-                [ 0,-1], # 4
-                [ 1,-1], # 5
-                [ 1, 0], # 6
+                [-1, 0], # 4
+                [-1, 1], # 5
+                [ 0, 1], # 6
                 [ 1, 1]  # 7
                 ]
+    p_curvature = []
+    p_degrees = []
+    distance = 50
     for i in range(len(img_pieces)):
-        p_chains.append(FreemanChainCode(img_pieces[i],directions))
-    #np.savetxt("./output/CSV/text_numpy_savetext.csv", p_chains, fmt='%s', delimiter=',')
+        p_chain,p_point = FreemanChainCode(img_pieces[i],directions)
+        p_chains.append(p_chain)
+        p_points.append(p_point)
+        p_curvature.append(calcCurvature(img_pieces[i],p_point))
+        degree = DegreeEquation(distance,p_point)
+        p_degrees.append(degree)
+    
+    p_edge_list = []
+    p_rough_list = []
+    
+    for Number in range(len(img_pieces)):
+        print("image No.",Number)
+        edge_list = corner_dividing(p_corners[Number],p_points[Number],p_degrees[Number])
+        p_edge_list.append(edge_list)
+        rough_list = judge_roughness(p_edge_list[Number])
+        p_rough_list.append(rough_list)
+        print("\n")
+    """
+    #曲率(curvature)とFreemanChainCodeの情報をcsvファイルに出力したいとき．
+    p_c_list = []
+    for i in range(len(img_pieces)):
+        p_c_list.append(p_curvature[i].tolist())
+    np.savetxt("./output/CSV/curvature.csv", p_c_list, fmt='%s',delimiter=',')
+    np.savetxt("./output/CSV/FreemanChainCode.csv", p_chains, fmt='%s', delimiter=',')
+    """
+    #showImage(img_pieces[0])
 
 
 # 画像の表示関数
@@ -242,10 +271,12 @@ def CornerDetection(data,img,pnum,img_pieces):
     return dst_corner
 
 
+
 #Freeman chain code 関数
 def FreemanChainCode(src,directions):
     point_is_found = False #見つかった場合True,見つからなかった場合False
     chain = [] #探索した方向を記録していくリスト
+    point = [] #探索した座標を記録していくリスト
     for y in range(src.shape[0]): #y軸走査
         for x in range(src.shape[1]): #x軸走査
             # print(y,x)
@@ -256,7 +287,7 @@ def FreemanChainCode(src,directions):
         if  point_is_found == True:
             break
     # print("(x,y)= (",x,y,")")
-    start_point = (y,x) #最初の地点を記録
+    start_point = (x,y) #最初の地点を記録
     current_point = start_point
     direction = 2 #最初の点の上にエッジはない
     for i in range(len(directions)):
@@ -265,8 +296,9 @@ def FreemanChainCode(src,directions):
         else:
             new_point = ( current_point[0]+directions[i][0],
                           current_point[1]+directions[i][1] )
-            if src[new_point[0],new_point[1]] == 255:
+            if src[new_point[1],new_point[0]] == 255:
                 current_point = new_point
+                point.append(current_point)
                 chain.append(i)
                 direction = i
                 #print(new_point[0],",",new_point[1],"direction=",direction)
@@ -284,19 +316,208 @@ def FreemanChainCode(src,directions):
         for direction in dirs:
             new_point = ( current_point[0]+directions[direction][0],
                           current_point[1]+directions[direction][1] )
-            if src[new_point[0],new_point[1]] == 255:
+            if src[new_point[1],new_point[0]] == 255:
                 chain.append(direction)
                 current_point = new_point
+                point.append(current_point)
                 #print(new_point[0],",",new_point[1])
                 break
         if count == 2000: break
-    count += 1
-    #print(current_point)
+        count += 1
+    # print(current_point)
+    # print(point)
     #print(chain)
     #showImage(src)
     # while current_point != start_point:
     #     direction = ()
-    return chain
+    return chain,point
+
+
+def DegreeEquation(distance,point):
+    #対象点の10点前後でcosθを計算する
+    degree = []
+    point_temp = []
+    for i in range(2):
+        point_temp.extend(point)
+    # print(point_temp)
+    # print(len(point))
+    for i in range(len(point)):
+   
+        point_center = point_temp[i]
+        point_a = point_temp[i-distance]
+        point_b = point_temp[i+distance]
+        #回転方向の計算 Rotate>0なら左回りRotate<0なら右回り
+        Rotate = (point_a[0]-point_center[0])*(point_b[1]-point_center[1])-(point_b[0]-point_center[0])*(point_a[1]-point_center[1])
+        if Rotate < 0:
+            Rotate = -1
+        elif Rotate > 0:
+            Rotate = 1
+
+        x = point_center[0]
+        y = point_center[1]
+        #ベクトルa->,b->を計算
+        vector_a = (point_a[0]-x,
+                point_a[1]-y)
+        vector_b = (point_b[0]-x,
+                point_b[1]-y)
+        #内積の計算
+        #分母
+        denominator = pow(pow(vector_a[0],2)+pow(vector_a[1],2),0.5)*pow(pow(vector_b[0],2)+pow(vector_b[1],2),0.5)   
+        #分子
+        numerator = vector_a[0]*vector_b[0]+vector_a[1]*vector_b[1]
+        #cosの計算
+        cos = clean_cos(numerator/denominator)
+        theta = math.acos(cos)
+        deg = Rotate*math.degrees(theta)
+        degree.append(deg)
+        # print("center = ",point_center," a = ",point_a," b = ",point_b)
+        # print("cos = ",cos,"theta = ",theta,"deg = ",deg,"degree=",degree[i])
+        # print("denominator=",denominator,",numerator=",numerator,"\n")
+    # print("len(deg) = ",len(degrees))
+    # print("len(points) = ",len(point))
+    # print(degree)
+    return degree
+
+# DegreeEquationのacos外れ値を定義内に調整する関数
+def clean_cos(cos_angle): 
+    return min(1,max(cos_angle,-1)) 
+
+#コーナー間で辺の情報を分ける関数
+def corner_dividing(corners,points,degrees):
+    #cornersがnparray型なのでリストに変換
+    corners_list = []
+    corners_num = len(corners)
+    for i in range(corners_num):
+        corners_list.append((corners[i][0],corners[i][1]))
+    # print(corners_list)
+    #(0,0)の点をリストから削除する
+    zero = (0,0)
+    if zero in corners_list:
+        corners_list.remove(zero)
+    corners_num = len(corners_list)
+    
+    # if len(corners_list) == 3:
+    #     print("len(corners) = 3")
+    # elif len(corners_list) == 4:
+    #     print("len(corners) = 4")
+    # else:
+    #     print("len(corners) = ",len(corners_list))
+
+    #相似度を計算してコーナー点の近似点を探す
+    point_num = len(points)
+    for i in range(corners_num):
+        if corners_list[i] in points:
+            continue
+        else:
+            subtract = ( points[0][0]-corners_list[i][0],
+                         points[0][1]-corners_list[i][1] )
+            min_similarity = pow(subtract[0]*subtract[0]
+                                +subtract[1]*subtract[1] , 1/2)
+            near_point = points[0]
+            for j in range(1,point_num):
+                subtract = ( points[j][0]-corners_list[i][0],
+                             points[j][1]-corners_list[i][1] )
+                simmilarity = pow(subtract[0]*subtract[0]
+                                 +subtract[1]*subtract[1] , 1/2)
+                if min_similarity > simmilarity:
+                    min_similarity = simmilarity
+                    near_point = points[j]
+            corners_list[i] = near_point
+    #デバッグ用
+    corner_index_list = []
+    for i in range(len(corners_list)):
+        if corners_list[i] in points:
+            # print(corners_list[i],"in points[",points.index(corners_list[i]),"]")
+            corner_index_list.append(points.index(corners_list[i]))
+    #コーナー間の辺を分割・記録
+    record_index = min(corner_index_list)
+    temp_record_index = corner_index_list.index(record_index)
+    # print("temp = ",temp_record_index)
+    # print("points_length = ",point_num)
+    edge = []
+    edge_list = []
+    print("corner_index_list = ",corner_index_list)
+    for i in range(len(corner_index_list)):
+        print("corner:",i," = ",points[corner_index_list[i]])
+    for i in range(point_num):
+        index = (i+record_index)%point_num
+        if i < point_num-1:
+            if index != corner_index_list[(temp_record_index+1)%len(corner_index_list)]:
+                edge.append(degrees[index])
+            elif index == corner_index_list[(temp_record_index+1)%len(corner_index_list)]:
+                # print(edge)
+                # print("len(edge)=",len(edge))
+                edge_list.append(edge[:])
+                # print("edge_list[0]=",edge_list[0])
+                edge.clear()
+                temp_record_index = (temp_record_index+1)%len(corner_index_list)
+                edge.append(degrees[index])
+        else:
+            edge.append(degrees[index])
+            edge_list.append(edge[:])
+            # print(edge)
+            # print("len(edge)=",len(edge))
+    # print("process finish.")
+    # print(edge_list)
+    return edge_list
+
+#辺それぞれが凹凸か判定する関数
+def judge_roughness(edge_list):
+    '''
+    roughリストの作成
+    1...凸/ -1...凹/ 0...直線
+    '''
+    rough_list = []
+    for i in range(len(edge_list)):
+        # print(edge_list[i])
+        print(edge_list[i][len(edge_list[i])//2])
+        if abs(edge_list[i][len(edge_list[i])//2]) < 170:
+            if edge_list[i][len(edge_list[i])//2] > 10:
+                print("凸")
+                rough_list.append(1)
+            elif edge_list[i][len(edge_list[i])//2] < -10:
+                print("凹")
+                rough_list.append(-1)
+            else:
+                print("直線")
+                rough_list.append(0)
+        else:
+            print("直線")
+            rough_list.append(0)
+    return rough_list
+
+
+
+def calcCurvature(img_b,p_point):
+    #ガウシアン
+    img = cv2.GaussianBlur(img_b, ksize=(5,5), sigmaX=1.3)
+    #水平の微分(縦方向の検出)
+    xkernel = np.array([[-1, 0, 1],
+                    [-2, 0, 2],
+                    [-1, 0, 1]])
+    fx = cv2.filter2D(img, -1, xkernel)
+    fxx = cv2.filter2D(fx, -1, xkernel)
+    #垂直(鉛直方向の検出)
+    ykernel = np.array([[-1, -2, -1],
+                   [0, 0, 0],
+                   [1, 2, 1]])
+    fy = cv2.filter2D(img, -1, ykernel)
+    fyy = cv2.filter2D(fy, -1, ykernel)
+    #斜
+    fxy = cv2.filter2D(fx, -1, ykernel)
+    fyx = cv2.filter2D(fy, -1, xkernel)
+    fxyyx = cv2.add(fxy / 2 , fyx / 2)
+    dst = np.zeros(len(p_point))
+    j = 0
+    for i in p_point:
+        #cは座標を転置して参照しやすいように
+        c = (i[1],i[0])
+        numerator = int(fxx[c]) + int(fyy[c]) + int(fxx[c])*math.pow(fy[c],2.0) + int(fyy[c])*math.pow(fx[c],2.0) - 2*int(fx[c])*int(fy[c])*int(fxyyx[c])
+        denominator = float(2*(1 + math.pow(fx[c],2.0) + math.pow(fy[c],2.0)))
+        dst[j] = round(numerator / denominator , 8)
+        j = j+1
+    return dst
+
 
 
 
