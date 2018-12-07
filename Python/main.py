@@ -546,6 +546,28 @@ def Grouping(p_curvature_list,p_rough_list):
             else:
                 group3.append((i,p_curvature_list[i]))
     print(group1[0][0])
+    
+    
+def AngularStaightLineDistance(corner):
+    #各コーナー座標よりコーナー間の直線を求める
+    
+    p_number = corner.shape[0]   #ピースの数(104ピース)
+    p_position = corner.shape[1]   #1ピースあたりの直線の数
+    
+    #各辺の直線を保存するリスト(1列目：ピース番号，2列目：直線の位置)
+    #2列目の順番：(0:左辺，1:底辺，2:右辺，3:上辺)
+    line = np.zeros((p_number,p_position))
+    
+    #直線の計算
+    for i in range(p_number):
+        for j in range(p_position):
+            if j+1 < p_position:
+                line[i][j] = math.sqrt(pow(corner[i][j][0] - corner[i][j+1][0],2) + pow(corner[i][j][1] - corner[i][j+1][1],2))
+            else:
+                line[i][j] = math.sqrt(pow(corner[i][j][0] - corner[i][j-3][0],2) + pow(corner[i][j][1] - corner[i][j-3][1],2)) 
+
+    return line
+
 
 
 if __name__=='__main__':
