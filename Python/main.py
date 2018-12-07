@@ -123,7 +123,8 @@ def main():
     np.savetxt("./output/CSV/curvature.csv", p_c_list, fmt='%s',delimiter=',')
     np.savetxt("./output/CSV/FreemanChainCode.csv", p_chains, fmt='%s', delimiter=',')
     """
-    # Grouping(p_curvature_list,p_rough_list)
+    #グルーピング関数でピースの形状ごとにグループ分け
+    group1,group2,grou3 = Grouping(p_rough_list)
     #showImage(img_pieces[0])
 
 
@@ -574,7 +575,7 @@ def calcCurvature(img_b,p_point):
 
 #凹凸の数でグループ分けを行う関数
 #全ピースのリストを引数にする
-def Grouping(p_curvature_list,p_rough_list):
+def Grouping(p_rough_list):
     #四隅のグループ
     group1 = []
     #外枠のグループ
@@ -582,16 +583,16 @@ def Grouping(p_curvature_list,p_rough_list):
     #内側のグループ
     group3 = []
     for i in range(len(p_rough_list)):
-        if len(p_rough_list[i]) == 3:
-            group1.append((i,p_curvature_list[i]))
+        if p_rough_list[i].count(0) == 2:
+            group1.append(i)
+        elif p_rough_list[i].count(0) == 1:
+            group2.append(i)
         else:
-            if p_rough_list[i].count(0) == 2:
-                group1.append((i,p_curvature_list[i]))
-            elif p_rough_list[i].count(0) == 1:
-                group2.append((i,p_curvature_list[i]))
-            else:
-                group3.append((i,p_curvature_list[i]))
-    print(group1[0][0])
+            group3.append(i)
+    print(group1)
+    print(group2)
+    print(group3)
+    return group1,group2,group3
     
     
 def AngularStaightLineDistance(corner):
