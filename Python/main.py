@@ -102,13 +102,16 @@ def main():
     
     p_edge_list = []
     p_rough_list = []
+    #ピースの4辺ごとの座標をまとめたリスト(最終的に使うやつ)
+    p_edge_point_list = []
     new_p_corners_list = []
     # p_curvature_list = []
-    for Number in range(len(img_pieces)):
+    for Number in range(len(img_pieces)): #ピースの数だけ回る
         print("image No.",Number)
-        edge_list,corners_list = corner_dividing(p_corners[Number],p_points[Number],p_degrees[Number])
+        edge_list,corners_list,points_list = corner_dividing(p_corners[Number],p_points[Number],p_degrees[Number])
         new_p_corners_list.append(corners_list)
         p_edge_list.append(edge_list)
+        p_edge_point_list.append(points_list)
         rough_list = judge_roughness(p_edge_list[Number])
         p_rough_list.append(rough_list)
         print("\n")
@@ -408,6 +411,7 @@ def corner_dividing(corners,points,degrees):
 
     #相似度を計算してコーナー点の近似点を探す
     point_num = len(points)
+    print(point_num)
     for i in range(corners_num):
         if corners_list[i] in points:
             continue
@@ -433,40 +437,82 @@ def corner_dividing(corners,points,degrees):
             # print(corners_list[i],"in points[",points.index(corners_list[i]),"]")
             corner_index_list.append(points.index(corners_list[i]))
     #コーナー間の辺を分割・記録
-    record_index = corner_index_list[0]
-    temp_record_index = corner_index_list.index(record_index)
     # print("temp = ",temp_record_index)
     # print("points_length = ",point_num)
     edge = []
     edge_list = []
     #新しいコーナー座標のリスト
     new_corners_point_list = []
+    #コーナー間の辺のリスト
+    new_point = []
+    #1ピース分のリスト
+    new_point_list = []
+    
+    if len(corner_index_list)==3:
+
+        # print("四隅のピースです")
+        for i in range(3):
+            if i == 0:
+                sub_of_pixel = abs(point_num - corner_index_list[2] + corner_index_list[0])
+                # print(sub_of_pixel)
+                if sub_of_pixel > 300:
+                    ave_sub = sub_of_pixel//2
+                    # print("ave_sub=",ave_sub)
+                    insert_index = int(corner_index_list[2] + ave_sub)
+                    if insert_index > point_num - 1:
+                        insert_index = int(insert_index % point_num)
+                        corner_index_list.insert(0,insert_index)
+                    else:
+                        corner_index_list.append(insert_index)
+            else:
+                sub_of_pixel = abs(corner_index_list[i] - corner_index_list[i-1])
+                # print(sub_of_pixel)
+                if sub_of_pixel > 300:
+                    ave_sub = sub_of_pixel//2
+                    # print("ave_sub=",ave_sub)
+                    insert_index = int(corner_index_list[i-1] + ave_sub)
+                    corner_index_list.insert(i,insert_index)
+            
+            
+    record_index = corner_index_list[0]
+    temp_record_index = corner_index_list.index(record_index)
     print("corner_index_list = ",corner_index_list)
+
+
     for i in range(len(corner_index_list)):
         print("corner:",i,",(corner_index_list",corner_index_list[i],") = ",points[corner_index_list[i]])
         new_corners_point_list.append(points[corner_index_list[i]])
+
     for i in range(point_num):
         index = (i+record_index)%point_num
         if i < point_num-1:
             if index != corner_index_list[(temp_record_index+1)%len(corner_index_list)]:
                 edge.append(degrees[index])
+                new_point.append(points[index])
             elif index == corner_index_list[(temp_record_index+1)%len(corner_index_list)]:
                 # print(edge)
                 # print("len(edge)=",len(edge))
                 edge_list.append(edge[:])
+                new_point_list.append(new_point[:])
                 # print("edge_list[0]=",edge_list[0])
                 edge.clear()
+                new_point.clear()
                 temp_record_index = (temp_record_index+1)%len(corner_index_list)
                 edge.append(degrees[index])
+                new_point.append(points[index])
         else:
             edge.append(degrees[index])
             edge_list.append(edge[:])
-            # print(edge)
-            # print("len(edge)=",len(edge))
+            new_point.append(points[index])
+            new_point_list.append(new_point[:])
+            print(new_point_list[0])
+            print(new_point_list[1])
+            print(new_point_list[2])
+            print(new_point_list[3])
     # print("process finish.")
     # print(edge_list)
-    print(new_corners_point_list)
-    return edge_list,new_corners_point_list
+    print("new_corners_point_list = ",new_corners_point_list)
+    return edge_list,new_corners_point_list,new_point_list
 
 #辺それぞれが凹凸か判定する関数
 def judge_roughness(edge_list):
@@ -478,7 +524,7 @@ def judge_roughness(edge_list):
     for i in range(len(edge_list)):
         # print(edge_list[i])
         
-        print(edge_list[i][len(edge_list[i])//2])
+        print(len(edge_list[i]))
         if abs(edge_list[i][len(edge_list[i])//2]) < 170:
             if edge_list[i][len(edge_list[i])//2] > 10:
                 print("凸")
