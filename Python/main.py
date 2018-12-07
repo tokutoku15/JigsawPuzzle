@@ -102,10 +102,12 @@ def main():
     
     p_edge_list = []
     p_rough_list = []
-    
+    new_p_corners_list = []
+    # p_curvature_list = []
     for Number in range(len(img_pieces)):
         print("image No.",Number)
-        edge_list = corner_dividing(p_corners[Number],p_points[Number],p_degrees[Number])
+        edge_list,corners_list = corner_dividing(p_corners[Number],p_points[Number],p_degrees[Number])
+        new_p_corners_list.append(corners_list)
         p_edge_list.append(edge_list)
         rough_list = judge_roughness(p_edge_list[Number])
         p_rough_list.append(rough_list)
@@ -118,6 +120,7 @@ def main():
     np.savetxt("./output/CSV/curvature.csv", p_c_list, fmt='%s',delimiter=',')
     np.savetxt("./output/CSV/FreemanChainCode.csv", p_chains, fmt='%s', delimiter=',')
     """
+    # Grouping(p_curvature_list,p_rough_list)
     #showImage(img_pieces[0])
 
 
@@ -267,7 +270,7 @@ def CornerDetection(data,img,pnum,img_pieces):
                     dst_corner[j][check][1] = y
             count += 1
         cv2.circle(img_shi,(int(dst_corner[j][check][0]),int(dst_corner[j][check][1])),3,(0,0,255),-1)
-        cv2.imwrite("./output/Piece/Corner/"+ str(pnum + j) +"_corner.png",img_shi)
+        cv2.imwrite("./output/Piece/Corner/" + str(pnum + j) +"_corner.png",img_shi)
     return dst_corner
 
 
@@ -430,15 +433,18 @@ def corner_dividing(corners,points,degrees):
             # print(corners_list[i],"in points[",points.index(corners_list[i]),"]")
             corner_index_list.append(points.index(corners_list[i]))
     #コーナー間の辺を分割・記録
-    record_index = min(corner_index_list)
+    record_index = corner_index_list[0]
     temp_record_index = corner_index_list.index(record_index)
     # print("temp = ",temp_record_index)
     # print("points_length = ",point_num)
     edge = []
     edge_list = []
+    #新しいコーナー座標のリスト
+    new_corners_point_list = []
     print("corner_index_list = ",corner_index_list)
     for i in range(len(corner_index_list)):
-        print("corner:",i," = ",points[corner_index_list[i]])
+        print("corner:",i,",(corner_index_list",corner_index_list[i],") = ",points[corner_index_list[i]])
+        new_corners_point_list.append(points[corner_index_list[i]])
     for i in range(point_num):
         index = (i+record_index)%point_num
         if i < point_num-1:
@@ -459,7 +465,8 @@ def corner_dividing(corners,points,degrees):
             # print("len(edge)=",len(edge))
     # print("process finish.")
     # print(edge_list)
-    return edge_list
+    print(new_corners_point_list)
+    return edge_list,new_corners_point_list
 
 #辺それぞれが凹凸か判定する関数
 def judge_roughness(edge_list):
@@ -470,6 +477,7 @@ def judge_roughness(edge_list):
     rough_list = []
     for i in range(len(edge_list)):
         # print(edge_list[i])
+        
         print(edge_list[i][len(edge_list[i])//2])
         if abs(edge_list[i][len(edge_list[i])//2]) < 170:
             if edge_list[i][len(edge_list[i])//2] > 10:
@@ -518,7 +526,26 @@ def calcCurvature(img_b,p_point):
         j = j+1
     return dst
 
-
+#凹凸の数でグループ分けを行う関数
+#全ピースのリストを引数にする
+def Grouping(p_curvature_list,p_rough_list):
+    #四隅のグループ
+    group1 = []
+    #外枠のグループ
+    group2 = []
+    #内側のグループ
+    group3 = []
+    for i in range(len(p_rough_list)):
+        if len(p_rough_list[i]) == 3:
+            group1.append((i,p_curvature_list[i]))
+        else:
+            if p_rough_list[i].count(0) == 2:
+                group1.append((i,p_curvature_list[i]))
+            elif p_rough_list[i].count(0) == 1:
+                group2.append((i,p_curvature_list[i]))
+            else:
+                group3.append((i,p_curvature_list[i]))
+    print(group1[0][0])
 
 
 if __name__=='__main__':
