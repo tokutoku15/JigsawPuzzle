@@ -3,6 +3,7 @@ import math
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
+import pickle
 
 def main():
     #カラー画像の読み取り
@@ -70,12 +71,7 @@ def main():
     for i in range(1,len(imgs_data)):
         p_corners = np.append(p_corners,CornerDetection(imgs_data[i],imgs_binary[i],count,img_pieces),axis=0)
         count = count + len(imgs_data[i])
-    """
-    #ピース番号，象限，x or y
-    print(type(p_corners))
-    print(p_corners[0])
-    print(p_corners[0][1,0])
-    """
+
     p_chains = []
     p_points = [] #pointsリストの作成(x,y)
     #directionリストの作成(x,y)
@@ -102,15 +98,28 @@ def main():
     
     p_edge_list = []
     p_rough_list = []
-    
-    for Number in range(len(img_pieces)):
+    #ピースの4辺ごとの座標をまとめたリスト(最終的に使うやつ)
+    p_edge_point_list = []
+    new_p_corners_list = []
+    for Number in range(len(img_pieces)): #ピースの数だけ回る
         print("image No.",Number)
-        edge_list = corner_dividing(p_corners[Number],p_points[Number],p_degrees[Number])
+        edge_list,corners_list,points_list = corner_dividing(p_corners[Number],p_points[Number],p_degrees[Number])
+        new_p_corners_list.append(corners_list)
         p_edge_list.append(edge_list)
+        p_edge_point_list.append(points_list)
+        #p_edge_point_list = p_edge_point_list + points_list
         rough_list = judge_roughness(p_edge_list[Number])
         p_rough_list.append(rough_list)
         print("\n")
+
     """
+    #座標の保存
+    for i in range(len(p_edge_point_list)):
+        saveList(p_rough_list[i], str(i) +'_rough')
+        for j in range(len(p_edge_point_list[i])):
+            saveList(p_edge_point_list[i][j], str(i) + '_' + str(j) +'_edge_point')
+    p = loadList('0_0_edge_point')
+    
     #曲率(curvature)とFreemanChainCodeの情報をcsvファイルに出力したいとき．
     p_c_list = []
     for i in range(len(img_pieces)):
@@ -118,6 +127,11 @@ def main():
     np.savetxt("./output/CSV/curvature.csv", p_c_list, fmt='%s',delimiter=',')
     np.savetxt("./output/CSV/FreemanChainCode.csv", p_chains, fmt='%s', delimiter=',')
     """
+    #グルーピング関数でピースの形状ごとにグループ分け
+    group1,group2,grou3 = Grouping(p_rough_list)
+    #p_edge_point_listを並進回転加えたやつ(類似度計算のときにしか使いません),座標値がfloatです
+    p_edge_point_conv_list = pointConv(p_edge_point_list,p_rough_list)
+    
     #showImage(img_pieces[0])
 
 
@@ -127,6 +141,17 @@ def showImage(img):
     cv2.imshow("img",r_img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
+#リストの保存
+def saveList(point_list,name):
+    f = open('./output/Point_List/' + str(name) + '.txt', 'wb')
+    pickle.dump(point_list, f)
+
+#リストの読み出し
+def loadList(name):
+    f = open("./output/Point_List/" + str(name) +".txt","rb")
+    return pickle.load(f)
+
 
 #ラベリング関数
 def Labeling(src):
@@ -267,7 +292,7 @@ def CornerDetection(data,img,pnum,img_pieces):
                     dst_corner[j][check][1] = y
             count += 1
         cv2.circle(img_shi,(int(dst_corner[j][check][0]),int(dst_corner[j][check][1])),3,(0,0,255),-1)
-        cv2.imwrite("./output/Piece/Corner/"+ str(pnum + j) +"_corner.png",img_shi)
+        #cv2.imwrite("./output/Piece/Corner/" + str(pnum + j) +"_corner.png",img_shi)
     return dst_corner
 
 
@@ -405,6 +430,7 @@ def corner_dividing(corners,points,degrees):
 
     #相似度を計算してコーナー点の近似点を探す
     point_num = len(points)
+    print(point_num)
     for i in range(corners_num):
         if corners_list[i] in points:
             continue
@@ -430,36 +456,82 @@ def corner_dividing(corners,points,degrees):
             # print(corners_list[i],"in points[",points.index(corners_list[i]),"]")
             corner_index_list.append(points.index(corners_list[i]))
     #コーナー間の辺を分割・記録
-    record_index = min(corner_index_list)
-    temp_record_index = corner_index_list.index(record_index)
     # print("temp = ",temp_record_index)
     # print("points_length = ",point_num)
     edge = []
     edge_list = []
+    #新しいコーナー座標のリスト
+    new_corners_point_list = []
+    #コーナー間の辺のリスト
+    new_point = []
+    #1ピース分のリスト
+    new_point_list = []
+    
+    if len(corner_index_list)==3:
+
+        # print("四隅のピースです")
+        for i in range(3):
+            if i == 0:
+                sub_of_pixel = abs(point_num - corner_index_list[2] + corner_index_list[0])
+                # print(sub_of_pixel)
+                if sub_of_pixel > 300:
+                    ave_sub = sub_of_pixel//2
+                    # print("ave_sub=",ave_sub)
+                    insert_index = int(corner_index_list[2] + ave_sub)
+                    if insert_index > point_num - 1:
+                        insert_index = int(insert_index % point_num)
+                        corner_index_list.insert(0,insert_index)
+                    else:
+                        corner_index_list.append(insert_index)
+            else:
+                sub_of_pixel = abs(corner_index_list[i] - corner_index_list[i-1])
+                # print(sub_of_pixel)
+                if sub_of_pixel > 300:
+                    ave_sub = sub_of_pixel//2
+                    # print("ave_sub=",ave_sub)
+                    insert_index = int(corner_index_list[i-1] + ave_sub)
+                    corner_index_list.insert(i,insert_index)
+            
+            
+    record_index = corner_index_list[0]
+    temp_record_index = corner_index_list.index(record_index)
     print("corner_index_list = ",corner_index_list)
+
+
     for i in range(len(corner_index_list)):
-        print("corner:",i," = ",points[corner_index_list[i]])
+        print("corner:",i,",(corner_index_list",corner_index_list[i],") = ",points[corner_index_list[i]])
+        new_corners_point_list.append(points[corner_index_list[i]])
+
     for i in range(point_num):
         index = (i+record_index)%point_num
         if i < point_num-1:
             if index != corner_index_list[(temp_record_index+1)%len(corner_index_list)]:
                 edge.append(degrees[index])
+                new_point.append(points[index])
             elif index == corner_index_list[(temp_record_index+1)%len(corner_index_list)]:
                 # print(edge)
                 # print("len(edge)=",len(edge))
                 edge_list.append(edge[:])
+                new_point_list.append(new_point[:])
                 # print("edge_list[0]=",edge_list[0])
                 edge.clear()
+                new_point.clear()
                 temp_record_index = (temp_record_index+1)%len(corner_index_list)
                 edge.append(degrees[index])
+                new_point.append(points[index])
         else:
             edge.append(degrees[index])
             edge_list.append(edge[:])
-            # print(edge)
-            # print("len(edge)=",len(edge))
+            new_point.append(points[index])
+            new_point_list.append(new_point[:])
+            print("start ",new_point_list[0][0])
+            print("start ",new_point_list[1][0])
+            print("start ",new_point_list[2][0])
+            print("start ",new_point_list[3][0])
     # print("process finish.")
     # print(edge_list)
-    return edge_list
+    print("new_corners_point_list = ",new_corners_point_list)
+    return edge_list,new_corners_point_list,new_point_list
 
 #辺それぞれが凹凸か判定する関数
 def judge_roughness(edge_list):
@@ -470,7 +542,8 @@ def judge_roughness(edge_list):
     rough_list = []
     for i in range(len(edge_list)):
         # print(edge_list[i])
-        print(edge_list[i][len(edge_list[i])//2])
+        
+        print(len(edge_list[i]))
         if abs(edge_list[i][len(edge_list[i])//2]) < 170:
             if edge_list[i][len(edge_list[i])//2] > 10:
                 print("凸")
@@ -487,7 +560,7 @@ def judge_roughness(edge_list):
     return rough_list
 
 
-
+#簡易版曲率
 def calcCurvature(img_b,p_point):
     #ガウシアン
     img = cv2.GaussianBlur(img_b, ksize=(5,5), sigmaX=1.3)
@@ -518,8 +591,89 @@ def calcCurvature(img_b,p_point):
         j = j+1
     return dst
 
+#凹凸の数でグループ分けを行う関数
+#全ピースのリストを引数にする
+def Grouping(p_rough_list):
+    #四隅のグループ
+    group1 = []
+    #外枠のグループ
+    group2 = []
+    #内側のグループ
+    group3 = []
+    for i in range(len(p_rough_list)):
+        if p_rough_list[i].count(0) == 2:
+            group1.append(i)
+        elif p_rough_list[i].count(0) == 1:
+            group2.append(i)
+        else:
+            group3.append(i)
+    """
+    print(group1)
+    print(group2)
+    print(group3)
+    """
+    return group1,group2,group3
+    
+#コーナー間の距離  
+def AngularStaightLineDistance(corner):
+    #各コーナー座標よりコーナー間の直線を求める
+    
+    p_number = corner.shape[0]   #ピースの数(104ピース)
+    p_position = corner.shape[1]   #1ピースあたりの直線の数
+    
+    #各辺の直線を保存するリスト(1列目：ピース番号，2列目：直線の位置)
+    #2列目の順番：(0:左辺，1:底辺，2:右辺，3:上辺)
+    line = np.zeros((p_number,p_position))
+    
+    #直線の計算
+    for i in range(p_number):
+        for j in range(p_position):
+            if j+1 < p_position:
+                line[i][j] = math.sqrt(pow(corner[i][j][0] - corner[i][j+1][0],2) + pow(corner[i][j][1] - corner[i][j+1][1],2))
+            else:
+                line[i][j] = math.sqrt(pow(corner[i][j][0] - corner[i][j-3][0],2) + pow(corner[i][j][1] - corner[i][j-3][1],2)) 
 
+    return line
 
+#ここから座標の平行移動と回転
+#原点に移動
+def pointTransport(points):
+    dst = []
+    dx = points[0][0]
+    dy = points[0][1]
+    for a in range(len(points)):
+        _t = (points[a][0] - dx , points[a][1] - dy)
+        dst.append(_t)
+    return dst
+
+#回転
+#rough = -1,0,1
+def pointRot(points,rough):
+    dst = []
+    dx = points[-1][0] - points[0][0]
+    dy = points[-1][1] - points[0][1]
+    sin = dy / math.sqrt(dx*dx + dy*dy)
+    cos = dx / math.sqrt(dx*dx + dy*dy)
+    for a in range(len(points)):
+        _x = points[a][0]*cos + points[a][1]*sin
+        _y = - points[a][0]*sin + points[a][1]*cos
+        if rough == -1:
+            _y = -_y
+        _t = (_x,_y)
+        dst.append(_t)
+    return dst
+
+#全ての辺を並進回転処理してそれを返す
+def pointConv(p_edge_point_list,p_rough_list):
+    dst = []
+    for i in range(len(p_edge_point_list)):
+        points_list =[]
+        for j in range(len(p_edge_point_list[i])):
+            p = pointTransport(p_edge_point_list[i][j])
+            p = pointRot(p,p_rough_list[i][j])
+            points_list.append(p)
+        dst.append(points_list)
+    return dst
 
 if __name__=='__main__':
     main()
