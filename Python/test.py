@@ -6,17 +6,26 @@ import matplotlib.pyplot as plt
 import pickle
 
 def main():
-    #point_a = loadList("0_0_edge_point_conv")
+    data = np.loadtxt("./output/CSV/AlltoAll_match.csv",delimiter=",")
+    data2 = np.loadtxt("./output/CSV/AlltoAll_match_sy.csv",delimiter=",")
+    for i in range(416):
+        for j in range(i,416):
+            if data[i][j] != data2[i][j]:
+                print("OMG")
+    
+    """
+    point_a = loadList("0_0_edge_point_conv")
+    point_b = loadList("103_0_edge_point_conv")
     #point_a = [(-2,5),(-3,5),(-3,6),(-4,6),(-4,7),(-5,7),(-5,8)]
     #point_a = [(2,5),(3,5),(3,6),(4,6),(4,7),(5,7),(5,8)]
     #point_a = list(reversed(point_a))
     #point_a = [(3,6),(3,5),(2,5),(2,4),(3,4),(3,3)]
-    point_a = [(0,0),(1,0),(2,1),(3,2),(4,2),(5,2),(4,1),(5,0),(6,0),(7,0),(8,0)]
-    point_b = [(0,0),(1,1),(2,0),(3,1),(4,0),(5,1),(6,0)]
+    #point_a = [(0,0),(1,0),(2,1),(3,2),(4,2),(5,3),(5,2),(4,1),(5,0),(6,0),(7,0),(8,0)]
+    #point_b = [(0,0),(1,1),(2,0),(3,1),(4,0),(5,1),(6,0)]
     n_a = np.array(point_a)
     n_b = np.array(point_b)
     px = similarityCalc(point_a,point_b)
-    """
+
     point_a_tr = pointTransport(point_a)
     point_a_rot = pointRot(point_a_tr,-1)
     for i in range(len(point_a)):
@@ -56,13 +65,19 @@ def similarityCalc(point_a,point_b):
     #要素1のみの行列(1×nb,1×na)
     one_b = np.ones_like(Vb)
     one_a = np.ones_like(Va)
-    print(one_a.shape)
-    print(type(one_a))
     S = Va.T * one_b - 2*matrix_a*matrix_b.T + one_a.T*Vb
-    #S = matrix_a*matrix_b.T
+    min_index_a = np.argmin(S,axis=1)
+    min_index_b = np.argmin(S,axis=0)
+    sa = 0
+    sb = 0
 
-
-    return 0
+    for k in range(S.shape[0]):
+        sa = sa + S[k,min_index_a[k,0]]
+    for k in range(S.shape[1]):
+        sb = sb + S[min_index_b[0,k],k]
+    S = sa/na + sb/nb
+    S2 = (sa + sb)/(na + nb)
+    return S2
 
 
 #原点に移動

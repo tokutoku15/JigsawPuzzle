@@ -129,9 +129,19 @@ def main():
     """
     #グルーピング関数でピースの形状ごとにグループ分け
     group1,group2,grou3 = Grouping(p_rough_list)
-    #p_edge_point_listを並進回転加えたやつ(類似度計算のときにしか使いません),座標値がfloatです
+    #p_edge_point_listを並進回転加えたやつ(類似度計算のときに引数としてp_edge_conv_point_list[i][j]を二つ渡してください),座標値がfloatです
     p_edge_point_conv_list = pointConv(p_edge_point_list,p_rough_list)
-    
+
+    """
+    #類似度行列，対称行列，処理時間やばいので開けてはいけません!
+    SSSS = np.zeros((416,416))
+    for i in range(416):
+        p_num_i = i//4
+        e_num_i = i%4
+        for j in range(i,416):
+            SSSS[i,j] = similarityCalc(p_edge_point_conv_list[p_num_i][e_num_i],p_edge_point_conv_list[j//4][j%4])
+    np.savetxt("./output/CSV/AlltoAll_match_sy.csv", SSSS, fmt='%s', delimiter=',')
+    """
     #showImage(img_pieces[0])
 
 
@@ -674,6 +684,34 @@ def pointConv(p_edge_point_list,p_rough_list):
             points_list.append(p)
         dst.append(points_list)
     return dst
+
+def similarityCalc(point_a,point_b):
+    #リストを行列へ変換(na×2,nb×2)
+    matrix_a = np.matrix(point_a)
+    matrix_b = np.matrix(point_b)
+    #点数
+    na = len(point_a)
+    nb = len(point_b)
+    #2ノルムの2乗(1×na,1×nb)
+    Va = np.matrix(np.diag(np.dot(matrix_a,matrix_a.T)))
+    Vb = np.matrix(np.diag(np.dot(matrix_b,matrix_b.T)))
+    #要素1のみの行列(1×nb,1×na)
+    one_b = np.ones_like(Vb)
+    one_a = np.ones_like(Va)
+    S = Va.T * one_b - 2*matrix_a*matrix_b.T + one_a.T*Vb
+    min_index_a = np.argmin(S,axis=1)
+    min_index_b = np.argmin(S,axis=0)
+    sa = 0
+    sb = 0
+
+    for k in range(S.shape[0]):
+        sa = sa + S[k,min_index_a[k,0]]
+    for k in range(S.shape[1]):
+        sb = sb + S[min_index_b[0,k],k]
+    S = sa/na + sb/nb
+    S2 = (sa + sb)/(na + nb)
+    return S2
+
 
 if __name__=='__main__':
     main()
