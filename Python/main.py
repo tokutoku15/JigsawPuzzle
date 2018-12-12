@@ -129,6 +129,12 @@ def main():
     """
     #グルーピング関数でピースの形状ごとにグループ分け
     group1,group2,grou3 = Grouping(p_rough_list)
+    #convex...凸 / concavity...凹
+    #(i,j) ... (ピース番号i,ピースiの変番号j)のタプルをリストに格納
+    group_of_convex,group_of_concavity = rough_grouping(p_rough_list)
+    print(group_of_convex)
+    print(group_of_concavity)
+
     #p_edge_point_listを並進回転加えたやつ(類似度計算のときに引数としてp_edge_conv_point_list[i][j]を二つ渡してください),座標値がfloatです
     p_edge_point_conv_list = pointConv(p_edge_point_list,p_rough_list)
 
@@ -623,6 +629,23 @@ def Grouping(p_rough_list):
     print(group3)
     """
     return group1,group2,group3
+
+#辺を凹凸の2つのグループに分ける．直線はマッチング時にはじかれるのでいらない．
+def rough_grouping(p_rough_list):
+    #凸グループ
+    group1 = []
+    #凹グループ
+    group2 = []
+    for i in range(len(p_rough_list)):
+        for j in range(len(p_rough_list[i])):
+            if p_rough_list[i][j] == 1:
+                id_tuple = (i,j)
+                group1.append(id_tuple)
+            elif p_rough_list[i][j] == -1:
+                id_tuple = (i,j)
+                group2.append(id_tuple)
+
+    return group1,group2
     
 #コーナー間の距離  
 def AngularStaightLineDistance(corner):
