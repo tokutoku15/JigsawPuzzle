@@ -52,6 +52,7 @@ def loadList(name):
     f = open("./output/Point_List/" + str(name) +".txt","rb")
     return pickle.load(f)
 
+#類似度計算
 def similarityCalc(point_a,point_b):
     #リストを行列へ変換(na×2,nb×2)
     matrix_a = np.matrix(point_a)
