@@ -124,13 +124,17 @@ def main():
     np.savetxt("./output/CSV/FreemanChainCode.csv", p_chains, fmt='%s', delimiter=',')
     """
     #グルーピング関数でピースの形状ごとにグループ分け
-    group1,group2,grou3 = Grouping(p_rough_list)
+    group1,group2,group3 = Grouping(p_rough_list)
     #convex...凸 / concavity...凹
     #(i,j) ... (ピース番号i,ピースiの変番号j)のタプルをリストに格納
     group_of_convex,group_of_concavity = rough_grouping(p_rough_list)
     print(group_of_convex)
     print(group_of_concavity)
     #showImage(img_pieces[0])
+    
+    p_edge_point_conv_list = pointConv(p_edge_point_list,p_rough_list)
+    
+    Matching(p_edge_point_conv_list,p_rough_list,group1,group2,group3)
 
 
 # 画像の表示関数
@@ -634,6 +638,180 @@ def AngularStaightLineDistance(corner):
                 line[i][j] = math.sqrt(pow(corner[i][j][0] - corner[i][j-3][0],2) + pow(corner[i][j][1] - corner[i][j-3][1],2)) 
 
     return line
+
+#ここから座標の平行移動と回転
+#原点に移動
+def pointTransport(points):
+    dst = []
+    dx = points[0][0]
+    dy = points[0][1]
+    for a in range(len(points)):
+        _t = (points[a][0] - dx , points[a][1] - dy)
+        dst.append(_t)
+    return dst
+
+#回転
+#rough = -1,0,1
+def pointRot(points,rough):
+    dst = []
+    dx = points[-1][0] - points[0][0]
+    dy = points[-1][1] - points[0][1]
+    sin = dy / math.sqrt(dx*dx + dy*dy)
+    cos = dx / math.sqrt(dx*dx + dy*dy)
+    for a in range(len(points)):
+        _x = points[a][0]*cos + points[a][1]*sin
+        _y = - points[a][0]*sin + points[a][1]*cos
+        if rough == -1:
+            _y = -_y
+        _t = (_x,_y)
+        dst.append(_t)
+    return dst
+
+#全ての辺を並進回転処理してそれを返す
+def pointConv(p_edge_point_list,p_rough_list):
+    dst = []
+    for i in range(len(p_edge_point_list)):
+        points_list =[]
+        for j in range(len(p_edge_point_list[i])):
+            p = pointTransport(p_edge_point_list[i][j])
+            p = pointRot(p,p_rough_list[i][j])
+            points_list.append(p)
+        dst.append(points_list)
+    return dst
+
+#類似度計算
+def similarityCalc(point_a,point_b):
+    #リストを行列へ変換(na×2,nb×2)
+    matrix_a = np.matrix(point_a)
+    matrix_b = np.matrix(point_b)
+    #点数
+    na = len(point_a)
+    nb = len(point_b)
+    #2ノルムの2乗(1×na,1×nb)
+    Va = np.matrix(np.diag(np.dot(matrix_a,matrix_a.T)))
+    Vb = np.matrix(np.diag(np.dot(matrix_b,matrix_b.T)))
+    #要素1のみの行列(1×nb,1×na)
+    one_b = np.ones_like(Vb)
+    one_a = np.ones_like(Va)
+    S = Va.T * one_b - 2*matrix_a*matrix_b.T + one_a.T*Vb
+    min_index_a = np.argmin(S,axis=1)
+    min_index_b = np.argmin(S,axis=0)
+    sa = 0
+    sb = 0
+
+    for k in range(S.shape[0]):
+        sa = sa + S[k,min_index_a[k,0]]
+    for k in range(S.shape[1]):
+        sb = sb + S[min_index_b[0,k],k]
+    S = sa/na + sb/nb
+    S2 = (sa + sb)/(na + nb)
+    return S2
+
+
+def Matching(p_edge_point_list,rough,group1,group2,group3):
+    #前処理
+    Attention_piece = group1[0]
+    group_outer = group1 + group2
+    del group_outer[0]
+    outer_scale = len(group_outer)
+    Candidate_piece = 0
+    Candidate_piece_value = 0
+    Detect_piece = 0
+    Detect_piece_value = 0
+    stock_number = 0
+    count = 0
+    edge = 0
+    Result_piece = []
+    Result_piece.append(Attention_piece)
+    corner = []
+    
+    #外枠ピースのマッチング
+    #決定するピース分のループ(37回)
+    for i in range(outer_scale):
+        #一つの注目ピースに対するピースを決定するために回すループ（37回）
+        for j in range(len(group_outer)):
+            Select_piece = group_outer[j]
+            #注目ピースの辺の数だけ回すループ（4回）
+            for k in range(len(rough[0])):
+                #オーバーフロー回避の為の条件文
+                if k <= 2:
+                    #注目ピースの探索辺を発見するための条件文
+                    if rough[Attention_piece][k] == 0 and rough[Attention_piece][k+1] != 0:
+                        #候補ピースの辺の数だけ回すループ（4回）
+                        for l in range(len(rough[0])):
+                            #オーバーフロー回避
+                            if l <= 2:
+                                #候補ピースの探索辺を発見するための条件文
+                                if rough[Select_piece][l] != 0 and rough[Select_piece][l+1] == 0:
+                                    #注目ピースと候補ピースのマッチングする辺の凹凸判定による条件文
+                                    if rough[Attention_piece][k+1] + rough[Select_piece][l] == 0:
+                                        Candidate_piece_value = similarityCalc(p_edge_point_list[Attention_piece][k+1],p_edge_point_list[Select_piece][l])
+                                        Candidate_piece = Select_piece
+                                        if count == 0:
+                                            count += 1
+                                        if i == outer_scale - 1:
+                                            if l == 0:
+                                                edge = l+3
+                                            else:
+                                                edge = l-1
+                                        print(Candidate_piece_value,Candidate_piece)
+                            #以下，上記の分岐
+                            else:
+                                if rough[Select_piece][l] != 0 and rough[Select_piece][l-3] == 0:
+                                    if rough[Attention_piece][k+1] + rough[Select_piece][l] == 0:
+                                        Candidate_piece_value = similarityCalc(p_edge_point_list[Attention_piece][k+1],p_edge_point_list[Select_piece][l])
+                                        Candidate_piece = Select_piece
+                                        if count == 0:
+                                            count += 1
+                                        if i == outer_scale - 1:
+                                            edge = l-1
+                                        print(Candidate_piece_value,Candidate_piece)
+                else:
+                    if rough[Attention_piece][k] == 0 and rough[Attention_piece][k-3] != 0:
+                        for l in range(len(rough[j])):
+                            if l <= 2:
+                                if rough[Select_piece][l] != 0 and rough[Select_piece][l+1] == 0:
+                                    if rough[Attention_piece][k-3] + rough[Select_piece][l] == 0:
+                                        Candidate_piece_value = similarityCalc(p_edge_point_list[Attention_piece][k-3],p_edge_point_list[Select_piece][l])
+                                        Candidate_piece = Select_piece
+                                        if count == 0:
+                                            count += 1
+                                        if i == outer_scale - 1:
+                                            if l == 0:
+                                                edge = l+3
+                                            else:
+                                                edge = l-1
+                                        print(Candidate_piece_value,Candidate_piece)
+                            else:
+                                if rough[Select_piece][l] != 0 and rough[Select_piece][l-3] == 0:
+                                    if rough[Attention_piece][k-3] + rough[Select_piece][l] == 0:
+                                        Candidate_piece_value = similarityCalc(p_edge_point_list[Attention_piece][k-3],p_edge_point_list[Select_piece][l])
+                                        Candidate_piece = Select_piece
+                                        if count == 0:
+                                            count += 1
+                                        if i == outer_scale - 1:
+                                            edge = l-1
+                                        print(Candidate_piece_value,Candidate_piece)
+            if count == 1:
+                Detect_piece_value = Candidate_piece_value
+                Detect_piece = Candidate_piece
+                stock_number = j
+                count += 1
+            elif count != 0:
+                if Detect_piece_value > Candidate_piece_value:
+                    Detect_piece_value = Candidate_piece_value
+                    Detect_piece = Candidate_piece
+                    stock_number = j
+        Result_piece.append(Detect_piece) 
+        Attention_piece = Detect_piece
+        del group_outer[stock_number]
+        count = 0
+        for i in range(len(group1)):
+            if group1[i] == Detect_piece:
+                corner.append(Detect_piece)
+        print(Detect_piece)
+    print(Result_piece)
+    print(corner)
 
 
 if __name__=='__main__':
