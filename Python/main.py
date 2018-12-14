@@ -108,13 +108,15 @@ def main():
     # p_curvature_list = []
     for Number in range(len(img_pieces)): #ピースの数だけ回る
         print("image No.",Number)
-        edge_list,corners_list,points_list = corner_dividing(p_corners[Number],p_points[Number],p_degrees[Number])
-        new_p_corners_list.append(corners_list)
+        edge_list,corners_point_list,points_list = corner_dividing(p_corners[Number],p_points[Number],p_degrees[Number])
+        new_p_corners_list.append(corners_point_list)
         p_edge_list.append(edge_list)
         p_edge_point_list.append(points_list)
         rough_list = judge_roughness(p_edge_list[Number])
         p_rough_list.append(rough_list)
         print("\n")
+    #p_line_list[ピース番号][辺番号(左辺から左回り)] = コーナー間の直線の長さ
+    p_line_list = StraightLineDistance(new_p_corners_list)
     """
     #曲率(curvature)とFreemanChainCodeの情報をcsvファイルに出力したいとき．
     p_c_list = []
@@ -638,6 +640,26 @@ def AngularStaightLineDistance(corner):
                 line[i][j] = math.sqrt(pow(corner[i][j][0] - corner[i][j-3][0],2) + pow(corner[i][j][1] - corner[i][j-3][1],2)) 
 
     return line
+
+def calcStraightLineDistance(x1,y1,x2,y2):
+    line = math.sqrt(pow(abs(x1-x2),2)+pow(abs(y1-y2),2))
+    return line
+
+def StraightLineDistance(p_corners_point_list): #p_corners_list[Number]で取得できるコーナーリストをぶち込む
+    line_list = []
+    p_line_list = []
+    for i in range(len(p_corners_point_list)):
+        for j in range(4):
+            x1 = p_corners_point_list[i][j][0]
+            y1 = p_corners_point_list[i][j][1]
+            x2 = p_corners_point_list[i][(j+1)%4][0]
+            y2 = p_corners_point_list[i][(j+1)%4][1]
+            line = calcStraightLineDistance(x1,y1,x2,y2)
+            print(i,",length = ",line)
+            line_list.append(line)
+        p_line_list.append(line_list[:])
+        print("")
+    return p_line_list
 
 #ここから座標の平行移動と回転
 #原点に移動
