@@ -148,6 +148,7 @@ def main():
     simP , match_list = similarityPointView(data2,p_rough_list,p)
     W = sampleMatrix(data2,p_rough_list,simP)
     np.savetxt("./output/CSV/data_matrix_W.csv", W, fmt='%s', delimiter=',')
+    print(W.max())
     #showImage(img_pieces[0])
     
 
@@ -816,15 +817,28 @@ def similarityPointView(data2,p_rough_list,p):
     return sim5,match_list
 
 def sampleMatrix(dataMat,p_rough_list,simP):
+    max_value = 0
+    for i in range(dataMat.shape[0]):
+        if len(simP[i]) != 0:
+            t = np.amax(dataMat[i][simP[i]])
+            if t > max_value:
+                max_value = t
+    print(max_value)
+    max_value = max_value / 1000
     W = np.zeros_like(dataMat)
     uI = np.array([[0,1,1,1],[1,0,1,1],[1,1,0,1],[1,1,1,0]])
     for i in range(W.shape[0]):
         if len(simP[i]) != 0:
-            W[i][simP[i]] = dataMat[i][simP[i]]
+            x = np.full(len(simP[i]),max_value) - dataMat[i][simP[i]]
+            print(x)
+            W[i][simP[i]] = sigmoid(x)
             if i%4 == 0:
                 W[i:i+4,i:i+4] = uI
     return W
 
+def sigmoid(x):
+   y = 1 / (1 + np.exp( -x ) )
+   return y
 
 if __name__=='__main__':
     main()
