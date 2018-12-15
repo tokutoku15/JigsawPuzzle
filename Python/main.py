@@ -143,9 +143,11 @@ def main():
     
     #保存してある行列を読みこみ
     data2 = np.loadtxt("./output/CSV/AlltoAll_match.csv",delimiter=",")
-    #sim5は416×(0 or p)のリスト，match_listは416×p×(piece_num,edge_num)
-    sim5 , match_list = similarityPointView(data2,p_rough_list,8)
-    
+    #simPは416×(0 or p)のリスト，match_listは416×p×(piece_num,edge_num)
+    p = 20
+    simP , match_list = similarityPointView(data2,p_rough_list,p)
+    W = sampleMatrix(data2,p_rough_list,simP)
+    np.savetxt("./output/CSV/data_matrix_W.csv", W, fmt='%s', delimiter=',')
     #showImage(img_pieces[0])
     
 
@@ -706,6 +708,7 @@ def pointConv(p_edge_point_list,p_rough_list):
         dst.append(points_list)
     return dst
 
+
 def similarityCalc(point_a,point_b):
     #リストを行列へ変換(na×2,nb×2)
     matrix_a = np.matrix(point_a)
@@ -743,6 +746,7 @@ def similarityCalc(point_a,point_b):
     S2 = sa/na + sb/nb
     return S2
 
+
 #類似度(距離)行列を生成してfnameに保存
 def similarityMatrix(p_edge_point_conv_list,p_rough_list,fname):
     #類似度行列，対称行列，処理時間やばいので開けてはいけません
@@ -764,6 +768,8 @@ def similarityMatrix(p_edge_point_conv_list,p_rough_list,fname):
             SSSS[j,i] = SSSS[i,j]
     np.savetxt(str(fname), SSSS, fmt='%s', delimiter=',')
     return SSSS
+
+
 
 #類似度の高い上位p個のインデックスと(piece_num,edge_num)のタプルを返す
 #行列data2を受け取って(piece_num,edge_num)がどの(piece_num,edge_num)と類似度(距離)が近いかを高い順にp個表示する．
@@ -808,6 +814,17 @@ def similarityPointView(data2,p_rough_list,p):
         print("\n")
     
     return sim5,match_list
+
+def sampleMatrix(dataMat,p_rough_list,simP):
+    W = np.zeros_like(dataMat)
+    uI = np.array([[0,1,1,1],[1,0,1,1],[1,1,0,1],[1,1,1,0]])
+    for i in range(W.shape[0]):
+        if len(simP[i]) != 0:
+            W[i][simP[i]] = dataMat[i][simP[i]]
+            if i%4 == 0:
+                W[i:i+4,i:i+4] = uI
+    return W
+
 
 if __name__=='__main__':
     main()
