@@ -6,16 +6,54 @@ import matplotlib.pyplot as plt
 import pickle
 
 def main():
-    data = np.loadtxt("./output/CSV/AlltoAll_match.csv",delimiter=",")
-    data2 = np.loadtxt("./output/CSV/AlltoAll_match_sy.csv",delimiter=",")
-    for i in range(416):
-        for j in range(i,416):
-            if data[i][j] != data2[i][j]:
-                print("OMG")
     
+    data2 = np.loadtxt("./output/CSV/AlltoAll_match_vv.csv",delimiter=",")
+    sim5 = []
+    
+    #候補cand番目まで
+    cand = 5
+    for i in range(data2.shape[0]):
+        sort_index = np.argsort(data2[i])
+        sort_index2 = []
+        c = 0
+        for j in range(len(sort_index)):
+            if (data2[i][sort_index[j]] > 0.000001):
+                c = c + 1
+                sort_index2.append(sort_index[j])
+            if c >= cand:
+                break
+        sort_index2 = (np.array(sort_index2))
+        sim5.append(sort_index2)
+        if(p_rough_list[i//4][i%4] != 0):
+            print(i , " : " , sim5[i])
+            print(i , " : " , data2[i][sim5[i]])
+    #(piece num , edge num)
+    print(data2[415][sort_index])
+    match_list = []
+    
+    for i in range(len(sim5)):
+        k = []
+        #cand個の(piece_num,edge_num)を生成
+        if(p_rough_list[i//4][i%4] != 0):
+            for j in range(cand):
+                p_num = sim5[i][j] // 4
+                e_num = sim5[i][j] % 4
+                k.append((p_num,e_num))
+        else:
+            k.append(())
+        match_list.append(k)
+        print((i//4,i%4)," >>> ",k)
+        if(sim5[i] != ()):
+            print((i//4 , i%4) , " : " , data2[i][sim5[i]])
+        else:
+            print((i//4,i%4)," >>> Line")
+        print("\n")
+
     """
+    
     point_a = loadList("0_0_edge_point_conv")
-    point_b = loadList("103_0_edge_point_conv")
+    point_b = loadList("10_1_edge_point_conv")
+    point_c = loadList("9_1_edge_point_conv")
     #point_a = [(-2,5),(-3,5),(-3,6),(-4,6),(-4,7),(-5,7),(-5,8)]
     #point_a = [(2,5),(3,5),(3,6),(4,6),(4,7),(5,7),(5,8)]
     #point_a = list(reversed(point_a))
@@ -25,12 +63,14 @@ def main():
     n_a = np.array(point_a)
     n_b = np.array(point_b)
     px = similarityCalc(point_a,point_b)
-
-    point_a_tr = pointTransport(point_a)
-    point_a_rot = pointRot(point_a_tr,-1)
+    py = similarityCalc(point_a,point_c)
+    print(px,"  :  ",py)
+    
     for i in range(len(point_a)):
         print(point_a[i]," >>> ",point_a_tr[i], ">>>" , point_a_rot[i])
     """
+    
+    
     
 
 
@@ -71,14 +111,29 @@ def similarityCalc(point_a,point_b):
     min_index_b = np.argmin(S,axis=0)
     sa = 0
     sb = 0
-
+    th = 1
+    pen = 10
     for k in range(S.shape[0]):
-        sa = sa + S[k,min_index_a[k,0]]
+        v = S[k,min_index_a[k,0]]
+        if(v > th):
+            v = v*v
+        elif(v < th):
+            v = v*(1/pen)
+        sa = sa + v
     for k in range(S.shape[1]):
-        sb = sb + S[min_index_b[0,k],k]
-    S = sa/na + sb/nb
-    S2 = (sa + sb)/(na + nb)
+        v = S[min_index_b[0,k],k]
+        if(v > th):
+            v = v*v
+        elif(v < th):
+            v = v*(1/pen)
+        sb = sb + v
+    S2 = sa/na + sb/nb
+    
+    for i in range(len(point_a)):
+        print(point_a[i]," >>> ",point_b[min_index_a[i,0]]," : ",S[i,min_index_a[i,0]])
+    
     return S2
+    
 
 
 #原点に移動

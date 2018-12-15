@@ -132,24 +132,22 @@ def main():
     #convex...凸 / concavity...凹
     #(i,j) ... (ピース番号i,ピースiの変番号j)のタプルをリストに格納
     group_of_convex,group_of_concavity = rough_grouping(p_rough_list)
-    print(group_of_convex)
-    print(group_of_concavity)
+    #print(group_of_convex)
+    #print(group_of_concavity)
 
-    #p_edge_point_listを並進回転加えたやつ(類似度計算のときに引数としてp_edge_conv_point_list[i][j]を二つ渡してください),座標値がfloatです
+    #p_edge_point_listを並進回転加えたやつ(類似度計算のときに引数としてp_edge_conv_point_list[i][j]を二つ渡してください)
     p_edge_point_conv_list = pointConv(p_edge_point_list,p_rough_list)
 
-    """
-    #類似度行列，対称行列，処理時間やばいので開けてはいけません!
-    SSSS = np.zeros((416,416))
-    for i in range(416):
-        p_num_i = i//4
-        e_num_i = i%4
-        for j in range(i,416):
-            SSSS[i,j] = similarityCalc(p_edge_point_conv_list[p_num_i][e_num_i],p_edge_point_conv_list[j//4][j%4])
-    np.savetxt("./output/CSV/AlltoAll_match_sy.csv", SSSS, fmt='%s', delimiter=',')
-    """
+    #類似度(距離)行列の生成と保存
+    #SSSS = similarityMatrix(p_edge_point_conv_list,p_rough_list,"./output/CSV/AlltoAll_match.csv")
+    
+    #保存してある行列を読みこみ
+    data2 = np.loadtxt("./output/CSV/AlltoAll_match.csv",delimiter=",")
+    #sim5は416×(0 or p)のリスト，match_listは416×p×(piece_num,edge_num)
+    sim5 , match_list = similarityPointView(data2,p_rough_list,8)
+    
     #showImage(img_pieces[0])
-
+    
 
 # 画像の表示関数
 def showImage(img):
@@ -726,15 +724,90 @@ def similarityCalc(point_a,point_b):
     min_index_b = np.argmin(S,axis=0)
     sa = 0
     sb = 0
-
+    th = 1
+    pen = 10
     for k in range(S.shape[0]):
-        sa = sa + S[k,min_index_a[k,0]]
+        v = S[k,min_index_a[k,0]]
+        if(v > th):
+            v = v*v
+        else:
+            v = v*(1/pen)
+        sa = sa + v
     for k in range(S.shape[1]):
-        sb = sb + S[min_index_b[0,k],k]
-    S = sa/na + sb/nb
-    S2 = (sa + sb)/(na + nb)
+        v = S[min_index_b[0,k],k]
+        if(v > th):
+            v = v*v
+        else:
+            v = v*(1/pen)
+        sb = sb + v
+    S2 = sa/na + sb/nb
     return S2
 
+#類似度(距離)行列を生成してfnameに保存
+def similarityMatrix(p_edge_point_conv_list,p_rough_list,fname):
+    #類似度行列，対称行列，処理時間やばいので開けてはいけません
+    #値が小さいほど似ている，同じピース内の辺は比較せずに0で埋めた
+    edge_size = 416
+    SSSS = np.zeros((edge_size,edge_size))
+    for i in range(edge_size):
+        p_num_i = i//4
+        e_num_i = i%4
+        for j in range(i,edge_size):
+            if(p_rough_list[p_num_i][e_num_i] * p_rough_list[j//4][j%4] != -1):
+                SSSS[i,j] = 0
+            else:
+                x = i - e_num_i
+                if (x <= j) and (j <= x + 3):
+                    SSSS[i,j] = 0
+                else:
+                    SSSS[i,j] = similarityCalc(p_edge_point_conv_list[p_num_i][e_num_i],p_edge_point_conv_list[j//4][j%4])
+            SSSS[j,i] = SSSS[i,j]
+    np.savetxt(str(fname), SSSS, fmt='%s', delimiter=',')
+    return SSSS
+
+#類似度の高い上位p個のインデックスと(piece_num,edge_num)のタプルを返す
+#行列data2を受け取って(piece_num,edge_num)がどの(piece_num,edge_num)と類似度(距離)が近いかを高い順にp個表示する．
+def similarityPointView(data2,p_rough_list,p):
+    sim5 = []
+    for i in range(data2.shape[0]):
+        #i行目をソートして，小さい順にインデックス番号を格納した箱．416個入る．
+        sort_index = np.argsort(data2[i])
+        #p個格納する箱
+        sort_index2 = []
+        c = 0
+        for j in range(len(sort_index)):
+            if (data2[i][sort_index[j]] > 0.00000001):
+                c = c + 1
+                sort_index2.append(sort_index[j])
+            if c >= p:
+                break
+        sort_index2 = (np.array(sort_index2))
+        sim5.append(sort_index2)
+        if(p_rough_list[i//4][i%4] != 0):
+            print(i , " : " , sim5[i])
+            print(i , " : " , data2[i][sim5[i]])
+    #(piece num , edge num)
+    match_list = []
+    
+    for i in range(len(sim5)):
+        k = []
+        #cand個の(piece_num,edge_num)を生成
+        if(p_rough_list[i//4][i%4] != 0):
+            for j in range(p):
+                p_num = sim5[i][j] // 4
+                e_num = sim5[i][j] % 4
+                k.append((p_num,e_num))
+        else:
+            k.append(())
+        match_list.append(k)
+        print("上位p個　",(i//4,i%4)," >>> ",k)
+        if(sim5[i] != ()):
+            print("各類似度　",(i//4 , i%4) , " : " , data2[i][sim5[i]])
+        else:
+            print((i//4 , i%4)," >>> Line")
+        print("\n")
+    
+    return sim5,match_list
 
 if __name__=='__main__':
     main()
