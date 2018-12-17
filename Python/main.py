@@ -111,7 +111,7 @@ def main():
         rough_list = judge_roughness(p_edge_list[Number])
         p_rough_list.append(rough_list)
         print("\n")
-
+    
     """
     #座標の保存
     for i in range(len(p_edge_point_list)):
@@ -137,7 +137,7 @@ def main():
 
     #p_edge_point_listを並進回転加えたやつ(類似度計算のときに引数としてp_edge_conv_point_list[i][j]を二つ渡してください)
     p_edge_point_conv_list = pointConv(p_edge_point_list,p_rough_list)
-
+    
     #類似度(距離)行列の生成と保存
     #SSSS = similarityMatrix(p_edge_point_conv_list,p_rough_list,"./output/CSV/AlltoAll_match.csv")
     
@@ -146,9 +146,13 @@ def main():
     #simPは416×(0 or p)のリスト，match_listは416×p×(piece_num,edge_num)
     p = 20
     simP , match_list = similarityPointView(data2,p_rough_list,p)
-    W = sampleMatrix(data2,p_rough_list,simP)
-    np.savetxt("./output/CSV/data_matrix_W.csv", W, fmt='%s', delimiter=',')
+    W = calcW(data2,simP,p)
+    L = calcL(W)
+    np.savetxt("./output/CSV/data_matrix_W2.csv", W, fmt='%s', delimiter=',')
+    np.savetxt("./output/CSV/data_matrix_L.csv", L, fmt='%s', delimiter=',')
+    
     print(W.max())
+    
     #showImage(img_pieces[0])
     
 
@@ -823,18 +827,41 @@ def sampleMatrix(dataMat,p_rough_list,simP):
             t = np.amax(dataMat[i][simP[i]])
             if t > max_value:
                 max_value = t
-    print(max_value)
+    print("max_value",max_value)
     max_value = max_value / 1000
     W = np.zeros_like(dataMat)
     uI = np.array([[0,1,1,1],[1,0,1,1],[1,1,0,1],[1,1,1,0]])
     for i in range(W.shape[0]):
         if len(simP[i]) != 0:
             x = np.full(len(simP[i]),max_value) - dataMat[i][simP[i]]
-            print(x)
             W[i][simP[i]] = sigmoid(x)
             if i%4 == 0:
                 W[i:i+4,i:i+4] = uI
     return W
+
+#行列W
+def calcW(dataMat,simP,p):
+    W = np.zeros_like(dataMat)
+    #ta=[x1,x2,...,xi,...,xp]で0<xi<1の値を生成，high_rank個
+    ta = (1/(p + 1))*np.arange(1,p + 1)
+    uI = np.array([[0,1,1,1],[1,0,1,1],[1,1,0,1],[1,1,1,0]])
+    for i in range(W.shape[0]):
+        if len(simP[i]) != 0:
+            W[i][simP[i]] = ta
+        if i%4 == 0:
+            W[i:i+4,i:i+4] = uI
+    return W
+
+#行列L
+def calcL(W):
+    D = np.zeros_like(W)
+    sum_row = np.sum(W, axis=1)
+    for i in range(W.shape[0]):
+        D[i,i] = sum_row[i]
+    #np.savetxt("./output/CSV/data_matrix_D.csv", D, fmt='%s', delimiter=',')
+    L = D - W
+    return L
+
 
 def sigmoid(x):
    y = 1 / (1 + np.exp( -x ) )
