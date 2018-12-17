@@ -20,13 +20,14 @@ def main():
     df = pd.DataFrame(v2)
     #df = pd.DataFrame(np.random.randn(5,2))
     fig, ax = plt.subplots()
-    df.plot(0,1,kind='scatter',ax=ax)
+    df.plot(0,1,kind='scatter',ax=ax,marker=".",alpha=0.01)
     for k, v in df.iterrows():
-        ax.annotate(k,xy=(v[0],v[1]),size=5)
+        ax.annotate(k//4,xy=(v[0],v[1]),size=8)
     plt.xlim(-0.006,0.015)
     plt.ylim(-0.015,0.015)
     ax.set_xlabel('1')
     ax.set_ylabel('2')
+    
     """
     #plot
     fig = plt.figure()
