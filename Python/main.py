@@ -148,10 +148,9 @@ def main():
     simP , match_list = similarityPointView(data2,p_rough_list,p)
     W = calcW(data2,simP,p)
     L = calcL(W)
-    np.savetxt("./output/CSV/data_matrix_W2.csv", W, fmt='%s', delimiter=',')
-    np.savetxt("./output/CSV/data_matrix_L.csv", L, fmt='%s', delimiter=',')
+    #np.savetxt("./output/CSV/data_matrix_W2.csv", W, fmt='%s', delimiter=',')
+    #np.savetxt("./output/CSV/data_matrix_L.csv", L, fmt='%s', delimiter=',')
     
-    print(W.max())
     
     #showImage(img_pieces[0])
     

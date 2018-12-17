@@ -2,55 +2,58 @@
 import math
 import numpy as np 
 import cv2
+import pandas as pd
 import matplotlib.pyplot as plt
 import pickle
 
 def main():
-    
-    data2 = np.loadtxt("./output/CSV/AlltoAll_match_vv.csv",delimiter=",")
-    sim5 = []
-    
-    #候補cand番目まで
-    cand = 5
-    for i in range(data2.shape[0]):
-        sort_index = np.argsort(data2[i])
-        sort_index2 = []
-        c = 0
-        for j in range(len(sort_index)):
-            if (data2[i][sort_index[j]] > 0.000001):
-                c = c + 1
-                sort_index2.append(sort_index[j])
-            if c >= cand:
-                break
-        sort_index2 = (np.array(sort_index2))
-        sim5.append(sort_index2)
-        if(p_rough_list[i//4][i%4] != 0):
-            print(i , " : " , sim5[i])
-            print(i , " : " , data2[i][sim5[i]])
-    #(piece num , edge num)
-    print(data2[415][sort_index])
-    match_list = []
-    
-    for i in range(len(sim5)):
-        k = []
-        #cand個の(piece_num,edge_num)を生成
-        if(p_rough_list[i//4][i%4] != 0):
-            for j in range(cand):
-                p_num = sim5[i][j] // 4
-                e_num = sim5[i][j] % 4
-                k.append((p_num,e_num))
-        else:
-            k.append(())
-        match_list.append(k)
-        print((i//4,i%4)," >>> ",k)
-        if(sim5[i] != ()):
-            print((i//4 , i%4) , " : " , data2[i][sim5[i]])
-        else:
-            print((i//4,i%4)," >>> Line")
-        print("\n")
+    L = np.loadtxt("./output/CSV/data_matrix_L.csv",delimiter=",")
+    print(L.shape)
+    A = np.array([[3,1],[2,2]])
+    la, v = np.linalg.eig(A)
+
+    la, v = np.linalg.eig(L)
+    v = (np.real(v[:,1:3])).T
+    v2 = np.dot(L,v.T)
+    print(v.shape)
+
+    df = pd.DataFrame(v2)
+    #df = pd.DataFrame(np.random.randn(5,2))
+    fig, ax = plt.subplots()
+    df.plot(0,1,kind='scatter',ax=ax)
+    for k, v in df.iterrows():
+        ax.annotate(k,xy=(v[0],v[1]),size=5)
+    plt.xlim(-0.006,0.015)
+    plt.ylim(-0.015,0.015)
+    ax.set_xlabel('1')
+    ax.set_ylabel('2')
+    """
+    #plot
+    fig = plt.figure()
+    ax = fig.add_subplot(1,1,1)
+    ax.scatter(v[0,:],v[1,:])
+    ax.set_title('first scatter plot')
+    ax.set_xlabel('x')
+    ax.set_ylabel('y')
+    """
+    # save as png
+    plt.savefig('./output/test.png')
+    plt.close(fig)
 
     """
-    
+    data2 = np.loadtxt("./output/CSV/AlltoAll_match_vv.csv",delimiter=",")
+    A = np.zeros((12,12))
+    print(A)
+    s = [0,2,4]
+    A[0][s] = [1,1,1]
+    I = np.array([[0,1],[1,0]])
+    print(I)
+    for i in range(0,12,2):
+        A[i:i+2,i:i+2] = I
+    print(A)
+    print(sigmoid(np.array([1,2,3,4])))
+    """
+    """
     point_a = loadList("0_0_edge_point_conv")
     point_b = loadList("10_1_edge_point_conv")
     point_c = loadList("9_1_edge_point_conv")
@@ -68,13 +71,33 @@ def main():
     
     for i in range(len(point_a)):
         print(point_a[i]," >>> ",point_a_tr[i], ">>>" , point_a_rot[i])
+    
+    for i in range(104):
+        for j in range(4):
+            point_a = loadList(""+ str(i) +"_" + str(j) + "_edge_point_conv")
+            # figure
+            fig = plt.figure()
+            n_a = (np.array(point_a)).T
+            ax = fig.add_subplot(1, 1, 1)
+            # plot
+            ax.plot(n_a[0,:], n_a[1,:],'.', color='b', label='y = sin(x)')
+
+            # x axis
+            #plt.xlim([-np.pi, np.pi])
+            ax.set_xlabel('x')
+
+            # y axis
+            ax.set_ylabel('y')
+
+            # save as png
+            plt.savefig('./output/ConvEdge/' + str(i) + '_' + str(j) + '.png')
+            plt.close(fig)
     """
-    
-    
-    
 
 
-
+def sigmoid(x):
+   y = 1 / (1 + np.exp( -x ) )
+   return y
 
 def showImage(img):
     # r_img = cv2.resize(img,(500, 600))
