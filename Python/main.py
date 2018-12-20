@@ -87,7 +87,7 @@ def main():
                 ]
     p_curvature = []
     p_degrees = []
-    distance = 50
+    distance = 20
     for i in range(len(img_pieces)):
         p_chain,p_point = FreemanChainCode(img_pieces[i],directions)
         p_chains.append(p_chain)
@@ -103,7 +103,8 @@ def main():
     new_p_corners_list = []
     for Number in range(len(img_pieces)): #ピースの数だけ回る
         print("image No.",Number)
-        edge_list,corners_list,points_list = corner_dividing(p_corners[Number],p_points[Number],p_degrees[Number])
+        corner_point_list = newCornerDetection(p_degrees[Number],p_points[Number],img_pieces[Number],Number)
+        edge_list,corners_list,points_list = corner_dividing(corner_point_list,p_points[Number])
         new_p_corners_list.append(corners_list)
         p_edge_list.append(edge_list)
         p_edge_point_list.append(points_list)
@@ -316,7 +317,6 @@ def CornerDetection(data,img,pnum,img_pieces):
     return dst_corner
 
 
-
 #Freeman chain code 関数
 def FreemanChainCode(src,directions):
     point_is_found = False #見つかった場合True,見つからなかった場合False
@@ -367,7 +367,7 @@ def FreemanChainCode(src,directions):
                 point.append(current_point)
                 #print(new_point[0],",",new_point[1])
                 break
-        if count == 2000: break
+        if count == 4000: break
         count += 1
     # print(current_point)
     # print(point)
@@ -379,7 +379,7 @@ def FreemanChainCode(src,directions):
 
 
 def DegreeEquation(distance,point):
-    #対象点の10点前後でcosθを計算する
+    #対象点のdistance点前後でcosθを計算する
     degree = []
     point_temp = []
     for i in range(2):
@@ -427,74 +427,67 @@ def DegreeEquation(distance,point):
 def clean_cos(cos_angle): 
     return min(1,max(cos_angle,-1)) 
 
-#コーナー間で辺の情報を分ける関数
-def corner_dividing(corners,points,degrees):
-    #cornersがnparray型なのでリストに変換
-    corners_list = []
-    corners_num = len(corners)
-    for i in range(corners_num):
-        corners_list.append((corners[i][0],corners[i][1]))
-    # print(corners_list)
-    #(0,0)の点をリストから削除する
-    zero = (0,0)
-    if zero in corners_list:
-        corners_list.remove(zero)
-    corners_num = len(corners_list)
-    
-    # if len(corners_list) == 3:
-    #     print("len(corners) = 3")
-    # elif len(corners_list) == 4:
-    #     print("len(corners) = 4")
-    # else:
-    #     print("len(corners) = ",len(corners_list))
-
-    #相似度を計算してコーナー点の近似点を探す
-    point_num = len(points)
-    print(point_num)
-    for i in range(corners_num):
-        if corners_list[i] in points:
-            continue
-        else:
-            subtract = ( points[0][0]-corners_list[i][0],
-                         points[0][1]-corners_list[i][1] )
-            min_similarity = pow(subtract[0]*subtract[0]
-                                +subtract[1]*subtract[1] , 1/2)
-            near_point = points[0]
-            for j in range(1,point_num):
-                subtract = ( points[j][0]-corners_list[i][0],
-                             points[j][1]-corners_list[i][1] )
-                simmilarity = pow(subtract[0]*subtract[0]
-                                 +subtract[1]*subtract[1] , 1/2)
-                if min_similarity > simmilarity:
-                    min_similarity = simmilarity
-                    near_point = points[j]
-            corners_list[i] = near_point
-    #デバッグ用
+def newCornerDetection(degree,points,image,Number):
+    print(len(degree))
+    thresh_degree = 104
+    #適当に角度の最小を設定
+    min_deg = thresh_degree
+    corner_index = -1
     corner_index_list = []
-    for i in range(len(corners_list)):
-        if corners_list[i] in points:
-            # print(corners_list[i],"in points[",points.index(corners_list[i]),"]")
-            corner_index_list.append(points.index(corners_list[i]))
-    #コーナー間の辺を分割・記録
-    # print("temp = ",temp_record_index)
-    # print("points_length = ",point_num)
-    edge = []
-    edge_list = []
-    #新しいコーナー座標のリスト
-    new_corners_point_list = []
-    #コーナー間の辺のリスト
-    new_point = []
-    #1ピース分のリスト
-    new_point_list = []
-    
-    if len(corner_index_list)==3:
+    #数え始めのフラグ
+    bool_count = False
+    for i in range(len(degree)):
+        # if abs(degree[i]) < thresh_degree and degree[i] != 0:
+        #     print("degree[",i,"]=",degree[i])
+        if bool_count == True:
+            if abs(degree[i]) < thresh_degree and degree[i] != 0:
+                if degree[i] < min_deg:
+                    min_deg = degree[i]
+                    corner_index = i
+            else:
+                bool_count = False
+                corner_index_list.append(corner_index)
+                min_deg=thresh_degree
+        else:
+            if abs(degree[i]) < thresh_degree and degree[i] != 0:
+                bool_count = True
+                corner_index = i
+                min_deg = degree[i]
+            else:
+                continue
 
+    print("length of corner_index_list is ",len(corner_index_list))
+    print("corner index is ",corner_index_list)
+    corner_point_list = []
+    for i in corner_index_list:
+        corner_point_list.append(points[i])
+    print("corner point is ",corner_point_list)
+
+
+    sub = 0
+    if len(corner_index_list) > 4:
+        for i in range(len(corner_index_list)):
+            if i == 0:
+                sub = abs(len(degree)-1-corner_index_list[-1]+corner_index_list[0])
+                print("sub = ",sub)
+                if sub < 200:
+                    del corner_index_list[i]
+                    break
+            else:
+                sub = abs(corner_index_list[i] - corner_index_list[i-1])
+                print("sub = ",sub)
+                if sub < 200:
+                    del corner_index_list[i]
+                    break
+
+    point_num = len(degree)
+    if len(corner_index_list)==3:
         # print("四隅のピースです")
         for i in range(3):
             if i == 0:
                 sub_of_pixel = abs(point_num - corner_index_list[2] + corner_index_list[0])
                 # print(sub_of_pixel)
-                if sub_of_pixel > 300:
+                if sub_of_pixel > 900:
                     ave_sub = sub_of_pixel//2
                     # print("ave_sub=",ave_sub)
                     insert_index = int(corner_index_list[2] + ave_sub)
@@ -506,13 +499,69 @@ def corner_dividing(corners,points,degrees):
             else:
                 sub_of_pixel = abs(corner_index_list[i] - corner_index_list[i-1])
                 # print(sub_of_pixel)
-                if sub_of_pixel > 300:
+                if sub_of_pixel > 900:
                     ave_sub = sub_of_pixel//2
                     # print("ave_sub=",ave_sub)
                     insert_index = int(corner_index_list[i-1] + ave_sub)
                     corner_index_list.insert(i,insert_index)
-            
-            
+
+    print("new length of corner_index_list is ",len(corner_index_list))
+    print("new corner index is ",corner_index_list)
+
+    corner_point_list = []
+    img_shi = cv2.cvtColor(image,cv2.COLOR_GRAY2BGR)
+    for i in range(len(corner_index_list)):
+        corner_point_list.append(points[corner_index_list[i]])
+        # cv2.circle(img_shi,(int(points[corner_index_list[i]][0]),int(points[corner_index_list[i]][1])),10,(0,0,255),-1)
+    # cv2.imwrite("./output/Piece/Corner/" + str(Number) +"_corner.png",img_shi)
+    print("corner point is ",corner_point_list)
+    return corner_point_list
+
+
+#コーナー間で辺の情報を分ける関数
+def corner_dividing(corner_point_list,points):
+    #凹凸判定用に角度計算をdistanceを変えて適用
+    degrees = DegreeEquation(100,points)
+    corners_num = len(corner_point_list)
+    #相似度を計算してコーナー点の近似点を探す
+    point_num = len(points)
+    print(point_num)
+    for i in range(corners_num):
+        if corner_point_list[i] in points:
+            continue
+        else:
+            subtract = ( points[0][0]-corner_point_list[i][0],
+                         points[0][1]-corner_point_list[i][1] )
+            min_similarity = pow(subtract[0]*subtract[0]
+                                +subtract[1]*subtract[1] , 1/2)
+            near_point = points[0]
+            for j in range(1,point_num):
+                subtract = ( points[j][0]-corner_point_list[i][0],
+                             points[j][1]-corner_point_list[i][1] )
+                simmilarity = pow(subtract[0]*subtract[0]
+                                 +subtract[1]*subtract[1] , 1/2)
+                if min_similarity > simmilarity:
+                    min_similarity = simmilarity
+                    near_point = points[j]
+            corner_point_list[i] = near_point
+    #デバッグ用
+    corner_index_list = []
+    for i in range(len(corner_point_list)):
+        if corner_point_list[i] in points:
+            print(corner_point_list[i],"in points[",points.index(corner_point_list[i]),"]")
+            corner_index_list.append(points.index(corner_point_list[i]))
+    # コーナー間の辺を分割・記録
+    # print("temp = ",temp_record_index)
+    print("points_length = ",point_num)
+    edge = []
+    edge_list = []
+    #新しいコーナー座標のリスト
+    new_corners_point_list = []
+    #コーナー間の辺のリスト
+    new_point = []
+    #1ピース分のリスト
+    new_point_list = []
+    
     record_index = corner_index_list[0]
     temp_record_index = corner_index_list.index(record_index)
     print("corner_index_list = ",corner_index_list)
@@ -530,7 +579,7 @@ def corner_dividing(corners,points,degrees):
                 new_point.append(points[index])
             elif index == corner_index_list[(temp_record_index+1)%len(corner_index_list)]:
                 # print(edge)
-                # print("len(edge)=",len(edge))
+                print("len(edge)=",len(edge))
                 edge_list.append(edge[:])
                 new_point_list.append(new_point[:])
                 # print("edge_list[0]=",edge_list[0])
@@ -544,6 +593,7 @@ def corner_dividing(corners,points,degrees):
             edge_list.append(edge[:])
             new_point.append(points[index])
             new_point_list.append(new_point[:])
+            print("len new_point_list = ",len(new_point_list))
             print("start ",new_point_list[0][0])
             print("start ",new_point_list[1][0])
             print("start ",new_point_list[2][0])
@@ -578,7 +628,6 @@ def judge_roughness(edge_list):
             print("直線")
             rough_list.append(0)
     return rough_list
-
 
 #簡易版曲率
 def calcCurvature(img_b,p_point):
