@@ -126,28 +126,36 @@ def main():
     np.savetxt("./output/CSV/FreemanChainCode.csv", p_chains, fmt='%s', delimiter=',')
     """
     #グルーピング関数でピースの形状ごとにグループ分け
-    group1,group2,grou3 = Grouping(p_rough_list)
+    group1,group2,group3 = Grouping(p_rough_list)
+    print(group1)
+    print(group2)
+    print(group3)
     #convex...凸 / concavity...凹
     #(i,j) ... (ピース番号i,ピースiの変番号j)のタプルをリストに格納
     group_of_convex,group_of_concavity = rough_grouping(p_rough_list)
-    #print(group_of_convex)
-    #print(group_of_concavity)
+    print(group_of_convex)
+    print(group_of_concavity)
 
     #p_edge_point_listを並進回転加えたやつ(類似度計算のときに引数としてp_edge_conv_point_list[i][j]を二つ渡してください)
     p_edge_point_conv_list = pointConv(p_edge_point_list,p_rough_list)
-    
+    for i in range(len(p_edge_point_conv_list)):
+        saveList(p_rough_list[i], str(i) +'_rough')
+        for j in range(len(p_edge_point_conv_list[i])):
+            saveList(p_edge_point_conv_list[i][j], str(i) + '_' + str(j) +'_edge_conv_point')
+    p = loadList('0_0_edge_conv_point')
+    print("p = ",p)
     #類似度(距離)行列の生成と保存
-    #SSSS = similarityMatrix(p_edge_point_conv_list,p_rough_list,"./output/CSV/AlltoAll_match.csv")
+    # SSSS = similarityMatrix(p_edge_point_conv_list,p_rough_list,"./output/CSV/AlltoAll_match.csv")
     
     #保存してある行列を読みこみ
-    # data2 = np.loadtxt("./output/CSV/AlltoAll_match.csv",delimiter=",")
+    data2 = np.loadtxt("./output/CSV/AlltoAll_match.csv",delimiter=",")
     #simPは416×(0 or p)のリスト，match_listは416×p×(piece_num,edge_num)
-    # p = 20
-    # simP , match_list = similarityPointView(data2,p_rough_list,p)
-    # W = calcW(data2,simP,p)
-    # L = calcL(W)
-    #np.savetxt("./output/CSV/data_matrix_W2.csv", W, fmt='%s', delimiter=',')
-    #np.savetxt("./output/CSV/data_matrix_L.csv", L, fmt='%s', delimiter=',')
+    p = 10
+    simP , match_list = similarityPointView(data2,p_rough_list,p)
+    W = calcW(data2,simP,p)
+    L = calcL(W)
+    np.savetxt("./output/CSV/data_matrix_W2.csv", W, fmt='%s', delimiter=',')
+    np.savetxt("./output/CSV/data_matrix_L.csv", L, fmt='%s', delimiter=',')
     
     
     #showImage(img_pieces[0])
@@ -509,8 +517,8 @@ def newCornerDetection(degree,points,image,Number):
     img_shi = cv2.cvtColor(image,cv2.COLOR_GRAY2BGR)
     for i in range(len(corner_index_list)):
         corner_point_list.append(points[corner_index_list[i]])
-        cv2.circle(img_shi,(int(points[corner_index_list[i]][0]),int(points[corner_index_list[i]][1])),10,(0,0,255),-1)
-    cv2.imwrite("./output/corner/" + str(Number) +"_corner.png",img_shi)
+    #     cv2.circle(img_shi,(int(points[corner_index_list[i]][0]),int(points[corner_index_list[i]][1])),10,(0,0,255),-1)
+    # cv2.imwrite("./output/corner/" + str(Number) +"_corner.png",img_shi)
     print("corner point is ",corner_point_list)
     return corner_point_list
 
@@ -742,7 +750,9 @@ def pointRot(points,rough):
         _y = - points[a][0]*sin + points[a][1]*cos
         if rough == -1:
             _y = -_y
-        _t = (_x,_y)
+            _x = -_x
+            _x = math.sqrt(dx*dx + dy*dy) + _x
+        _t = [_x,_y]
         dst.append(_t)
     return dst
 
@@ -801,7 +811,7 @@ def similarityCalc(point_a,point_b):
 def similarityMatrix(p_edge_point_conv_list,p_rough_list,fname):
     #類似度行列，対称行列，処理時間やばいので開けてはいけません
     #値が小さいほど似ている，同じピース内の辺は比較せずに0で埋めた
-    edge_size = 416
+    edge_size = 160
     SSSS = np.zeros((edge_size,edge_size))
     for i in range(edge_size):
         p_num_i = i//4
@@ -857,10 +867,10 @@ def similarityPointView(data2,p_rough_list,p):
             k.append(())
         match_list.append(k)
         print("上位p個　",(i//4,i%4)," >>> ",k)
-        if(sim5[i] != ()):
-            print("各類似度　",(i//4 , i%4) , " : " , data2[i][sim5[i]])
-        else:
-            print((i//4 , i%4)," >>> Line")
+        # if(sim5[i] != ()):
+        #     print("各類似度　",(i//4 , i%4) , " : " , data2[i][sim5[i]])
+        # else:
+        #     print((i//4 , i%4)," >>> Line")
         print("\n")
     
     return sim5,match_list
