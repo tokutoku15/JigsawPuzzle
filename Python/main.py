@@ -7,12 +7,12 @@ import pickle
 
 def main():
     #カラー画像の読み取り
-    img_src1 = cv2.imread("./input2/1T20.png",1)
-    img_src2 = cv2.imread("./input2/21T40.png",1)
-    img_src3 = cv2.imread("./input2/41T60.png",1)
-    img_src4 = cv2.imread("./input2/61T80.png",1)
-    img_src5 = cv2.imread("./input2/81T96.png",1)
-    img_src6 = cv2.imread("./input2/97T104.png",1)
+    img_src1 = cv2.imread("./input/1T20.png",1)
+    img_src2 = cv2.imread("./input/21T40.png",1)
+    img_src3 = cv2.imread("./input/41T60.png",1)
+    img_src4 = cv2.imread("./input/61T80.png",1)
+    img_src5 = cv2.imread("./input/81T96.png",1)
+    img_src6 = cv2.imread("./input/97T104.png",1)
     images = [img_src1,img_src2,img_src3,img_src4,img_src5,img_src6]
     img_num = len(images)
     p_num = 104
