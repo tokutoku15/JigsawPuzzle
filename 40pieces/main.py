@@ -310,7 +310,7 @@ def CornerDetection(data,img,pnum,img_pieces):
                     dst_corner[j][check][1] = y
             count += 1
         cv2.circle(img_shi,(int(dst_corner[j][check][0]),int(dst_corner[j][check][1])),3,(0,0,255),-1)
-        #cv2.imwrite("./output/Piece/Corner/" + str(pnum + j) +"_corner.png",img_shi)
+        # cv2.imwrite("./output/corner/" + str(pnum + j) +"_corner.png",img_shi)
     return dst_corner
 
 
@@ -426,7 +426,7 @@ def clean_cos(cos_angle):
 
 def newCornerDetection(degree,points,image,Number):
     print(len(degree))
-    thresh_degree = 104
+    thresh_degree = 110
     #適当に角度の最小を設定
     min_deg = thresh_degree
     corner_index = -1
@@ -509,8 +509,8 @@ def newCornerDetection(degree,points,image,Number):
     img_shi = cv2.cvtColor(image,cv2.COLOR_GRAY2BGR)
     for i in range(len(corner_index_list)):
         corner_point_list.append(points[corner_index_list[i]])
-        # cv2.circle(img_shi,(int(points[corner_index_list[i]][0]),int(points[corner_index_list[i]][1])),10,(0,0,255),-1)
-    # cv2.imwrite("./output/Piece/Corner/" + str(Number) +"_corner.png",img_shi)
+        cv2.circle(img_shi,(int(points[corner_index_list[i]][0]),int(points[corner_index_list[i]][1])),10,(0,0,255),-1)
+    cv2.imwrite("./output/corner/" + str(Number) +"_corner.png",img_shi)
     print("corner point is ",corner_point_list)
     return corner_point_list
 

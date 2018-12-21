@@ -85,7 +85,7 @@ def main():
                 ]
     p_curvature = []
     p_degrees = []
-    distance = 20
+    distance = 50
     for i in range(len(img_pieces)):
         p_chain,p_point = FreemanChainCode(img_pieces[i],directions)
         p_chains.append(p_chain)
@@ -510,8 +510,8 @@ def newCornerDetection(degree,points,image,Number):
     img_shi = cv2.cvtColor(image,cv2.COLOR_GRAY2BGR)
     for i in range(len(corner_index_list)):
         corner_point_list.append(points[corner_index_list[i]])
-        # cv2.circle(img_shi,(int(points[corner_index_list[i]][0]),int(points[corner_index_list[i]][1])),10,(0,0,255),-1)
-    # cv2.imwrite("./output/Piece/Corner/" + str(Number) +"_corner.png",img_shi)
+        cv2.circle(img_shi,(int(points[corner_index_list[i]][0]),int(points[corner_index_list[i]][1])),10,(0,0,255),-1)
+    cv2.imwrite("./output/corner/" + str(Number) +"_corner.png",img_shi)
     print("corner point is ",corner_point_list)
     return corner_point_list
 
