@@ -1,0 +1,6006 @@
+image No. 0
+3119
+length of corner_index_list is  4
+corner index is  [0, 815, 1552, 2359]
+corner point is  [(214, 16), (120, 549), (581, 641), (695, 110)]
+new length of corner_index_list is  4
+new corner index is  [0, 815, 1552, 2359]
+corner point is  [(214, 16), (120, 549), (581, 641), (695, 110)]
+3119
+(214, 16) in points[ 0 ]
+(120, 549) in points[ 815 ]
+(581, 641) in points[ 1552 ]
+(695, 110) in points[ 2359 ]
+points_length =  3119
+corner_index_list =  [0, 815, 1552, 2359]
+corner: 0 ,(corner_index_list 0 ) =  (214, 16)
+corner: 1 ,(corner_index_list 815 ) =  (120, 549)
+corner: 2 ,(corner_index_list 1552 ) =  (581, 641)
+corner: 3 ,(corner_index_list 2359 ) =  (695, 110)
+len(edge)= 815
+len(edge)= 737
+len(edge)= 807
+len new_point_list =  4
+start  (214, 16)
+start  (120, 549)
+start  (581, 641)
+start  (695, 110)
+new_corners_point_list =  [(214, 16), (120, 549), (581, 641), (695, 110)]
+815
+凸
+737
+凹
+807
+凸
+760
+凹
+
+
+image No. 1
+3121
+length of corner_index_list is  4
+corner index is  [639, 1409, 2175, 2965]
+corner point is  [(164, 40), (172, 533), (658, 540), (677, 38)]
+new length of corner_index_list is  4
+new corner index is  [639, 1409, 2175, 2965]
+corner point is  [(164, 40), (172, 533), (658, 540), (677, 38)]
+3121
+(164, 40) in points[ 639 ]
+(172, 533) in points[ 1409 ]
+(658, 540) in points[ 2175 ]
+(677, 38) in points[ 2965 ]
+points_length =  3121
+corner_index_list =  [639, 1409, 2175, 2965]
+corner: 0 ,(corner_index_list 639 ) =  (164, 40)
+corner: 1 ,(corner_index_list 1409 ) =  (172, 533)
+corner: 2 ,(corner_index_list 2175 ) =  (658, 540)
+corner: 3 ,(corner_index_list 2965 ) =  (677, 38)
+len(edge)= 770
+len(edge)= 766
+len(edge)= 790
+len new_point_list =  4
+start  (164, 40)
+start  (172, 533)
+start  (658, 540)
+start  (677, 38)
+new_corners_point_list =  [(164, 40), (172, 533), (658, 540), (677, 38)]
+770
+凸
+766
+凹
+790
+凸
+795
+凹
+
+
+image No. 2
+2909
+length of corner_index_list is  4
+corner index is  [663, 1489, 2245, 2812]
+corner point is  [(151, 51), (177, 601), (657, 585), (637, 18)]
+new length of corner_index_list is  4
+new corner index is  [663, 1489, 2245, 2812]
+corner point is  [(151, 51), (177, 601), (657, 585), (637, 18)]
+2909
+(151, 51) in points[ 663 ]
+(177, 601) in points[ 1489 ]
+(657, 585) in points[ 2245 ]
+(637, 18) in points[ 2812 ]
+points_length =  2909
+corner_index_list =  [663, 1489, 2245, 2812]
+corner: 0 ,(corner_index_list 663 ) =  (151, 51)
+corner: 1 ,(corner_index_list 1489 ) =  (177, 601)
+corner: 2 ,(corner_index_list 2245 ) =  (657, 585)
+corner: 3 ,(corner_index_list 2812 ) =  (637, 18)
+len(edge)= 826
+len(edge)= 756
+len(edge)= 567
+len new_point_list =  4
+start  (151, 51)
+start  (177, 601)
+start  (657, 585)
+start  (637, 18)
+new_corners_point_list =  [(151, 51), (177, 601), (657, 585), (637, 18)]
+826
+凸
+756
+凹
+567
+直線
+760
+凹
+
+
+image No. 3
+2766
+length of corner_index_list is  4
+corner index is  [1, 743, 1517, 2279]
+corner point is  [(191, 16), (159, 491), (659, 534), (679, 47)]
+new length of corner_index_list is  4
+new corner index is  [1, 743, 1517, 2279]
+corner point is  [(191, 16), (159, 491), (659, 534), (679, 47)]
+2766
+(191, 16) in points[ 1 ]
+(159, 491) in points[ 743 ]
+(659, 534) in points[ 1517 ]
+(679, 47) in points[ 2279 ]
+points_length =  2766
+corner_index_list =  [1, 743, 1517, 2279]
+corner: 0 ,(corner_index_list 1 ) =  (191, 16)
+corner: 1 ,(corner_index_list 743 ) =  (159, 491)
+corner: 2 ,(corner_index_list 1517 ) =  (659, 534)
+corner: 3 ,(corner_index_list 2279 ) =  (679, 47)
+len(edge)= 742
+len(edge)= 774
+len(edge)= 762
+len new_point_list =  4
+start  (191, 16)
+start  (159, 491)
+start  (659, 534)
+start  (679, 47)
+new_corners_point_list =  [(191, 16), (159, 491), (659, 534), (679, 47)]
+742
+凸
+774
+凹
+762
+凸
+488
+直線
+
+
+image No. 4
+2873
+length of corner_index_list is  4
+corner index is  [54, 808, 1354, 2103]
+corner point is  [(202, 17), (141, 497), (687, 574), (753, 98)]
+new length of corner_index_list is  4
+new corner index is  [54, 808, 1354, 2103]
+corner point is  [(202, 17), (141, 497), (687, 574), (753, 98)]
+2873
+(202, 17) in points[ 54 ]
+(141, 497) in points[ 808 ]
+(687, 574) in points[ 1354 ]
+(753, 98) in points[ 2103 ]
+points_length =  2873
+corner_index_list =  [54, 808, 1354, 2103]
+corner: 0 ,(corner_index_list 54 ) =  (202, 17)
+corner: 1 ,(corner_index_list 808 ) =  (141, 497)
+corner: 2 ,(corner_index_list 1354 ) =  (687, 574)
+corner: 3 ,(corner_index_list 2103 ) =  (753, 98)
+len(edge)= 754
+len(edge)= 546
+len(edge)= 749
+len new_point_list =  4
+start  (202, 17)
+start  (141, 497)
+start  (687, 574)
+start  (753, 98)
+new_corners_point_list =  [(202, 17), (141, 497), (687, 574), (753, 98)]
+754
+凸
+546
+直線
+749
+凸
+824
+凹
+
+
+image No. 5
+3031
+length of corner_index_list is  4
+corner index is  [108, 874, 1623, 2389]
+corner point is  [(189, 28), (144, 514), (611, 550), (646, 57)]
+new length of corner_index_list is  4
+new corner index is  [108, 874, 1623, 2389]
+corner point is  [(189, 28), (144, 514), (611, 550), (646, 57)]
+3031
+(189, 28) in points[ 108 ]
+(144, 514) in points[ 874 ]
+(611, 550) in points[ 1623 ]
+(646, 57) in points[ 2389 ]
+points_length =  3031
+corner_index_list =  [108, 874, 1623, 2389]
+corner: 0 ,(corner_index_list 108 ) =  (189, 28)
+corner: 1 ,(corner_index_list 874 ) =  (144, 514)
+corner: 2 ,(corner_index_list 1623 ) =  (611, 550)
+corner: 3 ,(corner_index_list 2389 ) =  (646, 57)
+len(edge)= 766
+len(edge)= 749
+len(edge)= 766
+len new_point_list =  4
+start  (189, 28)
+start  (144, 514)
+start  (611, 550)
+start  (646, 57)
+new_corners_point_list =  [(189, 28), (144, 514), (611, 550), (646, 57)]
+766
+凸
+749
+凹
+766
+凸
+750
+凹
+
+
+image No. 6
+3146
+length of corner_index_list is  4
+corner index is  [631, 1392, 2215, 2957]
+corner point is  [(161, 45), (176, 527), (725, 503), (705, 33)]
+new length of corner_index_list is  4
+new corner index is  [631, 1392, 2215, 2957]
+corner point is  [(161, 45), (176, 527), (725, 503), (705, 33)]
+3146
+(161, 45) in points[ 631 ]
+(176, 527) in points[ 1392 ]
+(725, 503) in points[ 2215 ]
+(705, 33) in points[ 2957 ]
+points_length =  3146
+corner_index_list =  [631, 1392, 2215, 2957]
+corner: 0 ,(corner_index_list 631 ) =  (161, 45)
+corner: 1 ,(corner_index_list 1392 ) =  (176, 527)
+corner: 2 ,(corner_index_list 2215 ) =  (725, 503)
+corner: 3 ,(corner_index_list 2957 ) =  (705, 33)
+len(edge)= 761
+len(edge)= 823
+len(edge)= 742
+len new_point_list =  4
+start  (161, 45)
+start  (176, 527)
+start  (725, 503)
+start  (705, 33)
+new_corners_point_list =  [(161, 45), (176, 527), (725, 503), (705, 33)]
+761
+凸
+823
+凹
+742
+凸
+820
+凹
+
+
+image No. 7
+3075
+length of corner_index_list is  4
+corner index is  [0, 738, 1535, 2267]
+corner point is  [(211, 16), (133, 478), (658, 571), (744, 121)]
+new length of corner_index_list is  4
+new corner index is  [0, 738, 1535, 2267]
+corner point is  [(211, 16), (133, 478), (658, 571), (744, 121)]
+3075
+(211, 16) in points[ 0 ]
+(133, 478) in points[ 738 ]
+(658, 571) in points[ 1535 ]
+(744, 121) in points[ 2267 ]
+points_length =  3075
+corner_index_list =  [0, 738, 1535, 2267]
+corner: 0 ,(corner_index_list 0 ) =  (211, 16)
+corner: 1 ,(corner_index_list 738 ) =  (133, 478)
+corner: 2 ,(corner_index_list 1535 ) =  (658, 571)
+corner: 3 ,(corner_index_list 2267 ) =  (744, 121)
+len(edge)= 738
+len(edge)= 797
+len(edge)= 732
+len new_point_list =  4
+start  (211, 16)
+start  (133, 478)
+start  (658, 571)
+start  (744, 121)
+new_corners_point_list =  [(211, 16), (133, 478), (658, 571), (744, 121)]
+738
+凸
+797
+凹
+732
+凸
+808
+凹
+
+
+image No. 8
+2510
+length of corner_index_list is  3
+corner index is  [923, 1701, 2485]
+corner point is  [(16, 506), (515, 527), (539, 17)]
+new length of corner_index_list is  4
+new corner index is  [449, 923, 1701, 2485]
+corner point is  [(65, 35), (16, 506), (515, 527), (539, 17)]
+2510
+(65, 35) in points[ 449 ]
+(16, 506) in points[ 923 ]
+(515, 527) in points[ 1701 ]
+(539, 17) in points[ 2485 ]
+points_length =  2510
+corner_index_list =  [449, 923, 1701, 2485]
+corner: 0 ,(corner_index_list 449 ) =  (65, 35)
+corner: 1 ,(corner_index_list 923 ) =  (16, 506)
+corner: 2 ,(corner_index_list 1701 ) =  (515, 527)
+corner: 3 ,(corner_index_list 2485 ) =  (539, 17)
+len(edge)= 474
+len(edge)= 778
+len(edge)= 784
+len new_point_list =  4
+start  (65, 35)
+start  (16, 506)
+start  (515, 527)
+start  (539, 17)
+new_corners_point_list =  [(65, 35), (16, 506), (515, 527), (539, 17)]
+474
+直線
+778
+凸
+784
+凹
+474
+直線
+
+
+image No. 9
+3150
+length of corner_index_list is  4
+corner index is  [51, 806, 1620, 2384]
+corner point is  [(185, 19), (153, 494), (694, 548), (740, 63)]
+new length of corner_index_list is  4
+new corner index is  [51, 806, 1620, 2384]
+corner point is  [(185, 19), (153, 494), (694, 548), (740, 63)]
+3150
+(185, 19) in points[ 51 ]
+(153, 494) in points[ 806 ]
+(694, 548) in points[ 1620 ]
+(740, 63) in points[ 2384 ]
+points_length =  3150
+corner_index_list =  [51, 806, 1620, 2384]
+corner: 0 ,(corner_index_list 51 ) =  (185, 19)
+corner: 1 ,(corner_index_list 806 ) =  (153, 494)
+corner: 2 ,(corner_index_list 1620 ) =  (694, 548)
+corner: 3 ,(corner_index_list 2384 ) =  (740, 63)
+len(edge)= 755
+len(edge)= 814
+len(edge)= 764
+len new_point_list =  4
+start  (185, 19)
+start  (153, 494)
+start  (694, 548)
+start  (740, 63)
+new_corners_point_list =  [(185, 19), (153, 494), (694, 548), (740, 63)]
+755
+凸
+814
+凹
+764
+凸
+817
+凹
+
+
+image No. 10
+3150
+length of corner_index_list is  4
+corner index is  [669, 1415, 2229, 3002]
+corner point is  [(147, 85), (191, 552), (731, 513), (686, 19)]
+new length of corner_index_list is  4
+new corner index is  [669, 1415, 2229, 3002]
+corner point is  [(147, 85), (191, 552), (731, 513), (686, 19)]
+3150
+(147, 85) in points[ 669 ]
+(191, 552) in points[ 1415 ]
+(731, 513) in points[ 2229 ]
+(686, 19) in points[ 3002 ]
+points_length =  3150
+corner_index_list =  [669, 1415, 2229, 3002]
+corner: 0 ,(corner_index_list 669 ) =  (147, 85)
+corner: 1 ,(corner_index_list 1415 ) =  (191, 552)
+corner: 2 ,(corner_index_list 2229 ) =  (731, 513)
+corner: 3 ,(corner_index_list 3002 ) =  (686, 19)
+len(edge)= 746
+len(edge)= 814
+len(edge)= 773
+len new_point_list =  4
+start  (147, 85)
+start  (191, 552)
+start  (731, 513)
+start  (686, 19)
+new_corners_point_list =  [(147, 85), (191, 552), (731, 513), (686, 19)]
+746
+凸
+814
+凹
+773
+凸
+817
+凹
+
+
+image No. 11
+2923
+length of corner_index_list is  4
+corner index is  [128, 948, 1726, 2291]
+corner point is  [(178, 26), (145, 573), (643, 603), (662, 38)]
+new length of corner_index_list is  4
+new corner index is  [128, 948, 1726, 2291]
+corner point is  [(178, 26), (145, 573), (643, 603), (662, 38)]
+2923
+(178, 26) in points[ 128 ]
+(145, 573) in points[ 948 ]
+(643, 603) in points[ 1726 ]
+(662, 38) in points[ 2291 ]
+points_length =  2923
+corner_index_list =  [128, 948, 1726, 2291]
+corner: 0 ,(corner_index_list 128 ) =  (178, 26)
+corner: 1 ,(corner_index_list 948 ) =  (145, 573)
+corner: 2 ,(corner_index_list 1726 ) =  (643, 603)
+corner: 3 ,(corner_index_list 2291 ) =  (662, 38)
+len(edge)= 820
+len(edge)= 778
+len(edge)= 565
+len new_point_list =  4
+start  (178, 26)
+start  (145, 573)
+start  (643, 603)
+start  (662, 38)
+new_corners_point_list =  [(178, 26), (145, 573), (643, 603), (662, 38)]
+820
+凸
+778
+凹
+565
+直線
+760
+凹
+
+
+image No. 12
+3143
+length of corner_index_list is  4
+corner index is  [113, 930, 1699, 2503]
+corner point is  [(181, 24), (150, 565), (643, 575), (657, 41)]
+new length of corner_index_list is  4
+new corner index is  [113, 930, 1699, 2503]
+corner point is  [(181, 24), (150, 565), (643, 575), (657, 41)]
+3143
+(181, 24) in points[ 113 ]
+(150, 565) in points[ 930 ]
+(643, 575) in points[ 1699 ]
+(657, 41) in points[ 2503 ]
+points_length =  3143
+corner_index_list =  [113, 930, 1699, 2503]
+corner: 0 ,(corner_index_list 113 ) =  (181, 24)
+corner: 1 ,(corner_index_list 930 ) =  (150, 565)
+corner: 2 ,(corner_index_list 1699 ) =  (643, 575)
+corner: 3 ,(corner_index_list 2503 ) =  (657, 41)
+len(edge)= 817
+len(edge)= 769
+len(edge)= 804
+len new_point_list =  4
+start  (181, 24)
+start  (150, 565)
+start  (643, 575)
+start  (657, 41)
+new_corners_point_list =  [(181, 24), (150, 565), (643, 575), (657, 41)]
+817
+凸
+769
+凹
+804
+凸
+753
+凹
+
+
+image No. 13
+2765
+length of corner_index_list is  4
+corner index is  [114, 895, 1638, 2142]
+corner point is  [(176, 29), (160, 533), (633, 538), (638, 34)]
+new length of corner_index_list is  4
+new corner index is  [114, 895, 1638, 2142]
+corner point is  [(176, 29), (160, 533), (633, 538), (638, 34)]
+2765
+(176, 29) in points[ 114 ]
+(160, 533) in points[ 895 ]
+(633, 538) in points[ 1638 ]
+(638, 34) in points[ 2142 ]
+points_length =  2765
+corner_index_list =  [114, 895, 1638, 2142]
+corner: 0 ,(corner_index_list 114 ) =  (176, 29)
+corner: 1 ,(corner_index_list 895 ) =  (160, 533)
+corner: 2 ,(corner_index_list 1638 ) =  (633, 538)
+corner: 3 ,(corner_index_list 2142 ) =  (638, 34)
+len(edge)= 781
+len(edge)= 743
+len(edge)= 504
+len new_point_list =  4
+start  (176, 29)
+start  (160, 533)
+start  (633, 538)
+start  (638, 34)
+new_corners_point_list =  [(176, 29), (160, 533), (633, 538), (638, 34)]
+781
+凸
+743
+凹
+504
+直線
+737
+凹
+
+
+image No. 14
+3080
+length of corner_index_list is  4
+corner index is  [637, 1404, 2188, 2936]
+corner point is  [(148, 54), (183, 542), (694, 496), (652, 25)]
+new length of corner_index_list is  4
+new corner index is  [637, 1404, 2188, 2936]
+corner point is  [(148, 54), (183, 542), (694, 496), (652, 25)]
+3080
+(148, 54) in points[ 637 ]
+(183, 542) in points[ 1404 ]
+(694, 496) in points[ 2188 ]
+(652, 25) in points[ 2936 ]
+points_length =  3080
+corner_index_list =  [637, 1404, 2188, 2936]
+corner: 0 ,(corner_index_list 637 ) =  (148, 54)
+corner: 1 ,(corner_index_list 1404 ) =  (183, 542)
+corner: 2 ,(corner_index_list 2188 ) =  (694, 496)
+corner: 3 ,(corner_index_list 2936 ) =  (652, 25)
+len(edge)= 767
+len(edge)= 784
+len(edge)= 748
+len new_point_list =  4
+start  (148, 54)
+start  (183, 542)
+start  (694, 496)
+start  (652, 25)
+new_corners_point_list =  [(148, 54), (183, 542), (694, 496), (652, 25)]
+767
+凸
+784
+凹
+748
+凸
+781
+凹
+
+
+image No. 15
+3146
+length of corner_index_list is  4
+corner index is  [0, 802, 1567, 2380]
+corner point is  [(209, 16), (112, 545), (598, 637), (702, 100)]
+new length of corner_index_list is  4
+new corner index is  [0, 802, 1567, 2380]
+corner point is  [(209, 16), (112, 545), (598, 637), (702, 100)]
+3146
+(209, 16) in points[ 0 ]
+(112, 545) in points[ 802 ]
+(598, 637) in points[ 1567 ]
+(702, 100) in points[ 2380 ]
+points_length =  3146
+corner_index_list =  [0, 802, 1567, 2380]
+corner: 0 ,(corner_index_list 0 ) =  (209, 16)
+corner: 1 ,(corner_index_list 802 ) =  (112, 545)
+corner: 2 ,(corner_index_list 1567 ) =  (598, 637)
+corner: 3 ,(corner_index_list 2380 ) =  (702, 100)
+len(edge)= 802
+len(edge)= 765
+len(edge)= 813
+len new_point_list =  4
+start  (209, 16)
+start  (112, 545)
+start  (598, 637)
+start  (702, 100)
+new_corners_point_list =  [(209, 16), (112, 545), (598, 637), (702, 100)]
+802
+凸
+765
+凹
+813
+凸
+766
+凹
+
+
+image No. 16
+3075
+length of corner_index_list is  4
+corner index is  [19, 795, 1557, 2323]
+corner point is  [(190, 16), (151, 517), (641, 565), (686, 75)]
+new length of corner_index_list is  4
+new corner index is  [19, 795, 1557, 2323]
+corner point is  [(190, 16), (151, 517), (641, 565), (686, 75)]
+3075
+(190, 16) in points[ 19 ]
+(151, 517) in points[ 795 ]
+(641, 565) in points[ 1557 ]
+(686, 75) in points[ 2323 ]
+points_length =  3075
+corner_index_list =  [19, 795, 1557, 2323]
+corner: 0 ,(corner_index_list 19 ) =  (190, 16)
+corner: 1 ,(corner_index_list 795 ) =  (151, 517)
+corner: 2 ,(corner_index_list 1557 ) =  (641, 565)
+corner: 3 ,(corner_index_list 2323 ) =  (686, 75)
+len(edge)= 776
+len(edge)= 762
+len(edge)= 766
+len new_point_list =  4
+start  (190, 16)
+start  (151, 517)
+start  (641, 565)
+start  (686, 75)
+new_corners_point_list =  [(190, 16), (151, 517), (641, 565), (686, 75)]
+776
+凸
+762
+凹
+766
+凸
+771
+凹
+
+
+image No. 17
+3162
+length of corner_index_list is  4
+corner index is  [599, 1419, 2179, 3009]
+corner point is  [(145, 61), (179, 605), (662, 578), (620, 21)]
+new length of corner_index_list is  4
+new corner index is  [599, 1419, 2179, 3009]
+corner point is  [(145, 61), (179, 605), (662, 578), (620, 21)]
+3162
+(145, 61) in points[ 599 ]
+(179, 605) in points[ 1419 ]
+(662, 578) in points[ 2179 ]
+(620, 21) in points[ 3009 ]
+points_length =  3162
+corner_index_list =  [599, 1419, 2179, 3009]
+corner: 0 ,(corner_index_list 599 ) =  (145, 61)
+corner: 1 ,(corner_index_list 1419 ) =  (179, 605)
+corner: 2 ,(corner_index_list 2179 ) =  (662, 578)
+corner: 3 ,(corner_index_list 3009 ) =  (620, 21)
+len(edge)= 820
+len(edge)= 760
+len(edge)= 830
+len new_point_list =  4
+start  (145, 61)
+start  (179, 605)
+start  (662, 578)
+start  (620, 21)
+new_corners_point_list =  [(145, 61), (179, 605), (662, 578), (620, 21)]
+820
+凸
+760
+凹
+830
+凸
+752
+凹
+
+
+image No. 18
+2738
+length of corner_index_list is  4
+corner index is  [0, 783, 1546, 2303]
+corner point is  [(192, 16), (159, 526), (643, 543), (626, 31)]
+new length of corner_index_list is  4
+new corner index is  [0, 783, 1546, 2303]
+corner point is  [(192, 16), (159, 526), (643, 543), (626, 31)]
+2738
+(192, 16) in points[ 0 ]
+(159, 526) in points[ 783 ]
+(643, 543) in points[ 1546 ]
+(626, 31) in points[ 2303 ]
+points_length =  2738
+corner_index_list =  [0, 783, 1546, 2303]
+corner: 0 ,(corner_index_list 0 ) =  (192, 16)
+corner: 1 ,(corner_index_list 783 ) =  (159, 526)
+corner: 2 ,(corner_index_list 1546 ) =  (643, 543)
+corner: 3 ,(corner_index_list 2303 ) =  (626, 31)
+len(edge)= 783
+len(edge)= 763
+len(edge)= 757
+len new_point_list =  4
+start  (192, 16)
+start  (159, 526)
+start  (643, 543)
+start  (626, 31)
+new_corners_point_list =  [(192, 16), (159, 526), (643, 543), (626, 31)]
+783
+凸
+763
+凹
+757
+凸
+435
+直線
+
+
+image No. 19
+3034
+length of corner_index_list is  4
+corner index is  [605, 1378, 2120, 2899]
+corner point is  [(162, 47), (172, 550), (637, 526), (627, 24)]
+new length of corner_index_list is  4
+new corner index is  [605, 1378, 2120, 2899]
+corner point is  [(162, 47), (172, 550), (637, 526), (627, 24)]
+3034
+(162, 47) in points[ 605 ]
+(172, 550) in points[ 1378 ]
+(637, 526) in points[ 2120 ]
+(627, 24) in points[ 2899 ]
+points_length =  3034
+corner_index_list =  [605, 1378, 2120, 2899]
+corner: 0 ,(corner_index_list 605 ) =  (162, 47)
+corner: 1 ,(corner_index_list 1378 ) =  (172, 550)
+corner: 2 ,(corner_index_list 2120 ) =  (637, 526)
+corner: 3 ,(corner_index_list 2899 ) =  (627, 24)
+len(edge)= 773
+len(edge)= 742
+len(edge)= 779
+len new_point_list =  4
+start  (162, 47)
+start  (172, 550)
+start  (637, 526)
+start  (627, 24)
+new_corners_point_list =  [(162, 47), (172, 550), (637, 526), (627, 24)]
+773
+凸
+742
+凹
+779
+凸
+740
+凹
+
+
+image No. 20
+3125
+length of corner_index_list is  4
+corner index is  [606, 1444, 2171, 2994]
+corner point is  [(141, 49), (179, 608), (625, 586), (597, 23)]
+new length of corner_index_list is  4
+new corner index is  [606, 1444, 2171, 2994]
+corner point is  [(141, 49), (179, 608), (625, 586), (597, 23)]
+3125
+(141, 49) in points[ 606 ]
+(179, 608) in points[ 1444 ]
+(625, 586) in points[ 2171 ]
+(597, 23) in points[ 2994 ]
+points_length =  3125
+corner_index_list =  [606, 1444, 2171, 2994]
+corner: 0 ,(corner_index_list 606 ) =  (141, 49)
+corner: 1 ,(corner_index_list 1444 ) =  (179, 608)
+corner: 2 ,(corner_index_list 2171 ) =  (625, 586)
+corner: 3 ,(corner_index_list 2994 ) =  (597, 23)
+len(edge)= 838
+len(edge)= 727
+len(edge)= 823
+len new_point_list =  4
+start  (141, 49)
+start  (179, 608)
+start  (625, 586)
+start  (597, 23)
+new_corners_point_list =  [(141, 49), (179, 608), (625, 586), (597, 23)]
+838
+凸
+727
+凹
+823
+凸
+737
+凹
+
+
+image No. 21
+2745
+length of corner_index_list is  4
+corner index is  [365, 1151, 1636, 2393]
+corner point is  [(31, 171), (25, 687), (510, 684), (469, 173)]
+new length of corner_index_list is  4
+new corner index is  [365, 1151, 1636, 2393]
+corner point is  [(31, 171), (25, 687), (510, 684), (469, 173)]
+2745
+(31, 171) in points[ 365 ]
+(25, 687) in points[ 1151 ]
+(510, 684) in points[ 1636 ]
+(469, 173) in points[ 2393 ]
+points_length =  2745
+corner_index_list =  [365, 1151, 1636, 2393]
+corner: 0 ,(corner_index_list 365 ) =  (31, 171)
+corner: 1 ,(corner_index_list 1151 ) =  (25, 687)
+corner: 2 ,(corner_index_list 1636 ) =  (510, 684)
+corner: 3 ,(corner_index_list 2393 ) =  (469, 173)
+len(edge)= 786
+len(edge)= 485
+len(edge)= 757
+len new_point_list =  4
+start  (31, 171)
+start  (25, 687)
+start  (510, 684)
+start  (469, 173)
+new_corners_point_list =  [(31, 171), (25, 687), (510, 684), (469, 173)]
+786
+凹
+485
+直線
+757
+凹
+717
+凸
+
+
+image No. 22
+3111
+length of corner_index_list is  4
+corner index is  [101, 841, 1655, 2408]
+corner point is  [(193, 24), (148, 483), (682, 529), (718, 67)]
+new length of corner_index_list is  4
+new corner index is  [101, 841, 1655, 2408]
+corner point is  [(193, 24), (148, 483), (682, 529), (718, 67)]
+3111
+(193, 24) in points[ 101 ]
+(148, 483) in points[ 841 ]
+(682, 529) in points[ 1655 ]
+(718, 67) in points[ 2408 ]
+points_length =  3111
+corner_index_list =  [101, 841, 1655, 2408]
+corner: 0 ,(corner_index_list 101 ) =  (193, 24)
+corner: 1 ,(corner_index_list 841 ) =  (148, 483)
+corner: 2 ,(corner_index_list 1655 ) =  (682, 529)
+corner: 3 ,(corner_index_list 2408 ) =  (718, 67)
+len(edge)= 740
+len(edge)= 814
+len(edge)= 753
+len new_point_list =  4
+start  (193, 24)
+start  (148, 483)
+start  (682, 529)
+start  (718, 67)
+new_corners_point_list =  [(193, 24), (148, 483), (682, 529), (718, 67)]
+740
+凸
+814
+凹
+753
+凸
+804
+凹
+
+
+image No. 23
+3140
+length of corner_index_list is  4
+corner index is  [625, 1412, 2180, 2990]
+corner point is  [(166, 35), (166, 552), (657, 560), (663, 33)]
+new length of corner_index_list is  4
+new corner index is  [625, 1412, 2180, 2990]
+corner point is  [(166, 35), (166, 552), (657, 560), (663, 33)]
+3140
+(166, 35) in points[ 625 ]
+(166, 552) in points[ 1412 ]
+(657, 560) in points[ 2180 ]
+(663, 33) in points[ 2990 ]
+points_length =  3140
+corner_index_list =  [625, 1412, 2180, 2990]
+corner: 0 ,(corner_index_list 625 ) =  (166, 35)
+corner: 1 ,(corner_index_list 1412 ) =  (166, 552)
+corner: 2 ,(corner_index_list 2180 ) =  (657, 560)
+corner: 3 ,(corner_index_list 2990 ) =  (663, 33)
+len(edge)= 787
+len(edge)= 768
+len(edge)= 810
+len new_point_list =  4
+start  (166, 35)
+start  (166, 552)
+start  (657, 560)
+start  (663, 33)
+new_corners_point_list =  [(166, 35), (166, 552), (657, 560), (663, 33)]
+787
+凸
+768
+凹
+810
+凸
+775
+凹
+
+
+image No. 24
+2856
+length of corner_index_list is  4
+corner index is  [147, 891, 1429, 2177]
+corner point is  [(170, 34), (169, 504), (707, 508), (723, 41)]
+new length of corner_index_list is  4
+new corner index is  [147, 891, 1429, 2177]
+corner point is  [(170, 34), (169, 504), (707, 508), (723, 41)]
+2856
+(170, 34) in points[ 147 ]
+(169, 504) in points[ 891 ]
+(707, 508) in points[ 1429 ]
+(723, 41) in points[ 2177 ]
+points_length =  2856
+corner_index_list =  [147, 891, 1429, 2177]
+corner: 0 ,(corner_index_list 147 ) =  (170, 34)
+corner: 1 ,(corner_index_list 891 ) =  (169, 504)
+corner: 2 ,(corner_index_list 1429 ) =  (707, 508)
+corner: 3 ,(corner_index_list 2177 ) =  (723, 41)
+len(edge)= 744
+len(edge)= 538
+len(edge)= 748
+len new_point_list =  4
+start  (170, 34)
+start  (169, 504)
+start  (707, 508)
+start  (723, 41)
+new_corners_point_list =  [(170, 34), (169, 504), (707, 508), (723, 41)]
+744
+凸
+538
+直線
+748
+凸
+826
+凹
+
+
+image No. 25
+3158
+length of corner_index_list is  4
+corner index is  [139, 965, 1727, 2535]
+corner point is  [(179, 24), (149, 579), (635, 577), (662, 51)]
+new length of corner_index_list is  4
+new corner index is  [139, 965, 1727, 2535]
+corner point is  [(179, 24), (149, 579), (635, 577), (662, 51)]
+3158
+(179, 24) in points[ 139 ]
+(149, 579) in points[ 965 ]
+(635, 577) in points[ 1727 ]
+(662, 51) in points[ 2535 ]
+points_length =  3158
+corner_index_list =  [139, 965, 1727, 2535]
+corner: 0 ,(corner_index_list 139 ) =  (179, 24)
+corner: 1 ,(corner_index_list 965 ) =  (149, 579)
+corner: 2 ,(corner_index_list 1727 ) =  (635, 577)
+corner: 3 ,(corner_index_list 2535 ) =  (662, 51)
+len(edge)= 826
+len(edge)= 762
+len(edge)= 808
+len new_point_list =  4
+start  (179, 24)
+start  (149, 579)
+start  (635, 577)
+start  (662, 51)
+new_corners_point_list =  [(179, 24), (149, 579), (635, 577), (662, 51)]
+826
+凸
+762
+凹
+808
+凸
+762
+凹
+
+
+image No. 26
+3100
+length of corner_index_list is  4
+corner index is  [116, 914, 1687, 2476]
+corner point is  [(179, 25), (158, 541), (635, 562), (646, 42)]
+new length of corner_index_list is  4
+new corner index is  [116, 914, 1687, 2476]
+corner point is  [(179, 25), (158, 541), (635, 562), (646, 42)]
+3100
+(179, 25) in points[ 116 ]
+(158, 541) in points[ 914 ]
+(635, 562) in points[ 1687 ]
+(646, 42) in points[ 2476 ]
+points_length =  3100
+corner_index_list =  [116, 914, 1687, 2476]
+corner: 0 ,(corner_index_list 116 ) =  (179, 25)
+corner: 1 ,(corner_index_list 914 ) =  (158, 541)
+corner: 2 ,(corner_index_list 1687 ) =  (635, 562)
+corner: 3 ,(corner_index_list 2476 ) =  (646, 42)
+len(edge)= 798
+len(edge)= 773
+len(edge)= 789
+len new_point_list =  4
+start  (179, 25)
+start  (158, 541)
+start  (635, 562)
+start  (646, 42)
+new_corners_point_list =  [(179, 25), (158, 541), (635, 562), (646, 42)]
+798
+凸
+773
+凹
+789
+凸
+740
+凹
+
+
+image No. 27
+3175
+length of corner_index_list is  4
+corner index is  [67, 879, 1659, 2457]
+corner point is  [(189, 24), (141, 558), (650, 608), (688, 92)]
+new length of corner_index_list is  4
+new corner index is  [67, 879, 1659, 2457]
+corner point is  [(189, 24), (141, 558), (650, 608), (688, 92)]
+3175
+(189, 24) in points[ 67 ]
+(141, 558) in points[ 879 ]
+(650, 608) in points[ 1659 ]
+(688, 92) in points[ 2457 ]
+points_length =  3175
+corner_index_list =  [67, 879, 1659, 2457]
+corner: 0 ,(corner_index_list 67 ) =  (189, 24)
+corner: 1 ,(corner_index_list 879 ) =  (141, 558)
+corner: 2 ,(corner_index_list 1659 ) =  (650, 608)
+corner: 3 ,(corner_index_list 2457 ) =  (688, 92)
+len(edge)= 812
+len(edge)= 780
+len(edge)= 798
+len new_point_list =  4
+start  (189, 24)
+start  (141, 558)
+start  (650, 608)
+start  (688, 92)
+new_corners_point_list =  [(189, 24), (141, 558), (650, 608), (688, 92)]
+812
+凸
+780
+凹
+798
+凸
+785
+凹
+
+
+image No. 28
+2461
+length of corner_index_list is  3
+corner index is  [123, 1043, 1839]
+corner point is  [(18, 16), (452, 560), (483, 36)]
+new length of corner_index_list is  4
+new corner index is  [123, 583, 1043, 1839]
+corner point is  [(18, 16), (18, 476), (452, 560), (483, 36)]
+2461
+(18, 16) in points[ 123 ]
+(18, 476) in points[ 583 ]
+(452, 560) in points[ 1043 ]
+(483, 36) in points[ 1839 ]
+points_length =  2461
+corner_index_list =  [123, 583, 1043, 1839]
+corner: 0 ,(corner_index_list 123 ) =  (18, 16)
+corner: 1 ,(corner_index_list 583 ) =  (18, 476)
+corner: 2 ,(corner_index_list 1043 ) =  (452, 560)
+corner: 3 ,(corner_index_list 1839 ) =  (483, 36)
+len(edge)= 460
+len(edge)= 460
+len(edge)= 796
+len new_point_list =  4
+start  (18, 16)
+start  (18, 476)
+start  (452, 560)
+start  (483, 36)
+new_corners_point_list =  [(18, 16), (18, 476), (452, 560), (483, 36)]
+460
+直線
+460
+直線
+796
+凸
+745
+凹
+
+
+image No. 29
+3101
+length of corner_index_list is  4
+corner index is  [115, 938, 1652, 2478]
+corner point is  [(178, 19), (157, 565), (591, 605), (636, 56)]
+new length of corner_index_list is  4
+new corner index is  [115, 938, 1652, 2478]
+corner point is  [(178, 19), (157, 565), (591, 605), (636, 56)]
+3101
+(178, 19) in points[ 115 ]
+(157, 565) in points[ 938 ]
+(591, 605) in points[ 1652 ]
+(636, 56) in points[ 2478 ]
+points_length =  3101
+corner_index_list =  [115, 938, 1652, 2478]
+corner: 0 ,(corner_index_list 115 ) =  (178, 19)
+corner: 1 ,(corner_index_list 938 ) =  (157, 565)
+corner: 2 ,(corner_index_list 1652 ) =  (591, 605)
+corner: 3 ,(corner_index_list 2478 ) =  (636, 56)
+len(edge)= 823
+len(edge)= 714
+len(edge)= 826
+len new_point_list =  4
+start  (178, 19)
+start  (157, 565)
+start  (591, 605)
+start  (636, 56)
+new_corners_point_list =  [(178, 19), (157, 565), (591, 605), (636, 56)]
+823
+凸
+714
+凹
+826
+凸
+738
+凹
+
+
+image No. 30
+3182
+length of corner_index_list is  4
+corner index is  [105, 888, 1708, 2482]
+corner point is  [(167, 21), (126, 535), (669, 546), (693, 50)]
+new length of corner_index_list is  4
+new corner index is  [105, 888, 1708, 2482]
+corner point is  [(167, 21), (126, 535), (669, 546), (693, 50)]
+3182
+(167, 21) in points[ 105 ]
+(126, 535) in points[ 888 ]
+(669, 546) in points[ 1708 ]
+(693, 50) in points[ 2482 ]
+points_length =  3182
+corner_index_list =  [105, 888, 1708, 2482]
+corner: 0 ,(corner_index_list 105 ) =  (167, 21)
+corner: 1 ,(corner_index_list 888 ) =  (126, 535)
+corner: 2 ,(corner_index_list 1708 ) =  (669, 546)
+corner: 3 ,(corner_index_list 2482 ) =  (693, 50)
+len(edge)= 783
+len(edge)= 820
+len(edge)= 774
+len new_point_list =  4
+start  (167, 21)
+start  (126, 535)
+start  (669, 546)
+start  (693, 50)
+new_corners_point_list =  [(167, 21), (126, 535), (669, 546), (693, 50)]
+783
+凸
+820
+凹
+774
+凸
+805
+凹
+
+
+image No. 31
+3237
+length of corner_index_list is  4
+corner index is  [164, 957, 1792, 2573]
+corner point is  [(176, 27), (149, 534), (705, 569), (732, 63)]
+new length of corner_index_list is  4
+new corner index is  [164, 957, 1792, 2573]
+corner point is  [(176, 27), (149, 534), (705, 569), (732, 63)]
+3237
+(176, 27) in points[ 164 ]
+(149, 534) in points[ 957 ]
+(705, 569) in points[ 1792 ]
+(732, 63) in points[ 2573 ]
+points_length =  3237
+corner_index_list =  [164, 957, 1792, 2573]
+corner: 0 ,(corner_index_list 164 ) =  (176, 27)
+corner: 1 ,(corner_index_list 957 ) =  (149, 534)
+corner: 2 ,(corner_index_list 1792 ) =  (705, 569)
+corner: 3 ,(corner_index_list 2573 ) =  (732, 63)
+len(edge)= 793
+len(edge)= 835
+len(edge)= 781
+len new_point_list =  4
+start  (176, 27)
+start  (149, 534)
+start  (705, 569)
+start  (732, 63)
+new_corners_point_list =  [(176, 27), (149, 534), (705, 569), (732, 63)]
+793
+凸
+835
+凹
+781
+凸
+828
+凹
+
+
+image No. 32
+3121
+length of corner_index_list is  4
+corner index is  [14, 785, 1587, 2324]
+corner point is  [(186, 16), (138, 489), (669, 551), (722, 87)]
+new length of corner_index_list is  4
+new corner index is  [14, 785, 1587, 2324]
+corner point is  [(186, 16), (138, 489), (669, 551), (722, 87)]
+3121
+(186, 16) in points[ 14 ]
+(138, 489) in points[ 785 ]
+(669, 551) in points[ 1587 ]
+(722, 87) in points[ 2324 ]
+points_length =  3121
+corner_index_list =  [14, 785, 1587, 2324]
+corner: 0 ,(corner_index_list 14 ) =  (186, 16)
+corner: 1 ,(corner_index_list 785 ) =  (138, 489)
+corner: 2 ,(corner_index_list 1587 ) =  (669, 551)
+corner: 3 ,(corner_index_list 2324 ) =  (722, 87)
+len(edge)= 771
+len(edge)= 802
+len(edge)= 737
+len new_point_list =  4
+start  (186, 16)
+start  (138, 489)
+start  (669, 551)
+start  (722, 87)
+new_corners_point_list =  [(186, 16), (138, 489), (669, 551), (722, 87)]
+771
+凸
+802
+凹
+737
+凸
+811
+凹
+
+
+image No. 33
+2849
+length of corner_index_list is  4
+corner index is  [88, 847, 1629, 2143]
+corner point is  [(183, 22), (136, 504), (645, 600), (725, 86)]
+new length of corner_index_list is  4
+new corner index is  [88, 847, 1629, 2143]
+corner point is  [(183, 22), (136, 504), (645, 600), (725, 86)]
+2849
+(183, 22) in points[ 88 ]
+(136, 504) in points[ 847 ]
+(645, 600) in points[ 1629 ]
+(725, 86) in points[ 2143 ]
+points_length =  2849
+corner_index_list =  [88, 847, 1629, 2143]
+corner: 0 ,(corner_index_list 88 ) =  (183, 22)
+corner: 1 ,(corner_index_list 847 ) =  (136, 504)
+corner: 2 ,(corner_index_list 1629 ) =  (645, 600)
+corner: 3 ,(corner_index_list 2143 ) =  (725, 86)
+len(edge)= 759
+len(edge)= 782
+len(edge)= 514
+len new_point_list =  4
+start  (183, 22)
+start  (136, 504)
+start  (645, 600)
+start  (725, 86)
+new_corners_point_list =  [(183, 22), (136, 504), (645, 600), (725, 86)]
+759
+凸
+782
+凹
+514
+直線
+794
+凹
+
+
+image No. 34
+2861
+length of corner_index_list is  4
+corner index is  [111, 894, 1394, 2183]
+corner point is  [(193, 42), (156, 550), (656, 586), (698, 70)]
+new length of corner_index_list is  4
+new corner index is  [111, 894, 1394, 2183]
+corner point is  [(193, 42), (156, 550), (656, 586), (698, 70)]
+2861
+(193, 42) in points[ 111 ]
+(156, 550) in points[ 894 ]
+(656, 586) in points[ 1394 ]
+(698, 70) in points[ 2183 ]
+points_length =  2861
+corner_index_list =  [111, 894, 1394, 2183]
+corner: 0 ,(corner_index_list 111 ) =  (193, 42)
+corner: 1 ,(corner_index_list 894 ) =  (156, 550)
+corner: 2 ,(corner_index_list 1394 ) =  (656, 586)
+corner: 3 ,(corner_index_list 2183 ) =  (698, 70)
+len(edge)= 783
+len(edge)= 500
+len(edge)= 789
+len new_point_list =  4
+start  (193, 42)
+start  (156, 550)
+start  (656, 586)
+start  (698, 70)
+new_corners_point_list =  [(193, 42), (156, 550), (656, 586), (698, 70)]
+783
+凸
+500
+直線
+789
+凸
+789
+凹
+
+
+image No. 35
+2847
+length of corner_index_list is  4
+corner index is  [635, 1133, 1910, 2687]
+corner point is  [(17, 27), (22, 525), (526, 515), (541, 31)]
+new length of corner_index_list is  4
+new corner index is  [635, 1133, 1910, 2687]
+corner point is  [(17, 27), (22, 525), (526, 515), (541, 31)]
+2847
+(17, 27) in points[ 635 ]
+(22, 525) in points[ 1133 ]
+(526, 515) in points[ 1910 ]
+(541, 31) in points[ 2687 ]
+points_length =  2847
+corner_index_list =  [635, 1133, 1910, 2687]
+corner: 0 ,(corner_index_list 635 ) =  (17, 27)
+corner: 1 ,(corner_index_list 1133 ) =  (22, 525)
+corner: 2 ,(corner_index_list 1910 ) =  (526, 515)
+corner: 3 ,(corner_index_list 2687 ) =  (541, 31)
+len(edge)= 498
+len(edge)= 777
+len(edge)= 777
+len new_point_list =  4
+start  (17, 27)
+start  (22, 525)
+start  (526, 515)
+start  (541, 31)
+new_corners_point_list =  [(17, 27), (22, 525), (526, 515), (541, 31)]
+498
+直線
+777
+凹
+777
+凸
+795
+凹
+
+
+image No. 36
+3190
+length of corner_index_list is  4
+corner index is  [129, 891, 1719, 2500]
+corner point is  [(186, 26), (150, 517), (698, 563), (734, 61)]
+new length of corner_index_list is  4
+new corner index is  [129, 891, 1719, 2500]
+corner point is  [(186, 26), (150, 517), (698, 563), (734, 61)]
+3190
+(186, 26) in points[ 129 ]
+(150, 517) in points[ 891 ]
+(698, 563) in points[ 1719 ]
+(734, 61) in points[ 2500 ]
+points_length =  3190
+corner_index_list =  [129, 891, 1719, 2500]
+corner: 0 ,(corner_index_list 129 ) =  (186, 26)
+corner: 1 ,(corner_index_list 891 ) =  (150, 517)
+corner: 2 ,(corner_index_list 1719 ) =  (698, 563)
+corner: 3 ,(corner_index_list 2500 ) =  (734, 61)
+len(edge)= 762
+len(edge)= 828
+len(edge)= 781
+len new_point_list =  4
+start  (186, 26)
+start  (150, 517)
+start  (698, 563)
+start  (734, 61)
+new_corners_point_list =  [(186, 26), (150, 517), (698, 563), (734, 61)]
+762
+凸
+828
+凹
+781
+凸
+819
+凹
+
+
+image No. 37
+2843
+length of corner_index_list is  4
+corner index is  [132, 928, 1397, 2194]
+corner point is  [(144, 50), (173, 596), (642, 590), (657, 56)]
+new length of corner_index_list is  4
+new corner index is  [132, 928, 1397, 2194]
+corner point is  [(144, 50), (173, 596), (642, 590), (657, 56)]
+2843
+(144, 50) in points[ 132 ]
+(173, 596) in points[ 928 ]
+(642, 590) in points[ 1397 ]
+(657, 56) in points[ 2194 ]
+points_length =  2843
+corner_index_list =  [132, 928, 1397, 2194]
+corner: 0 ,(corner_index_list 132 ) =  (144, 50)
+corner: 1 ,(corner_index_list 928 ) =  (173, 596)
+corner: 2 ,(corner_index_list 1397 ) =  (642, 590)
+corner: 3 ,(corner_index_list 2194 ) =  (657, 56)
+len(edge)= 796
+len(edge)= 469
+len(edge)= 797
+len new_point_list =  4
+start  (144, 50)
+start  (173, 596)
+start  (642, 590)
+start  (657, 56)
+new_corners_point_list =  [(144, 50), (173, 596), (642, 590), (657, 56)]
+796
+凸
+469
+直線
+797
+凸
+781
+凹
+
+
+image No. 38
+2765
+length of corner_index_list is  4
+corner index is  [51, 768, 1554, 2018]
+corner point is  [(192, 19), (140, 457), (669, 528), (713, 64)]
+new length of corner_index_list is  4
+new corner index is  [51, 768, 1554, 2018]
+corner point is  [(192, 19), (140, 457), (669, 528), (713, 64)]
+2765
+(192, 19) in points[ 51 ]
+(140, 457) in points[ 768 ]
+(669, 528) in points[ 1554 ]
+(713, 64) in points[ 2018 ]
+points_length =  2765
+corner_index_list =  [51, 768, 1554, 2018]
+corner: 0 ,(corner_index_list 51 ) =  (192, 19)
+corner: 1 ,(corner_index_list 768 ) =  (140, 457)
+corner: 2 ,(corner_index_list 1554 ) =  (669, 528)
+corner: 3 ,(corner_index_list 2018 ) =  (713, 64)
+len(edge)= 717
+len(edge)= 786
+len(edge)= 464
+len new_point_list =  4
+start  (192, 19)
+start  (140, 457)
+start  (669, 528)
+start  (713, 64)
+new_corners_point_list =  [(192, 19), (140, 457), (669, 528), (713, 64)]
+717
+凸
+786
+凹
+464
+直線
+798
+凹
+
+
+image No. 39
+3093
+length of corner_index_list is  4
+corner index is  [61, 811, 1618, 2338]
+corner point is  [(204, 19), (139, 491), (673, 567), (742, 98)]
+new length of corner_index_list is  4
+new corner index is  [61, 811, 1618, 2338]
+corner point is  [(204, 19), (139, 491), (673, 567), (742, 98)]
+3093
+(204, 19) in points[ 61 ]
+(139, 491) in points[ 811 ]
+(673, 567) in points[ 1618 ]
+(742, 98) in points[ 2338 ]
+points_length =  3093
+corner_index_list =  [61, 811, 1618, 2338]
+corner: 0 ,(corner_index_list 61 ) =  (204, 19)
+corner: 1 ,(corner_index_list 811 ) =  (139, 491)
+corner: 2 ,(corner_index_list 1618 ) =  (673, 567)
+corner: 3 ,(corner_index_list 2338 ) =  (742, 98)
+len(edge)= 750
+len(edge)= 807
+len(edge)= 720
+len new_point_list =  4
+start  (204, 19)
+start  (139, 491)
+start  (673, 567)
+start  (742, 98)
+new_corners_point_list =  [(204, 19), (139, 491), (673, 567), (742, 98)]
+750
+凸
+807
+凹
+720
+凸
+816
+凹
+
+
+image No. 40
+3147
+length of corner_index_list is  4
+corner index is  [72, 906, 1629, 2450]
+corner point is  [(178, 24), (148, 586), (621, 617), (656, 71)]
+new length of corner_index_list is  4
+new corner index is  [72, 906, 1629, 2450]
+corner point is  [(178, 24), (148, 586), (621, 617), (656, 71)]
+3147
+(178, 24) in points[ 72 ]
+(148, 586) in points[ 906 ]
+(621, 617) in points[ 1629 ]
+(656, 71) in points[ 2450 ]
+points_length =  3147
+corner_index_list =  [72, 906, 1629, 2450]
+corner: 0 ,(corner_index_list 72 ) =  (178, 24)
+corner: 1 ,(corner_index_list 906 ) =  (148, 586)
+corner: 2 ,(corner_index_list 1629 ) =  (621, 617)
+corner: 3 ,(corner_index_list 2450 ) =  (656, 71)
+len(edge)= 834
+len(edge)= 723
+len(edge)= 821
+len new_point_list =  4
+start  (178, 24)
+start  (148, 586)
+start  (621, 617)
+start  (656, 71)
+new_corners_point_list =  [(178, 24), (148, 586), (621, 617), (656, 71)]
+834
+凸
+723
+凹
+821
+凸
+769
+凹
+
+
+image No. 41
+3083
+length of corner_index_list is  4
+corner index is  [637, 1368, 2190, 2926]
+corner point is  [(159, 66), (183, 518), (728, 483), (682, 28)]
+new length of corner_index_list is  4
+new corner index is  [637, 1368, 2190, 2926]
+corner point is  [(159, 66), (183, 518), (728, 483), (682, 28)]
+3083
+(159, 66) in points[ 637 ]
+(183, 518) in points[ 1368 ]
+(728, 483) in points[ 2190 ]
+(682, 28) in points[ 2926 ]
+points_length =  3083
+corner_index_list =  [637, 1368, 2190, 2926]
+corner: 0 ,(corner_index_list 637 ) =  (159, 66)
+corner: 1 ,(corner_index_list 1368 ) =  (183, 518)
+corner: 2 ,(corner_index_list 2190 ) =  (728, 483)
+corner: 3 ,(corner_index_list 2926 ) =  (682, 28)
+len(edge)= 731
+len(edge)= 822
+len(edge)= 736
+len new_point_list =  4
+start  (159, 66)
+start  (183, 518)
+start  (728, 483)
+start  (682, 28)
+new_corners_point_list =  [(159, 66), (183, 518), (728, 483), (682, 28)]
+731
+凸
+822
+凹
+736
+凸
+794
+凹
+
+
+image No. 42
+3147
+length of corner_index_list is  4
+corner index is  [610, 1407, 2186, 2986]
+corner point is  [(158, 40), (168, 561), (669, 550), (653, 22)]
+new length of corner_index_list is  4
+new corner index is  [610, 1407, 2186, 2986]
+corner point is  [(158, 40), (168, 561), (669, 550), (653, 22)]
+3147
+(158, 40) in points[ 610 ]
+(168, 561) in points[ 1407 ]
+(669, 550) in points[ 2186 ]
+(653, 22) in points[ 2986 ]
+points_length =  3147
+corner_index_list =  [610, 1407, 2186, 2986]
+corner: 0 ,(corner_index_list 610 ) =  (158, 40)
+corner: 1 ,(corner_index_list 1407 ) =  (168, 561)
+corner: 2 ,(corner_index_list 2186 ) =  (669, 550)
+corner: 3 ,(corner_index_list 2986 ) =  (653, 22)
+len(edge)= 797
+len(edge)= 779
+len(edge)= 800
+len new_point_list =  4
+start  (158, 40)
+start  (168, 561)
+start  (669, 550)
+start  (653, 22)
+new_corners_point_list =  [(158, 40), (168, 561), (669, 550), (653, 22)]
+797
+凸
+779
+凹
+800
+凸
+771
+凹
+
+
+image No. 43
+3124
+length of corner_index_list is  4
+corner index is  [4, 813, 1576, 2396]
+corner point is  [(206, 17), (118, 554), (582, 617), (659, 72)]
+new length of corner_index_list is  4
+new corner index is  [4, 813, 1576, 2396]
+corner point is  [(206, 17), (118, 554), (582, 617), (659, 72)]
+3124
+(206, 17) in points[ 4 ]
+(118, 554) in points[ 813 ]
+(582, 617) in points[ 1576 ]
+(659, 72) in points[ 2396 ]
+points_length =  3124
+corner_index_list =  [4, 813, 1576, 2396]
+corner: 0 ,(corner_index_list 4 ) =  (206, 17)
+corner: 1 ,(corner_index_list 813 ) =  (118, 554)
+corner: 2 ,(corner_index_list 1576 ) =  (582, 617)
+corner: 3 ,(corner_index_list 2396 ) =  (659, 72)
+len(edge)= 809
+len(edge)= 763
+len(edge)= 820
+len new_point_list =  4
+start  (206, 17)
+start  (118, 554)
+start  (582, 617)
+start  (659, 72)
+new_corners_point_list =  [(206, 17), (118, 554), (582, 617), (659, 72)]
+809
+凸
+763
+凹
+820
+凸
+732
+凹
+
+
+image No. 44
+3039
+length of corner_index_list is  4
+corner index is  [0, 727, 1509, 2260]
+corner point is  [(235, 16), (89, 463), (597, 614), (732, 156)]
+new length of corner_index_list is  4
+new corner index is  [0, 727, 1509, 2260]
+corner point is  [(235, 16), (89, 463), (597, 614), (732, 156)]
+3039
+(235, 16) in points[ 0 ]
+(89, 463) in points[ 727 ]
+(597, 614) in points[ 1509 ]
+(732, 156) in points[ 2260 ]
+points_length =  3039
+corner_index_list =  [0, 727, 1509, 2260]
+corner: 0 ,(corner_index_list 0 ) =  (235, 16)
+corner: 1 ,(corner_index_list 727 ) =  (89, 463)
+corner: 2 ,(corner_index_list 1509 ) =  (597, 614)
+corner: 3 ,(corner_index_list 2260 ) =  (732, 156)
+len(edge)= 727
+len(edge)= 782
+len(edge)= 751
+len new_point_list =  4
+start  (235, 16)
+start  (89, 463)
+start  (597, 614)
+start  (732, 156)
+new_corners_point_list =  [(235, 16), (89, 463), (597, 614), (732, 156)]
+727
+凸
+782
+凹
+751
+凸
+779
+凹
+
+
+image No. 45
+3160
+length of corner_index_list is  4
+corner index is  [0, 817, 1591, 2397]
+corner point is  [(197, 16), (127, 562), (619, 620), (681, 86)]
+new length of corner_index_list is  4
+new corner index is  [0, 817, 1591, 2397]
+corner point is  [(197, 16), (127, 562), (619, 620), (681, 86)]
+3160
+(197, 16) in points[ 0 ]
+(127, 562) in points[ 817 ]
+(619, 620) in points[ 1591 ]
+(681, 86) in points[ 2397 ]
+points_length =  3160
+corner_index_list =  [0, 817, 1591, 2397]
+corner: 0 ,(corner_index_list 0 ) =  (197, 16)
+corner: 1 ,(corner_index_list 817 ) =  (127, 562)
+corner: 2 ,(corner_index_list 1591 ) =  (619, 620)
+corner: 3 ,(corner_index_list 2397 ) =  (681, 86)
+len(edge)= 817
+len(edge)= 774
+len(edge)= 806
+len new_point_list =  4
+start  (197, 16)
+start  (127, 562)
+start  (619, 620)
+start  (681, 86)
+new_corners_point_list =  [(197, 16), (127, 562), (619, 620), (681, 86)]
+817
+凸
+774
+凹
+806
+凸
+763
+凹
+
+
+image No. 46
+2909
+length of corner_index_list is  4
+corner index is  [694, 1470, 2265, 2797]
+corner point is  [(149, 58), (182, 552), (703, 548), (682, 16)]
+new length of corner_index_list is  4
+new corner index is  [694, 1470, 2265, 2797]
+corner point is  [(149, 58), (182, 552), (703, 548), (682, 16)]
+2909
+(149, 58) in points[ 694 ]
+(182, 552) in points[ 1470 ]
+(703, 548) in points[ 2265 ]
+(682, 16) in points[ 2797 ]
+points_length =  2909
+corner_index_list =  [694, 1470, 2265, 2797]
+corner: 0 ,(corner_index_list 694 ) =  (149, 58)
+corner: 1 ,(corner_index_list 1470 ) =  (182, 552)
+corner: 2 ,(corner_index_list 2265 ) =  (703, 548)
+corner: 3 ,(corner_index_list 2797 ) =  (682, 16)
+len(edge)= 776
+len(edge)= 795
+len(edge)= 532
+len new_point_list =  4
+start  (149, 58)
+start  (182, 552)
+start  (703, 548)
+start  (682, 16)
+new_corners_point_list =  [(149, 58), (182, 552), (703, 548), (682, 16)]
+776
+凸
+795
+凹
+532
+直線
+806
+凹
+
+
+image No. 47
+2849
+length of corner_index_list is  4
+corner index is  [0, 789, 1571, 2372]
+corner point is  [(197, 16), (152, 534), (657, 558), (673, 36)]
+new length of corner_index_list is  4
+new corner index is  [0, 789, 1571, 2372]
+corner point is  [(197, 16), (152, 534), (657, 558), (673, 36)]
+2849
+(197, 16) in points[ 0 ]
+(152, 534) in points[ 789 ]
+(657, 558) in points[ 1571 ]
+(673, 36) in points[ 2372 ]
+points_length =  2849
+corner_index_list =  [0, 789, 1571, 2372]
+corner: 0 ,(corner_index_list 0 ) =  (197, 16)
+corner: 1 ,(corner_index_list 789 ) =  (152, 534)
+corner: 2 ,(corner_index_list 1571 ) =  (657, 558)
+corner: 3 ,(corner_index_list 2372 ) =  (673, 36)
+len(edge)= 789
+len(edge)= 782
+len(edge)= 801
+len new_point_list =  4
+start  (197, 16)
+start  (152, 534)
+start  (657, 558)
+start  (673, 36)
+new_corners_point_list =  [(197, 16), (152, 534), (657, 558), (673, 36)]
+789
+凸
+782
+凹
+801
+凸
+477
+直線
+
+
+image No. 48
+3133
+length of corner_index_list is  4
+corner index is  [76, 890, 1670, 2437]
+corner point is  [(166, 32), (161, 572), (665, 572), (647, 50)]
+new length of corner_index_list is  4
+new corner index is  [76, 890, 1670, 2437]
+corner point is  [(166, 32), (161, 572), (665, 572), (647, 50)]
+3133
+(166, 32) in points[ 76 ]
+(161, 572) in points[ 890 ]
+(665, 572) in points[ 1670 ]
+(647, 50) in points[ 2437 ]
+points_length =  3133
+corner_index_list =  [76, 890, 1670, 2437]
+corner: 0 ,(corner_index_list 76 ) =  (166, 32)
+corner: 1 ,(corner_index_list 890 ) =  (161, 572)
+corner: 2 ,(corner_index_list 1670 ) =  (665, 572)
+corner: 3 ,(corner_index_list 2437 ) =  (647, 50)
+len(edge)= 814
+len(edge)= 780
+len(edge)= 767
+len new_point_list =  4
+start  (166, 32)
+start  (161, 572)
+start  (665, 572)
+start  (647, 50)
+new_corners_point_list =  [(166, 32), (161, 572), (665, 572), (647, 50)]
+814
+凸
+780
+凹
+767
+凸
+772
+凹
+
+
+image No. 49
+3062
+length of corner_index_list is  4
+corner index is  [23, 752, 1552, 2275]
+corner point is  [(211, 16), (135, 469), (663, 544), (738, 107)]
+new length of corner_index_list is  4
+new corner index is  [23, 752, 1552, 2275]
+corner point is  [(211, 16), (135, 469), (663, 544), (738, 107)]
+3062
+(211, 16) in points[ 23 ]
+(135, 469) in points[ 752 ]
+(663, 544) in points[ 1552 ]
+(738, 107) in points[ 2275 ]
+points_length =  3062
+corner_index_list =  [23, 752, 1552, 2275]
+corner: 0 ,(corner_index_list 23 ) =  (211, 16)
+corner: 1 ,(corner_index_list 752 ) =  (135, 469)
+corner: 2 ,(corner_index_list 1552 ) =  (663, 544)
+corner: 3 ,(corner_index_list 2275 ) =  (738, 107)
+len(edge)= 729
+len(edge)= 800
+len(edge)= 723
+len new_point_list =  4
+start  (211, 16)
+start  (135, 469)
+start  (663, 544)
+start  (738, 107)
+new_corners_point_list =  [(211, 16), (135, 469), (663, 544), (738, 107)]
+729
+凸
+800
+凹
+723
+凸
+810
+凹
+
+
+image No. 50
+3130
+length of corner_index_list is  4
+corner index is  [0, 812, 1563, 2380]
+corner point is  [(207, 16), (119, 545), (589, 622), (681, 74)]
+new length of corner_index_list is  4
+new corner index is  [0, 812, 1563, 2380]
+corner point is  [(207, 16), (119, 545), (589, 622), (681, 74)]
+3130
+(207, 16) in points[ 0 ]
+(119, 545) in points[ 812 ]
+(589, 622) in points[ 1563 ]
+(681, 74) in points[ 2380 ]
+points_length =  3130
+corner_index_list =  [0, 812, 1563, 2380]
+corner: 0 ,(corner_index_list 0 ) =  (207, 16)
+corner: 1 ,(corner_index_list 812 ) =  (119, 545)
+corner: 2 ,(corner_index_list 1563 ) =  (589, 622)
+corner: 3 ,(corner_index_list 2380 ) =  (681, 74)
+len(edge)= 812
+len(edge)= 751
+len(edge)= 817
+len new_point_list =  4
+start  (207, 16)
+start  (119, 545)
+start  (589, 622)
+start  (681, 74)
+new_corners_point_list =  [(207, 16), (119, 545), (589, 622), (681, 74)]
+812
+凸
+751
+凹
+817
+凸
+750
+凹
+
+
+image No. 51
+2840
+length of corner_index_list is  4
+corner index is  [88, 849, 1653, 2135]
+corner point is  [(177, 22), (155, 502), (681, 522), (697, 40)]
+new length of corner_index_list is  4
+new corner index is  [88, 849, 1653, 2135]
+corner point is  [(177, 22), (155, 502), (681, 522), (697, 40)]
+2840
+(177, 22) in points[ 88 ]
+(155, 502) in points[ 849 ]
+(681, 522) in points[ 1653 ]
+(697, 40) in points[ 2135 ]
+points_length =  2840
+corner_index_list =  [88, 849, 1653, 2135]
+corner: 0 ,(corner_index_list 88 ) =  (177, 22)
+corner: 1 ,(corner_index_list 849 ) =  (155, 502)
+corner: 2 ,(corner_index_list 1653 ) =  (681, 522)
+corner: 3 ,(corner_index_list 2135 ) =  (697, 40)
+len(edge)= 761
+len(edge)= 804
+len(edge)= 482
+len new_point_list =  4
+start  (177, 22)
+start  (155, 502)
+start  (681, 522)
+start  (697, 40)
+new_corners_point_list =  [(177, 22), (155, 502), (681, 522), (697, 40)]
+761
+凸
+804
+凹
+482
+直線
+793
+凹
+
+
+image No. 52
+2853
+length of corner_index_list is  4
+corner index is  [467, 1259, 2041, 2835]
+corner point is  [(175, 36), (177, 556), (681, 538), (660, 15)]
+new length of corner_index_list is  4
+new corner index is  [467, 1259, 2041, 2835]
+corner point is  [(175, 36), (177, 556), (681, 538), (660, 15)]
+2853
+(175, 36) in points[ 467 ]
+(177, 556) in points[ 1259 ]
+(681, 538) in points[ 2041 ]
+(660, 15) in points[ 2835 ]
+points_length =  2853
+corner_index_list =  [467, 1259, 2041, 2835]
+corner: 0 ,(corner_index_list 467 ) =  (175, 36)
+corner: 1 ,(corner_index_list 1259 ) =  (177, 556)
+corner: 2 ,(corner_index_list 2041 ) =  (681, 538)
+corner: 3 ,(corner_index_list 2835 ) =  (660, 15)
+len(edge)= 792
+len(edge)= 782
+len(edge)= 794
+len new_point_list =  4
+start  (175, 36)
+start  (177, 556)
+start  (681, 538)
+start  (660, 15)
+new_corners_point_list =  [(175, 36), (177, 556), (681, 538), (660, 15)]
+792
+凸
+782
+凹
+794
+凸
+485
+直線
+
+
+image No. 53
+2750
+length of corner_index_list is  4
+corner index is  [2, 805, 1530, 2332]
+corner point is  [(192, 17), (170, 542), (608, 562), (612, 32)]
+new length of corner_index_list is  4
+new corner index is  [2, 805, 1530, 2332]
+corner point is  [(192, 17), (170, 542), (608, 562), (612, 32)]
+2750
+(192, 17) in points[ 2 ]
+(170, 542) in points[ 805 ]
+(608, 562) in points[ 1530 ]
+(612, 32) in points[ 2332 ]
+points_length =  2750
+corner_index_list =  [2, 805, 1530, 2332]
+corner: 0 ,(corner_index_list 2 ) =  (192, 17)
+corner: 1 ,(corner_index_list 805 ) =  (170, 542)
+corner: 2 ,(corner_index_list 1530 ) =  (608, 562)
+corner: 3 ,(corner_index_list 2332 ) =  (612, 32)
+len(edge)= 803
+len(edge)= 725
+len(edge)= 802
+len new_point_list =  4
+start  (192, 17)
+start  (170, 542)
+start  (608, 562)
+start  (612, 32)
+new_corners_point_list =  [(192, 17), (170, 542), (608, 562), (612, 32)]
+803
+凸
+725
+凹
+802
+凸
+420
+直線
+
+
+image No. 54
+3128
+length of corner_index_list is  4
+corner index is  [3, 742, 1558, 2331]
+corner point is  [(210, 16), (111, 499), (656, 603), (748, 105)]
+new length of corner_index_list is  4
+new corner index is  [3, 742, 1558, 2331]
+corner point is  [(210, 16), (111, 499), (656, 603), (748, 105)]
+3128
+(210, 16) in points[ 3 ]
+(111, 499) in points[ 742 ]
+(656, 603) in points[ 1558 ]
+(748, 105) in points[ 2331 ]
+points_length =  3128
+corner_index_list =  [3, 742, 1558, 2331]
+corner: 0 ,(corner_index_list 3 ) =  (210, 16)
+corner: 1 ,(corner_index_list 742 ) =  (111, 499)
+corner: 2 ,(corner_index_list 1558 ) =  (656, 603)
+corner: 3 ,(corner_index_list 2331 ) =  (748, 105)
+len(edge)= 739
+len(edge)= 816
+len(edge)= 773
+len new_point_list =  4
+start  (210, 16)
+start  (111, 499)
+start  (656, 603)
+start  (748, 105)
+new_corners_point_list =  [(210, 16), (111, 499), (656, 603), (748, 105)]
+739
+凸
+816
+凹
+773
+凸
+800
+凹
+
+
+image No. 55
+3118
+length of corner_index_list is  4
+corner index is  [627, 1410, 2158, 2974]
+corner point is  [(157, 48), (169, 561), (663, 560), (649, 28)]
+new length of corner_index_list is  4
+new corner index is  [627, 1410, 2158, 2974]
+corner point is  [(157, 48), (169, 561), (663, 560), (649, 28)]
+3118
+(157, 48) in points[ 627 ]
+(169, 561) in points[ 1410 ]
+(663, 560) in points[ 2158 ]
+(649, 28) in points[ 2974 ]
+points_length =  3118
+corner_index_list =  [627, 1410, 2158, 2974]
+corner: 0 ,(corner_index_list 627 ) =  (157, 48)
+corner: 1 ,(corner_index_list 1410 ) =  (169, 561)
+corner: 2 ,(corner_index_list 2158 ) =  (663, 560)
+corner: 3 ,(corner_index_list 2974 ) =  (649, 28)
+len(edge)= 783
+len(edge)= 748
+len(edge)= 816
+len new_point_list =  4
+start  (157, 48)
+start  (169, 561)
+start  (663, 560)
+start  (649, 28)
+new_corners_point_list =  [(157, 48), (169, 561), (663, 560), (649, 28)]
+783
+凸
+748
+凹
+816
+凸
+771
+凹
+
+
+image No. 56
+3089
+length of corner_index_list is  4
+corner index is  [147, 900, 1684, 2434]
+corner point is  [(169, 32), (180, 510), (693, 521), (702, 48)]
+new length of corner_index_list is  4
+new corner index is  [147, 900, 1684, 2434]
+corner point is  [(169, 32), (180, 510), (693, 521), (702, 48)]
+3089
+(169, 32) in points[ 147 ]
+(180, 510) in points[ 900 ]
+(693, 521) in points[ 1684 ]
+(702, 48) in points[ 2434 ]
+points_length =  3089
+corner_index_list =  [147, 900, 1684, 2434]
+corner: 0 ,(corner_index_list 147 ) =  (169, 32)
+corner: 1 ,(corner_index_list 900 ) =  (180, 510)
+corner: 2 ,(corner_index_list 1684 ) =  (693, 521)
+corner: 3 ,(corner_index_list 2434 ) =  (702, 48)
+len(edge)= 753
+len(edge)= 784
+len(edge)= 750
+len new_point_list =  4
+start  (169, 32)
+start  (180, 510)
+start  (693, 521)
+start  (702, 48)
+new_corners_point_list =  [(169, 32), (180, 510), (693, 521), (702, 48)]
+753
+凸
+784
+凹
+750
+凸
+802
+凹
+
+
+image No. 57
+3068
+length of corner_index_list is  4
+corner index is  [45, 839, 1583, 2377]
+corner point is  [(207, 19), (137, 535), (601, 588), (660, 64)]
+new length of corner_index_list is  4
+new corner index is  [45, 839, 1583, 2377]
+corner point is  [(207, 19), (137, 535), (601, 588), (660, 64)]
+3068
+(207, 19) in points[ 45 ]
+(137, 535) in points[ 839 ]
+(601, 588) in points[ 1583 ]
+(660, 64) in points[ 2377 ]
+points_length =  3068
+corner_index_list =  [45, 839, 1583, 2377]
+corner: 0 ,(corner_index_list 45 ) =  (207, 19)
+corner: 1 ,(corner_index_list 839 ) =  (137, 535)
+corner: 2 ,(corner_index_list 1583 ) =  (601, 588)
+corner: 3 ,(corner_index_list 2377 ) =  (660, 64)
+len(edge)= 794
+len(edge)= 744
+len(edge)= 794
+len new_point_list =  4
+start  (207, 19)
+start  (137, 535)
+start  (601, 588)
+start  (660, 64)
+new_corners_point_list =  [(207, 19), (137, 535), (601, 588), (660, 64)]
+794
+凸
+744
+凹
+794
+凸
+736
+凹
+
+
+image No. 58
+3113
+length of corner_index_list is  4
+corner index is  [127, 943, 1677, 2488]
+corner point is  [(193, 18), (133, 559), (605, 601), (666, 66)]
+new length of corner_index_list is  4
+new corner index is  [127, 943, 1677, 2488]
+corner point is  [(193, 18), (133, 559), (605, 601), (666, 66)]
+3113
+(193, 18) in points[ 127 ]
+(133, 559) in points[ 943 ]
+(605, 601) in points[ 1677 ]
+(666, 66) in points[ 2488 ]
+points_length =  3113
+corner_index_list =  [127, 943, 1677, 2488]
+corner: 0 ,(corner_index_list 127 ) =  (193, 18)
+corner: 1 ,(corner_index_list 943 ) =  (133, 559)
+corner: 2 ,(corner_index_list 1677 ) =  (605, 601)
+corner: 3 ,(corner_index_list 2488 ) =  (666, 66)
+len(edge)= 816
+len(edge)= 734
+len(edge)= 811
+len new_point_list =  4
+start  (193, 18)
+start  (133, 559)
+start  (605, 601)
+start  (666, 66)
+new_corners_point_list =  [(193, 18), (133, 559), (605, 601), (666, 66)]
+816
+凸
+734
+凹
+811
+凸
+752
+凹
+
+
+image No. 59
+2807
+length of corner_index_list is  4
+corner index is  [642, 1395, 1882, 2629]
+corner point is  [(170, 40), (193, 520), (680, 520), (711, 36)]
+new length of corner_index_list is  4
+new corner index is  [642, 1395, 1882, 2629]
+corner point is  [(170, 40), (193, 520), (680, 520), (711, 36)]
+2807
+(170, 40) in points[ 642 ]
+(193, 520) in points[ 1395 ]
+(680, 520) in points[ 1882 ]
+(711, 36) in points[ 2629 ]
+points_length =  2807
+corner_index_list =  [642, 1395, 1882, 2629]
+corner: 0 ,(corner_index_list 642 ) =  (170, 40)
+corner: 1 ,(corner_index_list 1395 ) =  (193, 520)
+corner: 2 ,(corner_index_list 1882 ) =  (680, 520)
+corner: 3 ,(corner_index_list 2629 ) =  (711, 36)
+len(edge)= 753
+len(edge)= 487
+len(edge)= 747
+len new_point_list =  4
+start  (170, 40)
+start  (193, 520)
+start  (680, 520)
+start  (711, 36)
+new_corners_point_list =  [(170, 40), (193, 520), (680, 520), (711, 36)]
+753
+凸
+487
+直線
+747
+凸
+820
+凹
+
+
+image No. 60
+2818
+length of corner_index_list is  4
+corner index is  [693, 1187, 1980, 2721]
+corner point is  [(16, 59), (71, 553), (589, 482), (535, 19)]
+new length of corner_index_list is  4
+new corner index is  [693, 1187, 1980, 2721]
+corner point is  [(16, 59), (71, 553), (589, 482), (535, 19)]
+2818
+(16, 59) in points[ 693 ]
+(71, 553) in points[ 1187 ]
+(589, 482) in points[ 1980 ]
+(535, 19) in points[ 2721 ]
+points_length =  2818
+corner_index_list =  [693, 1187, 1980, 2721]
+corner: 0 ,(corner_index_list 693 ) =  (16, 59)
+corner: 1 ,(corner_index_list 1187 ) =  (71, 553)
+corner: 2 ,(corner_index_list 1980 ) =  (589, 482)
+corner: 3 ,(corner_index_list 2721 ) =  (535, 19)
+len(edge)= 494
+len(edge)= 793
+len(edge)= 741
+len new_point_list =  4
+start  (16, 59)
+start  (71, 553)
+start  (589, 482)
+start  (535, 19)
+new_corners_point_list =  [(16, 59), (71, 553), (589, 482), (535, 19)]
+494
+直線
+793
+凹
+741
+凸
+790
+凹
+
+
+image No. 61
+2823
+length of corner_index_list is  4
+corner index is  [617, 1419, 1872, 2672]
+corner point is  [(150, 49), (190, 572), (643, 551), (638, 30)]
+new length of corner_index_list is  4
+new corner index is  [617, 1419, 1872, 2672]
+corner point is  [(150, 49), (190, 572), (643, 551), (638, 30)]
+2823
+(150, 49) in points[ 617 ]
+(190, 572) in points[ 1419 ]
+(643, 551) in points[ 1872 ]
+(638, 30) in points[ 2672 ]
+points_length =  2823
+corner_index_list =  [617, 1419, 1872, 2672]
+corner: 0 ,(corner_index_list 617 ) =  (150, 49)
+corner: 1 ,(corner_index_list 1419 ) =  (190, 572)
+corner: 2 ,(corner_index_list 1872 ) =  (643, 551)
+corner: 3 ,(corner_index_list 2672 ) =  (638, 30)
+len(edge)= 802
+len(edge)= 453
+len(edge)= 800
+len new_point_list =  4
+start  (150, 49)
+start  (190, 572)
+start  (643, 551)
+start  (638, 30)
+new_corners_point_list =  [(150, 49), (190, 572), (643, 551), (638, 30)]
+802
+凸
+453
+直線
+800
+凸
+768
+凹
+
+
+image No. 62
+2457
+length of corner_index_list is  3
+corner index is  [0, 731, 1521]
+corner point is  [(569, 16), (109, 139), (238, 650)]
+new length of corner_index_list is  4
+new corner index is  [0, 731, 1521, 1989]
+corner point is  [(569, 16), (109, 139), (238, 650), (672, 480)]
+2457
+(569, 16) in points[ 0 ]
+(109, 139) in points[ 731 ]
+(238, 650) in points[ 1521 ]
+(672, 480) in points[ 1989 ]
+points_length =  2457
+corner_index_list =  [0, 731, 1521, 1989]
+corner: 0 ,(corner_index_list 0 ) =  (569, 16)
+corner: 1 ,(corner_index_list 731 ) =  (109, 139)
+corner: 2 ,(corner_index_list 1521 ) =  (238, 650)
+corner: 3 ,(corner_index_list 1989 ) =  (672, 480)
+len(edge)= 731
+len(edge)= 790
+len(edge)= 468
+len new_point_list =  4
+start  (569, 16)
+start  (109, 139)
+start  (238, 650)
+start  (672, 480)
+new_corners_point_list =  [(569, 16), (109, 139), (238, 650), (672, 480)]
+731
+凹
+790
+凸
+468
+直線
+468
+直線
+
+
+image No. 63
+3065
+length of corner_index_list is  4
+corner index is  [0, 743, 1536, 2282]
+corner point is  [(238, 16), (116, 469), (627, 597), (744, 131)]
+new length of corner_index_list is  4
+new corner index is  [0, 743, 1536, 2282]
+corner point is  [(238, 16), (116, 469), (627, 597), (744, 131)]
+3065
+(238, 16) in points[ 0 ]
+(116, 469) in points[ 743 ]
+(627, 597) in points[ 1536 ]
+(744, 131) in points[ 2282 ]
+points_length =  3065
+corner_index_list =  [0, 743, 1536, 2282]
+corner: 0 ,(corner_index_list 0 ) =  (238, 16)
+corner: 1 ,(corner_index_list 743 ) =  (116, 469)
+corner: 2 ,(corner_index_list 1536 ) =  (627, 597)
+corner: 3 ,(corner_index_list 2282 ) =  (744, 131)
+len(edge)= 743
+len(edge)= 793
+len(edge)= 746
+len new_point_list =  4
+start  (238, 16)
+start  (116, 469)
+start  (627, 597)
+start  (744, 131)
+new_corners_point_list =  [(238, 16), (116, 469), (627, 597), (744, 131)]
+743
+凸
+793
+凹
+746
+凸
+783
+凹
+
+
+image No. 64
+3147
+length of corner_index_list is  4
+corner index is  [685, 1453, 2261, 3023]
+corner point is  [(136, 82), (199, 572), (734, 501), (667, 18)]
+new length of corner_index_list is  4
+new corner index is  [685, 1453, 2261, 3023]
+corner point is  [(136, 82), (199, 572), (734, 501), (667, 18)]
+3147
+(136, 82) in points[ 685 ]
+(199, 572) in points[ 1453 ]
+(734, 501) in points[ 2261 ]
+(667, 18) in points[ 3023 ]
+points_length =  3147
+corner_index_list =  [685, 1453, 2261, 3023]
+corner: 0 ,(corner_index_list 685 ) =  (136, 82)
+corner: 1 ,(corner_index_list 1453 ) =  (199, 572)
+corner: 2 ,(corner_index_list 2261 ) =  (734, 501)
+corner: 3 ,(corner_index_list 3023 ) =  (667, 18)
+len(edge)= 768
+len(edge)= 808
+len(edge)= 762
+len new_point_list =  4
+start  (136, 82)
+start  (199, 572)
+start  (734, 501)
+start  (667, 18)
+new_corners_point_list =  [(136, 82), (199, 572), (734, 501), (667, 18)]
+768
+凸
+808
+凹
+762
+凸
+809
+凹
+
+
+image No. 65
+2861
+length of corner_index_list is  4
+corner index is  [145, 900, 1697, 2202]
+corner point is  [(181, 29), (160, 504), (678, 547), (706, 42)]
+new length of corner_index_list is  4
+new corner index is  [145, 900, 1697, 2202]
+corner point is  [(181, 29), (160, 504), (678, 547), (706, 42)]
+2861
+(181, 29) in points[ 145 ]
+(160, 504) in points[ 900 ]
+(678, 547) in points[ 1697 ]
+(706, 42) in points[ 2202 ]
+points_length =  2861
+corner_index_list =  [145, 900, 1697, 2202]
+corner: 0 ,(corner_index_list 145 ) =  (181, 29)
+corner: 1 ,(corner_index_list 900 ) =  (160, 504)
+corner: 2 ,(corner_index_list 1697 ) =  (678, 547)
+corner: 3 ,(corner_index_list 2202 ) =  (706, 42)
+len(edge)= 755
+len(edge)= 797
+len(edge)= 505
+len new_point_list =  4
+start  (181, 29)
+start  (160, 504)
+start  (678, 547)
+start  (706, 42)
+new_corners_point_list =  [(181, 29), (160, 504), (678, 547), (706, 42)]
+755
+凸
+797
+凹
+505
+直線
+804
+凹
+
+
+image No. 66
+3123
+length of corner_index_list is  4
+corner index is  [111, 891, 1684, 2433]
+corner point is  [(154, 34), (176, 535), (694, 504), (677, 31)]
+new length of corner_index_list is  4
+new corner index is  [111, 891, 1684, 2433]
+corner point is  [(154, 34), (176, 535), (694, 504), (677, 31)]
+3123
+(154, 34) in points[ 111 ]
+(176, 535) in points[ 891 ]
+(694, 504) in points[ 1684 ]
+(677, 31) in points[ 2433 ]
+points_length =  3123
+corner_index_list =  [111, 891, 1684, 2433]
+corner: 0 ,(corner_index_list 111 ) =  (154, 34)
+corner: 1 ,(corner_index_list 891 ) =  (176, 535)
+corner: 2 ,(corner_index_list 1684 ) =  (694, 504)
+corner: 3 ,(corner_index_list 2433 ) =  (677, 31)
+len(edge)= 780
+len(edge)= 793
+len(edge)= 749
+len new_point_list =  4
+start  (154, 34)
+start  (176, 535)
+start  (694, 504)
+start  (677, 31)
+new_corners_point_list =  [(154, 34), (176, 535), (694, 504), (677, 31)]
+780
+凸
+793
+凹
+749
+凸
+801
+凹
+
+
+image No. 67
+3080
+length of corner_index_list is  4
+corner index is  [615, 1414, 2143, 2948]
+corner point is  [(148, 50), (183, 578), (636, 556), (618, 21)]
+new length of corner_index_list is  4
+new corner index is  [615, 1414, 2143, 2948]
+corner point is  [(148, 50), (183, 578), (636, 556), (618, 21)]
+3080
+(148, 50) in points[ 615 ]
+(183, 578) in points[ 1414 ]
+(636, 556) in points[ 2143 ]
+(618, 21) in points[ 2948 ]
+points_length =  3080
+corner_index_list =  [615, 1414, 2143, 2948]
+corner: 0 ,(corner_index_list 615 ) =  (148, 50)
+corner: 1 ,(corner_index_list 1414 ) =  (183, 578)
+corner: 2 ,(corner_index_list 2143 ) =  (636, 556)
+corner: 3 ,(corner_index_list 2948 ) =  (618, 21)
+len(edge)= 799
+len(edge)= 729
+len(edge)= 805
+len new_point_list =  4
+start  (148, 50)
+start  (183, 578)
+start  (636, 556)
+start  (618, 21)
+new_corners_point_list =  [(148, 50), (183, 578), (636, 556), (618, 21)]
+799
+凸
+729
+凹
+805
+凸
+747
+凹
+
+
+image No. 68
+3077
+length of corner_index_list is  4
+corner index is  [78, 853, 1619, 2360]
+corner point is  [(179, 19), (157, 514), (679, 522), (703, 65)]
+new length of corner_index_list is  4
+new corner index is  [78, 853, 1619, 2360]
+corner point is  [(179, 19), (157, 514), (679, 522), (703, 65)]
+3077
+(179, 19) in points[ 78 ]
+(157, 514) in points[ 853 ]
+(679, 522) in points[ 1619 ]
+(703, 65) in points[ 2360 ]
+points_length =  3077
+corner_index_list =  [78, 853, 1619, 2360]
+corner: 0 ,(corner_index_list 78 ) =  (179, 19)
+corner: 1 ,(corner_index_list 853 ) =  (157, 514)
+corner: 2 ,(corner_index_list 1619 ) =  (679, 522)
+corner: 3 ,(corner_index_list 2360 ) =  (703, 65)
+len(edge)= 775
+len(edge)= 766
+len(edge)= 741
+len new_point_list =  4
+start  (179, 19)
+start  (157, 514)
+start  (679, 522)
+start  (703, 65)
+new_corners_point_list =  [(179, 19), (157, 514), (679, 522), (703, 65)]
+775
+凸
+766
+凹
+741
+凸
+795
+凹
+
+
+image No. 69
+3192
+length of corner_index_list is  4
+corner index is  [82, 856, 1690, 2456]
+corner point is  [(203, 21), (144, 503), (705, 556), (747, 65)]
+new length of corner_index_list is  4
+new corner index is  [82, 856, 1690, 2456]
+corner point is  [(203, 21), (144, 503), (705, 556), (747, 65)]
+3192
+(203, 21) in points[ 82 ]
+(144, 503) in points[ 856 ]
+(705, 556) in points[ 1690 ]
+(747, 65) in points[ 2456 ]
+points_length =  3192
+corner_index_list =  [82, 856, 1690, 2456]
+corner: 0 ,(corner_index_list 82 ) =  (203, 21)
+corner: 1 ,(corner_index_list 856 ) =  (144, 503)
+corner: 2 ,(corner_index_list 1690 ) =  (705, 556)
+corner: 3 ,(corner_index_list 2456 ) =  (747, 65)
+len(edge)= 774
+len(edge)= 834
+len(edge)= 766
+len new_point_list =  4
+start  (203, 21)
+start  (144, 503)
+start  (705, 556)
+start  (747, 65)
+new_corners_point_list =  [(203, 21), (144, 503), (705, 556), (747, 65)]
+774
+凸
+834
+凹
+766
+凸
+818
+凹
+
+
+image No. 70
+3238
+length of corner_index_list is  4
+corner index is  [1, 839, 1613, 2454]
+corner point is  [(192, 16), (131, 579), (622, 630), (693, 63)]
+new length of corner_index_list is  4
+new corner index is  [1, 839, 1613, 2454]
+corner point is  [(192, 16), (131, 579), (622, 630), (693, 63)]
+3238
+(192, 16) in points[ 1 ]
+(131, 579) in points[ 839 ]
+(622, 630) in points[ 1613 ]
+(693, 63) in points[ 2454 ]
+points_length =  3238
+corner_index_list =  [1, 839, 1613, 2454]
+corner: 0 ,(corner_index_list 1 ) =  (192, 16)
+corner: 1 ,(corner_index_list 839 ) =  (131, 579)
+corner: 2 ,(corner_index_list 1613 ) =  (622, 630)
+corner: 3 ,(corner_index_list 2454 ) =  (693, 63)
+len(edge)= 838
+len(edge)= 774
+len(edge)= 841
+len new_point_list =  4
+start  (192, 16)
+start  (131, 579)
+start  (622, 630)
+start  (693, 63)
+new_corners_point_list =  [(192, 16), (131, 579), (622, 630), (693, 63)]
+838
+凸
+774
+凹
+841
+凸
+785
+凹
+
+
+image No. 71
+3106
+length of corner_index_list is  4
+corner index is  [603, 1414, 2166, 2972]
+corner point is  [(161, 40), (174, 575), (646, 568), (622, 24)]
+new length of corner_index_list is  4
+new corner index is  [603, 1414, 2166, 2972]
+corner point is  [(161, 40), (174, 575), (646, 568), (622, 24)]
+3106
+(161, 40) in points[ 603 ]
+(174, 575) in points[ 1414 ]
+(646, 568) in points[ 2166 ]
+(622, 24) in points[ 2972 ]
+points_length =  3106
+corner_index_list =  [603, 1414, 2166, 2972]
+corner: 0 ,(corner_index_list 603 ) =  (161, 40)
+corner: 1 ,(corner_index_list 1414 ) =  (174, 575)
+corner: 2 ,(corner_index_list 2166 ) =  (646, 568)
+corner: 3 ,(corner_index_list 2972 ) =  (622, 24)
+len(edge)= 811
+len(edge)= 752
+len(edge)= 806
+len new_point_list =  4
+start  (161, 40)
+start  (174, 575)
+start  (646, 568)
+start  (622, 24)
+new_corners_point_list =  [(161, 40), (174, 575), (646, 568), (622, 24)]
+811
+凸
+752
+凹
+806
+凸
+737
+凹
+
+
+image No. 72
+2754
+length of corner_index_list is  4
+corner index is  [113, 922, 1341, 2141]
+corner point is  [(167, 27), (175, 563), (594, 569), (614, 41)]
+new length of corner_index_list is  4
+new corner index is  [113, 922, 1341, 2141]
+corner point is  [(167, 27), (175, 563), (594, 569), (614, 41)]
+2754
+(167, 27) in points[ 113 ]
+(175, 563) in points[ 922 ]
+(594, 569) in points[ 1341 ]
+(614, 41) in points[ 2141 ]
+points_length =  2754
+corner_index_list =  [113, 922, 1341, 2141]
+corner: 0 ,(corner_index_list 113 ) =  (167, 27)
+corner: 1 ,(corner_index_list 922 ) =  (175, 563)
+corner: 2 ,(corner_index_list 1341 ) =  (594, 569)
+corner: 3 ,(corner_index_list 2141 ) =  (614, 41)
+len(edge)= 809
+len(edge)= 419
+len(edge)= 800
+len new_point_list =  4
+start  (167, 27)
+start  (175, 563)
+start  (594, 569)
+start  (614, 41)
+new_corners_point_list =  [(167, 27), (175, 563), (594, 569), (614, 41)]
+809
+凸
+419
+直線
+800
+凸
+726
+凹
+
+
+image No. 73
+2909
+length of corner_index_list is  4
+corner index is  [0, 534, 1337, 2112]
+corner point is  [(88, 16), (16, 550), (546, 600), (615, 102)]
+new length of corner_index_list is  4
+new corner index is  [0, 534, 1337, 2112]
+corner point is  [(88, 16), (16, 550), (546, 600), (615, 102)]
+2909
+(88, 16) in points[ 0 ]
+(16, 550) in points[ 534 ]
+(546, 600) in points[ 1337 ]
+(615, 102) in points[ 2112 ]
+points_length =  2909
+corner_index_list =  [0, 534, 1337, 2112]
+corner: 0 ,(corner_index_list 0 ) =  (88, 16)
+corner: 1 ,(corner_index_list 534 ) =  (16, 550)
+corner: 2 ,(corner_index_list 1337 ) =  (546, 600)
+corner: 3 ,(corner_index_list 2112 ) =  (615, 102)
+len(edge)= 534
+len(edge)= 803
+len(edge)= 775
+len new_point_list =  4
+start  (88, 16)
+start  (16, 550)
+start  (546, 600)
+start  (615, 102)
+new_corners_point_list =  [(88, 16), (16, 550), (546, 600), (615, 102)]
+534
+直線
+803
+凹
+775
+凸
+797
+凹
+
+
+image No. 74
+2862
+length of corner_index_list is  4
+corner index is  [156, 966, 1441, 2246]
+corner point is  [(184, 26), (160, 560), (635, 584), (677, 49)]
+new length of corner_index_list is  4
+new corner index is  [156, 966, 1441, 2246]
+corner point is  [(184, 26), (160, 560), (635, 584), (677, 49)]
+2862
+(184, 26) in points[ 156 ]
+(160, 560) in points[ 966 ]
+(635, 584) in points[ 1441 ]
+(677, 49) in points[ 2246 ]
+points_length =  2862
+corner_index_list =  [156, 966, 1441, 2246]
+corner: 0 ,(corner_index_list 156 ) =  (184, 26)
+corner: 1 ,(corner_index_list 966 ) =  (160, 560)
+corner: 2 ,(corner_index_list 1441 ) =  (635, 584)
+corner: 3 ,(corner_index_list 2246 ) =  (677, 49)
+len(edge)= 810
+len(edge)= 475
+len(edge)= 805
+len new_point_list =  4
+start  (184, 26)
+start  (160, 560)
+start  (635, 584)
+start  (677, 49)
+new_corners_point_list =  [(184, 26), (160, 560), (635, 584), (677, 49)]
+810
+凸
+475
+直線
+805
+凸
+772
+凹
+
+
+image No. 75
+3124
+length of corner_index_list is  4
+corner index is  [97, 867, 1657, 2437]
+corner point is  [(194, 18), (143, 512), (659, 569), (702, 74)]
+new length of corner_index_list is  4
+new corner index is  [97, 867, 1657, 2437]
+corner point is  [(194, 18), (143, 512), (659, 569), (702, 74)]
+3124
+(194, 18) in points[ 97 ]
+(143, 512) in points[ 867 ]
+(659, 569) in points[ 1657 ]
+(702, 74) in points[ 2437 ]
+points_length =  3124
+corner_index_list =  [97, 867, 1657, 2437]
+corner: 0 ,(corner_index_list 97 ) =  (194, 18)
+corner: 1 ,(corner_index_list 867 ) =  (143, 512)
+corner: 2 ,(corner_index_list 1657 ) =  (659, 569)
+corner: 3 ,(corner_index_list 2437 ) =  (702, 74)
+len(edge)= 770
+len(edge)= 790
+len(edge)= 780
+len new_point_list =  4
+start  (194, 18)
+start  (143, 512)
+start  (659, 569)
+start  (702, 74)
+new_corners_point_list =  [(194, 18), (143, 512), (659, 569), (702, 74)]
+770
+凸
+790
+凹
+780
+凸
+784
+凹
+
+
+image No. 76
+3012
+length of corner_index_list is  5
+corner index is  [125, 908, 913, 1607, 2404]
+corner point is  [(170, 26), (162, 535), (162, 540), (624, 572), (624, 39)]
+sub =  732
+sub =  783
+sub =  5
+new length of corner_index_list is  4
+new corner index is  [125, 908, 1607, 2404]
+corner point is  [(170, 26), (162, 535), (624, 572), (624, 39)]
+3012
+(170, 26) in points[ 125 ]
+(162, 535) in points[ 908 ]
+(624, 572) in points[ 1607 ]
+(624, 39) in points[ 2404 ]
+points_length =  3012
+corner_index_list =  [125, 908, 1607, 2404]
+corner: 0 ,(corner_index_list 125 ) =  (170, 26)
+corner: 1 ,(corner_index_list 908 ) =  (162, 535)
+corner: 2 ,(corner_index_list 1607 ) =  (624, 572)
+corner: 3 ,(corner_index_list 2404 ) =  (624, 39)
+len(edge)= 783
+len(edge)= 699
+len(edge)= 797
+len new_point_list =  4
+start  (170, 26)
+start  (162, 535)
+start  (624, 572)
+start  (624, 39)
+new_corners_point_list =  [(170, 26), (162, 535), (624, 572), (624, 39)]
+783
+凸
+699
+凹
+797
+凸
+733
+凹
+
+
+image No. 77
+2808
+length of corner_index_list is  4
+corner index is  [0, 468, 1272, 2000]
+corner point is  [(63, 16), (15, 484), (545, 535), (598, 83)]
+new length of corner_index_list is  4
+new corner index is  [0, 468, 1272, 2000]
+corner point is  [(63, 16), (15, 484), (545, 535), (598, 83)]
+2808
+(63, 16) in points[ 0 ]
+(15, 484) in points[ 468 ]
+(545, 535) in points[ 1272 ]
+(598, 83) in points[ 2000 ]
+points_length =  2808
+corner_index_list =  [0, 468, 1272, 2000]
+corner: 0 ,(corner_index_list 0 ) =  (63, 16)
+corner: 1 ,(corner_index_list 468 ) =  (15, 484)
+corner: 2 ,(corner_index_list 1272 ) =  (545, 535)
+corner: 3 ,(corner_index_list 2000 ) =  (598, 83)
+len(edge)= 468
+len(edge)= 804
+len(edge)= 728
+len new_point_list =  4
+start  (63, 16)
+start  (15, 484)
+start  (545, 535)
+start  (598, 83)
+new_corners_point_list =  [(63, 16), (15, 484), (545, 535), (598, 83)]
+468
+直線
+804
+凹
+728
+凸
+808
+凹
+
+
+image No. 78
+2870
+length of corner_index_list is  4
+corner index is  [132, 955, 1421, 2235]
+corner point is  [(167, 29), (173, 576), (639, 582), (656, 42)]
+new length of corner_index_list is  4
+new corner index is  [132, 955, 1421, 2235]
+corner point is  [(167, 29), (173, 576), (639, 582), (656, 42)]
+2870
+(167, 29) in points[ 132 ]
+(173, 576) in points[ 955 ]
+(639, 582) in points[ 1421 ]
+(656, 42) in points[ 2235 ]
+points_length =  2870
+corner_index_list =  [132, 955, 1421, 2235]
+corner: 0 ,(corner_index_list 132 ) =  (167, 29)
+corner: 1 ,(corner_index_list 955 ) =  (173, 576)
+corner: 2 ,(corner_index_list 1421 ) =  (639, 582)
+corner: 3 ,(corner_index_list 2235 ) =  (656, 42)
+len(edge)= 823
+len(edge)= 466
+len(edge)= 814
+len new_point_list =  4
+start  (167, 29)
+start  (173, 576)
+start  (639, 582)
+start  (656, 42)
+new_corners_point_list =  [(167, 29), (173, 576), (639, 582), (656, 42)]
+823
+凸
+466
+直線
+814
+凸
+767
+凹
+
+
+image No. 79
+3073
+length of corner_index_list is  4
+corner index is  [65, 796, 1613, 2302]
+corner point is  [(199, 18), (138, 477), (680, 549), (761, 93)]
+new length of corner_index_list is  4
+new corner index is  [65, 796, 1613, 2302]
+corner point is  [(199, 18), (138, 477), (680, 549), (761, 93)]
+3073
+(199, 18) in points[ 65 ]
+(138, 477) in points[ 796 ]
+(680, 549) in points[ 1613 ]
+(761, 93) in points[ 2302 ]
+points_length =  3073
+corner_index_list =  [65, 796, 1613, 2302]
+corner: 0 ,(corner_index_list 65 ) =  (199, 18)
+corner: 1 ,(corner_index_list 796 ) =  (138, 477)
+corner: 2 ,(corner_index_list 1613 ) =  (680, 549)
+corner: 3 ,(corner_index_list 2302 ) =  (761, 93)
+len(edge)= 731
+len(edge)= 817
+len(edge)= 689
+len new_point_list =  4
+start  (199, 18)
+start  (138, 477)
+start  (680, 549)
+start  (761, 93)
+new_corners_point_list =  [(199, 18), (138, 477), (680, 549), (761, 93)]
+731
+凸
+817
+凹
+689
+凸
+836
+凹
+
+
+image No. 80
+3098
+length of corner_index_list is  4
+corner index is  [2, 767, 1550, 2310]
+corner point is  [(206, 17), (136, 497), (643, 579), (731, 96)]
+new length of corner_index_list is  4
+new corner index is  [2, 767, 1550, 2310]
+corner point is  [(206, 17), (136, 497), (643, 579), (731, 96)]
+3098
+(206, 17) in points[ 2 ]
+(136, 497) in points[ 767 ]
+(643, 579) in points[ 1550 ]
+(731, 96) in points[ 2310 ]
+points_length =  3098
+corner_index_list =  [2, 767, 1550, 2310]
+corner: 0 ,(corner_index_list 2 ) =  (206, 17)
+corner: 1 ,(corner_index_list 767 ) =  (136, 497)
+corner: 2 ,(corner_index_list 1550 ) =  (643, 579)
+corner: 3 ,(corner_index_list 2310 ) =  (731, 96)
+len(edge)= 765
+len(edge)= 783
+len(edge)= 760
+len new_point_list =  4
+start  (206, 17)
+start  (136, 497)
+start  (643, 579)
+start  (731, 96)
+new_corners_point_list =  [(206, 17), (136, 497), (643, 579), (731, 96)]
+765
+凸
+783
+凹
+760
+凸
+790
+凹
+
+
+image No. 81
+3048
+length of corner_index_list is  4
+corner index is  [0, 784, 1531, 2293]
+corner point is  [(202, 16), (128, 526), (600, 583), (681, 97)]
+new length of corner_index_list is  4
+new corner index is  [0, 784, 1531, 2293]
+corner point is  [(202, 16), (128, 526), (600, 583), (681, 97)]
+3048
+(202, 16) in points[ 0 ]
+(128, 526) in points[ 784 ]
+(600, 583) in points[ 1531 ]
+(681, 97) in points[ 2293 ]
+points_length =  3048
+corner_index_list =  [0, 784, 1531, 2293]
+corner: 0 ,(corner_index_list 0 ) =  (202, 16)
+corner: 1 ,(corner_index_list 784 ) =  (128, 526)
+corner: 2 ,(corner_index_list 1531 ) =  (600, 583)
+corner: 3 ,(corner_index_list 2293 ) =  (681, 97)
+len(edge)= 784
+len(edge)= 747
+len(edge)= 762
+len new_point_list =  4
+start  (202, 16)
+start  (128, 526)
+start  (600, 583)
+start  (681, 97)
+new_corners_point_list =  [(202, 16), (128, 526), (600, 583), (681, 97)]
+784
+凸
+747
+凹
+762
+凸
+755
+凹
+
+
+image No. 82
+2931
+length of corner_index_list is  4
+corner index is  [134, 896, 1723, 2245]
+corner point is  [(185, 33), (151, 516), (705, 566), (728, 44)]
+new length of corner_index_list is  4
+new corner index is  [134, 896, 1723, 2245]
+corner point is  [(185, 33), (151, 516), (705, 566), (728, 44)]
+2931
+(185, 33) in points[ 134 ]
+(151, 516) in points[ 896 ]
+(705, 566) in points[ 1723 ]
+(728, 44) in points[ 2245 ]
+points_length =  2931
+corner_index_list =  [134, 896, 1723, 2245]
+corner: 0 ,(corner_index_list 134 ) =  (185, 33)
+corner: 1 ,(corner_index_list 896 ) =  (151, 516)
+corner: 2 ,(corner_index_list 1723 ) =  (705, 566)
+corner: 3 ,(corner_index_list 2245 ) =  (728, 44)
+len(edge)= 762
+len(edge)= 827
+len(edge)= 522
+len new_point_list =  4
+start  (185, 33)
+start  (151, 516)
+start  (705, 566)
+start  (728, 44)
+new_corners_point_list =  [(185, 33), (151, 516), (705, 566), (728, 44)]
+762
+凸
+827
+凹
+522
+直線
+820
+凹
+
+
+image No. 83
+2785
+length of corner_index_list is  3
+corner index is  [0, 779, 2023]
+corner point is  [(189, 16), (148, 520), (679, 68)]
+new length of corner_index_list is  4
+new corner index is  [0, 779, 1401, 2023]
+corner point is  [(189, 16), (148, 520), (505, 556), (679, 68)]
+2785
+(189, 16) in points[ 0 ]
+(148, 520) in points[ 779 ]
+(505, 556) in points[ 1401 ]
+(679, 68) in points[ 2023 ]
+points_length =  2785
+corner_index_list =  [0, 779, 1401, 2023]
+corner: 0 ,(corner_index_list 0 ) =  (189, 16)
+corner: 1 ,(corner_index_list 779 ) =  (148, 520)
+corner: 2 ,(corner_index_list 1401 ) =  (505, 556)
+corner: 3 ,(corner_index_list 2023 ) =  (679, 68)
+len(edge)= 779
+len(edge)= 622
+len(edge)= 622
+len new_point_list =  4
+start  (189, 16)
+start  (148, 520)
+start  (505, 556)
+start  (679, 68)
+new_corners_point_list =  [(189, 16), (148, 520), (505, 556), (679, 68)]
+779
+凸
+622
+凹
+622
+直線
+762
+凹
+
+
+image No. 84
+2812
+length of corner_index_list is  4
+corner index is  [110, 937, 1358, 2184]
+corner point is  [(184, 28), (154, 579), (575, 608), (635, 55)]
+new length of corner_index_list is  4
+new corner index is  [110, 937, 1358, 2184]
+corner point is  [(184, 28), (154, 579), (575, 608), (635, 55)]
+2812
+(184, 28) in points[ 110 ]
+(154, 579) in points[ 937 ]
+(575, 608) in points[ 1358 ]
+(635, 55) in points[ 2184 ]
+points_length =  2812
+corner_index_list =  [110, 937, 1358, 2184]
+corner: 0 ,(corner_index_list 110 ) =  (184, 28)
+corner: 1 ,(corner_index_list 937 ) =  (154, 579)
+corner: 2 ,(corner_index_list 1358 ) =  (575, 608)
+corner: 3 ,(corner_index_list 2184 ) =  (635, 55)
+len(edge)= 827
+len(edge)= 421
+len(edge)= 826
+len new_point_list =  4
+start  (184, 28)
+start  (154, 579)
+start  (575, 608)
+start  (635, 55)
+new_corners_point_list =  [(184, 28), (154, 579), (575, 608), (635, 55)]
+827
+凸
+421
+直線
+826
+凸
+738
+凹
+
+
+image No. 85
+2940
+length of corner_index_list is  4
+corner index is  [177, 945, 1512, 2269]
+corner point is  [(179, 32), (173, 522), (740, 544), (752, 50)]
+new length of corner_index_list is  4
+new corner index is  [177, 945, 1512, 2269]
+corner point is  [(179, 32), (173, 522), (740, 544), (752, 50)]
+2940
+(179, 32) in points[ 177 ]
+(173, 522) in points[ 945 ]
+(740, 544) in points[ 1512 ]
+(752, 50) in points[ 2269 ]
+points_length =  2940
+corner_index_list =  [177, 945, 1512, 2269]
+corner: 0 ,(corner_index_list 177 ) =  (179, 32)
+corner: 1 ,(corner_index_list 945 ) =  (173, 522)
+corner: 2 ,(corner_index_list 1512 ) =  (740, 544)
+corner: 3 ,(corner_index_list 2269 ) =  (752, 50)
+len(edge)= 768
+len(edge)= 567
+len(edge)= 757
+len new_point_list =  4
+start  (179, 32)
+start  (173, 522)
+start  (740, 544)
+start  (752, 50)
+new_corners_point_list =  [(179, 32), (173, 522), (740, 544), (752, 50)]
+768
+凸
+567
+直線
+757
+凸
+848
+凹
+
+
+image No. 86
+2583
+length of corner_index_list is  3
+corner index is  [187, 956, 1948]
+corner point is  [(187, 34), (174, 534), (733, 40)]
+new length of corner_index_list is  4
+new corner index is  [187, 956, 1452, 1948]
+corner point is  [(187, 34), (174, 534), (670, 531), (733, 40)]
+2583
+(187, 34) in points[ 187 ]
+(174, 534) in points[ 956 ]
+(670, 531) in points[ 1452 ]
+(733, 40) in points[ 1948 ]
+points_length =  2583
+corner_index_list =  [187, 956, 1452, 1948]
+corner: 0 ,(corner_index_list 187 ) =  (187, 34)
+corner: 1 ,(corner_index_list 956 ) =  (174, 534)
+corner: 2 ,(corner_index_list 1452 ) =  (670, 531)
+corner: 3 ,(corner_index_list 1948 ) =  (733, 40)
+len(edge)= 769
+len(edge)= 496
+len(edge)= 496
+len new_point_list =  4
+start  (187, 34)
+start  (174, 534)
+start  (670, 531)
+start  (733, 40)
+new_corners_point_list =  [(187, 34), (174, 534), (670, 531), (733, 40)]
+769
+凸
+496
+直線
+496
+直線
+822
+凹
+
+
+image No. 87
+3021
+length of corner_index_list is  5
+corner index is  [624, 1360, 1366, 2130, 2869]
+corner point is  [(158, 44), (174, 495), (175, 501), (663, 496), (658, 25)]
+sub =  775
+sub =  736
+sub =  6
+new length of corner_index_list is  4
+new corner index is  [624, 1360, 2130, 2869]
+corner point is  [(158, 44), (174, 495), (663, 496), (658, 25)]
+3021
+(158, 44) in points[ 624 ]
+(174, 495) in points[ 1360 ]
+(663, 496) in points[ 2130 ]
+(658, 25) in points[ 2869 ]
+points_length =  3021
+corner_index_list =  [624, 1360, 2130, 2869]
+corner: 0 ,(corner_index_list 624 ) =  (158, 44)
+corner: 1 ,(corner_index_list 1360 ) =  (174, 495)
+corner: 2 ,(corner_index_list 2130 ) =  (663, 496)
+corner: 3 ,(corner_index_list 2869 ) =  (658, 25)
+len(edge)= 736
+len(edge)= 770
+len(edge)= 739
+len new_point_list =  4
+start  (158, 44)
+start  (174, 495)
+start  (663, 496)
+start  (658, 25)
+new_corners_point_list =  [(158, 44), (174, 495), (663, 496), (658, 25)]
+736
+凸
+770
+凹
+739
+凸
+776
+凹
+
+
+image No. 88
+3183
+length of corner_index_list is  5
+corner index is  [607, 611, 1459, 2190, 3046]
+corner point is  [(145, 53), (146, 57), (182, 627), (645, 600), (607, 20)]
+sub =  743
+sub =  4
+new length of corner_index_list is  4
+new corner index is  [607, 1459, 2190, 3046]
+corner point is  [(145, 53), (182, 627), (645, 600), (607, 20)]
+3183
+(145, 53) in points[ 607 ]
+(182, 627) in points[ 1459 ]
+(645, 600) in points[ 2190 ]
+(607, 20) in points[ 3046 ]
+points_length =  3183
+corner_index_list =  [607, 1459, 2190, 3046]
+corner: 0 ,(corner_index_list 607 ) =  (145, 53)
+corner: 1 ,(corner_index_list 1459 ) =  (182, 627)
+corner: 2 ,(corner_index_list 2190 ) =  (645, 600)
+corner: 3 ,(corner_index_list 3046 ) =  (607, 20)
+len(edge)= 852
+len(edge)= 731
+len(edge)= 856
+len new_point_list =  4
+start  (145, 53)
+start  (182, 627)
+start  (645, 600)
+start  (607, 20)
+new_corners_point_list =  [(145, 53), (182, 627), (645, 600), (607, 20)]
+852
+凸
+731
+凹
+856
+凸
+744
+凹
+
+
+image No. 89
+3190
+length of corner_index_list is  4
+corner index is  [16, 766, 1600, 2356]
+corner point is  [(198, 16), (138, 492), (690, 584), (771, 105)]
+new length of corner_index_list is  4
+new corner index is  [16, 766, 1600, 2356]
+corner point is  [(198, 16), (138, 492), (690, 584), (771, 105)]
+3190
+(198, 16) in points[ 16 ]
+(138, 492) in points[ 766 ]
+(690, 584) in points[ 1600 ]
+(771, 105) in points[ 2356 ]
+points_length =  3190
+corner_index_list =  [16, 766, 1600, 2356]
+corner: 0 ,(corner_index_list 16 ) =  (198, 16)
+corner: 1 ,(corner_index_list 766 ) =  (138, 492)
+corner: 2 ,(corner_index_list 1600 ) =  (690, 584)
+corner: 3 ,(corner_index_list 2356 ) =  (771, 105)
+len(edge)= 750
+len(edge)= 834
+len(edge)= 756
+len new_point_list =  4
+start  (198, 16)
+start  (138, 492)
+start  (690, 584)
+start  (771, 105)
+new_corners_point_list =  [(198, 16), (138, 492), (690, 584), (771, 105)]
+750
+凸
+834
+凹
+756
+凸
+850
+凹
+
+
+image No. 90
+3199
+length of corner_index_list is  4
+corner index is  [94, 919, 1690, 2528]
+corner point is  [(206, 20), (135, 567), (621, 622), (688, 64)]
+new length of corner_index_list is  4
+new corner index is  [94, 919, 1690, 2528]
+corner point is  [(206, 20), (135, 567), (621, 622), (688, 64)]
+3199
+(206, 20) in points[ 94 ]
+(135, 567) in points[ 919 ]
+(621, 622) in points[ 1690 ]
+(688, 64) in points[ 2528 ]
+points_length =  3199
+corner_index_list =  [94, 919, 1690, 2528]
+corner: 0 ,(corner_index_list 94 ) =  (206, 20)
+corner: 1 ,(corner_index_list 919 ) =  (135, 567)
+corner: 2 ,(corner_index_list 1690 ) =  (621, 622)
+corner: 3 ,(corner_index_list 2528 ) =  (688, 64)
+len(edge)= 825
+len(edge)= 771
+len(edge)= 838
+len new_point_list =  4
+start  (206, 20)
+start  (135, 567)
+start  (621, 622)
+start  (688, 64)
+new_corners_point_list =  [(206, 20), (135, 567), (621, 622), (688, 64)]
+825
+凸
+771
+凹
+838
+凸
+765
+凹
+
+
+image No. 91
+3104
+length of corner_index_list is  4
+corner index is  [627, 1394, 2182, 2935]
+corner point is  [(146, 71), (191, 554), (701, 495), (659, 20)]
+new length of corner_index_list is  4
+new corner index is  [627, 1394, 2182, 2935]
+corner point is  [(146, 71), (191, 554), (701, 495), (659, 20)]
+3104
+(146, 71) in points[ 627 ]
+(191, 554) in points[ 1394 ]
+(701, 495) in points[ 2182 ]
+(659, 20) in points[ 2935 ]
+points_length =  3104
+corner_index_list =  [627, 1394, 2182, 2935]
+corner: 0 ,(corner_index_list 627 ) =  (146, 71)
+corner: 1 ,(corner_index_list 1394 ) =  (191, 554)
+corner: 2 ,(corner_index_list 2182 ) =  (701, 495)
+corner: 3 ,(corner_index_list 2935 ) =  (659, 20)
+len(edge)= 767
+len(edge)= 788
+len(edge)= 753
+len new_point_list =  4
+start  (146, 71)
+start  (191, 554)
+start  (701, 495)
+start  (659, 20)
+new_corners_point_list =  [(146, 71), (191, 554), (701, 495), (659, 20)]
+767
+凸
+788
+凹
+753
+凸
+796
+凹
+
+
+image No. 92
+3072
+length of corner_index_list is  4
+corner index is  [596, 1391, 2150, 2937]
+corner point is  [(149, 62), (189, 587), (672, 527), (606, 18)]
+new length of corner_index_list is  4
+new corner index is  [596, 1391, 2150, 2937]
+corner point is  [(149, 62), (189, 587), (672, 527), (606, 18)]
+3072
+(149, 62) in points[ 596 ]
+(189, 587) in points[ 1391 ]
+(672, 527) in points[ 2150 ]
+(606, 18) in points[ 2937 ]
+points_length =  3072
+corner_index_list =  [596, 1391, 2150, 2937]
+corner: 0 ,(corner_index_list 596 ) =  (149, 62)
+corner: 1 ,(corner_index_list 1391 ) =  (189, 587)
+corner: 2 ,(corner_index_list 2150 ) =  (672, 527)
+corner: 3 ,(corner_index_list 2937 ) =  (606, 18)
+len(edge)= 795
+len(edge)= 759
+len(edge)= 787
+len new_point_list =  4
+start  (149, 62)
+start  (189, 587)
+start  (672, 527)
+start  (606, 18)
+new_corners_point_list =  [(149, 62), (189, 587), (672, 527), (606, 18)]
+795
+凸
+759
+凹
+787
+凸
+731
+凹
+
+
+image No. 93
+3127
+length of corner_index_list is  4
+corner index is  [134, 893, 1686, 2463]
+corner point is  [(179, 25), (154, 510), (678, 549), (710, 50)]
+new length of corner_index_list is  4
+new corner index is  [134, 893, 1686, 2463]
+corner point is  [(179, 25), (154, 510), (678, 549), (710, 50)]
+3127
+(179, 25) in points[ 134 ]
+(154, 510) in points[ 893 ]
+(678, 549) in points[ 1686 ]
+(710, 50) in points[ 2463 ]
+points_length =  3127
+corner_index_list =  [134, 893, 1686, 2463]
+corner: 0 ,(corner_index_list 134 ) =  (179, 25)
+corner: 1 ,(corner_index_list 893 ) =  (154, 510)
+corner: 2 ,(corner_index_list 1686 ) =  (678, 549)
+corner: 3 ,(corner_index_list 2463 ) =  (710, 50)
+len(edge)= 759
+len(edge)= 793
+len(edge)= 777
+len new_point_list =  4
+start  (179, 25)
+start  (154, 510)
+start  (678, 549)
+start  (710, 50)
+new_corners_point_list =  [(179, 25), (154, 510), (678, 549), (710, 50)]
+759
+凸
+793
+凹
+777
+凸
+798
+凹
+
+
+image No. 94
+3063
+length of corner_index_list is  4
+corner index is  [0, 728, 1524, 2258]
+corner point is  [(219, 16), (137, 483), (658, 573), (746, 119)]
+new length of corner_index_list is  4
+new corner index is  [0, 728, 1524, 2258]
+corner point is  [(219, 16), (137, 483), (658, 573), (746, 119)]
+3063
+(219, 16) in points[ 0 ]
+(137, 483) in points[ 728 ]
+(658, 573) in points[ 1524 ]
+(746, 119) in points[ 2258 ]
+points_length =  3063
+corner_index_list =  [0, 728, 1524, 2258]
+corner: 0 ,(corner_index_list 0 ) =  (219, 16)
+corner: 1 ,(corner_index_list 728 ) =  (137, 483)
+corner: 2 ,(corner_index_list 1524 ) =  (658, 573)
+corner: 3 ,(corner_index_list 2258 ) =  (746, 119)
+len(edge)= 728
+len(edge)= 796
+len(edge)= 734
+len new_point_list =  4
+start  (219, 16)
+start  (137, 483)
+start  (658, 573)
+start  (746, 119)
+new_corners_point_list =  [(219, 16), (137, 483), (658, 573), (746, 119)]
+728
+凸
+796
+凹
+734
+凸
+805
+凹
+
+
+image No. 95
+3103
+length of corner_index_list is  4
+corner index is  [5, 813, 1549, 2361]
+corner point is  [(192, 16), (132, 552), (590, 607), (659, 66)]
+new length of corner_index_list is  4
+new corner index is  [5, 813, 1549, 2361]
+corner point is  [(192, 16), (132, 552), (590, 607), (659, 66)]
+3103
+(192, 16) in points[ 5 ]
+(132, 552) in points[ 813 ]
+(590, 607) in points[ 1549 ]
+(659, 66) in points[ 2361 ]
+points_length =  3103
+corner_index_list =  [5, 813, 1549, 2361]
+corner: 0 ,(corner_index_list 5 ) =  (192, 16)
+corner: 1 ,(corner_index_list 813 ) =  (132, 552)
+corner: 2 ,(corner_index_list 1549 ) =  (590, 607)
+corner: 3 ,(corner_index_list 2361 ) =  (659, 66)
+len(edge)= 808
+len(edge)= 736
+len(edge)= 812
+len new_point_list =  4
+start  (192, 16)
+start  (132, 552)
+start  (590, 607)
+start  (659, 66)
+new_corners_point_list =  [(192, 16), (132, 552), (590, 607), (659, 66)]
+808
+凸
+736
+凹
+812
+凸
+747
+凹
+
+
+image No. 96
+3054
+length of corner_index_list is  5
+corner index is  [611, 1355, 2135, 2888, 2892]
+corner point is  [(163, 43), (175, 506), (683, 496), (665, 26), (663, 22)]
+sub =  772
+sub =  744
+sub =  780
+sub =  753
+sub =  4
+new length of corner_index_list is  4
+new corner index is  [611, 1355, 2135, 2888]
+corner point is  [(163, 43), (175, 506), (683, 496), (665, 26)]
+3054
+(163, 43) in points[ 611 ]
+(175, 506) in points[ 1355 ]
+(683, 496) in points[ 2135 ]
+(665, 26) in points[ 2888 ]
+points_length =  3054
+corner_index_list =  [611, 1355, 2135, 2888]
+corner: 0 ,(corner_index_list 611 ) =  (163, 43)
+corner: 1 ,(corner_index_list 1355 ) =  (175, 506)
+corner: 2 ,(corner_index_list 2135 ) =  (683, 496)
+corner: 3 ,(corner_index_list 2888 ) =  (665, 26)
+len(edge)= 744
+len(edge)= 780
+len(edge)= 753
+len new_point_list =  4
+start  (163, 43)
+start  (175, 506)
+start  (683, 496)
+start  (665, 26)
+new_corners_point_list =  [(163, 43), (175, 506), (683, 496), (665, 26)]
+744
+凸
+780
+凹
+753
+凸
+777
+凹
+
+
+image No. 97
+3104
+length of corner_index_list is  4
+corner index is  [109, 886, 1650, 2452]
+corner point is  [(186, 23), (151, 530), (637, 569), (669, 51)]
+new length of corner_index_list is  4
+new corner index is  [109, 886, 1650, 2452]
+corner point is  [(186, 23), (151, 530), (637, 569), (669, 51)]
+3104
+(186, 23) in points[ 109 ]
+(151, 530) in points[ 886 ]
+(637, 569) in points[ 1650 ]
+(669, 51) in points[ 2452 ]
+points_length =  3104
+corner_index_list =  [109, 886, 1650, 2452]
+corner: 0 ,(corner_index_list 109 ) =  (186, 23)
+corner: 1 ,(corner_index_list 886 ) =  (151, 530)
+corner: 2 ,(corner_index_list 1650 ) =  (637, 569)
+corner: 3 ,(corner_index_list 2452 ) =  (669, 51)
+len(edge)= 777
+len(edge)= 764
+len(edge)= 802
+len new_point_list =  4
+start  (186, 23)
+start  (151, 530)
+start  (637, 569)
+start  (669, 51)
+new_corners_point_list =  [(186, 23), (151, 530), (637, 569), (669, 51)]
+777
+凸
+764
+凹
+802
+凸
+761
+凹
+
+
+image No. 98
+2830
+length of corner_index_list is  4
+corner index is  [124, 907, 1663, 2185]
+corner point is  [(174, 26), (160, 530), (645, 555), (666, 33)]
+new length of corner_index_list is  4
+new corner index is  [124, 907, 1663, 2185]
+corner point is  [(174, 26), (160, 530), (645, 555), (666, 33)]
+2830
+(174, 26) in points[ 124 ]
+(160, 530) in points[ 907 ]
+(645, 555) in points[ 1663 ]
+(666, 33) in points[ 2185 ]
+points_length =  2830
+corner_index_list =  [124, 907, 1663, 2185]
+corner: 0 ,(corner_index_list 124 ) =  (174, 26)
+corner: 1 ,(corner_index_list 907 ) =  (160, 530)
+corner: 2 ,(corner_index_list 1663 ) =  (645, 555)
+corner: 3 ,(corner_index_list 2185 ) =  (666, 33)
+len(edge)= 783
+len(edge)= 756
+len(edge)= 522
+len new_point_list =  4
+start  (174, 26)
+start  (160, 530)
+start  (645, 555)
+start  (666, 33)
+new_corners_point_list =  [(174, 26), (160, 530), (645, 555), (666, 33)]
+783
+凸
+756
+凹
+522
+直線
+769
+凹
+
+
+image No. 99
+3161
+length of corner_index_list is  4
+corner index is  [136, 899, 1721, 2489]
+corner point is  [(186, 25), (156, 511), (700, 550), (719, 63)]
+new length of corner_index_list is  4
+new corner index is  [136, 899, 1721, 2489]
+corner point is  [(186, 25), (156, 511), (700, 550), (719, 63)]
+3161
+(186, 25) in points[ 136 ]
+(156, 511) in points[ 899 ]
+(700, 550) in points[ 1721 ]
+(719, 63) in points[ 2489 ]
+points_length =  3161
+corner_index_list =  [136, 899, 1721, 2489]
+corner: 0 ,(corner_index_list 136 ) =  (186, 25)
+corner: 1 ,(corner_index_list 899 ) =  (156, 511)
+corner: 2 ,(corner_index_list 1721 ) =  (700, 550)
+corner: 3 ,(corner_index_list 2489 ) =  (719, 63)
+len(edge)= 763
+len(edge)= 822
+len(edge)= 768
+len new_point_list =  4
+start  (186, 25)
+start  (156, 511)
+start  (700, 550)
+start  (719, 63)
+new_corners_point_list =  [(186, 25), (156, 511), (700, 550), (719, 63)]
+763
+凸
+822
+凹
+768
+凸
+808
+凹
+
+
+image No. 100
+2851
+length of corner_index_list is  4
+corner index is  [145, 906, 1418, 2175]
+corner point is  [(183, 29), (176, 514), (688, 542), (729, 59)]
+new length of corner_index_list is  4
+new corner index is  [145, 906, 1418, 2175]
+corner point is  [(183, 29), (176, 514), (688, 542), (729, 59)]
+2851
+(183, 29) in points[ 145 ]
+(176, 514) in points[ 906 ]
+(688, 542) in points[ 1418 ]
+(729, 59) in points[ 2175 ]
+points_length =  2851
+corner_index_list =  [145, 906, 1418, 2175]
+corner: 0 ,(corner_index_list 145 ) =  (183, 29)
+corner: 1 ,(corner_index_list 906 ) =  (176, 514)
+corner: 2 ,(corner_index_list 1418 ) =  (688, 542)
+corner: 3 ,(corner_index_list 2175 ) =  (729, 59)
+len(edge)= 761
+len(edge)= 512
+len(edge)= 757
+len new_point_list =  4
+start  (183, 29)
+start  (176, 514)
+start  (688, 542)
+start  (729, 59)
+new_corners_point_list =  [(183, 29), (176, 514), (688, 542), (729, 59)]
+761
+凸
+512
+直線
+757
+凸
+821
+凹
+
+
+image No. 101
+2882
+length of corner_index_list is  4
+corner index is  [0, 763, 1564, 2311]
+corner point is  [(30, 16), (26, 503), (552, 522), (600, 40)]
+new length of corner_index_list is  4
+new corner index is  [0, 763, 1564, 2311]
+corner point is  [(30, 16), (26, 503), (552, 522), (600, 40)]
+2882
+(30, 16) in points[ 0 ]
+(26, 503) in points[ 763 ]
+(552, 522) in points[ 1564 ]
+(600, 40) in points[ 2311 ]
+points_length =  2882
+corner_index_list =  [0, 763, 1564, 2311]
+corner: 0 ,(corner_index_list 0 ) =  (30, 16)
+corner: 1 ,(corner_index_list 763 ) =  (26, 503)
+corner: 2 ,(corner_index_list 1564 ) =  (552, 522)
+corner: 3 ,(corner_index_list 2311 ) =  (600, 40)
+len(edge)= 763
+len(edge)= 801
+len(edge)= 747
+len new_point_list =  4
+start  (30, 16)
+start  (26, 503)
+start  (552, 522)
+start  (600, 40)
+new_corners_point_list =  [(30, 16), (26, 503), (552, 522), (600, 40)]
+763
+凹
+801
+凸
+747
+凹
+571
+直線
+
+
+image No. 102
+3140
+length of corner_index_list is  4
+corner index is  [401, 1159, 1958, 2717]
+corner point is  [(43, 155), (28, 636), (559, 639), (589, 172)]
+new length of corner_index_list is  4
+new corner index is  [401, 1159, 1958, 2717]
+corner point is  [(43, 155), (28, 636), (559, 639), (589, 172)]
+3140
+(43, 155) in points[ 401 ]
+(28, 636) in points[ 1159 ]
+(559, 639) in points[ 1958 ]
+(589, 172) in points[ 2717 ]
+points_length =  3140
+corner_index_list =  [401, 1159, 1958, 2717]
+corner: 0 ,(corner_index_list 401 ) =  (43, 155)
+corner: 1 ,(corner_index_list 1159 ) =  (28, 636)
+corner: 2 ,(corner_index_list 1958 ) =  (559, 639)
+corner: 3 ,(corner_index_list 2717 ) =  (589, 172)
+len(edge)= 758
+len(edge)= 799
+len(edge)= 759
+len new_point_list =  4
+start  (43, 155)
+start  (28, 636)
+start  (559, 639)
+start  (589, 172)
+new_corners_point_list =  [(43, 155), (28, 636), (559, 639), (589, 172)]
+758
+凹
+799
+凸
+759
+凹
+824
+凸
+
+
+image No. 103
+2905
+length of corner_index_list is  4
+corner index is  [0, 730, 1435, 2185]
+corner point is  [(295, 16), (26, 457), (436, 711), (725, 263)]
+new length of corner_index_list is  4
+new corner index is  [0, 730, 1435, 2185]
+corner point is  [(295, 16), (26, 457), (436, 711), (725, 263)]
+2905
+(295, 16) in points[ 0 ]
+(26, 457) in points[ 730 ]
+(436, 711) in points[ 1435 ]
+(725, 263) in points[ 2185 ]
+points_length =  2905
+corner_index_list =  [0, 730, 1435, 2185]
+corner: 0 ,(corner_index_list 0 ) =  (295, 16)
+corner: 1 ,(corner_index_list 730 ) =  (26, 457)
+corner: 2 ,(corner_index_list 1435 ) =  (436, 711)
+corner: 3 ,(corner_index_list 2185 ) =  (725, 263)
+len(edge)= 730
+len(edge)= 705
+len(edge)= 750
+len new_point_list =  4
+start  (295, 16)
+start  (26, 457)
+start  (436, 711)
+start  (725, 263)
+new_corners_point_list =  [(295, 16), (26, 457), (436, 711), (725, 263)]
+730
+凸
+705
+凹
+750
+凸
+720
+凹
+
+
+[8, 28, 62, 86]
+[2, 3, 4, 11, 13, 18, 21, 24, 33, 34, 35, 37, 38, 46, 47, 51, 52, 53, 59, 60, 61, 65, 72, 73, 74, 77, 78, 82, 83, 84, 85, 98, 100, 101]
+[0, 1, 5, 6, 7, 9, 10, 12, 14, 15, 16, 17, 19, 20, 22, 23, 25, 26, 27, 29, 30, 31, 32, 36, 39, 40, 41, 42, 43, 44, 45, 48, 49, 50, 54, 55, 56, 57, 58, 63, 64, 66, 67, 68, 69, 70, 71, 75, 76, 79, 80, 81, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 99, 102, 103]
+上位p個　 (0, 0)  >>>  [(10, 3), (54, 1), (31, 3), (33, 3), (6, 1), (89, 1), (22, 1), (79, 3)]
+各類似度　 (0, 0)  :  [  34.25198166  617.12356506 1208.27129738 1327.99369962 1652.86293386
+ 2075.02452173 3103.45183291 3110.84038408]
+
+
+上位p個　 (0, 1)  >>>  [(7, 0), (89, 0), (4, 2), (66, 2), (87, 2), (65, 0), (91, 0), (80, 0)]
+各類似度　 (0, 1)  :  [ 43.58228802  57.0883499  111.6149976  117.57199627 245.85673393
+ 247.56674133 254.92282818 377.37561868]
+
+
+上位p個　 (0, 2)  >>>  [(64, 1), (6, 3), (93, 3), (80, 3), (41, 1), (49, 3), (39, 1), (7, 1)]
+各類似度　 (0, 2)  :  [  75.54413266  121.3499225   249.00778813  449.72493164  501.03018655
+  520.01465725 1001.76005928 1048.67372755]
+
+
+上位p個　 (0, 3)  >>>  [(64, 0), (36, 0), (16, 2), (93, 0), (91, 0), (1, 0), (36, 2), (89, 0)]
+各類似度　 (0, 3)  :  [125.07022089 183.59687386 216.59749008 308.0244781  326.59239185
+ 368.24403136 380.14226153 400.1058127 ]
+
+
+上位p個　 (1, 0)  >>>  [(87, 3), (23, 1), (25, 3), (12, 1), (103, 1), (14, 3), (90, 1), (55, 3)]
+各類似度　 (1, 0)  :  [ 24.31214065  55.33750689  58.55346792  72.81480005  80.81227761
+ 115.90666019 152.49948965 323.55477769]
+
+
+上位p個　 (1, 1)  >>>  [(5, 0), (64, 0), (36, 0), (99, 0), (3, 2), (89, 0), (4, 2), (66, 2)]
+各類似度　 (1, 1)  :  [ 34.059226   122.65983189 128.75472143 135.26724875 165.85438629
+ 184.08960011 227.42189966 398.95753527]
+
+
+上位p個　 (1, 2)  >>>  [(27, 3), (23, 3), (52, 1), (66, 3), (55, 3), (74, 3), (16, 3), (87, 3)]
+各類似度　 (1, 2)  :  [ 160.29380161 1905.58488367 2437.82648488 2734.46507461 2953.3407672
+ 3158.31531403 3236.42019037 3321.60320858]
+
+
+上位p個　 (1, 3)  >>>  [(23, 2), (26, 0), (13, 0), (42, 0), (55, 0), (67, 0), (36, 2), (54, 2)]
+各類似度　 (1, 3)  :  [ 378.92975826  433.81861852  630.41568048  739.64727382  892.7373361
+ 1335.71173465 1602.53363695 1677.34002279]
+
+
+上位p個　 (2, 0)  >>>  [(6, 1), (31, 3), (9, 3), (10, 3), (79, 3), (89, 3), (85, 3), (33, 3)]
+各類似度　 (2, 0)  :  [  269.54919379  1097.91725506  5243.65047835  8510.38725047
+  8514.74024494 14874.17687991 19055.45979938 22647.71314797]
+
+
+上位p個　 (2, 1)  >>>  [(4, 2), (3, 2), (66, 2), (99, 0), (5, 0), (36, 0), (80, 0), (7, 0)]
+各類似度　 (2, 1)  :  [ 23.14199072 125.91064894 165.93425754 237.71019266 240.02090606
+ 320.6557306  341.65188763 359.98939823]
+
+
+上位p個　 (2, 2)  >>>  [()]
+(2, 2)  >>> Line
+
+
+上位p個　 (2, 3)  >>>  [(3, 2), (4, 2), (4, 0), (80, 0), (99, 0), (80, 2), (5, 0), (85, 0)]
+各類似度　 (2, 3)  :  [ 44.92944942 145.29250072 157.41208982 289.73904368 398.5240639
+ 400.47165258 405.12440522 487.33773821]
+
+
+上位p個　 (3, 0)  >>>  [(13, 1), (98, 1), (11, 3), (50, 3), (98, 3), (2, 1), (12, 3), (88, 3)]
+各類似度　 (3, 0)  :  [  13.19862914  146.58078692 1040.33971996 1369.1625181  1409.88686966
+ 1661.64377525 1806.35342407 1934.36967341]
+
+
+上位p個　 (3, 1)  >>>  [(19, 0), (99, 2), (89, 2), (51, 0), (63, 2), (9, 2), (6, 0), (35, 2)]
+各類似度　 (3, 1)  :  [  43.70151194 1096.32893422 1413.45921411 1626.39091197 1768.61978653
+ 2641.133102   3073.98378849 6518.05241362]
+
+
+上位p個　 (3, 2)  >>>  [(2, 3), (97, 3), (90, 1), (2, 1), (90, 3), (1, 1), (12, 1), (78, 3)]
+各類似度　 (3, 2)  :  [ 44.92944942  60.24396771  71.39567945 125.91064894 138.89184796
+ 165.85438629 169.07716229 184.06692775]
+
+
+上位p個　 (3, 3)  >>>  [()]
+(3, 3)  >>> Line
+
+
+上位p個　 (4, 0)  >>>  [(11, 3), (98, 3), (2, 3), (97, 3), (67, 3), (58, 3), (2, 1), (11, 1)]
+各類似度　 (4, 0)  :  [ 23.93873411  66.10366932 157.41208982 252.45135673 343.00452635
+ 344.07620081 416.01642811 487.19380195]
+
+
+上位p個　 (4, 1)  >>>  [()]
+(4, 1)  >>> Line
+
+
+上位p個　 (4, 2)  >>>  [(2, 1), (0, 1), (101, 2), (2, 3), (90, 1), (90, 3), (97, 3), (1, 1)]
+各類似度　 (4, 2)  :  [ 23.14199072 111.6149976  111.9598062  145.29250072 186.54075428
+ 191.69525755 201.26705867 227.42189966]
+
+
+上位p個　 (4, 3)  >>>  [(17, 2), (15, 2), (95, 2), (70, 0), (20, 0), (58, 0), (102, 3), (45, 0)]
+各類似度　 (4, 3)  :  [ 114.21216087  207.90069985  298.47136268  365.24604148  392.96616869
+  955.91955783 1188.37367815 1287.83420703]
+
+
+上位p個　 (5, 0)  >>>  [(1, 1), (12, 1), (90, 1), (23, 1), (2, 1), (87, 3), (25, 3), (2, 3)]
+各類似度　 (5, 0)  :  [ 34.059226    70.8773977   92.54847018 137.15537714 240.02090606
+ 278.18023553 356.47062259 405.12440522]
+
+
+上位p個　 (5, 1)  >>>  [(10, 0), (96, 0), (22, 0), (91, 2), (63, 2), (41, 2), (6, 0), (6, 2)]
+各類似度　 (5, 1)  :  [ 33.74306207  83.94509565 107.21441632 177.76124989 178.09237961
+ 208.4985485  229.29549156 248.10207941]
+
+
+上位p個　 (5, 2)  >>>  [(16, 1), (15, 1), (96, 3), (87, 1), (102, 0), (81, 3), (61, 3), (78, 3)]
+各類似度　 (5, 2)  :  [ 91.62521455 196.15753793 198.94438343 316.46573787 330.35265718
+ 382.65365932 513.24230281 547.92689983]
+
+
+上位p個　 (5, 3)  >>>  [(22, 2), (41, 0), (63, 0), (7, 2), (14, 2), (32, 2), (77, 2), (24, 0)]
+各類似度　 (5, 3)  :  [ 476.4673637   958.44603879  993.59157465 1020.19421402 1081.5880733
+ 1100.38166188 1276.78202755 1550.16209359]
+
+
+上位p個　 (6, 0)  >>>  [(45, 3), (17, 1), (17, 3), (97, 1), (5, 1), (102, 0), (95, 3), (16, 1)]
+各類似度　 (6, 0)  :  [ 44.90032365 116.29460405 164.59023124 178.25466078 229.29549156
+ 379.48484964 389.83542907 393.11514373]
+
+
+上位p個　 (6, 1)  >>>  [(2, 0), (0, 0), (40, 0), (37, 0), (70, 2), (20, 2), (88, 0), (88, 2)]
+各類似度　 (6, 1)  :  [  269.54919379  1652.86293386  1837.91057566  4317.55933069
+  5522.62631642  8562.35426754  9264.47204065 11130.17935697]
+
+
+上位p個　 (6, 2)  >>>  [(88, 3), (71, 3), (12, 3), (5, 1), (102, 0), (19, 3), (17, 1), (95, 3)]
+各類似度　 (6, 2)  :  [104.95615074 214.99521324 229.65935629 248.10207941 253.80591251
+ 278.45590108 340.90872618 476.44913893]
+
+
+上位p個　 (6, 3)  >>>  [(0, 2), (58, 2), (15, 0), (12, 0), (42, 2), (101, 1), (11, 0), (67, 0)]
+各類似度　 (6, 3)  :  [ 121.3499225   981.65372979 1041.2053206  1359.20478717 1408.82397803
+ 1663.98172011 1914.7908469  2247.97816366]
+
+
+上位p個　 (7, 0)  >>>  [(0, 1), (2, 1), (67, 3), (58, 3), (97, 3), (101, 2), (90, 3), (81, 1)]
+各類似度　 (7, 0)  :  [ 43.58228802 359.98939823 384.38248606 501.59150715 547.80523564
+ 703.31443793 740.93463128 821.23977515]
+
+
+上位p個　 (7, 1)  >>>  [(15, 0), (67, 0), (12, 0), (42, 2), (42, 0), (11, 0), (23, 2), (81, 0)]
+各類似度　 (7, 1)  :  [ 82.26906658 135.46318043 141.44476054 260.14862272 335.66168769
+ 390.0055035  705.47759821 976.53204598]
+
+
+上位p個　 (7, 2)  >>>  [(20, 3), (67, 1), (26, 3), (43, 3), (29, 3), (19, 3), (71, 3), (71, 1)]
+各類似度　 (7, 2)  :  [ 52.12360802  71.87354714 108.04608182 108.95656503 155.94015772
+ 159.52666017 208.9207633  449.30920756]
+
+
+上位p個　 (7, 3)  >>>  [(67, 2), (17, 0), (71, 2), (43, 0), (103, 2), (29, 2), (95, 0), (40, 2)]
+各類似度　 (7, 3)  :  [ 64.99809067 100.4400424  158.9014497  190.2054025  203.74363005
+ 213.84044565 290.33296222 334.91319664]
+
+
+上位p個　 (8, 0)  >>>  [()]
+(8, 0)  >>> Line
+
+
+上位p個　 (8, 1)  >>>  [(11, 1), (98, 3), (2, 3), (101, 2), (78, 3), (47, 1), (2, 1), (11, 3)]
+各類似度　 (8, 1)  :  [  52.35175157  277.82642029  557.54413681  799.6272119   833.22910787
+  916.61857312 1077.69965643 1223.94264923]
+
+
+上位p個　 (8, 2)  >>>  [(18, 0), (34, 2), (61, 2), (52, 0), (28, 2), (72, 2), (37, 2), (74, 2)]
+各類似度　 (8, 2)  :  [  64.54748382  267.82372136  293.29225295  571.37425196 2570.19012961
+ 2825.86130743 3320.56036911 3559.58299547]
+
+
+上位p個　 (8, 3)  >>>  [()]
+(8, 3)  >>> Line
+
+
+上位p個　 (9, 0)  >>>  [(18, 1), (74, 3), (70, 1), (55, 3), (16, 3), (103, 1), (42, 1), (23, 3)]
+各類似度　 (9, 0)  :  [ 654.57023546  663.55065366  724.8464568  1894.58620163 2570.76363652
+ 3246.91830043 3615.60567167 3655.22217815]
+
+
+上位p個　 (9, 1)  >>>  [(11, 0), (67, 0), (48, 0), (12, 0), (15, 0), (23, 2), (42, 2), (42, 0)]
+各類似度　 (9, 1)  :  [ 116.26735415  421.78691693  436.32569439  439.47810273  483.96840313
+  618.36755084  988.04394146 1770.06865878]
+
+
+上位p個　 (9, 2)  >>>  [(17, 1), (45, 3), (97, 1), (17, 3), (102, 0), (12, 3), (16, 1), (15, 1)]
+各類似度　 (9, 2)  :  [ 53.62149203  77.64523263 182.36690188 240.2775297  304.78496644
+ 375.2560355  463.18054881 595.83374209]
+
+
+上位p個　 (9, 3)  >>>  [(20, 2), (2, 0), (40, 0), (0, 0), (37, 0), (88, 2), (70, 2), (88, 0)]
+各類似度　 (9, 3)  :  [  651.61799534  5243.65047835  6070.8563209  12620.24902761
+ 18610.37648563 19055.7281125  19547.4507104  21919.37067566]
+
+
+上位p個　 (10, 0)  >>>  [(5, 1), (88, 3), (71, 3), (17, 3), (17, 1), (19, 3), (102, 0), (95, 3)]
+各類似度　 (10, 0)  :  [ 33.74306207  85.63714073 203.58001194 303.52931093 316.55400006
+ 323.49472975 338.16208297 426.32491492]
+
+
+上位p個　 (10, 1)  >>>  [(12, 0), (15, 0), (67, 0), (11, 0), (23, 2), (42, 2), (48, 0), (42, 0)]
+各類似度　 (10, 1)  :  [ 243.17290643  436.85001179  508.69319788  582.21445568  636.81816032
+  810.11274855 1198.48945664 1269.41776007]
+
+
+上位p個　 (10, 2)  >>>  [(15, 1), (96, 3), (16, 1), (87, 1), (81, 3), (102, 0), (97, 1), (61, 3)]
+各類似度　 (10, 2)  :  [ 29.75025023  79.03648934  91.36871765 105.84843211 151.58400899
+ 281.86261985 304.03061677 313.09644986]
+
+
+上位p個　 (10, 3)  >>>  [(0, 0), (27, 0), (50, 2), (43, 2), (37, 0), (84, 0), (45, 0), (70, 2)]
+各類似度　 (10, 3)  :  [  34.25198166 1344.99384314 1349.52936789 1811.71563091 2013.64782856
+ 2859.23393493 5518.01674686 6003.54847854]
+
+
+上位p個　 (11, 0)  >>>  [(9, 1), (7, 1), (10, 1), (44, 1), (64, 3), (6, 3), (32, 3), (41, 3)]
+各類似度　 (11, 0)  :  [ 116.26735415  390.0055035   582.21445568  732.24135056 1220.99316361
+ 1914.7908469  1983.55588849 2294.54855784]
+
+
+上位p個　 (11, 1)  >>>  [(8, 1), (85, 0), (3, 2), (81, 2), (80, 0), (4, 0), (85, 2), (99, 0)]
+各類似度　 (11, 1)  :  [ 52.35175157 256.67279802 274.13658373 274.17833757 402.67875287
+ 487.19380195 534.78399628 545.94279394]
+
+
+上位p個　 (11, 2)  >>>  [()]
+(11, 2)  >>> Line
+
+
+上位p個　 (11, 3)  >>>  [(4, 0), (85, 0), (39, 0), (3, 2), (69, 2), (4, 2), (85, 2), (65, 0)]
+各類似度　 (11, 3)  :  [ 23.93873411 266.51013126 448.96878162 478.38815552 521.8818511
+ 536.39745377 551.84848208 670.12693072]
+
+
+上位p個　 (12, 0)  >>>  [(7, 1), (10, 1), (9, 1), (44, 1), (41, 3), (64, 3), (6, 3), (93, 3)]
+各類似度　 (12, 0)  :  [ 141.44476054  243.17290643  439.47810273  561.76000999  763.29554247
+  956.90836912 1359.20478717 1775.84024282]
+
+
+上位p個　 (12, 1)  >>>  [(36, 0), (64, 0), (99, 0), (5, 0), (1, 0), (36, 2), (3, 2), (89, 0)]
+各類似度　 (12, 1)  :  [ 12.1844356   19.33432354  43.23258024  70.8773977   72.81480005
+ 102.92261229 169.07716229 183.04229954]
+
+
+上位p個　 (12, 2)  >>>  [(32, 1), (93, 1), (59, 3), (49, 1), (66, 1), (30, 1), (86, 3), (82, 3)]
+各類似度　 (12, 2)  :  [  85.96062002  147.55324116  231.04238846  244.77537596  310.97287103
+  514.96666721 1077.26432202 1603.58285437]
+
+
+上位p個　 (12, 3)  >>>  [(96, 2), (39, 0), (60, 2), (6, 2), (80, 0), (82, 0), (9, 2), (65, 0)]
+各類似度　 (12, 3)  :  [ 44.19901755  52.58825755  82.22773566 229.65935629 279.7270046
+ 319.50766406 375.2560355  422.52732054]
+
+
+上位p個　 (13, 0)  >>>  [(14, 3), (87, 3), (23, 1), (52, 1), (1, 3), (12, 1), (55, 3), (0, 3)]
+各類似度　 (13, 0)  :  [105.66225422 133.53345007 358.79095582 597.86946597 630.41568048
+ 718.83234916 748.18684541 825.2663587 ]
+
+
+上位p個　 (13, 1)  >>>  [(3, 0), (39, 0), (4, 0), (85, 2), (85, 0), (49, 0), (4, 2), (56, 0)]
+各類似度　 (13, 1)  :  [  13.19862914  819.54843247  925.88794751 1355.46624644 1363.6781301
+ 1637.79640176 1886.34579744 2009.24212394]
+
+
+上位p個　 (13, 2)  >>>  [()]
+(13, 2)  >>> Line
+
+
+上位p個　 (13, 3)  >>>  [(77, 2), (68, 2), (79, 0), (56, 2), (41, 0), (44, 0), (14, 2), (94, 2)]
+各類似度　 (13, 3)  :  [  47.22069505   57.67725987   69.96797787  121.47703484  199.87233713
+  628.60811959  750.60293684 2390.89075613]
+
+
+上位p個　 (14, 0)  >>>  [(74, 3), (70, 1), (16, 3), (55, 3), (42, 1), (48, 1), (52, 1), (23, 3)]
+各類似度　 (14, 0)  :  [  40.85491901   63.52097107  349.28394192  458.46671122  642.1579752
+  793.8632915  1152.45476292 1212.5665722 ]
+
+
+上位p個　 (14, 1)  >>>  [(92, 2), (61, 0), (23, 0), (55, 2), (47, 2), (102, 1), (76, 2), (67, 2)]
+各類似度　 (14, 1)  :  [ 265.01725912  719.32481145  906.47875869 1264.49177481 1335.94385471
+ 1411.78049658 1433.52790615 1681.57320787]
+
+
+上位p個　 (14, 2)  >>>  [(19, 1), (29, 3), (13, 3), (5, 3), (50, 1), (71, 1), (28, 3), (76, 3)]
+各類似度　 (14, 2)  :  [ 673.25126285  675.39888438  750.60293684 1081.5880733  1392.86691578
+ 1536.28879226 2205.02484153 2442.07029243]
+
+
+上位p個　 (14, 3)  >>>  [(13, 0), (1, 0), (30, 2), (64, 0), (55, 0), (36, 2), (36, 0), (5, 0)]
+各類似度　 (14, 3)  :  [105.66225422 115.90666019 208.45187523 220.52159814 225.49312207
+ 368.99176542 397.3866561  619.56692808]
+
+
+上位p個　 (15, 0)  >>>  [(7, 1), (10, 1), (41, 3), (9, 1), (64, 3), (44, 1), (63, 3), (93, 3)]
+各類似度　 (15, 0)  :  [  82.26906658  436.85001179  450.76242711  483.96840313  559.5247271
+  604.97609425  836.14945858 1021.34799069]
+
+
+上位p個　 (15, 1)  >>>  [(10, 2), (82, 0), (5, 2), (80, 2), (89, 2), (6, 0), (9, 2), (99, 2)]
+各類似度　 (15, 1)  :  [ 29.75025023  61.46753789 196.15753793 478.77536754 562.88432029
+ 571.59485766 595.83374209 674.97890016]
+
+
+上位p個　 (15, 2)  >>>  [(4, 3), (39, 3), (59, 3), (49, 1), (69, 1), (32, 1), (100, 3), (24, 3)]
+各類似度　 (15, 2)  :  [207.90069985 219.83434123 269.72543716 358.79875165 434.34485992
+ 450.26463537 644.7114497  748.91426173]
+
+
+上位p個　 (15, 3)  >>>  [(31, 2), (3, 2), (85, 0), (5, 0), (99, 0), (4, 2), (4, 0), (1, 0)]
+各類似度　 (15, 3)  :  [ 490.76230774  794.81749044  998.9294935  1209.5017738  1590.46924647
+ 1812.3438198  1822.28479381 1871.34364599]
+
+
+上位p個　 (16, 0)  >>>  [(70, 1), (75, 3), (74, 3), (80, 1), (42, 1), (48, 1), (55, 3), (63, 3)]
+各類似度　 (16, 0)  :  [ 71.26374954  85.12286109 100.78514562 105.8627772  153.6347239
+ 186.32933993 359.19184906 391.14052173]
+
+
+上位p個　 (16, 1)  >>>  [(10, 2), (5, 2), (82, 0), (6, 0), (9, 2), (81, 2), (89, 2), (80, 2)]
+各類似度　 (16, 1)  :  [ 91.36871765  91.62521455 142.05971362 393.11514373 463.18054881
+ 642.45078015 695.92526828 703.63572097]
+
+
+上位p個　 (16, 2)  >>>  [(61, 3), (92, 1), (0, 3), (96, 3), (23, 1), (87, 1), (78, 3), (12, 1)]
+各類似度　 (16, 2)  :  [ 69.16732076 207.66172737 216.59749008 340.28254904 480.95967954
+ 497.45303926 593.0349683  711.79251317]
+
+
+上位p個　 (16, 3)  >>>  [(19, 2), (14, 0), (54, 2), (31, 2), (64, 2), (83, 0), (68, 0), (30, 2)]
+各類似度　 (16, 3)  :  [187.87413556 349.28394192 390.87033483 408.07231621 417.05988441
+ 439.91104168 809.97974311 849.15093038]
+
+
+上位p個　 (17, 0)  >>>  [(7, 3), (99, 1), (31, 1), (59, 3), (94, 3), (100, 3), (39, 1), (54, 3)]
+各類似度　 (17, 0)  :  [ 100.4400424   198.57155588  743.08411625  758.83984428  771.60539833
+  837.10145511 1069.32734773 1516.24887911]
+
+
+上位p個　 (17, 1)  >>>  [(9, 2), (63, 2), (89, 2), (6, 0), (91, 2), (10, 0), (6, 2), (82, 0)]
+各類似度　 (17, 1)  :  [ 53.62149203  87.64482865  95.68055196 116.29460405 288.74199591
+ 316.55400006 340.90872618 377.15315279]
+
+
+上位p個　 (17, 2)  >>>  [(69, 1), (4, 3), (24, 3), (59, 3), (100, 3), (30, 1), (39, 3), (36, 3)]
+各類似度　 (17, 2)  :  [  93.53030987  114.21216087  632.2273576   836.92521838 1039.70727272
+ 1054.53115636 1389.81767263 1560.86025787]
+
+
+上位p個　 (17, 3)  >>>  [(63, 2), (89, 2), (6, 0), (9, 2), (10, 0), (99, 2), (91, 2), (96, 0)]
+各類似度　 (17, 3)  :  [ 30.42101764  55.79238665 164.59023124 240.2775297  303.52931093
+ 316.43372058 395.99056114 493.86858006]
+
+
+上位p個　 (18, 0)  >>>  [(8, 2), (35, 3), (21, 0), (60, 3), (73, 3), (63, 1), (65, 1), (38, 1)]
+各類似度　 (18, 0)  :  [  64.54748382  410.10264156  538.11211187 1408.10140715 1886.91079214
+ 2566.77091012 2731.58588073 3227.83089683]
+
+
+上位p個　 (18, 1)  >>>  [(9, 0), (73, 2), (68, 0), (66, 0), (93, 2), (16, 0), (75, 0), (97, 0)]
+各類似度　 (18, 1)  :  [ 654.57023546 1236.18321572 1380.39051631 1477.5089971  1936.00989387
+ 1972.51641303 2176.966991   2483.70815283]
+
+
+上位p個　 (18, 2)  >>>  [(21, 2), (3, 1), (103, 3), (45, 3), (50, 1), (17, 3), (17, 1), (97, 1)]
+各類似度　 (18, 2)  :  [   86.39830715  6789.24783565 21767.09311256 26085.7165048
+ 27075.44470181 29356.3993707  34363.03149237 37443.85940916]
+
+
+上位p個　 (18, 3)  >>>  [()]
+(18, 3)  >>> Line
+
+
+上位p個　 (19, 0)  >>>  [(3, 1), (45, 3), (17, 1), (103, 3), (17, 3), (97, 1), (50, 1), (26, 1)]
+各類似度　 (19, 0)  :  [  43.70151194 1237.85187905 2782.91122561 2887.75759455 3558.23631558
+ 3732.69318413 4219.1345121  4424.40683247]
+
+
+上位p個　 (19, 1)  >>>  [(68, 2), (79, 0), (77, 2), (56, 2), (44, 0), (41, 0), (14, 2), (94, 2)]
+各類似度　 (19, 1)  :  [  44.93858027   63.45409417   91.20553991  149.1290016   304.68351771
+  323.27816702  673.25126285 2388.93037788]
+
+
+上位p個　 (19, 2)  >>>  [(16, 3), (74, 3), (70, 1), (80, 1), (75, 3), (42, 1), (63, 3), (33, 1)]
+各類似度　 (19, 2)  :  [ 187.87413556  432.40900977  788.09218147  886.55701661 1170.87507545
+ 1268.57047497 1340.67080113 1398.44293869]
+
+
+上位p個　 (19, 3)  >>>  [(41, 2), (32, 2), (22, 0), (7, 2), (96, 0), (6, 2), (63, 2), (10, 0)]
+各類似度　 (19, 3)  :  [ 54.41593031  95.62628644 125.10162607 159.52666017 235.66431256
+ 278.45590108 297.0164679  323.49472975]
+
+
+上位p個　 (20, 0)  >>>  [(31, 1), (100, 3), (69, 1), (99, 1), (4, 3), (39, 3), (7, 3), (54, 3)]
+各類似度　 (20, 0)  :  [  31.51681743  182.19346558  336.65357741  391.61747753  392.96616869
+  583.43349388  596.79496568 1060.86573996]
+
+
+上位p個　 (20, 1)  >>>  [(21, 3), (68, 2), (79, 0), (77, 2), (41, 0), (44, 0), (94, 2), (56, 2)]
+各類似度　 (20, 1)  :  [ 496.66580141  568.93274286 1150.4451266  1347.77884002 2135.22471282
+ 2562.86588386 5129.38648701 5534.69702858]
+
+
+上位p個　 (20, 2)  >>>  [(9, 3), (6, 1), (31, 3), (10, 3), (89, 3), (79, 3), (33, 3), (85, 3)]
+各類似度　 (20, 2)  :  [  651.61799534  8562.35426754 13087.59049191 48758.9567605
+ 54428.45170359 57824.51841304 69760.57532454 72036.75753354]
+
+
+上位p個　 (20, 3)  >>>  [(7, 2), (32, 2), (41, 2), (24, 0), (22, 0), (63, 0), (22, 2), (96, 0)]
+各類似度　 (20, 3)  :  [  52.12360802  122.87977249  211.60867836  458.61565088  617.40613249
+  796.13098737 1253.73167401 1313.93591787]
+
+
+上位p個　 (21, 0)  >>>  [(34, 2), (18, 0), (61, 2), (74, 2), (78, 2), (52, 0), (55, 2), (61, 0)]
+各類似度　 (21, 0)  :  [  88.61827476  538.11211187 1492.22558756 1673.23874477 2576.67235458
+ 2710.31023405 3251.5580365  3519.01678603]
+
+
+上位p個　 (21, 1)  >>>  [()]
+(21, 1)  >>> Line
+
+
+上位p個　 (21, 2)  >>>  [(18, 2), (19, 0), (99, 2), (51, 0), (63, 2), (89, 2), (56, 2), (14, 2)]
+各類似度　 (21, 2)  :  [   86.39830715 10917.154269   23755.13860601 23964.60955533
+ 29634.92038223 32372.51320049 32865.64380679 47346.44061625]
+
+
+上位p個　 (21, 3)  >>>  [(20, 1), (57, 3), (72, 3), (76, 3), (84, 3), (92, 3), (95, 1), (13, 3)]
+各類似度　 (21, 3)  :  [ 496.66580141  528.70264369  727.00073083 1065.55229535 1573.6598817
+ 1690.0660759  2158.93334085 3215.40013695]
+
+
+上位p個　 (22, 0)  >>>  [(5, 1), (19, 3), (71, 3), (95, 3), (67, 1), (43, 3), (26, 3), (29, 3)]
+各類似度　 (22, 0)  :  [107.21441632 125.10162607 169.07646455 213.84252772 320.42686693
+ 329.87771183 354.03651229 415.57010872]
+
+
+上位p個　 (22, 1)  >>>  [(27, 0), (43, 2), (45, 0), (45, 2), (25, 0), (50, 2), (29, 0), (84, 0)]
+各類似度　 (22, 1)  :  [ 102.42262272  372.20379275  530.62662399 1168.5442055  1282.02819781
+ 2011.52871018 2268.66472918 2532.67223934]
+
+
+上位p個　 (22, 2)  >>>  [(5, 3), (71, 3), (19, 3), (43, 3), (5, 1), (95, 3), (40, 3), (20, 3)]
+各類似度　 (22, 2)  :  [ 476.4673637   485.1427223   638.18980554 1096.03332969 1145.78561857
+ 1190.21676515 1200.37601132 1253.73167401]
+
+
+上位p個　 (22, 3)  >>>  [(23, 2), (42, 0), (55, 0), (48, 0), (67, 0), (26, 0), (42, 2), (54, 2)]
+各類似度　 (22, 3)  :  [  51.01324595  102.53332755  445.84782532  487.1766533   818.4660643
+  904.13369135 2026.8374827  2364.38289546]
+
+
+上位p個　 (23, 0)  >>>  [(66, 1), (14, 1), (77, 1), (32, 1), (93, 1), (73, 1), (45, 1), (59, 3)]
+各類似度　 (23, 0)  :  [ 693.59329639  906.47875869  979.97369951 1602.98244778 2118.27425714
+ 2417.08840559 2749.93745223 3047.78092863]
+
+
+上位p個　 (23, 1)  >>>  [(36, 0), (64, 0), (99, 0), (1, 0), (5, 0), (89, 0), (91, 0), (36, 2)]
+各類似度　 (23, 1)  :  [ 17.79210986  47.0493257   47.27125424  55.33750689 137.15537714
+ 138.19092179 158.10834946 174.37731246]
+
+
+上位p個　 (23, 2)  >>>  [(22, 3), (44, 1), (75, 1), (1, 3), (32, 3), (56, 1), (9, 1), (10, 1)]
+各類似度　 (23, 2)  :  [ 51.01324595 105.76811346 141.55165253 378.92975826 409.46455693
+ 538.52569513 618.36755084 636.81816032]
+
+
+上位p個　 (23, 3)  >>>  [(64, 2), (30, 2), (1, 0), (54, 2), (16, 0), (13, 0), (14, 0), (55, 0)]
+各類似度　 (23, 3)  :  [ 237.79881023  276.21699014  356.1548616   547.50902543  707.18192815
+ 1022.96367796 1212.5665722  1220.77846446]
+
+
+上位p個　 (24, 0)  >>>  [(29, 3), (71, 1), (26, 3), (20, 3), (67, 1), (19, 3), (43, 3), (17, 3)]
+各類似度　 (24, 0)  :  [133.77542888 233.97083991 377.04636828 458.61565088 563.83134112
+ 653.3668643  965.46942398 970.69866928]
+
+
+上位p個　 (24, 1)  >>>  [()]
+(24, 1)  >>> Line
+
+
+上位p個　 (24, 2)  >>>  [(28, 3), (67, 1), (29, 3), (26, 3), (102, 2), (71, 1), (19, 3), (43, 3)]
+各類似度　 (24, 2)  :  [  46.2984747   605.55049755  634.19309653  845.48174828  873.105974
+ 1045.46817214 1162.63200713 1214.68541114]
+
+
+上位p個　 (24, 3)  >>>  [(45, 0), (25, 0), (70, 0), (45, 2), (58, 0), (95, 2), (43, 2), (17, 2)]
+各類似度　 (24, 3)  :  [101.77946034 115.96111391 195.22260205 364.71856731 432.73240845
+ 476.64050607 592.4932164  632.2273576 ]
+
+
+上位p個　 (25, 0)  >>>  [(36, 3), (24, 3), (69, 3), (89, 1), (86, 3), (54, 1), (30, 1), (69, 1)]
+各類似度　 (25, 0)  :  [110.26468659 115.96111391 264.69344398 342.09288911 727.60398863
+ 729.35699544 817.11180442 862.80216507]
+
+
+上位p個　 (25, 1)  >>>  [(33, 0), (87, 2), (64, 0), (16, 2), (93, 0), (89, 0), (36, 2), (91, 0)]
+各類似度　 (25, 1)  :  [ 135.98851323 1793.20109477 2102.36764848 2344.96327968 2480.93576432
+ 3316.36805415 3345.75200108 3689.8488024 ]
+
+
+上位p個　 (25, 2)  >>>  [(30, 3), (96, 3), (51, 3), (11, 1), (3, 1), (68, 3), (15, 1), (42, 3)]
+各類似度　 (25, 2)  :  [  160.87222044  8249.83975159 10496.78564375 10608.08330336
+ 11966.02772495 12259.70032162 13212.44915564 13291.9680677 ]
+
+
+上位p個　 (25, 3)  >>>  [(1, 0), (30, 2), (64, 2), (64, 0), (99, 0), (5, 0), (36, 0), (89, 0)]
+各類似度　 (25, 3)  :  [ 58.55346792 203.2699392  204.3587544  259.71777599 274.33371943
+ 356.47062259 383.3297581  734.11229233]
+
+
+上位p個　 (26, 0)  >>>  [(44, 1), (1, 3), (52, 1), (63, 3), (41, 3), (80, 1), (22, 3), (14, 3)]
+各類似度　 (26, 0)  :  [429.23308138 433.81861852 494.75495424 744.27761073 793.9593734
+ 854.42103585 904.13369135 963.48136949]
+
+
+上位p個　 (26, 1)  >>>  [(44, 2), (63, 2), (89, 2), (6, 0), (32, 2), (99, 2), (22, 0), (9, 2)]
+各類似度　 (26, 1)  :  [302.67421739 320.00807781 564.68527121 584.45571093 681.46021375
+ 917.65523648 926.72187287 967.05273973]
+
+
+上位p個　 (26, 2)  >>>  [(93, 1), (66, 1), (32, 1), (49, 1), (30, 1), (59, 3), (77, 1), (86, 3)]
+各類似度　 (26, 2)  :  [  94.9318935   211.90920665  700.84690674  801.16912388 2141.34620607
+ 2320.67755716 3299.90295078 3627.66729838]
+
+
+上位p個　 (26, 3)  >>>  [(32, 2), (7, 2), (63, 2), (41, 2), (22, 0), (24, 0), (24, 2), (96, 0)]
+各類似度　 (26, 3)  :  [  24.1831163   108.04608182  163.58976883  288.93436229  354.03651229
+  377.04636828  845.48174828 1005.10146079]
+
+
+上位p個　 (27, 0)  >>>  [(22, 1), (69, 3), (86, 3), (54, 1), (36, 3), (33, 3), (10, 3), (24, 3)]
+各類似度　 (27, 0)  :  [ 102.42262272  499.77040267  624.11129292  927.5442275   985.66555922
+ 1193.0176795  1344.99384314 1817.03973452]
+
+
+上位p個　 (27, 1)  >>>  [(97, 0), (47, 2), (81, 0), (66, 0), (73, 2), (101, 1), (76, 0), (92, 2)]
+各類似度　 (27, 1)  :  [299.94154342 305.5051733  310.36412251 344.94199162 387.76676448
+ 581.25552941 643.40666076 643.94106478]
+
+
+上位p個　 (27, 2)  >>>  [(44, 3), (70, 3), (83, 3), (62, 0), (98, 3), (51, 3), (101, 0), (50, 3)]
+各類似度　 (27, 2)  :  [5.19390747e+01 1.25517768e+04 2.46064175e+04 8.56807933e+04
+ 1.21582640e+05 1.22475819e+05 1.28856057e+05 1.41248559e+05]
+
+
+上位p個　 (27, 3)  >>>  [(1, 2), (99, 0), (13, 0), (36, 2), (31, 2), (30, 2), (52, 2), (1, 0)]
+各類似度　 (27, 3)  :  [ 160.29380161 2363.08353463 2418.4457152  2455.56374804 2503.29233112
+ 2566.60318771 2869.74570109 2872.98137261]
+
+
+上位p個　 (28, 0)  >>>  [()]
+(28, 0)  >>> Line
+
+
+上位p個　 (28, 1)  >>>  [()]
+(28, 1)  >>> Line
+
+
+上位p個　 (28, 2)  >>>  [(60, 3), (51, 1), (65, 1), (38, 1), (8, 2), (33, 1), (46, 1), (73, 3)]
+各類似度　 (28, 2)  :  [ 113.02172107  224.40490427  267.19334152 1545.00000685 2570.19012961
+ 2726.69124787 4046.09543605 4169.55767519]
+
+
+上位p個　 (28, 3)  >>>  [(24, 2), (24, 0), (77, 2), (35, 2), (51, 0), (60, 2), (82, 0), (3, 0)]
+各類似度　 (28, 3)  :  [   46.2984747   2401.44371782  3205.63739995  8668.49138106
+  8973.73664157 10218.47103621 12788.23702809 13009.16312987]
+
+
+上位p個　 (29, 0)  >>>  [(30, 1), (69, 3), (86, 3), (24, 3), (32, 1), (49, 1), (36, 3), (93, 1)]
+各類似度　 (29, 0)  :  [  93.95202518  409.47294761  488.57806715  777.16659309 1089.50723708
+ 1105.2819139  1223.42951306 1329.97171872]
+
+
+上位p個　 (29, 1)  >>>  [(38, 0), (41, 2), (49, 0), (22, 0), (7, 2), (96, 0), (22, 2), (60, 2)]
+各類似度　 (29, 1)  :  [  42.66227901 2181.00409223 2887.86080682 3754.04954443 4636.44507842
+ 4845.85166893 7777.56815491 8894.51313797]
+
+
+上位p個　 (29, 2)  >>>  [(99, 1), (7, 3), (36, 1), (94, 3), (41, 1), (39, 1), (100, 3), (31, 1)]
+各類似度　 (29, 2)  :  [111.02576501 213.84044565 319.98078843 329.13084932 392.25963976
+ 452.73426942 510.93460525 584.79938093]
+
+
+上位p個　 (29, 3)  >>>  [(32, 2), (24, 0), (7, 2), (41, 0), (22, 0), (79, 0), (77, 2), (56, 2)]
+各類似度　 (29, 3)  :  [ 93.5226898  133.77542888 155.94015772 278.50797467 415.57010872
+ 568.19876977 582.44779129 585.40397217]
+
+
+上位p個　 (30, 0)  >>>  [(37, 3), (25, 1), (34, 3), (103, 3), (61, 3), (0, 3), (87, 1), (21, 2)]
+各類似度　 (30, 0)  :  [  188.49779252 30895.53759815 44585.4358951  47790.14631395
+ 65845.56921785 66125.92387191 68838.68588911 70922.03109694]
+
+
+上位p個　 (30, 1)  >>>  [(29, 0), (45, 2), (95, 2), (58, 0), (57, 2), (12, 2), (43, 2), (45, 0)]
+各類似度　 (30, 1)  :  [ 93.95202518 138.46286955 338.95190739 478.34375276 487.79278305
+ 514.96666721 530.31905544 723.04350067]
+
+
+上位p個　 (30, 2)  >>>  [(87, 3), (52, 1), (55, 3), (25, 3), (14, 3), (23, 3), (103, 1), (74, 3)]
+各類似度　 (30, 2)  :  [147.7068472  164.23273572 175.54834308 203.2699392  208.45187523
+ 276.21699014 280.12791846 307.02067687]
+
+
+上位p個　 (30, 3)  >>>  [(25, 2), (34, 0), (19, 0), (92, 0), (10, 2), (69, 2), (5, 2), (98, 0)]
+各類似度　 (30, 3)  :  [  160.87222044  2948.36791827  5367.98056571 13605.40947793
+ 13918.72607935 15105.52131197 16650.23946452 17677.75062926]
+
+
+上位p個　 (31, 0)  >>>  [(34, 3), (91, 3), (25, 1), (55, 1), (22, 3), (55, 3), (75, 1), (48, 1)]
+各類似度　 (31, 0)  :  [  889.18715898  5330.67419485  6472.31225267  8557.97725591
+ 11646.0166295  12844.27837318 12964.30268712 15830.89775993]
+
+
+上位p個　 (31, 1)  >>>  [(20, 0), (29, 2), (71, 2), (17, 0), (102, 3), (43, 0), (95, 0), (40, 2)]
+各類似度　 (31, 1)  :  [  31.51681743  584.79938093  686.31895164  743.08411625  992.42601584
+ 1389.28596994 1504.01063265 1728.9578917 ]
+
+
+上位p個　 (31, 2)  >>>  [(16, 3), (15, 3), (65, 3), (74, 3), (23, 3), (87, 3), (55, 3), (70, 1)]
+各類似度　 (31, 2)  :  [ 408.07231621  490.76230774  718.09725481 1252.68712352 1928.00210393
+ 1935.07014208 2145.76686728 2474.85329719]
+
+
+上位p個　 (31, 3)  >>>  [(40, 0), (70, 2), (2, 0), (0, 0), (37, 0), (88, 2), (88, 0), (50, 2)]
+各類似度　 (31, 3)  :  [ 808.38137432 1009.5136948  1097.91725506 1208.27129738 1266.54420087
+ 2566.85964146 2917.92904918 5084.63305671]
+
+
+上位p個　 (32, 0)  >>>  [(43, 1), (25, 1), (34, 3), (61, 3), (96, 3), (92, 1), (88, 1), (0, 3)]
+各類似度　 (32, 0)  :  [ 1372.63258135 17503.45784887 24899.31079472 28763.22060454
+ 34451.39987948 37805.6478493  38662.47946303 39124.18999072]
+
+
+上位p個　 (32, 1)  >>>  [(12, 2), (95, 2), (45, 2), (57, 2), (15, 2), (78, 0), (74, 0), (26, 2)]
+各類似度　 (32, 1)  :  [ 85.96062002 213.12900238 222.30278335 435.72393847 450.26463537
+ 504.8763707  579.42881142 700.84690674]
+
+
+上位p個　 (32, 2)  >>>  [(26, 3), (29, 3), (19, 3), (71, 1), (20, 3), (67, 1), (71, 3), (43, 3)]
+各類似度　 (32, 2)  :  [ 24.1831163   93.5226898   95.62628644 104.20582683 122.87977249
+ 292.04758978 309.50657653 333.97753058]
+
+
+上位p個　 (32, 3)  >>>  [(48, 0), (23, 2), (67, 0), (42, 0), (11, 0), (52, 2), (12, 0), (15, 0)]
+各類似度　 (32, 3)  :  [  34.63705658  409.46455693 1478.12522345 1630.88584459 1983.55588849
+ 2410.05441712 2687.84438979 3303.83760111]
+
+
+上位p個　 (33, 0)  >>>  [(25, 1), (0, 3), (61, 3), (34, 3), (92, 1), (96, 3), (87, 1), (15, 1)]
+各類似度　 (33, 0)  :  [ 135.98851323 1342.88254492 1544.87979791 3172.44417235 3248.07998579
+ 4370.83102893 4729.08684788 5039.72399536]
+
+
+上位p個　 (33, 1)  >>>  [(47, 0), (19, 2), (53, 0), (83, 0), (28, 2), (62, 1), (31, 2), (53, 2)]
+各類似度　 (33, 1)  :  [  99.02292871 1398.44293869 1714.18696598 2027.25557514 2726.69124787
+ 2765.21910788 3063.14582866 3149.7628121 ]
+
+
+上位p個　 (33, 2)  >>>  [()]
+(33, 2)  >>> Line
+
+
+上位p個　 (33, 3)  >>>  [(37, 0), (50, 2), (27, 0), (0, 0), (43, 2), (45, 0), (25, 0), (84, 0)]
+各類似度　 (33, 3)  :  [  97.22249135  847.91868135 1193.0176795  1327.99369962 2590.67171916
+ 3663.92153433 4367.26424638 4619.82050433]
+
+
+上位p個　 (34, 0)  >>>  [(35, 1), (30, 3), (98, 1), (42, 3), (17, 1), (45, 3), (98, 3), (11, 1)]
+各類似度　 (34, 0)  :  [1376.62559448 2948.36791827 4113.18683989 5203.12130956 5644.63887022
+ 6341.74579071 6456.82317655 6680.15670521]
+
+
+上位p個　 (34, 1)  >>>  [()]
+(34, 1)  >>> Line
+
+
+上位p個　 (34, 2)  >>>  [(21, 0), (35, 3), (8, 2), (73, 3), (73, 1), (77, 1), (77, 3), (60, 1)]
+各類似度　 (34, 2)  :  [  88.61827476  253.21722243  267.82372136  560.30937544 1500.37968882
+ 1673.76708043 1802.4182944  2350.4450813 ]
+
+
+上位p個　 (34, 3)  >>>  [(31, 0), (33, 0), (54, 0), (42, 0), (23, 2), (64, 0), (98, 0), (36, 2)]
+各類似度　 (34, 3)  :  [  889.18715898  3172.44417235  6133.9347237  13386.33622518
+ 13892.63688889 14850.71575676 15348.64285585 15426.27506327]
+
+
+上位p個　 (35, 0)  >>>  [()]
+(35, 0)  >>> Line
+
+
+上位p個　 (35, 1)  >>>  [(34, 0), (94, 0), (9, 2), (75, 2), (63, 2), (14, 2), (59, 0), (6, 0)]
+各類似度　 (35, 1)  :  [ 1376.62559448  7347.05677293  9993.73080444 10536.97376649
+ 13637.9552072  14524.86986299 14879.5444836  15411.76671426]
+
+
+上位p個　 (35, 2)  >>>  [(48, 3), (40, 3), (17, 1), (5, 1), (45, 3), (12, 3), (95, 3), (19, 3)]
+各類似度　 (35, 2)  :  [ 242.71173085  374.10510836  619.6069816   912.13367847 1002.00608711
+ 1075.46525158 1193.33044914 1259.49220748]
+
+
+上位p個　 (35, 3)  >>>  [(74, 2), (34, 2), (72, 2), (18, 0), (78, 2), (61, 2), (52, 0), (37, 2)]
+各類似度　 (35, 3)  :  [ 198.26734166  253.21722243  366.45475564  410.10264156  453.70807292
+ 1142.4668666  2149.68565802 2994.4218296 ]
+
+
+上位p個　 (36, 0)  >>>  [(12, 1), (23, 1), (92, 1), (90, 1), (1, 1), (87, 3), (47, 1), (0, 3)]
+各類似度　 (36, 0)  :  [ 12.1844356   17.79210986  56.16546981  76.35256757 128.75472143
+ 166.77638389 178.85590109 183.59687386]
+
+
+上位p個　 (36, 1)  >>>  [(40, 2), (29, 2), (58, 2), (43, 0), (50, 0), (95, 0), (103, 2), (76, 2)]
+各類似度　 (36, 1)  :  [105.35643458 319.98078843 334.85400402 493.32165139 547.36460973
+ 557.316899   810.1128409  888.37098437]
+
+
+上位p個　 (36, 2)  >>>  [(47, 1), (12, 1), (87, 3), (23, 1), (90, 1), (14, 3), (0, 3), (92, 1)]
+各類似度　 (36, 2)  :  [ 29.20185294 102.92261229 159.64463923 174.37731246 254.68332462
+ 368.99176542 380.14226153 402.65511271]
+
+
+上位p個　 (36, 3)  >>>  [(45, 0), (25, 0), (45, 2), (43, 2), (70, 0), (58, 0), (27, 0), (95, 2)]
+各類似度　 (36, 3)  :  [ 39.27314055 110.26468659 365.03177658 436.37657428 626.91843413
+ 662.41066331 985.66555922 999.9285566 ]
+
+
+上位p個　 (37, 0)  >>>  [(33, 3), (31, 3), (79, 3), (10, 3), (54, 1), (6, 1), (22, 1), (85, 3)]
+各類似度　 (37, 0)  :  [  97.22249135 1266.54420087 1808.38150517 2013.64782856 2104.5342544
+ 4317.55933069 4636.63014952 4900.37805372]
+
+
+上位p個　 (37, 1)  >>>  [()]
+(37, 1)  >>> Line
+
+
+上位p個　 (37, 2)  >>>  [(38, 1), (60, 3), (73, 3), (65, 1), (51, 1), (82, 1), (35, 3), (8, 2)]
+各類似度　 (37, 2)  :  [ 440.84690311  813.57965732 1981.05218447 2158.31281398 2258.24563202
+ 2575.72886378 2994.4218296  3320.56036911]
+
+
+上位p個　 (37, 3)  >>>  [(30, 0), (33, 0), (32, 0), (99, 2), (16, 2), (18, 2), (10, 2), (31, 0)]
+各類似度　 (37, 3)  :  [   188.49779252  28754.43607819  74322.7104948   88257.62222529
+  97399.70031935  98228.7962438  111588.45966209 112786.20865685]
+
+
+上位p個　 (38, 0)  >>>  [(29, 1), (88, 1), (71, 3), (88, 3), (67, 1), (43, 3), (29, 3), (19, 3)]
+各類似度　 (38, 0)  :  [  42.66227901 2409.42618952 2483.1932647  2618.60165395 3007.86507467
+ 3108.32238943 3700.65861976 3754.58848981]
+
+
+上位p個　 (38, 1)  >>>  [(37, 2), (52, 0), (61, 2), (28, 2), (90, 0), (74, 2), (18, 0), (34, 2)]
+各類似度　 (38, 1)  :  [ 440.84690311  834.48625886 1013.36820421 1545.00000685 2717.64005484
+ 3197.07484585 3227.83089683 4499.90625213]
+
+
+上位p個　 (38, 2)  >>>  [()]
+(38, 2)  >>> Line
+
+
+上位p個　 (38, 3)  >>>  [(47, 2), (97, 0), (92, 2), (61, 0), (73, 2), (57, 0), (71, 0), (102, 1)]
+各類似度　 (38, 3)  :  [  78.65353407  401.97227285 1550.00931534 1939.49847155 2316.285853
+ 2445.90665997 2552.13638224 2877.30222125]
+
+
+上位p個　 (39, 0)  >>>  [(12, 3), (102, 0), (88, 3), (58, 3), (81, 1), (81, 3), (11, 3), (98, 1)]
+各類似度　 (39, 0)  :  [ 52.58825755 149.00183763 160.62580031 248.80227758 368.32863423
+ 442.28003234 448.96878162 533.78205548]
+
+
+上位p個　 (39, 1)  >>>  [(43, 0), (50, 0), (40, 2), (95, 0), (58, 2), (76, 2), (103, 2), (67, 2)]
+各類似度　 (39, 1)  :  [ 48.87795214  62.8529253   82.39322546 117.3126909  124.29146603
+ 146.31301498 225.81946573 280.46845346]
+
+
+上位p個　 (39, 2)  >>>  [(40, 1), (55, 1), (55, 3), (103, 1), (25, 3), (74, 3), (70, 1), (76, 1)]
+各類似度　 (39, 2)  :  [  26.62443035 1178.39445505 3560.20318036 4135.69966974 5058.64859748
+ 5142.69496572 5444.75504768 8228.35456401]
+
+
+上位p個　 (39, 3)  >>>  [(15, 2), (20, 0), (102, 3), (29, 2), (95, 2), (103, 2), (95, 0), (17, 2)]
+各類似度　 (39, 3)  :  [ 219.83434123  583.43349388  607.16089371  845.61596917  954.37008331
+ 1219.62960917 1367.00327785 1389.81767263]
+
+
+上位p個　 (40, 0)  >>>  [(31, 3), (6, 1), (9, 3), (79, 3), (89, 3), (10, 3), (85, 3), (33, 3)]
+各類似度　 (40, 0)  :  [  808.38137432  1837.91057566  6070.8563209  13120.68496595
+ 13203.39638188 18591.32422675 25254.24029503 25452.24064788]
+
+
+上位p個　 (40, 1)  >>>  [(39, 2), (54, 0), (79, 2), (64, 2), (14, 0), (1, 0), (30, 2), (66, 0)]
+各類似度　 (40, 1)  :  [   26.62443035   948.69135786  4012.02997499  5245.4109068
+  8444.40750403  9749.81407541 10661.71833286 10983.72059617]
+
+
+上位p個　 (40, 2)  >>>  [(41, 1), (39, 1), (36, 1), (94, 3), (56, 3), (99, 3), (7, 3), (54, 3)]
+各類似度　 (40, 2)  :  [ 25.612339    82.39322546 105.35643458 298.17574647 303.08667051
+ 305.80428835 334.91319664 355.55073393]
+
+
+上位p個　 (40, 3)  >>>  [(35, 2), (63, 2), (63, 0), (22, 2), (32, 2), (24, 0), (9, 2), (22, 0)]
+各類似度　 (40, 3)  :  [ 374.10510836  550.2004546  1151.24470593 1200.37601132 1312.29495225
+ 1797.46470157 1858.02493434 2122.95169963]
+
+
+上位p個　 (41, 0)  >>>  [(13, 3), (29, 3), (72, 3), (19, 1), (76, 3), (84, 3), (5, 3), (67, 1)]
+各類似度　 (41, 0)  :  [ 199.87233713  278.50797467  301.88757686  323.27816702  341.91902584
+  656.9121947   958.44603879 1320.49319563]
+
+
+上位p個　 (41, 1)  >>>  [(40, 2), (58, 2), (50, 0), (76, 2), (95, 0), (29, 2), (43, 0), (0, 2)]
+各類似度　 (41, 1)  :  [ 25.612339   112.62026011 301.2008807  368.97609094 382.33104604
+ 392.25963976 448.55829835 501.03018655]
+
+
+上位p個　 (41, 2)  >>>  [(71, 3), (43, 3), (19, 3), (88, 3), (5, 1), (20, 3), (95, 3), (26, 3)]
+各類似度　 (41, 2)  :  [ 24.51552771  28.04760703  54.41593031 181.22469743 208.4985485
+ 211.60867836 240.29112024 288.93436229]
+
+
+上位p個　 (41, 3)  >>>  [(42, 2), (67, 0), (42, 0), (15, 0), (23, 2), (12, 0), (103, 0), (26, 0)]
+各類似度　 (41, 3)  :  [101.95043565 189.24689915 298.92313278 450.76242711 647.1289882
+ 763.29554247 788.52338273 793.9593734 ]
+
+
+上位p個　 (42, 0)  >>>  [(44, 1), (22, 3), (75, 1), (41, 3), (7, 1), (80, 1), (52, 1), (63, 3)]
+各類似度　 (42, 0)  :  [ 90.61482891 102.53332755 157.83431277 298.92313278 335.66168769
+ 424.80178724 633.86992813 649.83218488]
+
+
+上位p個　 (42, 1)  >>>  [(73, 2), (16, 0), (66, 0), (81, 0), (68, 0), (76, 0), (93, 2), (75, 0)]
+各類似度　 (42, 1)  :  [ 46.42781087 153.6347239  201.52977093 279.24624033 291.62090656
+ 373.07650669 405.55673534 503.90808116]
+
+
+上位p個　 (42, 2)  >>>  [(41, 3), (64, 3), (63, 3), (7, 1), (44, 1), (80, 1), (93, 3), (10, 1)]
+各類似度　 (42, 2)  :  [101.95043565 218.73765942 239.42436856 260.14862272 416.45994193
+ 666.30929932 725.16993902 810.11274855]
+
+
+上位p個　 (42, 3)  >>>  [(69, 2), (80, 0), (4, 0), (80, 2), (85, 0), (5, 2), (81, 2), (4, 2)]
+各類似度　 (42, 3)  :  [  36.98758672  318.40946626  507.76594886  882.71662174  979.05801717
+  998.66881962 1063.10494844 1119.40155736]
+
+
+上位p個　 (43, 0)  >>>  [(39, 1), (54, 3), (7, 3), (99, 3), (56, 3), (94, 3), (41, 1), (80, 3)]
+各類似度　 (43, 0)  :  [ 48.87795214 186.54565321 190.2054025  353.6560382  376.42591219
+ 422.21253701 448.55829835 468.86581002]
+
+
+上位p個　 (43, 1)  >>>  [(32, 0), (87, 0), (22, 2), (38, 0), (89, 2), (33, 0), (99, 2), (51, 0)]
+各類似度　 (43, 1)  :  [ 1372.63258135  8092.11778501 16396.91144038 21629.58050885
+ 26139.74069031 26919.36592338 28117.63089374 29323.91198598]
+
+
+上位p個　 (43, 2)  >>>  [(69, 3), (86, 3), (22, 1), (54, 1), (36, 3), (30, 1), (24, 3), (89, 1)]
+各類似度　 (43, 2)  :  [ 61.91022468 110.35122163 372.20379275 400.50719179 436.37657428
+ 530.31905544 592.4932164  615.30042125]
+
+
+上位p個　 (43, 3)  >>>  [(41, 2), (7, 2), (22, 0), (32, 2), (96, 0), (24, 0), (63, 0), (10, 0)]
+各類似度　 (43, 3)  :  [  28.04760703  108.95656503  329.87771183  333.97753058  510.53407291
+  965.46942398 1001.54396019 1038.37184317]
+
+
+上位p個　 (44, 0)  >>>  [(19, 1), (57, 3), (92, 3), (57, 1), (13, 3), (84, 3), (76, 3), (95, 1)]
+各類似度　 (44, 0)  :  [ 304.68351771  379.75642124  388.93080426  523.61311184  628.60811959
+  912.47192221 1181.73340066 1261.15586682]
+
+
+上位p個　 (44, 1)  >>>  [(67, 0), (42, 0), (23, 2), (42, 2), (26, 0), (12, 0), (15, 0), (55, 0)]
+各類似度　 (44, 1)  :  [ 70.12759692  90.61482891 105.76811346 416.45994193 429.23308138
+ 561.76000999 604.97609425 664.1972741 ]
+
+
+上位p個　 (44, 2)  >>>  [(26, 1), (45, 3), (97, 1), (5, 1), (102, 0), (17, 1), (81, 3), (17, 3)]
+各類似度　 (44, 2)  :  [ 302.67421739  331.51648067  533.93339657  705.67167465  764.64101504
+ 1032.58650934 1110.49261219 1121.58789628]
+
+
+上位p個　 (44, 3)  >>>  [(27, 2), (75, 2), (59, 0), (85, 2), (86, 0), (85, 0), (100, 0), (53, 0)]
+各類似度　 (44, 3)  :  [5.19390747e+01 1.47891708e+04 4.35515045e+04 7.91274760e+04
+ 8.35882575e+04 9.24676173e+04 1.02808190e+05 1.14173772e+05]
+
+
+上位p個　 (45, 0)  >>>  [(36, 3), (24, 3), (69, 3), (89, 1), (54, 1), (22, 1), (69, 1), (30, 1)]
+各類似度　 (45, 0)  :  [ 39.27314055 101.77946034 341.07969518 451.60948997 523.39686665
+ 530.62662399 711.83368468 723.04350067]
+
+
+上位p個　 (45, 1)  >>>  [(46, 0), (23, 0), (26, 2), (34, 2), (92, 2), (18, 0), (57, 2), (61, 0)]
+各類似度　 (45, 1)  :  [1.04634790e+01 2.74993745e+03 3.98956300e+03 5.44630655e+03
+ 6.62552369e+03 9.49172272e+03 1.03260113e+04 1.10393947e+04]
+
+
+上位p個　 (45, 2)  >>>  [(49, 1), (30, 1), (69, 3), (93, 1), (32, 1), (86, 3), (24, 3), (36, 3)]
+各類似度　 (45, 2)  :  [ 95.36871202 138.46286955 195.29225952 218.93710609 222.30278335
+ 282.46649429 364.71856731 365.03177658]
+
+
+上位p個　 (45, 3)  >>>  [(6, 0), (89, 2), (63, 2), (9, 2), (99, 2), (82, 0), (91, 2), (44, 2)]
+各類似度　 (45, 3)  :  [ 44.90032365  50.07872902  67.00668775  77.64523263 117.10953594
+ 117.78990671 255.57389923 331.51648067]
+
+
+上位p個　 (46, 0)  >>>  [(45, 1), (66, 1), (14, 1), (91, 1), (93, 1), (60, 1), (21, 0), (63, 1)]
+各類似度　 (46, 0)  :  [1.04634790e+01 2.25535484e+03 2.84259715e+03 6.56292035e+03
+ 7.16586772e+03 8.13794387e+03 1.01726121e+04 1.71295603e+04]
+
+
+上位p個　 (46, 1)  >>>  [(47, 0), (53, 0), (19, 2), (83, 0), (28, 2), (53, 2), (62, 1), (31, 2)]
+各類似度　 (46, 1)  :  [ 181.31889883 2536.22443074 2980.91445046 3211.95285437 4046.09543605
+ 4476.12963035 5320.58189332 6193.01324797]
+
+
+上位p個　 (46, 2)  >>>  [()]
+(46, 2)  >>> Line
+
+
+上位p個　 (46, 3)  >>>  [(53, 2), (62, 1), (23, 2), (67, 0), (42, 0), (12, 0), (57, 0), (52, 2)]
+各類似度　 (46, 3)  :  [ 137.87455696  426.56463782  957.94791402 1196.06909478 1497.82405132
+ 2033.53289562 2039.96227263 2214.13590217]
+
+
+上位p個　 (47, 0)  >>>  [(33, 1), (46, 1), (51, 1), (65, 1), (60, 3), (63, 1), (64, 3), (16, 3)]
+各類似度　 (47, 0)  :  [  99.02292871  181.31889883  479.78809032  678.21269569 1345.96512599
+ 4651.41409875 4987.78244986 5124.51651008]
+
+
+上位p個　 (47, 1)  >>>  [(36, 2), (64, 0), (36, 0), (98, 0), (80, 2), (1, 0), (5, 0), (3, 2)]
+各類似度　 (47, 1)  :  [ 29.20185294 110.26943621 178.85590109 343.16524964 395.50928092
+ 432.62106728 561.69685006 712.19139985]
+
+
+上位p個　 (47, 2)  >>>  [(38, 3), (63, 1), (94, 1), (96, 1), (27, 1), (60, 1), (66, 3), (93, 3)]
+各類似度　 (47, 2)  :  [ 78.65353407 193.07144048 194.75770415 218.17774338 305.5051733
+ 411.7292492  431.7874262  795.30142801]
+
+
+上位p個　 (47, 3)  >>>  [()]
+(47, 3)  >>> Line
+
+
+上位p個　 (48, 0)  >>>  [(32, 3), (9, 1), (22, 3), (44, 1), (10, 1), (7, 1), (75, 1), (41, 3)]
+各類似度　 (48, 0)  :  [  34.63705658  436.32569439  487.1766533   774.4845363  1198.48945664
+ 1299.47964012 1491.85806439 2149.85829843]
+
+
+上位p個　 (48, 1)  >>>  [(66, 0), (81, 0), (73, 2), (16, 0), (93, 2), (68, 0), (76, 0), (75, 0)]
+各類似度　 (48, 1)  :  [ 22.90447902 145.42469144 180.04522771 186.32933993 218.0230217
+ 369.58766094 553.7069738  646.27158304]
+
+
+上位p個　 (48, 2)  >>>  [(68, 1), (56, 3), (94, 3), (80, 3), (39, 1), (54, 3), (7, 3), (99, 3)]
+各類似度　 (48, 2)  :  [  36.04922891 2070.32779208 2077.04701743 2088.27899636 2118.57620183
+ 2268.89406064 2602.87780467 3831.3176688 ]
+
+
+上位p個　 (48, 3)  >>>  [(35, 2), (69, 2), (69, 0), (80, 0), (60, 2), (9, 2), (39, 0), (65, 0)]
+各類似度　 (48, 3)  :  [ 242.71173085  453.70452075  528.48001776  756.28127365 1164.85582774
+ 1254.22233832 1254.30726587 1275.9500079 ]
+
+
+上位p個　 (49, 0)  >>>  [(88, 3), (5, 1), (71, 3), (88, 1), (12, 3), (19, 3), (81, 1), (58, 3)]
+各類似度　 (49, 0)  :  [ 15.99656902 262.23187842 351.83103013 586.90054765 601.55080226
+ 621.51675848 727.18531412 817.41269706]
+
+
+上位p個　 (49, 1)  >>>  [(45, 2), (95, 2), (12, 2), (15, 2), (58, 0), (57, 2), (26, 2), (45, 0)]
+各類似度　 (49, 1)  :  [ 95.36871202 140.92115412 244.77537596 358.79875165 382.29961573
+ 521.47499429 801.16912388 851.52320642]
+
+
+上位p個　 (49, 2)  >>>  [(53, 1), (57, 3), (95, 1), (57, 1), (84, 3), (92, 3), (20, 1), (19, 1)]
+各類似度　 (49, 2)  :  [6.79408738e+01 8.09505654e+04 8.56360286e+04 1.06902350e+05
+ 1.36999718e+05 1.38319455e+05 1.46033223e+05 1.49479900e+05]
+
+
+上位p個　 (49, 3)  >>>  [(58, 2), (50, 0), (0, 2), (71, 0), (101, 1), (40, 2), (42, 2), (97, 2)]
+各類似度　 (49, 3)  :  [ 154.17787374  183.59467735  520.01465725 1070.90257954 1196.92090228
+ 1354.31978795 1508.27681783 1710.55115994]
+
+
+上位p個　 (50, 0)  >>>  [(39, 1), (49, 3), (41, 1), (99, 3), (36, 1), (54, 3), (64, 1), (7, 3)]
+各類似度　 (50, 0)  :  [ 62.8529253  183.59467735 301.2008807  349.97889145 547.36460973
+ 666.26427018 762.44010235 852.80115295]
+
+
+上位p個　 (50, 1)  >>>  [(51, 0), (32, 2), (63, 2), (99, 2), (56, 2), (79, 0), (14, 2), (89, 2)]
+各類似度　 (50, 1)  :  [ 295.02052012  698.14745149  698.76151676 1191.55075923 1224.4232893
+ 1336.77091183 1392.86691578 1805.08659167]
+
+
+上位p個　 (50, 2)  >>>  [(54, 1), (89, 1), (79, 3), (85, 3), (33, 3), (10, 3), (69, 3), (36, 3)]
+各類似度　 (50, 2)  :  [  95.10221054  355.83351277  412.46432663  635.97903389  847.91868135
+ 1349.52936789 1594.91139014 1728.76750963]
+
+
+上位p個　 (50, 3)  >>>  [(56, 0), (3, 2), (85, 2), (4, 2), (99, 0), (80, 0), (85, 0), (4, 0)]
+各類似度　 (50, 3)  :  [  58.48769759  354.01502878  743.0564924   822.23086737  960.74971021
+ 1036.53739893 1149.43056783 1205.42480477]
+
+
+上位p個　 (51, 0)  >>>  [(50, 1), (26, 1), (17, 3), (71, 1), (45, 3), (3, 1), (5, 1), (26, 3)]
+各類似度　 (51, 0)  :  [ 295.02052012 1057.44366022 1071.68018806 1086.2601995  1527.16821559
+ 1626.39091197 1656.58579524 2163.2807679 ]
+
+
+上位p個　 (51, 1)  >>>  [(53, 0), (28, 2), (47, 0), (52, 0), (61, 2), (37, 2), (18, 0), (90, 0)]
+各類似度　 (51, 1)  :  [ 102.13498124  224.40490427  479.78809032 1233.91790006 1363.04075946
+ 2258.24563202 5387.6232048  6179.25458904]
+
+
+上位p個　 (51, 2)  >>>  [()]
+(51, 2)  >>> Line
+
+
+上位p個　 (51, 3)  >>>  [(52, 2), (8, 1), (36, 2), (98, 0), (85, 2), (92, 0), (13, 0), (81, 2)]
+各類似度　 (51, 3)  :  [ 792.25005654 1292.50997612 1964.21301559 2034.18332178 3613.66723657
+ 3989.15941926 4472.74975991 5006.1230688 ]
+
+
+上位p個　 (52, 0)  >>>  [(60, 3), (8, 2), (38, 1), (65, 1), (73, 3), (51, 1), (35, 3), (21, 0)]
+各類似度　 (52, 0)  :  [ 190.9548699   571.37425196  834.48625886  936.50507237 1219.99613381
+ 1233.91790006 2149.68565802 2710.31023405]
+
+
+上位p個　 (52, 1)  >>>  [(30, 2), (54, 2), (1, 0), (55, 0), (26, 0), (64, 2), (13, 0), (42, 0)]
+各類似度　 (52, 1)  :  [164.23273572 317.51591999 331.87224658 334.26936159 494.75495424
+ 552.79160815 597.86946597 633.86992813]
+
+
+上位p個　 (52, 2)  >>>  [(65, 3), (51, 3), (14, 3), (47, 1), (15, 3), (46, 3), (32, 3), (87, 3)]
+各類似度　 (52, 2)  :  [ 669.36486533  792.25005654 1485.37994946 1793.23200822 2104.87699315
+ 2214.13590217 2410.05441712 2584.95995424]
+
+
+上位p個　 (52, 3)  >>>  [()]
+(52, 3)  >>> Line
+
+
+上位p個　 (53, 0)  >>>  [(51, 1), (65, 1), (60, 3), (33, 1), (46, 1), (63, 1), (79, 1), (38, 1)]
+各類似度　 (53, 0)  :  [ 102.13498124  823.30689777 1582.6377321  1714.18696598 2536.22443074
+ 4500.14539339 5071.72904241 5470.47464206]
+
+
+上位p個　 (53, 1)  >>>  [(49, 2), (21, 3), (94, 2), (44, 0), (68, 2), (77, 2), (87, 0), (79, 0)]
+各類似度　 (53, 1)  :  [6.79408738e+01 6.63648795e+04 1.04010660e+05 1.11802727e+05
+ 1.77337463e+05 2.56574259e+05 2.69219162e+05 2.79838952e+05]
+
+
+上位p個　 (53, 2)  >>>  [(46, 3), (65, 3), (66, 3), (80, 1), (63, 3), (56, 1), (33, 1), (44, 1)]
+各類似度　 (53, 2)  :  [ 137.87455696  184.72653779 2174.2958776  2331.68830183 2559.13968576
+ 3055.29422939 3149.7628121  3291.11003273]
+
+
+上位p個　 (53, 3)  >>>  [()]
+(53, 3)  >>> Line
+
+
+上位p個　 (54, 0)  >>>  [(55, 1), (40, 1), (55, 3), (103, 1), (52, 1), (25, 3), (87, 3), (14, 3)]
+各類似度　 (54, 0)  :  [  32.22126133  948.69135786 1886.69135667 2179.01347411 2844.17188005
+ 3198.49623814 3236.95577236 3412.79048461]
+
+
+上位p個　 (54, 1)  >>>  [(50, 2), (43, 2), (45, 0), (0, 0), (25, 0), (27, 0), (90, 2), (88, 0)]
+各類似度　 (54, 1)  :  [  95.10221054  400.50719179  523.39686665  617.12356506  729.35699544
+  927.5442275   972.89926889 1211.12861608]
+
+
+上位p個　 (54, 2)  >>>  [(80, 1), (63, 3), (74, 3), (52, 1), (70, 1), (75, 3), (55, 3), (16, 3)]
+各類似度　 (54, 2)  :  [156.07215425 157.18649923 224.26759254 317.51591999 320.95449605
+ 331.02309008 337.99926864 390.87033483]
+
+
+上位p個　 (54, 3)  >>>  [(43, 0), (95, 0), (71, 2), (76, 2), (58, 2), (40, 2), (67, 2), (103, 2)]
+各類似度　 (54, 3)  :  [186.54565321 194.52172776 204.50617266 255.39453873 332.8006939
+ 355.55073393 365.81462403 614.77746153]
+
+
+上位p個　 (55, 0)  >>>  [(56, 1), (14, 3), (52, 1), (87, 3), (75, 1), (22, 3), (44, 1), (1, 3)]
+各類似度　 (55, 0)  :  [178.03225783 225.49312207 334.26936159 412.07513794 413.28689722
+ 445.84782532 664.1972741  892.7373361 ]
+
+
+上位p個　 (55, 1)  >>>  [(54, 0), (39, 2), (64, 2), (54, 2), (66, 0), (16, 0), (14, 0), (30, 2)]
+各類似度　 (55, 1)  :  [  32.22126133 1178.39445505 1944.60751279 2647.91208026 2854.73286744
+ 3726.11254126 4053.78104425 4099.0040499 ]
+
+
+上位p個　 (55, 2)  >>>  [(63, 1), (60, 1), (77, 1), (82, 3), (14, 1), (73, 1), (79, 1), (99, 1)]
+各類似度　 (55, 2)  :  [ 276.38156189  340.48131758 1118.98948555 1147.24974423 1264.49177481
+ 1443.48715994 1881.53545415 2180.41774833]
+
+
+上位p個　 (55, 3)  >>>  [(64, 2), (30, 2), (1, 0), (54, 2), (16, 0), (14, 0), (66, 0), (13, 0)]
+各類似度　 (55, 3)  :  [ 58.30241056 175.54834308 323.55477769 337.99926864 359.19184906
+ 458.46671122 580.81048923 748.18684541]
+
+
+上位p個　 (56, 0)  >>>  [(50, 3), (2, 1), (97, 3), (2, 3), (98, 3), (90, 1), (101, 2), (90, 3)]
+各類似度　 (56, 0)  :  [  58.48769759  535.3602      668.15989768  696.88579321 1075.48135975
+ 1207.3291006  1217.80784917 1255.28181407]
+
+
+上位p個　 (56, 1)  >>>  [(55, 0), (23, 2), (42, 0), (13, 0), (30, 2), (1, 0), (64, 0), (36, 2)]
+各類似度　 (56, 1)  :  [ 178.03225783  538.52569513  866.19832752  929.47309883  976.49236824
+ 1163.08920553 1573.53227161 1601.36577272]
+
+
+上位p個　 (56, 2)  >>>  [(13, 3), (19, 1), (29, 3), (71, 1), (57, 1), (76, 3), (92, 3), (50, 1)]
+各類似度　 (56, 2)  :  [ 121.47703484  149.1290016   585.40397217  918.55742586 1064.69223979
+ 1084.35299147 1118.51139585 1224.4232893 ]
+
+
+上位p個　 (56, 3)  >>>  [(76, 2), (95, 0), (58, 2), (40, 2), (67, 2), (43, 0), (103, 2), (102, 1)]
+各類似度　 (56, 3)  :  [152.602404   192.19185304 237.67297076 303.08667051 313.20698129
+ 376.42591219 592.51428136 711.85141633]
+
+
+上位p個　 (57, 0)  >>>  [(66, 3), (63, 3), (94, 1), (80, 1), (75, 3), (96, 1), (42, 1), (64, 3)]
+各類似度　 (57, 0)  :  [  46.82617423  246.14489888  460.32785146  493.66405419  574.41288905
+  989.54769585 1123.56452515 1328.24100972]
+
+
+上位p個　 (57, 1)  >>>  [(68, 2), (44, 0), (79, 0), (77, 2), (56, 2), (94, 2), (41, 0), (14, 2)]
+各類似度　 (57, 1)  :  [ 458.30225364  523.61311184  723.97195585 1044.22958281 1064.69223979
+ 1710.74604924 2061.75404459 5385.19099194]
+
+
+上位p個　 (57, 2)  >>>  [(93, 1), (66, 1), (32, 1), (30, 1), (49, 1), (59, 3), (86, 3), (69, 3)]
+各類似度　 (57, 2)  :  [  48.25981576  221.43940475  435.72393847  487.79278305  521.47499429
+  980.74054919 1143.97442185 1516.90273585]
+
+
+上位p個　 (57, 3)  >>>  [(68, 2), (44, 0), (21, 3), (77, 2), (79, 0), (41, 0), (56, 2), (94, 2)]
+各類似度　 (57, 3)  :  [ 239.69368859  379.75642124  528.70264369 1012.30060952 1398.12060265
+ 1796.86315857 1973.81434091 2284.08739983]
+
+
+上位p個　 (58, 0)  >>>  [(49, 1), (24, 3), (30, 1), (59, 3), (36, 3), (32, 1), (69, 3), (4, 3)]
+各類似度　 (58, 0)  :  [382.29961573 432.73240845 478.34375276 593.81343342 662.41066331
+ 712.5896206  903.9065803  955.91955783]
+
+
+上位p個　 (58, 1)  >>>  [(94, 0), (63, 0), (41, 2), (7, 2), (24, 2), (22, 2), (35, 2), (24, 0)]
+各類似度　 (58, 1)  :  [  234.87200525  4593.8841821  10314.54133757 10380.19619208
+ 10425.9059879  13840.45656621 14065.71692285 15142.39957422]
+
+
+上位p個　 (58, 2)  >>>  [(64, 1), (80, 3), (41, 1), (39, 1), (49, 3), (99, 3), (56, 3), (93, 3)]
+各類似度　 (58, 2)  :  [ 74.40916405 111.26781756 112.62026011 124.29146603 154.17787374
+ 199.27497412 237.67297076 263.31807193]
+
+
+上位p個　 (58, 3)  >>>  [(65, 0), (60, 2), (80, 0), (96, 2), (39, 0), (4, 0), (82, 0), (4, 2)]
+各類似度　 (58, 3)  :  [ 20.83246204 157.68697999 160.90915802 195.46076579 248.80227758
+ 344.07620081 368.57637379 373.1106624 ]
+
+
+上位p個　 (59, 0)  >>>  [(62, 0), (98, 3), (11, 3), (13, 1), (70, 3), (2, 3), (42, 3), (98, 1)]
+各類似度　 (59, 0)  :  [  84.25139131 2915.98133273 3174.68184512 3781.61901171 3898.02071548
+ 8197.99620717 9217.20620133 9602.68608883]
+
+
+上位p個　 (59, 1)  >>>  [()]
+(59, 1)  >>> Line
+
+
+上位p個　 (59, 2)  >>>  [(101, 2), (23, 1), (25, 3), (90, 1), (87, 3), (12, 1), (103, 1), (0, 1)]
+各類似度　 (59, 2)  :  [ 479.78861902  720.08274812 1095.02123726 1885.89371195 1913.64144246
+ 1930.93057671 1983.26291645 2216.22142707]
+
+
+上位p個　 (59, 3)  >>>  [(102, 3), (95, 2), (12, 2), (15, 2), (45, 2), (58, 0), (17, 0), (17, 2)]
+各類似度　 (59, 3)  :  [136.60681792 144.53478649 231.04238846 269.72543716 385.66144801
+ 593.81343342 758.83984428 836.92521838]
+
+
+上位p個　 (60, 0)  >>>  [()]
+(60, 0)  >>> Line
+
+
+上位p個　 (60, 1)  >>>  [(61, 0), (55, 2), (47, 2), (92, 2), (67, 2), (97, 0), (102, 1), (76, 2)]
+各類似度　 (60, 1)  :  [  34.93775732  340.48131758  411.7292492   521.12083546  750.97971379
+  887.62969583 1007.72782996 1232.23766948]
+
+
+上位p個　 (60, 2)  >>>  [(88, 3), (12, 3), (58, 3), (81, 1), (102, 0), (71, 3), (88, 1), (67, 3)]
+各類似度　 (60, 2)  :  [ 52.75432243  82.22773566 157.68697999 238.08857103 348.63839355
+ 424.48914695 465.50671189 476.75718115]
+
+
+上位p個　 (60, 3)  >>>  [(28, 2), (52, 0), (61, 2), (37, 2), (47, 0), (18, 0), (53, 0), (74, 2)]
+各類似度　 (60, 3)  :  [ 113.02172107  190.9548699   269.88533849  813.57965732 1345.96512599
+ 1408.10140715 1582.6377321  3287.67773717]
+
+
+上位p個　 (61, 0)  >>>  [(60, 1), (63, 1), (14, 1), (73, 1), (91, 1), (77, 1), (96, 1), (65, 1)]
+各類似度　 (61, 0)  :  [  34.93775732  101.11581218  719.32481145 1050.56044766 1128.90250011
+ 1245.60275519 1854.78760303 1895.8418682 ]
+
+
+上位p個　 (61, 1)  >>>  [()]
+(61, 1)  >>> Line
+
+
+上位p個　 (61, 2)  >>>  [(60, 3), (8, 2), (65, 1), (73, 3), (38, 1), (35, 3), (51, 1), (21, 0)]
+各類似度　 (61, 2)  :  [ 269.88533849  293.29225295  560.39189524  670.73595016 1013.36820421
+ 1142.4668666  1363.04075946 1492.22558756]
+
+
+上位p個　 (61, 3)  >>>  [(16, 2), (80, 2), (93, 0), (91, 0), (89, 0), (64, 0), (36, 0), (10, 2)]
+各類似度　 (61, 3)  :  [ 69.16732076  75.02525118  77.0516797  129.4334665  213.09017302
+ 215.84898016 244.82519309 313.09644986]
+
+
+上位p個　 (62, 0)  >>>  [(59, 0), (85, 0), (4, 0), (85, 2), (3, 0), (60, 2), (34, 0), (3, 2)]
+各類似度　 (62, 0)  :  [   84.25139131  5142.86490474  5540.10481219  7077.03750689
+  8981.65968489 15095.7859741  15544.51590535 19251.59843987]
+
+
+上位p個　 (62, 1)  >>>  [(65, 3), (46, 3), (33, 1), (52, 1), (46, 1), (51, 1), (65, 1), (51, 3)]
+各類似度　 (62, 1)  :  [  71.15173856  426.56463782 2765.21910788 4081.88782381 5320.58189332
+ 8311.58504121 8322.6394707  8566.82503675]
+
+
+上位p個　 (62, 2)  >>>  [()]
+(62, 2)  >>> Line
+
+
+上位p個　 (62, 3)  >>>  [()]
+(62, 3)  >>> Line
+
+
+上位p個　 (63, 0)  >>>  [(102, 2), (20, 3), (5, 3), (43, 3), (40, 3), (26, 3), (71, 3), (67, 1)]
+各類似度　 (63, 0)  :  [  33.86225892  796.13098737  993.59157465 1001.54396019 1151.24470593
+ 1233.79869381 1236.6500557  1340.87845561]
+
+
+上位p個　 (63, 1)  >>>  [(61, 0), (47, 2), (55, 2), (97, 0), (57, 0), (71, 0), (61, 2), (92, 2)]
+各類似度　 (63, 1)  :  [ 101.11581218  193.07144048  276.38156189  974.79759244 1755.32011672
+ 1823.10371437 2052.43107948 2190.21147635]
+
+
+上位p個　 (63, 2)  >>>  [(17, 3), (45, 3), (17, 1), (71, 1), (26, 3), (5, 1), (95, 3), (19, 3)]
+各類似度　 (63, 2)  :  [ 30.42101764  67.00668775  87.64482865 129.88490665 163.58976883
+ 178.09237961 187.35939197 297.0164679 ]
+
+
+上位p個　 (63, 3)  >>>  [(81, 0), (103, 0), (76, 0), (67, 0), (54, 2), (101, 1), (42, 2), (57, 0)]
+各類似度　 (63, 3)  :  [ 31.25408686  42.91687493 107.15553892 131.0053859  157.18649923
+ 162.79110071 239.42436856 246.14489888]
+
+
+上位p個　 (64, 0)  >>>  [(12, 1), (23, 1), (47, 1), (92, 1), (87, 3), (1, 1), (0, 3), (90, 1)]
+各類似度　 (64, 0)  :  [ 19.33432354  47.0493257  110.26943621 117.81716449 119.28826911
+ 122.65983189 125.07022089 185.12224164]
+
+
+上位p個　 (64, 1)  >>>  [(58, 2), (0, 2), (101, 1), (71, 0), (50, 0), (42, 2), (40, 2), (76, 2)]
+各類似度　 (64, 1)  :  [  74.40916405   75.54413266  564.98635233  753.14494558  762.44010235
+ 1202.45695252 1533.14944729 1659.36332255]
+
+
+上位p個　 (64, 2)  >>>  [(74, 3), (55, 3), (103, 1), (25, 3), (70, 1), (23, 3), (87, 3), (16, 3)]
+各類似度　 (64, 2)  :  [ 25.96971473  58.30241056 137.87440529 204.3587544  231.97384712
+ 237.79881023 385.58474892 417.05988441]
+
+
+上位p個　 (64, 3)  >>>  [(71, 0), (42, 2), (15, 0), (101, 1), (67, 0), (12, 0), (0, 2), (11, 0)]
+各類似度　 (64, 3)  :  [  46.86607014  218.73765942  559.5247271   636.32296757  791.1653334
+  956.90836912 1143.26552937 1220.99316361]
+
+
+上位p個　 (65, 0)  >>>  [(58, 3), (81, 1), (102, 0), (67, 3), (0, 1), (97, 3), (81, 3), (88, 3)]
+各類似度　 (65, 0)  :  [ 20.83246204  62.40821157 200.66275123 240.22102735 247.56674133
+ 334.489996   360.67633901 367.66705462]
+
+
+上位p個　 (65, 1)  >>>  [(28, 2), (61, 2), (47, 0), (53, 0), (52, 0), (61, 0), (37, 2), (18, 0)]
+各類似度　 (65, 1)  :  [ 267.19334152  560.39189524  678.21269569  823.30689777  936.50507237
+ 1895.8418682  2158.31281398 2731.58588073]
+
+
+上位p個　 (65, 2)  >>>  [()]
+(65, 2)  >>> Line
+
+
+上位p個　 (65, 3)  >>>  [(62, 1), (53, 2), (52, 2), (31, 2), (55, 0), (83, 0), (19, 2), (36, 2)]
+各類似度　 (65, 3)  :  [  71.15173856  184.72653779  669.36486533  718.09725481 1821.90086474
+ 2182.88199927 2810.79082354 2857.60715387]
+
+
+上位p個　 (66, 0)  >>>  [(48, 1), (75, 3), (80, 1), (42, 1), (70, 1), (27, 1), (74, 3), (63, 3)]
+各類似度　 (66, 0)  :  [ 22.90447902  61.21252035 135.02330858 201.52977093 237.49198978
+ 344.94199162 402.71961364 520.99112031]
+
+
+上位p個　 (66, 1)  >>>  [(26, 2), (57, 2), (12, 2), (74, 0), (23, 0), (72, 0), (45, 2), (46, 0)]
+各類似度　 (66, 1)  :  [ 211.90920665  221.43940475  310.97287103  567.21042912  693.59329639
+  730.15675535  939.10384007 2255.3548413 ]
+
+
+上位p個　 (66, 2)  >>>  [(0, 1), (2, 1), (67, 3), (1, 1), (97, 3), (90, 1), (90, 3), (2, 3)]
+各類似度　 (66, 2)  :  [117.57199627 165.93425754 227.5355191  398.95753527 419.54046503
+ 431.60902958 434.31472528 520.03408441]
+
+
+上位p個　 (66, 3)  >>>  [(57, 0), (47, 2), (81, 0), (76, 0), (71, 0), (97, 0), (67, 0), (42, 2)]
+各類似度　 (66, 3)  :  [  46.82617423  431.7874262   456.76805589  754.46992336  805.67862387
+  826.64499774  832.1824683  1091.69852758]
+
+
+上位p個　 (67, 0)  >>>  [(44, 1), (63, 3), (7, 1), (41, 3), (80, 1), (9, 1), (10, 1), (75, 3)]
+各類似度　 (67, 0)  :  [ 70.12759692 131.0053859  135.46318043 189.24689915 355.60609325
+ 421.78691693 508.69319788 718.58760239]
+
+
+上位p個　 (67, 1)  >>>  [(7, 2), (32, 2), (22, 0), (41, 2), (24, 0), (24, 2), (96, 0), (10, 0)]
+各類似度　 (67, 1)  :  [  71.87354714  292.04758978  320.42686693  469.08405566  563.83134112
+  605.55049755  749.84373125 1208.66195798]
+
+
+上位p個　 (67, 2)  >>>  [(7, 3), (94, 3), (99, 1), (39, 1), (56, 3), (54, 3), (99, 3), (80, 3)]
+各類似度　 (67, 2)  :  [ 64.99809067 170.68012034 174.97268556 280.46845346 313.20698129
+ 365.81462403 462.14331    514.70164825]
+
+
+上位p個　 (67, 3)  >>>  [(80, 0), (66, 2), (4, 2), (65, 0), (89, 0), (4, 0), (7, 0), (96, 2)]
+各類似度　 (67, 3)  :  [223.82577223 227.5355191  234.75671013 240.22102735 295.5164208
+ 343.00452635 384.38248606 435.92731911]
+
+
+上位p個　 (68, 0)  >>>  [(70, 1), (74, 3), (42, 1), (75, 3), (48, 1), (80, 1), (16, 3), (27, 1)]
+各類似度　 (68, 0)  :  [ 55.99334055 117.09313852 291.62090656 346.40017849 369.58766094
+ 774.04109955 809.97974311 989.52827253]
+
+
+上位p個　 (68, 1)  >>>  [(48, 2), (76, 2), (67, 2), (95, 0), (71, 2), (103, 2), (43, 0), (58, 2)]
+各類似度　 (68, 1)  :  [  36.04922891 2528.39679757 2894.02778158 3138.46163991 3447.48431168
+ 4049.28316955 4556.5786955  5338.40253722]
+
+
+上位p個　 (68, 2)  >>>  [(19, 1), (13, 3), (84, 3), (76, 3), (72, 3), (57, 3), (92, 3), (57, 1)]
+各類似度　 (68, 2)  :  [ 44.93858027  57.67725987  91.68511157 135.38804728 199.55035469
+ 239.69368859 407.96173329 458.30225364]
+
+
+上位p個　 (68, 3)  >>>  [(92, 0), (98, 0), (48, 0), (36, 2), (52, 2), (8, 1), (55, 0), (10, 2)]
+各類似度　 (68, 3)  :  [  65.93247966 1940.90878741 2809.07117455 2843.4713183  4185.1841539
+ 5290.10945746 6645.75001334 6981.30228489]
+
+
+上位p個　 (69, 0)  >>>  [(48, 3), (42, 3), (90, 3), (92, 1), (61, 3), (102, 0), (67, 3), (78, 3)]
+各類似度　 (69, 0)  :  [ 528.48001776 1605.43678949 2066.36943047 2349.45585988 2542.37411457
+ 2807.41536201 2827.39407361 3006.43779462]
+
+
+上位p個　 (69, 1)  >>>  [(17, 2), (70, 0), (20, 0), (15, 2), (95, 2), (45, 0), (25, 0), (102, 3)]
+各類似度　 (69, 1)  :  [  93.53030987  103.24830141  336.65357741  434.34485992  586.77145931
+  711.83368468  862.80216507 1126.4193552 ]
+
+
+上位p個　 (69, 2)  >>>  [(42, 3), (48, 3), (11, 3), (90, 3), (102, 0), (11, 1), (12, 3), (98, 3)]
+各類似度　 (69, 2)  :  [ 36.98758672 453.70452075 521.8818511  662.17448007 679.56325145
+ 728.16418807 743.85767344 826.07526416]
+
+
+上位p個　 (69, 3)  >>>  [(43, 2), (45, 2), (25, 0), (45, 0), (29, 0), (27, 0), (58, 0), (95, 2)]
+各類似度　 (69, 3)  :  [ 61.91022468 195.29225952 264.69344398 341.07969518 409.47294761
+ 499.77040267 903.9065803  976.06420248]
+
+
+上位p個　 (70, 0)  >>>  [(69, 1), (24, 3), (4, 3), (36, 3), (89, 1), (69, 3), (100, 3), (30, 1)]
+各類似度　 (70, 0)  :  [ 103.24830141  195.22260205  365.24604148  626.91843413  733.37871745
+ 1690.43629444 2386.13711182 2427.73565883]
+
+
+上位p個　 (70, 1)  >>>  [(68, 0), (14, 0), (16, 0), (64, 2), (66, 0), (75, 0), (73, 2), (54, 2)]
+各類似度　 (70, 1)  :  [ 55.99334055  63.52097107  71.26374954 231.97384712 237.49198978
+ 238.20905596 310.08577932 320.95449605]
+
+
+上位p個　 (70, 2)  >>>  [(79, 3), (89, 3), (31, 3), (85, 3), (54, 1), (89, 1), (6, 1), (10, 3)]
+各類似度　 (70, 2)  :  [ 106.90136887  536.47224354 1009.5136948  2227.22199102 2676.94000321
+ 4198.24044322 5522.62631642 6003.54847854]
+
+
+上位p個　 (70, 3)  >>>  [(75, 2), (59, 0), (85, 2), (85, 0), (27, 2), (34, 0), (56, 0), (3, 0)]
+各類似度　 (70, 3)  :  [  362.62019283  3898.02071548  9744.29427568 12436.78872891
+ 12551.77684594 13767.0917294  18614.82806492 18839.21624351]
+
+
+上位p個　 (71, 0)  >>>  [(64, 3), (93, 3), (79, 1), (63, 3), (64, 1), (66, 3), (80, 3), (49, 3)]
+各類似度　 (71, 0)  :  [  46.86607014  180.08621414  518.32585919  529.95723878  753.14494558
+  805.67862387  856.08362213 1070.90257954]
+
+
+上位p個　 (71, 1)  >>>  [(32, 2), (63, 2), (24, 0), (7, 2), (79, 0), (56, 2), (24, 2), (51, 0)]
+各類似度　 (71, 1)  :  [ 104.20582683  129.88490665  233.97083991  449.30920756  902.32135441
+  918.55742586 1045.46817214 1086.2601995 ]
+
+
+上位p個　 (71, 2)  >>>  [(7, 3), (54, 3), (39, 1), (99, 1), (94, 3), (31, 1), (56, 3), (99, 3)]
+各類似度　 (71, 2)  :  [158.9014497  204.50617266 316.4149969  468.96771094 527.25946715
+ 686.31895164 728.0320296  819.27038151]
+
+
+上位p個　 (71, 3)  >>>  [(41, 2), (96, 0), (22, 0), (10, 0), (7, 2), (6, 2), (32, 2), (49, 0)]
+各類似度　 (71, 3)  :  [ 24.51552771 165.61717923 169.07646455 203.58001194 208.9207633
+ 214.99521324 309.50657653 351.83103013]
+
+
+上位p個　 (72, 0)  >>>  [(77, 1), (82, 3), (73, 1), (66, 1), (32, 1), (93, 1), (86, 3), (59, 3)]
+各類似度　 (72, 0)  :  [ 146.44559951  171.62204257  655.04350765  730.15675535  730.50058554
+ 1144.74515887 1892.64929533 1940.12590443]
+
+
+上位p個　 (72, 1)  >>>  [()]
+(72, 1)  >>> Line
+
+
+上位p個　 (72, 2)  >>>  [(35, 3), (73, 3), (8, 2), (77, 3), (21, 0), (82, 1), (77, 1), (30, 1)]
+各類似度　 (72, 2)  :  [ 366.45475564 1203.48839779 2825.86130743 3368.87065708 3835.17730563
+ 5024.54687725 5125.17640687 5827.43121044]
+
+
+上位p個　 (72, 3)  >>>  [(77, 2), (68, 2), (41, 0), (79, 0), (21, 3), (44, 0), (56, 2), (14, 2)]
+各類似度　 (72, 3)  :  [ 174.40656518  199.55035469  301.88757686  463.88727454  727.00073083
+ 3196.23202861 3862.83268747 5015.56005806]
+
+
+上位p個　 (73, 0)  >>>  [()]
+(73, 0)  >>> Line
+
+
+上位p個　 (73, 1)  >>>  [(72, 0), (61, 0), (74, 0), (55, 2), (78, 0), (34, 2), (78, 2), (23, 0)]
+各類似度　 (73, 1)  :  [ 655.04350765 1050.56044766 1085.56783166 1443.48715994 1481.29495355
+ 1500.37968882 2261.3843598  2417.08840559]
+
+
+上位p個　 (73, 2)  >>>  [(42, 1), (75, 3), (80, 1), (48, 1), (70, 1), (27, 1), (63, 3), (96, 1)]
+各類似度　 (73, 2)  :  [ 46.42781087  62.6023397  147.5010528  180.04522771 310.08577932
+ 387.76676448 436.42688818 483.69929062]
+
+
+上位p個　 (73, 3)  >>>  [(74, 2), (78, 2), (34, 2), (61, 2), (72, 2), (52, 0), (84, 2), (18, 0)]
+各類似度　 (73, 3)  :  [  60.75984613   98.35090687  560.30937544  670.73595016 1203.48839779
+ 1219.99613381 1527.63411745 1886.91079214]
+
+
+上位p個　 (74, 0)  >>>  [(82, 3), (77, 1), (66, 1), (32, 1), (73, 1), (93, 1), (59, 3), (86, 3)]
+各類似度　 (74, 0)  :  [ 220.00775222  266.47942006  567.21042912  579.42881142 1085.56783166
+ 1132.92314561 1430.06523954 1880.95644963]
+
+
+上位p個　 (74, 1)  >>>  [()]
+(74, 1)  >>> Line
+
+
+上位p個　 (74, 2)  >>>  [(73, 3), (35, 3), (77, 3), (82, 1), (21, 0), (38, 1), (60, 3), (73, 1)]
+各類似度　 (74, 2)  :  [  60.75984613  198.26734166  479.5765092   867.5028038  1673.23874477
+ 3197.07484585 3287.67773717 3472.89909751]
+
+
+上位p個　 (74, 3)  >>>  [(64, 2), (14, 0), (16, 0), (68, 0), (54, 2), (75, 0), (30, 2), (83, 0)]
+各類似度　 (74, 3)  :  [ 25.96971473  40.85491901 100.78514562 117.09313852 224.26759254
+ 274.34453551 307.02067687 348.07934968]
+
+
+上位p個　 (75, 0)  >>>  [(70, 1), (74, 3), (42, 1), (48, 1), (80, 1), (16, 3), (27, 1), (63, 3)]
+各類似度　 (75, 0)  :  [ 238.20905596  274.34453551  503.90808116  646.27158304  701.25504665
+  997.5717948  1382.59053019 1671.25921264]
+
+
+上位p個　 (75, 1)  >>>  [(23, 2), (42, 0), (55, 0), (13, 0), (67, 0), (26, 0), (48, 0), (36, 2)]
+各類似度　 (75, 1)  :  [ 141.55165253  157.83431277  413.28689722 1034.16412799 1271.51155022
+ 1343.81088722 1491.85806439 1760.0630751 ]
+
+
+上位p個　 (75, 2)  >>>  [(70, 3), (62, 0), (35, 1), (13, 1), (48, 3), (98, 3), (102, 2), (50, 3)]
+各類似度　 (75, 2)  :  [  362.62019283  4454.12119339 10536.97376649 10881.1653358
+ 11468.2204628  13516.03890578 13831.13065117 14031.91402517]
+
+
+上位p個　 (75, 3)  >>>  [(81, 0), (66, 0), (73, 2), (76, 0), (16, 0), (93, 2), (103, 0), (54, 2)]
+各類似度　 (75, 3)  :  [  7.72504316  61.21252035  62.6023397   68.83625531  85.12286109
+ 164.85480761 279.35597932 331.02309008]
+
+
+上位p個　 (76, 0)  >>>  [(75, 3), (63, 3), (80, 1), (42, 1), (48, 1), (27, 1), (66, 3), (70, 1)]
+各類似度　 (76, 0)  :  [ 68.83625531 107.15553892 277.01910571 373.07650669 553.7069738
+ 643.40666076 754.46992336 768.96663609]
+
+
+上位p個　 (76, 1)  >>>  [(79, 2), (39, 2), (54, 0), (33, 0), (87, 2), (64, 0), (36, 0), (1, 0)]
+各類似度　 (76, 1)  :  [  159.05210382  8228.35456401 13036.91012097 28523.44179553
+ 39425.94804301 51147.52799192 55976.76016661 56667.08771317]
+
+
+上位p個　 (76, 2)  >>>  [(80, 3), (39, 1), (56, 3), (99, 3), (93, 3), (54, 3), (41, 1), (94, 3)]
+各類似度　 (76, 2)  :  [ 44.56666151 146.31301498 152.602404   179.08125102 235.57894969
+ 255.39453873 368.97609094 421.53115937]
+
+
+上位p個　 (76, 3)  >>>  [(79, 0), (77, 2), (68, 2), (41, 0), (21, 3), (56, 2), (44, 0), (14, 2)]
+各類似度　 (76, 3)  :  [ 108.47174874  135.09797728  135.38804728  341.91902584 1065.55229535
+ 1084.35299147 1181.73340066 2442.07029243]
+
+
+上位p個　 (77, 0)  >>>  [()]
+(77, 0)  >>> Line
+
+
+上位p個　 (77, 1)  >>>  [(72, 0), (74, 0), (78, 0), (23, 0), (55, 2), (61, 0), (34, 2), (78, 2)]
+各類似度　 (77, 1)  :  [ 146.44559951  266.47942006  518.70791009  979.97369951 1118.98948555
+ 1245.60275519 1673.76708043 2265.86767845]
+
+
+上位p個　 (77, 2)  >>>  [(13, 3), (19, 1), (76, 3), (72, 3), (84, 3), (29, 3), (92, 3), (57, 3)]
+各類似度　 (77, 2)  :  [  47.22069505   91.20553991  135.09797728  174.40656518  336.58905269
+  582.44779129  719.60858446 1012.30060952]
+
+
+上位p個　 (77, 3)  >>>  [(78, 2), (74, 2), (84, 2), (34, 2), (61, 2), (90, 0), (72, 2), (55, 2)]
+各類似度　 (77, 3)  :  [  90.56974386  479.5765092  1252.70703088 1802.4182944  2530.83872206
+ 3020.07290815 3368.87065708 4146.83093329]
+
+
+上位p個　 (78, 0)  >>>  [(82, 3), (32, 1), (77, 1), (86, 3), (30, 1), (73, 1), (59, 3), (49, 1)]
+各類似度　 (78, 0)  :  [ 120.60374771  504.8763707   518.70791009 1049.17888906 1234.89726583
+ 1481.29495355 1683.03474895 1709.76314752]
+
+
+上位p個　 (78, 1)  >>>  [()]
+(78, 1)  >>> Line
+
+
+上位p個　 (78, 2)  >>>  [(77, 3), (73, 3), (35, 3), (82, 1), (73, 1), (77, 1), (21, 0), (60, 3)]
+各類似度　 (78, 2)  :  [  90.56974386   98.35090687  453.70807292  515.4317111  2261.3843598
+ 2265.86767845 2576.67235458 4003.22603528]
+
+
+上位p個　 (78, 3)  >>>  [(80, 2), (80, 0), (3, 2), (93, 0), (4, 2), (81, 2), (91, 0), (65, 0)]
+各類似度　 (78, 3)  :  [ 12.90757306  57.71542369 184.06692775 248.02930035 259.93780587
+ 273.4542115  302.91326802 386.98962515]
+
+
+上位p個　 (79, 0)  >>>  [(19, 1), (13, 3), (76, 3), (84, 3), (92, 3), (72, 3), (29, 3), (57, 1)]
+各類似度　 (79, 0)  :  [ 63.45409417  69.96797787 108.47174874 387.40345013 418.70105987
+ 463.88727454 568.19876977 723.97195585]
+
+
+上位p個　 (79, 1)  >>>  [(90, 0), (71, 0), (102, 1), (55, 2), (61, 0), (47, 2), (67, 2), (101, 1)]
+各類似度　 (79, 1)  :  [ 455.00867243  518.32585919 1754.18848569 1881.53545415 2197.30566183
+ 2816.23583666 3322.75663173 3337.73191975]
+
+
+上位p個　 (79, 2)  >>>  [(76, 1), (40, 1), (25, 1), (55, 1), (0, 3), (103, 1), (61, 3), (92, 1)]
+各類似度　 (79, 2)  :  [  159.05210382  4012.02997499  9750.08846069 14907.78715199
+ 26946.0194284  33369.48796958 34748.97049087 37547.48844238]
+
+
+上位p個　 (79, 3)  >>>  [(70, 2), (88, 0), (88, 2), (50, 2), (37, 0), (43, 2), (90, 2), (25, 0)]
+各類似度　 (79, 3)  :  [ 106.90136887  204.3506503   233.43909852  412.46432663 1808.38150517
+ 2617.50934217 2789.5115042  3078.23947722]
+
+
+上位p個　 (80, 0)  >>>  [(90, 3), (78, 3), (97, 3), (58, 3), (67, 3), (81, 1), (12, 3), (2, 3)]
+各類似度　 (80, 0)  :  [  8.4897847   57.71542369  66.70173421 160.90915802 223.82577223
+ 247.33619013 279.7270046  289.73904368]
+
+
+上位p個　 (80, 1)  >>>  [(81, 0), (16, 0), (66, 0), (73, 2), (54, 2), (103, 0), (76, 0), (67, 0)]
+各類似度　 (80, 1)  :  [ 32.77548219 105.8627772  135.02330858 147.5010528  156.07215425
+ 194.00169221 277.01910571 355.60609325]
+
+
+上位p個　 (80, 2)  >>>  [(78, 3), (92, 1), (61, 3), (90, 3), (97, 3), (96, 3), (102, 0), (90, 1)]
+各類似度　 (80, 2)  :  [ 12.90757306  34.06759901  75.02525118 113.95045451 215.83779405
+ 268.00303888 269.43343904 284.85002589]
+
+
+上位p個　 (80, 3)  >>>  [(76, 2), (58, 2), (102, 1), (95, 0), (0, 2), (43, 0), (40, 2), (67, 2)]
+各類似度　 (80, 3)  :  [ 44.56666151 111.26781756 198.49782634 274.15293096 449.72493164
+ 468.86581002 511.6099848  514.70164825]
+
+
+上位p個　 (81, 0)  >>>  [(75, 3), (63, 3), (80, 1), (48, 1), (42, 1), (27, 1), (66, 3), (94, 1)]
+各類似度　 (81, 0)  :  [  7.72504316  31.25408686  32.77548219 145.42469144 279.24624033
+ 310.36412251 456.76805589 540.18221074]
+
+
+上位p個　 (81, 1)  >>>  [(65, 0), (96, 2), (82, 0), (60, 2), (80, 0), (87, 2), (80, 2), (93, 0)]
+各類似度　 (81, 1)  :  [ 62.40821157  73.84614148 191.13006804 238.08857103 247.33619013
+ 312.59170548 355.99397916 357.50427161]
+
+
+上位p個　 (81, 2)  >>>  [(97, 3), (78, 3), (11, 1), (101, 2), (92, 1), (90, 3), (61, 3), (87, 1)]
+各類似度　 (81, 2)  :  [221.01331738 273.4542115  274.17833757 316.66803867 427.51648079
+ 485.44636392 516.82673009 571.08706408]
+
+
+上位p個　 (81, 3)  >>>  [(82, 0), (10, 2), (80, 2), (65, 0), (5, 2), (96, 2), (39, 0), (9, 2)]
+各類似度　 (81, 3)  :  [ 25.06756867 151.58400899 334.12880024 360.67633901 382.65365932
+ 383.45032573 442.28003234 708.2096639 ]
+
+
+上位p個　 (82, 0)  >>>  [(81, 3), (97, 1), (15, 1), (102, 0), (45, 3), (16, 1), (81, 1), (87, 1)]
+各類似度　 (82, 0)  :  [ 25.06756867  41.1142401   61.46753789  67.87154702 117.78990671
+ 142.05971362 191.13006804 222.43583665]
+
+
+上位p個　 (82, 1)  >>>  [(84, 2), (78, 2), (74, 2), (90, 0), (37, 2), (72, 2), (55, 2), (72, 0)]
+各類似度　 (82, 1)  :  [8.25247226e+00 5.15431711e+02 8.67502804e+02 1.79238204e+03
+ 2.57572886e+03 5.02454688e+03 7.77190120e+03 1.07383179e+04]
+
+
+上位p個　 (82, 2)  >>>  [()]
+(82, 2)  >>> Line
+
+
+上位p個　 (82, 3)  >>>  [(78, 0), (72, 0), (74, 0), (55, 2), (12, 2), (61, 0), (67, 2), (57, 2)]
+各類似度　 (82, 3)  :  [ 120.60374771  171.62204257  220.00775222 1147.24974423 1603.58285437
+ 2095.00351233 2650.17342592 2700.74339623]
+
+
+上位p個　 (83, 0)  >>>  [(74, 3), (80, 1), (75, 3), (16, 3), (70, 1), (63, 3), (42, 1), (48, 1)]
+各類似度　 (83, 0)  :  [ 348.07934968  420.00955583  429.5081777   439.91104168  456.01074967
+  478.8498519   678.8878824  1463.95175185]
+
+
+上位p個　 (83, 1)  >>>  [(49, 2), (21, 3), (94, 2), (44, 0), (87, 0), (68, 2), (77, 2), (79, 0)]
+各類似度　 (83, 1)  :  [18441426.78561487 28770399.36546746 31054560.46250324 33106332.28644251
+ 33639801.42670668 34607217.68335772 36659194.71234384 37543143.18052423]
+
+
+上位p個　 (83, 2)  >>>  [()]
+(83, 2)  >>> Line
+
+
+上位p個　 (83, 3)  >>>  [(86, 0), (100, 0), (31, 2), (85, 2), (47, 0), (85, 0), (59, 0), (27, 2)]
+各類似度　 (83, 3)  :  [ 3820.95351406 11583.59470675 17692.93062389 19066.08367711
+ 19262.78384673 19654.56447097 20261.49507834 24606.41754899]
+
+
+上位p個　 (84, 0)  >>>  [(86, 3), (69, 3), (22, 1), (10, 3), (54, 1), (85, 3), (89, 1), (30, 1)]
+各類似度　 (84, 0)  :  [ 557.08339652 1423.5555699  2532.67223934 2859.23393493 3334.60495416
+ 3669.76781613 4538.5754867  4558.44877613]
+
+
+上位p個　 (84, 1)  >>>  [()]
+(84, 1)  >>> Line
+
+
+上位p個　 (84, 2)  >>>  [(82, 1), (77, 3), (73, 3), (38, 1), (79, 1), (35, 3), (73, 1), (77, 1)]
+各類似度　 (84, 2)  :  [8.25247226e+00 1.25270703e+03 1.52763412e+03 4.54868924e+03
+ 7.27086109e+03 9.15926440e+03 1.00627155e+04 1.26509514e+04]
+
+
+上位p個　 (84, 3)  >>>  [(68, 2), (77, 2), (79, 0), (41, 0), (44, 0), (87, 0), (21, 3), (94, 2)]
+各類似度　 (84, 3)  :  [  91.68511157  336.58905269  387.40345013  656.9121947   912.47192221
+ 1088.89309777 1573.6598817  1633.06029949]
+
+
+上位p個　 (85, 0)  >>>  [(98, 3), (11, 1), (11, 3), (97, 3), (2, 3), (2, 1), (90, 3), (42, 3)]
+各類似度　 (85, 0)  :  [  4.59053984 256.67279802 266.51013126 465.41407882 487.33773821
+ 867.15001873 894.02716685 979.05801717]
+
+
+上位p個　 (85, 1)  >>>  [()]
+(85, 1)  >>> Line
+
+
+上位p個　 (85, 2)  >>>  [(98, 3), (11, 1), (11, 3), (98, 1), (50, 3), (2, 3), (97, 3), (2, 1)]
+各類似度　 (85, 2)  :  [ 289.2994219   534.78399628  551.84848208  674.88442106  743.0564924
+ 1024.64674176 1157.31942056 1302.6188118 ]
+
+
+上位p個　 (85, 3)  >>>  [(88, 0), (50, 2), (88, 2), (90, 2), (25, 0), (43, 2), (70, 2), (45, 0)]
+各類似度　 (85, 3)  :  [  38.34418227  635.97903389  770.64893587 1307.69573038 1788.85392488
+ 2009.55644533 2227.22199102 2649.87099256]
+
+
+上位p個　 (86, 0)  >>>  [(101, 0), (83, 3), (33, 1), (65, 1), (51, 1), (65, 3), (38, 3), (46, 1)]
+各類似度　 (86, 0)  :  [ 1843.79892925  3820.95351406  6740.02173772  7407.40307353
+  9445.13150681 10131.85117695 11484.90671829 11869.23769015]
+
+
+上位p個　 (86, 1)  >>>  [()]
+(86, 1)  >>> Line
+
+
+上位p個　 (86, 2)  >>>  [()]
+(86, 2)  >>> Line
+
+
+上位p個　 (86, 3)  >>>  [(84, 0), (78, 0), (74, 0), (72, 0), (37, 0), (72, 2), (34, 2), (78, 2)]
+各類似度　 (86, 3)  :  [  557.08339652  1049.17888906  1880.95644963  1892.64929533
+ 10314.15203323 10745.5505658  16533.54703531 17136.86245202]
+
+
+上位p個　 (87, 0)  >>>  [(84, 3), (19, 1), (13, 3), (5, 3), (72, 3), (57, 1), (57, 3), (76, 3)]
+各類似度　 (87, 0)  :  [1088.89309777 3030.75756192 4916.42902496 5094.25980415 5527.22276735
+ 5698.1736289  6329.00037736 6609.87998605]
+
+
+上位p個　 (87, 1)  >>>  [(10, 2), (82, 0), (5, 2), (16, 2), (81, 2), (80, 2), (93, 0), (91, 0)]
+各類似度　 (87, 1)  :  [105.84843211 222.43583665 316.46573787 497.45303926 571.08706408
+ 603.78448338 659.30263834 882.58655011]
+
+
+上位p個　 (87, 2)  >>>  [(0, 1), (81, 1), (92, 1), (102, 0), (61, 3), (88, 1), (67, 3), (1, 1)]
+各類似度　 (87, 2)  :  [245.85673393 312.59170548 442.86933835 486.84889422 573.92167534
+ 643.44382627 667.3783544  988.21437874]
+
+
+上位p個　 (87, 3)  >>>  [(1, 0), (64, 0), (13, 0), (30, 2), (36, 2), (36, 0), (99, 0), (5, 0)]
+各類似度　 (87, 3)  :  [ 24.31214065 119.28826911 133.53345007 147.7068472  159.64463923
+ 166.77638389 246.03585379 278.18023553]
+
+
+上位p個　 (88, 0)  >>>  [(85, 3), (79, 3), (89, 3), (89, 1), (54, 1), (31, 3), (24, 3), (36, 3)]
+各類似度　 (88, 0)  :  [  38.34418227  204.3506503   323.11646931  913.35294964 1211.12861608
+ 2917.92904918 5756.98564443 6153.56985804]
+
+
+上位p個　 (88, 1)  >>>  [(96, 2), (60, 2), (6, 2), (49, 0), (87, 2), (10, 0), (96, 0), (39, 0)]
+各類似度　 (88, 1)  :  [ 58.72927564 465.50671189 507.2923077  586.90054765 643.44382627
+ 664.61339121 782.89619825 892.48278885]
+
+
+上位p個　 (88, 2)  >>>  [(89, 3), (79, 3), (85, 3), (31, 3), (54, 1), (89, 1), (6, 1), (24, 3)]
+各類似度　 (88, 2)  :  [   49.06635938   233.43909852   770.64893587  2566.85964146
+  4327.21449375  5006.91254326 11130.17935697 16034.57309614]
+
+
+上位p個　 (88, 3)  >>>  [(49, 0), (96, 0), (96, 2), (60, 2), (10, 0), (6, 2), (39, 0), (41, 2)]
+各類似度　 (88, 3)  :  [ 15.99656902  42.5308461   51.85870022  52.75432243  85.63714073
+ 104.95615074 160.62580031 181.22469743]
+
+
+上位p個　 (89, 0)  >>>  [(92, 1), (0, 1), (23, 1), (90, 1), (12, 1), (1, 1), (61, 3), (67, 3)]
+各類似度　 (89, 0)  :  [ 46.40541231  57.0883499  138.19092179 144.48984958 183.04229954
+ 184.08960011 213.09017302 295.5164208 ]
+
+
+上位p個　 (89, 1)  >>>  [(90, 2), (25, 0), (50, 2), (45, 0), (43, 2), (70, 0), (88, 0), (58, 0)]
+各類似度　 (89, 1)  :  [  20.2845003   342.09288911  355.83351277  451.60948997  615.30042125
+  733.37871745  913.35294964 1159.02805216]
+
+
+上位p個　 (89, 2)  >>>  [(45, 3), (17, 3), (17, 1), (97, 1), (103, 3), (102, 0), (5, 1), (15, 1)]
+各類似度　 (89, 2)  :  [ 50.07872902  55.79238665  95.68055196 175.5193282  424.65698531
+ 447.32073652 529.40063815 562.88432029]
+
+
+上位p個　 (89, 3)  >>>  [(88, 2), (88, 0), (70, 2), (50, 2), (90, 2), (25, 0), (43, 2), (45, 0)]
+各類似度　 (89, 3)  :  [  49.06635938  323.11646931  536.47224354 3031.18654634 5738.83081811
+ 6674.496369   8099.48089909 9407.72370232]
+
+
+上位p個　 (90, 0)  >>>  [(79, 1), (82, 1), (73, 3), (38, 1), (7, 3), (63, 1), (77, 3), (39, 1)]
+各類似度　 (90, 0)  :  [ 455.00867243 1792.38204034 2198.16321305 2717.64005484 2801.00601822
+ 2865.03684766 3020.07290815 3929.87374222]
+
+
+上位p個　 (90, 1)  >>>  [(99, 0), (3, 2), (36, 0), (5, 0), (89, 0), (1, 0), (91, 0), (64, 0)]
+各類似度　 (90, 1)  :  [ 19.60786434  71.39567945  76.35256757  92.54847018 144.48984958
+ 152.49948965 157.56476621 185.12224164]
+
+
+上位p個　 (90, 2)  >>>  [(89, 1), (54, 1), (85, 3), (24, 3), (36, 3), (86, 3), (69, 3), (79, 3)]
+各類似度　 (90, 2)  :  [  20.2845003   972.89926889 1307.69573038 1375.40241249 1501.12010354
+ 2585.86669936 2592.96301792 2789.5115042 ]
+
+
+上位p個　 (90, 3)  >>>  [(80, 0), (80, 2), (3, 2), (4, 2), (89, 0), (99, 0), (91, 0), (66, 2)]
+各類似度　 (90, 3)  :  [  8.4897847  113.95045451 138.89184796 191.69525755 378.13854937
+ 382.15271456 392.20060738 434.31472528]
+
+
+上位p個　 (91, 0)  >>>  [(92, 1), (61, 3), (90, 1), (23, 1), (12, 1), (0, 1), (78, 3), (0, 3)]
+各類似度　 (91, 0)  :  [ 50.98956465 129.4334665  157.56476621 158.10834946 199.4778914
+ 254.92282818 302.91326802 326.59239185]
+
+
+上位p個　 (91, 1)  >>>  [(92, 2), (61, 0), (76, 2), (67, 2), (47, 2), (102, 1), (97, 0), (95, 0)]
+各類似度　 (91, 1)  :  [ 124.97382555 1128.90250011 1161.73623529 1702.00477845 1891.60395576
+ 1981.53247705 2293.80842869 3089.84893064]
+
+
+上位p個　 (91, 2)  >>>  [(5, 1), (45, 3), (88, 3), (17, 1), (102, 0), (97, 1), (17, 3), (19, 3)]
+各類似度　 (91, 2)  :  [177.76124989 255.57389923 282.8628745  288.74199591 345.6627059
+ 372.62010892 395.99056114 490.5655495 ]
+
+
+上位p個　 (91, 3)  >>>  [(97, 2), (101, 1), (66, 0), (93, 2), (73, 2), (16, 0), (81, 0), (92, 2)]
+各類似度　 (91, 3)  :  [ 44.66528563 197.65762325 540.60457981 762.29790513 837.34587601
+ 843.42416534 872.98759978 971.29690696]
+
+
+上位p個　 (92, 0)  >>>  [(68, 3), (96, 3), (47, 1), (1, 3), (32, 3), (51, 3), (56, 1), (11, 1)]
+各類似度　 (92, 0)  :  [  65.93247966 2620.0051007  2688.95941046 3100.80617759 3503.7990822
+ 3989.15941926 5871.92151665 6217.6694592 ]
+
+
+上位p個　 (92, 1)  >>>  [(80, 2), (93, 0), (89, 0), (91, 0), (36, 0), (99, 0), (64, 0), (3, 2)]
+各類似度　 (92, 1)  :  [ 34.06759901  44.03244048  46.40541231  50.98956465  56.16546981
+  91.19908171 117.81716449 201.20806882]
+
+
+上位p個　 (92, 2)  >>>  [(91, 1), (14, 1), (60, 1), (80, 3), (27, 1), (93, 3), (91, 3), (56, 3)]
+各類似度　 (92, 2)  :  [ 124.97382555  265.01725912  521.12083546  606.63813202  643.94106478
+  882.99860589  971.29690696 1005.28249291]
+
+
+上位p個　 (92, 3)  >>>  [(44, 0), (68, 2), (79, 0), (77, 2), (56, 2), (41, 0), (21, 3), (94, 2)]
+各類似度　 (92, 3)  :  [ 388.93080426  407.96173329  418.70105987  719.60858446 1118.51139585
+ 1431.49298539 1690.0660759  2005.81840707]
+
+
+上位p個　 (93, 0)  >>>  [(92, 1), (61, 3), (78, 3), (0, 3), (81, 1), (23, 1), (12, 1), (0, 1)]
+各類似度　 (93, 0)  :  [ 44.03244048  77.0516797  248.02930035 308.0244781  357.50427161
+ 362.44835899 423.40153294 431.24893153]
+
+
+上位p個　 (93, 1)  >>>  [(57, 2), (26, 2), (12, 2), (45, 2), (74, 0), (72, 0), (95, 2), (29, 0)]
+各類似度　 (93, 1)  :  [  48.25981576   94.9318935   147.55324116  218.93710609 1132.92314561
+ 1144.74515887 1323.50869559 1329.97171872]
+
+
+上位p個　 (93, 2)  >>>  [(75, 3), (48, 1), (70, 1), (42, 1), (80, 1), (74, 3), (27, 1), (91, 3)]
+各類似度　 (93, 2)  :  [164.85480761 218.0230217  327.53432662 405.55673534 483.4584438
+ 494.84836656 742.83985196 762.29790513]
+
+
+上位p個　 (93, 3)  >>>  [(101, 1), (71, 0), (102, 1), (76, 2), (0, 2), (58, 2), (81, 0), (42, 2)]
+各類似度　 (93, 3)  :  [163.64232383 180.08621414 200.61911603 235.57894969 249.00778813
+ 263.31807193 624.13067588 725.16993902]
+
+
+上位p個　 (94, 0)  >>>  [(58, 1), (102, 2), (35, 1), (28, 3), (5, 3), (20, 3), (71, 3), (19, 3)]
+各類似度　 (94, 0)  :  [  234.87200525  2923.62614059  7347.05677293  8924.71673547
+  9202.08934809 10714.70798508 10980.58351974 11074.65973347]
+
+
+上位p個　 (94, 1)  >>>  [(47, 2), (57, 0), (81, 0), (101, 1), (76, 0), (97, 0), (71, 0), (0, 2)]
+各類似度　 (94, 1)  :  [ 194.75770415  460.32785146  540.18221074 1070.04423534 1238.00878881
+ 1304.18216845 1475.63365473 1563.28428531]
+
+
+上位p個　 (94, 2)  >>>  [(84, 3), (57, 1), (92, 3), (57, 3), (19, 1), (13, 3), (95, 1), (20, 1)]
+各類似度　 (94, 2)  :  [1633.06029949 1710.74604924 2005.81840707 2284.08739983 2388.93037788
+ 2390.89075613 3712.24261899 5129.38648701]
+
+
+上位p個　 (94, 3)  >>>  [(67, 2), (95, 0), (40, 2), (29, 2), (103, 2), (76, 2), (43, 0), (71, 2)]
+各類似度　 (94, 3)  :  [170.68012034 216.00241789 298.17574647 329.13084932 385.13350876
+ 421.53115937 422.21253701 527.25946715]
+
+
+上位p個　 (95, 0)  >>>  [(39, 1), (99, 3), (99, 1), (56, 3), (54, 3), (94, 3), (80, 3), (7, 3)]
+各類似度　 (95, 0)  :  [117.3126909  127.29467459 129.91088076 192.19185304 194.52172776
+ 216.00241789 274.15293096 290.33296222]
+
+
+上位p個　 (95, 1)  >>>  [(68, 2), (79, 0), (44, 0), (77, 2), (56, 2), (21, 3), (41, 0), (94, 2)]
+各類似度　 (95, 1)  :  [ 569.49375371 1200.86817352 1261.15586682 1660.48673564 1885.66396751
+ 2158.93334085 2900.75358679 3712.24261899]
+
+
+上位p個　 (95, 2)  >>>  [(49, 1), (59, 3), (32, 1), (4, 3), (30, 1), (24, 3), (100, 3), (69, 1)]
+各類似度　 (95, 2)  :  [140.92115412 144.53478649 213.12900238 298.47136268 338.95190739
+ 476.64050607 569.94940017 586.77145931]
+
+
+上位p個　 (95, 3)  >>>  [(63, 2), (22, 0), (41, 2), (96, 2), (96, 0), (6, 0), (10, 0), (6, 2)]
+各類似度　 (95, 3)  :  [187.35939197 213.84252772 240.29112024 262.84808387 376.75590116
+ 389.83542907 426.32491492 476.44913893]
+
+
+上位p個　 (96, 0)  >>>  [(88, 3), (5, 1), (71, 3), (19, 3), (95, 3), (17, 3), (43, 3), (12, 3)]
+各類似度　 (96, 0)  :  [ 42.5308461   83.94509565 165.61717923 235.66431256 376.75590116
+ 493.86858006 510.53407291 521.99920586]
+
+
+上位p個　 (96, 1)  >>>  [(97, 0), (47, 2), (73, 2), (57, 0), (92, 2), (66, 0), (68, 0), (16, 0)]
+各類似度　 (96, 1)  :  [  25.25908205  218.17774338  483.69929062  989.54769585 1029.04384043
+ 1084.97395087 1195.72744642 1237.84788955]
+
+
+上位p個　 (96, 2)  >>>  [(12, 3), (88, 3), (88, 1), (81, 1), (102, 0), (58, 3), (5, 1), (95, 3)]
+各類似度　 (96, 2)  :  [ 44.19901755  51.85870022  58.72927564  73.84614148  77.65705328
+ 195.46076579 255.38489621 262.84808387]
+
+
+上位p個　 (96, 3)  >>>  [(10, 2), (5, 2), (98, 0), (80, 2), (16, 2), (81, 2), (93, 0), (36, 0)]
+各類似度　 (96, 3)  :  [ 79.03648934 198.94438343 205.33815635 268.00303888 340.28254904
+ 628.23762616 750.6262417  799.31855621]
+
+
+上位p個　 (97, 0)  >>>  [(96, 1), (27, 1), (38, 3), (42, 1), (66, 3), (60, 1), (63, 1), (48, 1)]
+各類似度　 (97, 0)  :  [  25.25908205  299.94154342  401.97227285  678.60703015  826.64499774
+  887.62969583  974.79759244 1143.71840317]
+
+
+上位p個　 (97, 1)  >>>  [(82, 0), (89, 2), (6, 0), (9, 2), (10, 2), (99, 2), (91, 2), (44, 2)]
+各類似度　 (97, 1)  :  [ 41.1142401  175.5193282  178.25466078 182.36690188 304.03061677
+ 344.80044347 372.62010892 533.93339657]
+
+
+上位p個　 (97, 2)  >>>  [(91, 3), (80, 3), (49, 3), (63, 3), (48, 1), (93, 3), (64, 1), (75, 3)]
+各類似度　 (97, 2)  :  [  44.66528563 1514.31797244 1710.55115994 1835.85698732 1920.7450651
+ 2040.39227701 2250.08110792 2276.61552614]
+
+
+上位p個　 (97, 3)  >>>  [(3, 2), (80, 0), (99, 0), (4, 2), (80, 2), (81, 2), (4, 0), (65, 0)]
+各類似度　 (97, 3)  :  [ 60.24396771  66.70173421 193.74199947 201.26705867 215.83779405
+ 221.01331738 252.45135673 334.489996  ]
+
+
+上位p個　 (98, 0)  >>>  [(96, 3), (47, 1), (12, 1), (61, 3), (23, 1), (92, 1), (0, 3), (78, 3)]
+各類似度　 (98, 0)  :  [205.33815635 343.16524964 500.69294845 502.26708117 527.01635438
+ 540.27649525 654.64383713 678.35557571]
+
+
+上位p個　 (98, 1)  >>>  [(3, 0), (39, 0), (85, 2), (100, 2), (4, 0), (5, 2), (6, 2), (9, 2)]
+各類似度　 (98, 1)  :  [ 146.58078692  533.78205548  674.88442106  806.50760749 1267.22009942
+ 1279.97394982 1468.02142763 1708.01565642]
+
+
+上位p個　 (98, 2)  >>>  [()]
+(98, 2)  >>> Line
+
+
+上位p個　 (98, 3)  >>>  [(85, 0), (4, 0), (3, 2), (8, 1), (85, 2), (80, 0), (4, 2), (69, 2)]
+各類似度　 (98, 3)  :  [  4.59053984  66.10366932 252.55867988 277.82642029 289.2994219
+ 592.40546435 630.12084194 826.07526416]
+
+
+上位p個　 (99, 0)  >>>  [(90, 1), (12, 1), (23, 1), (92, 1), (1, 1), (97, 3), (2, 1), (87, 3)]
+各類似度　 (99, 0)  :  [ 19.60786434  43.23258024  47.27125424  91.19908171 135.26724875
+ 193.74199947 237.71019266 246.03585379]
+
+
+上位p個　 (99, 1)  >>>  [(29, 2), (95, 0), (102, 3), (67, 2), (17, 0), (20, 0), (40, 2), (103, 2)]
+各類似度　 (99, 1)  :  [111.02576501 129.91088076 172.00185149 174.97268556 198.57155588
+ 391.61747753 408.60471606 459.42967134]
+
+
+上位p個　 (99, 2)  >>>  [(103, 3), (45, 3), (17, 3), (97, 1), (15, 1), (17, 1), (26, 1), (3, 1)]
+各類似度　 (99, 2)  :  [  94.59378101  117.10953594  316.43372058  344.80044347  674.97890016
+  748.69618558  917.65523648 1096.32893422]
+
+
+上位p個　 (99, 3)  >>>  [(95, 0), (76, 2), (58, 2), (40, 2), (50, 0), (43, 0), (67, 2), (103, 2)]
+各類似度　 (99, 3)  :  [127.29467459 179.08125102 199.27497412 305.80428835 349.97889145
+ 353.6560382  462.14331    682.51467003]
+
+
+上位p個　 (100, 0)  >>>  [(101, 0), (15, 3), (16, 3), (70, 1), (74, 3), (42, 1), (96, 1), (83, 3)]
+各類似度　 (100, 0)  :  [   30.01060148  4143.01997695  4288.34079674  7213.03005619
+  7831.00348952  9114.15086915  9315.99803134 11583.59470675]
+
+
+上位p個　 (100, 1)  >>>  [()]
+(100, 1)  >>> Line
+
+
+上位p個　 (100, 2)  >>>  [(101, 2), (98, 1), (11, 1), (2, 1), (78, 3), (90, 3), (58, 3), (97, 3)]
+各類似度　 (100, 2)  :  [ 538.67835371  806.50760749  975.49857277 1002.4985935  1089.09807318
+ 1201.53700466 1225.50916914 1254.21870749]
+
+
+上位p個　 (100, 3)  >>>  [(20, 0), (102, 3), (29, 2), (95, 2), (103, 2), (15, 2), (17, 0), (67, 2)]
+各類似度　 (100, 3)  :  [182.19346558 329.88435789 510.93460525 569.94940017 607.96129693
+ 644.7114497  837.10145511 901.00643245]
+
+
+上位p個　 (101, 0)  >>>  [(100, 0), (86, 0), (31, 2), (19, 2), (83, 0), (9, 0), (97, 0), (73, 2)]
+各類似度　 (101, 0)  :  [   30.01060148  1843.79892925  2897.8759915   4273.87422925
+  8155.18525259  9725.45876438 11640.69623889 13083.9516189 ]
+
+
+上位p個　 (101, 1)  >>>  [(63, 3), (93, 3), (91, 3), (75, 3), (80, 1), (64, 1), (27, 1), (64, 3)]
+各類似度　 (101, 1)  :  [162.79110071 163.64232383 197.65762325 360.30650602 387.103612
+ 564.98635233 581.25552941 636.32296757]
+
+
+上位p個　 (101, 2)  >>>  [(4, 2), (36, 0), (81, 2), (3, 2), (99, 0), (59, 2), (66, 2), (100, 2)]
+各類似度　 (101, 2)  :  [111.9598062  241.23349729 316.66803867 320.28129827 397.40750808
+ 479.78861902 527.17591132 538.67835371]
+
+
+上位p個　 (101, 3)  >>>  [()]
+(101, 3)  >>> Line
+
+
+上位p個　 (102, 0)  >>>  [(82, 0), (96, 2), (39, 0), (65, 0), (6, 2), (80, 2), (10, 2), (9, 2)]
+各類似度　 (102, 0)  :  [ 67.87154702  77.65705328 149.00183763 200.66275123 253.80591251
+ 269.43343904 281.86261985 304.78496644]
+
+
+上位p個　 (102, 1)  >>>  [(80, 3), (93, 3), (39, 1), (56, 3), (41, 1), (99, 3), (54, 3), (60, 1)]
+各類似度　 (102, 1)  :  [ 198.49782634  200.61911603  452.8723483   711.85141633  762.37586553
+  836.05769359  859.56684406 1007.72782996]
+
+
+上位p個　 (102, 2)  >>>  [(63, 0), (24, 2), (7, 2), (22, 2), (35, 2), (41, 2), (94, 0), (14, 2)]
+各類似度　 (102, 2)  :  [  33.86225892  873.105974    957.36736641 1778.65205645 1881.31844238
+ 1910.13344549 2923.62614059 3954.26837381]
+
+
+上位p個　 (102, 3)  >>>  [(59, 3), (99, 1), (100, 3), (39, 3), (32, 1), (7, 3), (31, 1), (69, 1)]
+各類似度　 (102, 3)  :  [ 136.60681792  172.00185149  329.88435789  607.16089371  779.31245476
+  874.04913921  992.42601584 1126.4193552 ]
+
+
+上位p個　 (103, 0)  >>>  [(63, 3), (80, 1), (75, 3), (41, 3), (48, 1), (7, 1), (44, 1), (66, 3)]
+各類似度　 (103, 0)  :  [  42.91687493  194.00169221  279.35597932  788.52338273  981.57714839
+ 1054.14895103 1197.02426269 1226.99702242]
+
+
+上位p個　 (103, 1)  >>>  [(1, 0), (64, 2), (30, 2), (64, 0), (99, 0), (36, 0), (5, 0), (89, 0)]
+各類似度　 (103, 1)  :  [ 80.81227761 137.87440529 280.12791846 322.42159581 372.73666827
+ 474.30792937 482.24632505 810.81870249]
+
+
+上位p個　 (103, 2)  >>>  [(7, 3), (39, 1), (94, 3), (99, 1), (41, 1), (56, 3), (100, 3), (54, 3)]
+各類似度　 (103, 2)  :  [203.74363005 225.81946573 385.13350876 459.42967134 536.36999346
+ 592.51428136 607.96129693 614.77746153]
+
+
+上位p個　 (103, 3)  >>>  [(99, 2), (89, 2), (82, 0), (6, 0), (63, 2), (9, 2), (91, 2), (44, 2)]
+各類似度　 (103, 3)  :  [  94.59378101  424.65698531  830.17495669 1025.89034777 1149.01865829
+ 1242.4632553  2402.42475963 2412.75321541]
+
+
