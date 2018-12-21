@@ -7,26 +7,32 @@ import matplotlib.pyplot as plt
 import pickle
 
 def main():
+    
     L = np.loadtxt("./output/CSV/data_matrix_L.csv",delimiter=",")
     print(L.shape)
     A = np.array([[3,1],[2,2]])
     la, v = np.linalg.eig(A)
 
     la, v = np.linalg.eig(L)
-    v = (np.real(v[:,1:3])).T
-    v2 = np.dot(L,v.T)
+    v = np.real(v[:,1:3])
+    v2 = np.dot(L,v)
     print(v.shape)
 
-    df = pd.DataFrame(v2)
-    #df = pd.DataFrame(np.random.randn(5,2))
+    df = pd.DataFrame(v)
+    #x = np.random.randn(5,2)
+    #df = pd.DataFrame(x)
     fig, ax = plt.subplots()
     df.plot(0,1,kind='scatter',ax=ax,marker=".",alpha=0.01)
     for k, v in df.iterrows():
         ax.annotate(k//4,xy=(v[0],v[1]),size=8)
-    plt.xlim(-0.006,0.015)
-    plt.ylim(-0.015,0.015)
+    plt.xlim(-0.1,0.1)
+    plt.ylim(-0.2,0.2)
     ax.set_xlabel('1')
     ax.set_ylabel('2')
+
+    # save as png
+    plt.savefig('./output/test.png')
+    plt.close(fig)
     
     """
     #plot
@@ -37,10 +43,8 @@ def main():
     ax.set_xlabel('x')
     ax.set_ylabel('y')
     """
-    # save as png
-    plt.savefig('./output/test.png')
-    plt.close(fig)
-
+    
+    
     """
     data2 = np.loadtxt("./output/CSV/AlltoAll_match_vv.csv",delimiter=",")
     A = np.zeros((12,12))
@@ -54,46 +58,66 @@ def main():
     print(A)
     print(sigmoid(np.array([1,2,3,4])))
     """
+
     """
-    point_a = loadList("0_0_edge_point_conv")
-    point_b = loadList("10_1_edge_point_conv")
-    point_c = loadList("9_1_edge_point_conv")
-    #point_a = [(-2,5),(-3,5),(-3,6),(-4,6),(-4,7),(-5,7),(-5,8)]
-    #point_a = [(2,5),(3,5),(3,6),(4,6),(4,7),(5,7),(5,8)]
-    #point_a = list(reversed(point_a))
+    #point_a = loadList("0_0_edge_point_conv")
+    #point_b = loadList("10_1_edge_point_conv")
+    #point_c = loadList("9_1_edge_point_conv")
+    #point_a = [(-2,5),(-3,6),(-4,7),(-5,8),(-6,9),(-6,8),(-6,10)]
+    #point_a = [(2,5),(3,6),(4,6),(4,7),(5,7),(5,8)]
+    point_a = [(-2,-5),(-3,-6),(-4,-6),(-4,-7),(-5,-7),(-5,-8)]
+    
     #point_a = [(3,6),(3,5),(2,5),(2,4),(3,4),(3,3)]
-    #point_a = [(0,0),(1,0),(2,1),(3,2),(4,2),(5,3),(5,2),(4,1),(5,0),(6,0),(7,0),(8,0)]
+    #point_a = [(0,0),(1,0),(2,1),(3,2),(4,2),(5,1),(6,0)]
     #point_b = [(0,0),(1,1),(2,0),(3,1),(4,0),(5,1),(6,0)]
+    #point_a = [(0,0),(0,1),(1,1),(1,0),(2,0)]
+    
+    point_a = pointTransport(point_a)
+    point_a = pointRot(point_a,-1)
     n_a = np.array(point_a)
-    n_b = np.array(point_b)
-    px = similarityCalc(point_a,point_b)
-    py = similarityCalc(point_a,point_c)
-    print(px,"  :  ",py)
+    fig = plt.figure()
+    ax = fig.add_subplot(1,1,1)
+    ax.scatter(n_a[:,0],n_a[:,1])
+    ax.set_title('first scatter plot')
+    ax.set_xlabel('x')
+    ax.set_ylabel('y')
+    # save as png
+    plt.savefig('./output/test.png')
+    plt.close(fig)
+    #n_b = np.array(point_b)
+    #px = similarityCalc(point_a,point_b)
+    #py = similarityCalc(point_a,point_c)
+    #print(px,"  :  ",py)
+    """
     
-    for i in range(len(point_a)):
-        print(point_a[i]," >>> ",point_a_tr[i], ">>>" , point_a_rot[i])
-    
+    """
     for i in range(104):
         for j in range(4):
-            point_a = loadList(""+ str(i) +"_" + str(j) + "_edge_point_conv")
+            point_a = loadList( str(i) +"_" + str(j) + "_edge_point_conv")
+            print(len(point_a))
             # figure
             fig = plt.figure()
             n_a = (np.array(point_a)).T
             ax = fig.add_subplot(1, 1, 1)
             # plot
-            ax.plot(n_a[0,:], n_a[1,:],'.', color='b', label='y = sin(x)')
+            ax.plot(n_a[0,:], n_a[1,:],'.', color='b', label='y = point')
 
             # x axis
-            #plt.xlim([-np.pi, np.pi])
             ax.set_xlabel('x')
+            plt.xlim(-100,800)
 
             # y axis
             ax.set_ylabel('y')
+            plt.ylim(-100,800)
 
+            plt.grid(color='gray')
             # save as png
             plt.savefig('./output/ConvEdge/' + str(i) + '_' + str(j) + '.png')
             plt.close(fig)
     """
+            
+    
+    
 
 
 def sigmoid(x):
@@ -180,12 +204,13 @@ def pointRot(points,rough):
     cos = dx / math.sqrt(dx*dx + dy*dy)
     for a in range(len(points)):
         _x = points[a][0]*cos + points[a][1]*sin
-        _y = - points[a][0]*sin + points[a][1]*cos
+        _y = -points[a][0]*sin + points[a][1]*cos
         if rough == -1:
-            _y = -_y
+            _x = -1*_x
+            _y = -1*_y
+            _x = math.sqrt(dx*dx + dy*dy) + _x
         _t = (_x,_y)
         dst.append(_t)
-    
     return dst
 
 
