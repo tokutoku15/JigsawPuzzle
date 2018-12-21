@@ -1,0 +1,851 @@
+image No. 0
+4161
+length of corner_index_list is  3
+corner index is  [615, 2165, 3471]
+corner point is  [(16, 321), (854, 1080), (818, 283)]
+new length of corner_index_list is  4
+new corner index is  [615, 1390, 2165, 3471]
+corner point is  [(16, 321), (79, 1088), (854, 1080), (818, 283)]
+4161
+(16, 321) in points[ 615 ]
+(79, 1088) in points[ 1390 ]
+(854, 1080) in points[ 2165 ]
+(818, 283) in points[ 3471 ]
+points_length =  4161
+corner_index_list =  [615, 1390, 2165, 3471]
+corner: 0 ,(corner_index_list 615 ) =  (16, 321)
+corner: 1 ,(corner_index_list 1390 ) =  (79, 1088)
+corner: 2 ,(corner_index_list 2165 ) =  (854, 1080)
+corner: 3 ,(corner_index_list 3471 ) =  (818, 283)
+len(edge)= 775
+len(edge)= 775
+len(edge)= 1306
+len new_point_list =  4
+new_corners_point_list =  [(16, 321), (79, 1088), (854, 1080), (818, 283)]
+775
+直線
+775
+直線
+1306
+凹
+1305
+凸
+
+
+image No. 1
+4639
+length of corner_index_list is  4
+corner index is  [1152, 2458, 3199, 4497]
+corner point is  [(291, 61), (323, 858), (1064, 843), (1095, 42)]
+new length of corner_index_list is  4
+new corner index is  [1152, 2458, 3199, 4497]
+corner point is  [(291, 61), (323, 858), (1064, 843), (1095, 42)]
+4639
+(291, 61) in points[ 1152 ]
+(323, 858) in points[ 2458 ]
+(1064, 843) in points[ 3199 ]
+(1095, 42) in points[ 4497 ]
+points_length =  4639
+corner_index_list =  [1152, 2458, 3199, 4497]
+corner: 0 ,(corner_index_list 1152 ) =  (291, 61)
+corner: 1 ,(corner_index_list 2458 ) =  (323, 858)
+corner: 2 ,(corner_index_list 3199 ) =  (1064, 843)
+corner: 3 ,(corner_index_list 4497 ) =  (1095, 42)
+len(edge)= 1306
+len(edge)= 741
+len(edge)= 1298
+len new_point_list =  4
+new_corners_point_list =  [(291, 61), (323, 858), (1064, 843), (1095, 42)]
+1306
+凸
+741
+直線
+1298
+凸
+1294
+凹
+
+
+image No. 2
+4729
+length of corner_index_list is  4
+corner index is  [636, 1933, 2775, 4074]
+corner point is  [(37, 316), (36, 1118), (878, 1067), (835, 274)]
+new length of corner_index_list is  4
+new corner index is  [636, 1933, 2775, 4074]
+corner point is  [(37, 316), (36, 1118), (878, 1067), (835, 274)]
+4729
+(37, 316) in points[ 636 ]
+(36, 1118) in points[ 1933 ]
+(878, 1067) in points[ 2775 ]
+(835, 274) in points[ 4074 ]
+points_length =  4729
+corner_index_list =  [636, 1933, 2775, 4074]
+corner: 0 ,(corner_index_list 636 ) =  (37, 316)
+corner: 1 ,(corner_index_list 1933 ) =  (36, 1118)
+corner: 2 ,(corner_index_list 2775 ) =  (878, 1067)
+corner: 3 ,(corner_index_list 4074 ) =  (835, 274)
+len(edge)= 1297
+len(edge)= 842
+len(edge)= 1299
+len new_point_list =  4
+new_corners_point_list =  [(37, 316), (36, 1118), (878, 1067), (835, 274)]
+1297
+凹
+842
+直線
+1299
+凹
+1291
+凸
+
+
+image No. 3
+4652
+length of corner_index_list is  4
+corner index is  [160, 1461, 2233, 3538]
+corner point is  [(323, 36), (274, 829), (1046, 875), (1109, 79)]
+new length of corner_index_list is  4
+new corner index is  [160, 1461, 2233, 3538]
+corner point is  [(323, 36), (274, 829), (1046, 875), (1109, 79)]
+4652
+(323, 36) in points[ 160 ]
+(274, 829) in points[ 1461 ]
+(1046, 875) in points[ 2233 ]
+(1109, 79) in points[ 3538 ]
+points_length =  4652
+corner_index_list =  [160, 1461, 2233, 3538]
+corner: 0 ,(corner_index_list 160 ) =  (323, 36)
+corner: 1 ,(corner_index_list 1461 ) =  (274, 829)
+corner: 2 ,(corner_index_list 2233 ) =  (1046, 875)
+corner: 3 ,(corner_index_list 3538 ) =  (1109, 79)
+len(edge)= 1301
+len(edge)= 772
+len(edge)= 1305
+len new_point_list =  4
+new_corners_point_list =  [(323, 36), (274, 829), (1046, 875), (1109, 79)]
+1301
+凸
+772
+直線
+1305
+凸
+1274
+凹
+
+
+image No. 4
+4152
+length of corner_index_list is  3
+corner index is  [147, 1688, 2992]
+corner point is  [(15, 25), (790, 842), (811, 44)]
+new length of corner_index_list is  4
+new corner index is  [147, 917, 1688, 2992]
+corner point is  [(15, 25), (25, 795), (790, 842), (811, 44)]
+4152
+(15, 25) in points[ 147 ]
+(25, 795) in points[ 917 ]
+(790, 842) in points[ 1688 ]
+(811, 44) in points[ 2992 ]
+points_length =  4152
+corner_index_list =  [147, 917, 1688, 2992]
+corner: 0 ,(corner_index_list 147 ) =  (15, 25)
+corner: 1 ,(corner_index_list 917 ) =  (25, 795)
+corner: 2 ,(corner_index_list 1688 ) =  (790, 842)
+corner: 3 ,(corner_index_list 2992 ) =  (811, 44)
+len(edge)= 770
+len(edge)= 771
+len(edge)= 1304
+len new_point_list =  4
+new_corners_point_list =  [(15, 25), (25, 795), (790, 842), (811, 44)]
+770
+直線
+771
+直線
+1304
+凸
+1307
+凹
+
+
+image No. 5
+4785
+length of corner_index_list is  4
+corner index is  [213, 1530, 2844, 3690]
+corner point is  [(307, 51), (275, 859), (1096, 893), (1110, 47)]
+new length of corner_index_list is  4
+new corner index is  [213, 1530, 2844, 3690]
+corner point is  [(307, 51), (275, 859), (1096, 893), (1110, 47)]
+4785
+(307, 51) in points[ 213 ]
+(275, 859) in points[ 1530 ]
+(1096, 893) in points[ 2844 ]
+(1110, 47) in points[ 3690 ]
+points_length =  4785
+corner_index_list =  [213, 1530, 2844, 3690]
+corner: 0 ,(corner_index_list 213 ) =  (307, 51)
+corner: 1 ,(corner_index_list 1530 ) =  (275, 859)
+corner: 2 ,(corner_index_list 2844 ) =  (1096, 893)
+corner: 3 ,(corner_index_list 3690 ) =  (1110, 47)
+len(edge)= 1317
+len(edge)= 1314
+len(edge)= 846
+len new_point_list =  4
+new_corners_point_list =  [(307, 51), (275, 859), (1096, 893), (1110, 47)]
+1317
+凸
+1314
+凹
+846
+直線
+1308
+凹
+
+
+image No. 6
+5217
+length of corner_index_list is  4
+corner index is  [1130, 2426, 3753, 5036]
+corner point is  [(254, 80), (313, 885), (1119, 813), (1059, 37)]
+new length of corner_index_list is  4
+new corner index is  [1130, 2426, 3753, 5036]
+corner point is  [(254, 80), (313, 885), (1119, 813), (1059, 37)]
+5217
+(254, 80) in points[ 1130 ]
+(313, 885) in points[ 2426 ]
+(1119, 813) in points[ 3753 ]
+(1059, 37) in points[ 5036 ]
+points_length =  5217
+corner_index_list =  [1130, 2426, 3753, 5036]
+corner: 0 ,(corner_index_list 1130 ) =  (254, 80)
+corner: 1 ,(corner_index_list 2426 ) =  (313, 885)
+corner: 2 ,(corner_index_list 3753 ) =  (1119, 813)
+corner: 3 ,(corner_index_list 5036 ) =  (1059, 37)
+len(edge)= 1296
+len(edge)= 1327
+len(edge)= 1283
+len new_point_list =  4
+new_corners_point_list =  [(254, 80), (313, 885), (1119, 813), (1059, 37)]
+1296
+凸
+1327
+凹
+1283
+凸
+1311
+凹
+
+
+image No. 7
+5264
+length of corner_index_list is  4
+corner index is  [1077, 2411, 3719, 5050]
+corner point is  [(279, 52), (303, 872), (1111, 845), (1076, 33)]
+new length of corner_index_list is  4
+new corner index is  [1077, 2411, 3719, 5050]
+corner point is  [(279, 52), (303, 872), (1111, 845), (1076, 33)]
+5264
+(279, 52) in points[ 1077 ]
+(303, 872) in points[ 2411 ]
+(1111, 845) in points[ 3719 ]
+(1076, 33) in points[ 5050 ]
+points_length =  5264
+corner_index_list =  [1077, 2411, 3719, 5050]
+corner: 0 ,(corner_index_list 1077 ) =  (279, 52)
+corner: 1 ,(corner_index_list 2411 ) =  (303, 872)
+corner: 2 ,(corner_index_list 3719 ) =  (1111, 845)
+corner: 3 ,(corner_index_list 5050 ) =  (1076, 33)
+len(edge)= 1334
+len(edge)= 1308
+len(edge)= 1331
+len new_point_list =  4
+new_corners_point_list =  [(279, 52), (303, 872), (1111, 845), (1076, 33)]
+1334
+凸
+1308
+凹
+1331
+凸
+1291
+凹
+
+
+image No. 8
+5212
+length of corner_index_list is  4
+corner index is  [1144, 2424, 3755, 5024]
+corner point is  [(274, 68), (293, 860), (1097, 849), (1091, 48)]
+new length of corner_index_list is  4
+new corner index is  [1144, 2424, 3755, 5024]
+corner point is  [(274, 68), (293, 860), (1097, 849), (1091, 48)]
+5212
+(274, 68) in points[ 1144 ]
+(293, 860) in points[ 2424 ]
+(1097, 849) in points[ 3755 ]
+(1091, 48) in points[ 5024 ]
+points_length =  5212
+corner_index_list =  [1144, 2424, 3755, 5024]
+corner: 0 ,(corner_index_list 1144 ) =  (274, 68)
+corner: 1 ,(corner_index_list 2424 ) =  (293, 860)
+corner: 2 ,(corner_index_list 3755 ) =  (1097, 849)
+corner: 3 ,(corner_index_list 5024 ) =  (1091, 48)
+len(edge)= 1280
+len(edge)= 1331
+len(edge)= 1269
+len new_point_list =  4
+new_corners_point_list =  [(274, 68), (293, 860), (1097, 849), (1091, 48)]
+1280
+凸
+1331
+凹
+1269
+凸
+1332
+凹
+
+
+image No. 9
+4768
+length of corner_index_list is  3
+corner index is  [984, 2272, 3602]
+corner point is  [(15, 883), (808, 869), (827, 64)]
+new length of corner_index_list is  4
+new corner index is  [984, 2272, 3602, 4677]
+corner point is  [(15, 883), (808, 869), (827, 64), (256, 24)]
+4768
+(15, 883) in points[ 984 ]
+(808, 869) in points[ 2272 ]
+(827, 64) in points[ 3602 ]
+(256, 24) in points[ 4677 ]
+points_length =  4768
+corner_index_list =  [984, 2272, 3602, 4677]
+corner: 0 ,(corner_index_list 984 ) =  (15, 883)
+corner: 1 ,(corner_index_list 2272 ) =  (808, 869)
+corner: 2 ,(corner_index_list 3602 ) =  (827, 64)
+corner: 3 ,(corner_index_list 4677 ) =  (256, 24)
+len(edge)= 1288
+len(edge)= 1330
+len(edge)= 1075
+len new_point_list =  4
+new_corners_point_list =  [(15, 883), (808, 869), (827, 64), (256, 24)]
+1288
+凹
+1330
+凸
+1075
+凹
+1075
+直線
+
+
+image No. 10
+4678
+length of corner_index_list is  4
+corner index is  [0, 1318, 2608, 3922]
+corner point is  [(315, 16), (282, 842), (1069, 840), (1070, 24)]
+new length of corner_index_list is  4
+new corner index is  [0, 1318, 2608, 3922]
+corner point is  [(315, 16), (282, 842), (1069, 840), (1070, 24)]
+4678
+(315, 16) in points[ 0 ]
+(282, 842) in points[ 1318 ]
+(1069, 840) in points[ 2608 ]
+(1070, 24) in points[ 3922 ]
+points_length =  4678
+corner_index_list =  [0, 1318, 2608, 3922]
+corner: 0 ,(corner_index_list 0 ) =  (315, 16)
+corner: 1 ,(corner_index_list 1318 ) =  (282, 842)
+corner: 2 ,(corner_index_list 2608 ) =  (1069, 840)
+corner: 3 ,(corner_index_list 3922 ) =  (1070, 24)
+len(edge)= 1318
+len(edge)= 1290
+len(edge)= 1314
+len new_point_list =  4
+new_corners_point_list =  [(315, 16), (282, 842), (1069, 840), (1070, 24)]
+1318
+凸
+1290
+凹
+1314
+凸
+756
+直線
+
+
+image No. 11
+5159
+length of corner_index_list is  4
+corner index is  [215, 1505, 2794, 4078]
+corner point is  [(300, 57), (306, 844), (1085, 844), (1093, 45)]
+new length of corner_index_list is  4
+new corner index is  [215, 1505, 2794, 4078]
+corner point is  [(300, 57), (306, 844), (1085, 844), (1093, 45)]
+5159
+(300, 57) in points[ 215 ]
+(306, 844) in points[ 1505 ]
+(1085, 844) in points[ 2794 ]
+(1093, 45) in points[ 4078 ]
+points_length =  5159
+corner_index_list =  [215, 1505, 2794, 4078]
+corner: 0 ,(corner_index_list 215 ) =  (300, 57)
+corner: 1 ,(corner_index_list 1505 ) =  (306, 844)
+corner: 2 ,(corner_index_list 2794 ) =  (1085, 844)
+corner: 3 ,(corner_index_list 4078 ) =  (1093, 45)
+len(edge)= 1290
+len(edge)= 1289
+len(edge)= 1284
+len new_point_list =  4
+new_corners_point_list =  [(300, 57), (306, 844), (1085, 844), (1093, 45)]
+1290
+凸
+1289
+凹
+1284
+凸
+1296
+凹
+
+
+image No. 12
+5183
+length of corner_index_list is  4
+corner index is  [1084, 2390, 3681, 4984]
+corner point is  [(293, 61), (325, 865), (1110, 831), (1089, 34)]
+new length of corner_index_list is  4
+new corner index is  [1084, 2390, 3681, 4984]
+corner point is  [(293, 61), (325, 865), (1110, 831), (1089, 34)]
+5183
+(293, 61) in points[ 1084 ]
+(325, 865) in points[ 2390 ]
+(1110, 831) in points[ 3681 ]
+(1089, 34) in points[ 4984 ]
+points_length =  5183
+corner_index_list =  [1084, 2390, 3681, 4984]
+corner: 0 ,(corner_index_list 1084 ) =  (293, 61)
+corner: 1 ,(corner_index_list 2390 ) =  (325, 865)
+corner: 2 ,(corner_index_list 3681 ) =  (1110, 831)
+corner: 3 ,(corner_index_list 4984 ) =  (1089, 34)
+len(edge)= 1306
+len(edge)= 1291
+len(edge)= 1303
+len new_point_list =  4
+new_corners_point_list =  [(293, 61), (325, 865), (1110, 831), (1089, 34)]
+1306
+凸
+1291
+凹
+1303
+凸
+1283
+凹
+
+
+image No. 13
+5235
+length of corner_index_list is  5
+corner index is  [0, 1131, 2444, 3782, 5073]
+corner point is  [(930, 16), (282, 72), (306, 877), (1109, 847), (1080, 59)]
+sub =  161
+new length of corner_index_list is  4
+new corner index is  [1131, 2444, 3782, 5073]
+corner point is  [(282, 72), (306, 877), (1109, 847), (1080, 59)]
+5235
+(282, 72) in points[ 1131 ]
+(306, 877) in points[ 2444 ]
+(1109, 847) in points[ 3782 ]
+(1080, 59) in points[ 5073 ]
+points_length =  5235
+corner_index_list =  [1131, 2444, 3782, 5073]
+corner: 0 ,(corner_index_list 1131 ) =  (282, 72)
+corner: 1 ,(corner_index_list 2444 ) =  (306, 877)
+corner: 2 ,(corner_index_list 3782 ) =  (1109, 847)
+corner: 3 ,(corner_index_list 5073 ) =  (1080, 59)
+len(edge)= 1313
+len(edge)= 1338
+len(edge)= 1291
+len new_point_list =  4
+new_corners_point_list =  [(282, 72), (306, 877), (1109, 847), (1080, 59)]
+1313
+凸
+1338
+凹
+1291
+凸
+1293
+凹
+
+
+image No. 14
+4647
+length of corner_index_list is  4
+corner index is  [172, 1463, 2214, 3510]
+corner point is  [(282, 56), (317, 848), (1068, 844), (1084, 47)]
+new length of corner_index_list is  4
+new corner index is  [172, 1463, 2214, 3510]
+corner point is  [(282, 56), (317, 848), (1068, 844), (1084, 47)]
+4647
+(282, 56) in points[ 172 ]
+(317, 848) in points[ 1463 ]
+(1068, 844) in points[ 2214 ]
+(1084, 47) in points[ 3510 ]
+points_length =  4647
+corner_index_list =  [172, 1463, 2214, 3510]
+corner: 0 ,(corner_index_list 172 ) =  (282, 56)
+corner: 1 ,(corner_index_list 1463 ) =  (317, 848)
+corner: 2 ,(corner_index_list 2214 ) =  (1068, 844)
+corner: 3 ,(corner_index_list 3510 ) =  (1084, 47)
+len(edge)= 1291
+len(edge)= 751
+len(edge)= 1296
+len new_point_list =  4
+new_corners_point_list =  [(282, 56), (317, 848), (1068, 844), (1084, 47)]
+1291
+凸
+751
+直線
+1296
+凸
+1309
+凹
+
+
+image No. 15
+4803
+length of corner_index_list is  4
+corner index is  [651, 1982, 2823, 4139]
+corner point is  [(59, 290), (28, 1105), (869, 1113), (862, 296)]
+new length of corner_index_list is  4
+new corner index is  [651, 1982, 2823, 4139]
+corner point is  [(59, 290), (28, 1105), (869, 1113), (862, 296)]
+4803
+(59, 290) in points[ 651 ]
+(28, 1105) in points[ 1982 ]
+(869, 1113) in points[ 2823 ]
+(862, 296) in points[ 4139 ]
+points_length =  4803
+corner_index_list =  [651, 1982, 2823, 4139]
+corner: 0 ,(corner_index_list 651 ) =  (59, 290)
+corner: 1 ,(corner_index_list 1982 ) =  (28, 1105)
+corner: 2 ,(corner_index_list 2823 ) =  (869, 1113)
+corner: 3 ,(corner_index_list 4139 ) =  (862, 296)
+len(edge)= 1331
+len(edge)= 841
+len(edge)= 1316
+len new_point_list =  4
+new_corners_point_list =  [(59, 290), (28, 1105), (869, 1113), (862, 296)]
+1331
+凹
+841
+直線
+1316
+凹
+1315
+凸
+
+
+image No. 16
+5199
+length of corner_index_list is  4
+corner index is  [181, 1477, 2787, 4084]
+corner point is  [(317, 43), (301, 833), (1101, 855), (1109, 60)]
+new length of corner_index_list is  4
+new corner index is  [181, 1477, 2787, 4084]
+corner point is  [(317, 43), (301, 833), (1101, 855), (1109, 60)]
+5199
+(317, 43) in points[ 181 ]
+(301, 833) in points[ 1477 ]
+(1101, 855) in points[ 2787 ]
+(1109, 60) in points[ 4084 ]
+points_length =  5199
+corner_index_list =  [181, 1477, 2787, 4084]
+corner: 0 ,(corner_index_list 181 ) =  (317, 43)
+corner: 1 ,(corner_index_list 1477 ) =  (301, 833)
+corner: 2 ,(corner_index_list 2787 ) =  (1101, 855)
+corner: 3 ,(corner_index_list 4084 ) =  (1109, 60)
+len(edge)= 1296
+len(edge)= 1310
+len(edge)= 1297
+len new_point_list =  4
+new_corners_point_list =  [(317, 43), (301, 833), (1101, 855), (1109, 60)]
+1296
+凸
+1310
+凹
+1297
+凸
+1296
+凹
+
+
+image No. 17
+5216
+length of corner_index_list is  4
+corner index is  [1148, 2446, 3742, 5044]
+corner point is  [(278, 56), (301, 851), (1094, 840), (1081, 40)]
+new length of corner_index_list is  4
+new corner index is  [1148, 2446, 3742, 5044]
+corner point is  [(278, 56), (301, 851), (1094, 840), (1081, 40)]
+5216
+(278, 56) in points[ 1148 ]
+(301, 851) in points[ 2446 ]
+(1094, 840) in points[ 3742 ]
+(1081, 40) in points[ 5044 ]
+points_length =  5216
+corner_index_list =  [1148, 2446, 3742, 5044]
+corner: 0 ,(corner_index_list 1148 ) =  (278, 56)
+corner: 1 ,(corner_index_list 2446 ) =  (301, 851)
+corner: 2 ,(corner_index_list 3742 ) =  (1094, 840)
+corner: 3 ,(corner_index_list 5044 ) =  (1081, 40)
+len(edge)= 1298
+len(edge)= 1296
+len(edge)= 1302
+len new_point_list =  4
+new_corners_point_list =  [(278, 56), (301, 851), (1094, 840), (1081, 40)]
+1298
+凸
+1296
+凹
+1302
+凸
+1320
+凹
+
+
+image No. 18
+5265
+length of corner_index_list is  4
+corner index is  [1103, 2439, 3751, 5067]
+corner point is  [(299, 62), (321, 863), (1109, 854), (1094, 46)]
+new length of corner_index_list is  4
+new corner index is  [1103, 2439, 3751, 5067]
+corner point is  [(299, 62), (321, 863), (1109, 854), (1094, 46)]
+5265
+(299, 62) in points[ 1103 ]
+(321, 863) in points[ 2439 ]
+(1109, 854) in points[ 3751 ]
+(1094, 46) in points[ 5067 ]
+points_length =  5265
+corner_index_list =  [1103, 2439, 3751, 5067]
+corner: 0 ,(corner_index_list 1103 ) =  (299, 62)
+corner: 1 ,(corner_index_list 2439 ) =  (321, 863)
+corner: 2 ,(corner_index_list 3751 ) =  (1109, 854)
+corner: 3 ,(corner_index_list 5067 ) =  (1094, 46)
+len(edge)= 1336
+len(edge)= 1312
+len(edge)= 1316
+len new_point_list =  4
+new_corners_point_list =  [(299, 62), (321, 863), (1109, 854), (1094, 46)]
+1336
+凸
+1312
+凹
+1316
+凸
+1301
+凹
+
+
+image No. 19
+4748
+length of corner_index_list is  4
+corner index is  [1181, 2497, 3784, 4622]
+corner point is  [(300, 75), (322, 868), (1115, 861), (1086, 23)]
+new length of corner_index_list is  4
+new corner index is  [1181, 2497, 3784, 4622]
+corner point is  [(300, 75), (322, 868), (1115, 861), (1086, 23)]
+4748
+(300, 75) in points[ 1181 ]
+(322, 868) in points[ 2497 ]
+(1115, 861) in points[ 3784 ]
+(1086, 23) in points[ 4622 ]
+points_length =  4748
+corner_index_list =  [1181, 2497, 3784, 4622]
+corner: 0 ,(corner_index_list 1181 ) =  (300, 75)
+corner: 1 ,(corner_index_list 2497 ) =  (322, 868)
+corner: 2 ,(corner_index_list 3784 ) =  (1115, 861)
+corner: 3 ,(corner_index_list 4622 ) =  (1086, 23)
+len(edge)= 1316
+len(edge)= 1287
+len(edge)= 838
+len new_point_list =  4
+new_corners_point_list =  [(300, 75), (322, 868), (1115, 861), (1086, 23)]
+1316
+凸
+1287
+凹
+838
+直線
+1307
+凹
+
+
+image No. 20
+4220
+length of corner_index_list is  3
+corner index is  [681, 2006, 3329]
+corner point is  [(320, 28), (312, 843), (1116, 854)]
+new length of corner_index_list is  4
+new corner index is  [681, 2006, 3329, 4115]
+corner point is  [(320, 28), (312, 843), (1116, 854), (1093, 68)]
+4220
+(320, 28) in points[ 681 ]
+(312, 843) in points[ 2006 ]
+(1116, 854) in points[ 3329 ]
+(1093, 68) in points[ 4115 ]
+points_length =  4220
+corner_index_list =  [681, 2006, 3329, 4115]
+corner: 0 ,(corner_index_list 681 ) =  (320, 28)
+corner: 1 ,(corner_index_list 2006 ) =  (312, 843)
+corner: 2 ,(corner_index_list 3329 ) =  (1116, 854)
+corner: 3 ,(corner_index_list 4115 ) =  (1093, 68)
+len(edge)= 1325
+len(edge)= 1323
+len(edge)= 786
+len new_point_list =  4
+new_corners_point_list =  [(320, 28), (312, 843), (1116, 854), (1093, 68)]
+1325
+凸
+1323
+凹
+786
+直線
+786
+直線
+
+
+image No. 21
+4666
+length of corner_index_list is  4
+corner index is  [737, 2062, 3352, 4656]
+corner point is  [(327, 34), (315, 841), (1101, 816), (1074, 16)]
+new length of corner_index_list is  4
+new corner index is  [737, 2062, 3352, 4656]
+corner point is  [(327, 34), (315, 841), (1101, 816), (1074, 16)]
+4666
+(327, 34) in points[ 737 ]
+(315, 841) in points[ 2062 ]
+(1101, 816) in points[ 3352 ]
+(1074, 16) in points[ 4656 ]
+points_length =  4666
+corner_index_list =  [737, 2062, 3352, 4656]
+corner: 0 ,(corner_index_list 737 ) =  (327, 34)
+corner: 1 ,(corner_index_list 2062 ) =  (315, 841)
+corner: 2 ,(corner_index_list 3352 ) =  (1101, 816)
+corner: 3 ,(corner_index_list 4656 ) =  (1074, 16)
+len(edge)= 1325
+len(edge)= 1290
+len(edge)= 1304
+len new_point_list =  4
+new_corners_point_list =  [(327, 34), (315, 841), (1101, 816), (1074, 16)]
+1325
+凸
+1290
+凹
+1304
+凸
+747
+直線
+
+
+image No. 22
+4797
+length of corner_index_list is  4
+corner index is  [181, 1503, 2843, 3270]
+corner point is  [(303, 49), (310, 856), (1112, 856), (1116, 435)]
+new length of corner_index_list is  4
+new corner index is  [181, 1503, 2843, 3270]
+corner point is  [(303, 49), (310, 856), (1112, 856), (1116, 435)]
+4797
+(303, 49) in points[ 181 ]
+(310, 856) in points[ 1503 ]
+(1112, 856) in points[ 2843 ]
+(1116, 435) in points[ 3270 ]
+points_length =  4797
+corner_index_list =  [181, 1503, 2843, 3270]
+corner: 0 ,(corner_index_list 181 ) =  (303, 49)
+corner: 1 ,(corner_index_list 1503 ) =  (310, 856)
+corner: 2 ,(corner_index_list 2843 ) =  (1112, 856)
+corner: 3 ,(corner_index_list 3270 ) =  (1116, 435)
+len(edge)= 1322
+len(edge)= 1340
+len(edge)= 427
+len new_point_list =  4
+new_corners_point_list =  [(303, 49), (310, 856), (1112, 856), (1116, 435)]
+1322
+凸
+1340
+凹
+427
+直線
+1708
+凹
+
+
+image No. 23
+4696
+length of corner_index_list is  4
+corner index is  [8, 1353, 2650, 3963]
+corner point is  [(335, 16), (324, 821), (1123, 823), (1076, 15)]
+new length of corner_index_list is  4
+new corner index is  [8, 1353, 2650, 3963]
+corner point is  [(335, 16), (324, 821), (1123, 823), (1076, 15)]
+4696
+(335, 16) in points[ 8 ]
+(324, 821) in points[ 1353 ]
+(1123, 823) in points[ 2650 ]
+(1076, 15) in points[ 3963 ]
+points_length =  4696
+corner_index_list =  [8, 1353, 2650, 3963]
+corner: 0 ,(corner_index_list 8 ) =  (335, 16)
+corner: 1 ,(corner_index_list 1353 ) =  (324, 821)
+corner: 2 ,(corner_index_list 2650 ) =  (1123, 823)
+corner: 3 ,(corner_index_list 3963 ) =  (1076, 15)
+len(edge)= 1345
+len(edge)= 1297
+len(edge)= 1313
+len new_point_list =  4
+new_corners_point_list =  [(335, 16), (324, 821), (1123, 823), (1076, 15)]
+1345
+凸
+1297
+凹
+1313
+凸
+741
+直線
+
+
+image No. 24
+4191
+length of corner_index_list is  3
+corner index is  [1173, 2484, 4054]
+corner point is  [(297, 72), (324, 861), (1102, 21)]
+new length of corner_index_list is  4
+new corner index is  [1173, 2484, 3269, 4054]
+corner point is  [(297, 72), (324, 861), (1097, 806), (1102, 21)]
+4191
+(297, 72) in points[ 1173 ]
+(324, 861) in points[ 2484 ]
+(1097, 806) in points[ 3269 ]
+(1102, 21) in points[ 4054 ]
+points_length =  4191
+corner_index_list =  [1173, 2484, 3269, 4054]
+corner: 0 ,(corner_index_list 1173 ) =  (297, 72)
+corner: 1 ,(corner_index_list 2484 ) =  (324, 861)
+corner: 2 ,(corner_index_list 3269 ) =  (1097, 806)
+corner: 3 ,(corner_index_list 4054 ) =  (1102, 21)
+len(edge)= 1311
+len(edge)= 785
+len(edge)= 785
+len new_point_list =  4
+new_corners_point_list =  [(297, 72), (324, 861), (1097, 806), (1102, 21)]
+1311
+凸
+785
+直線
+785
+直線
+1310
+凹
+
+
