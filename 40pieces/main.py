@@ -127,14 +127,14 @@ def main():
     """
     #グルーピング関数でピースの形状ごとにグループ分け
     group1,group2,group3 = Grouping(p_rough_list)
-    print(group1)
-    print(group2)
-    print(group3)
+    #print(group1)
+    #print(group2)
+    #print(group3)
     #convex...凸 / concavity...凹
     #(i,j) ... (ピース番号i,ピースiの変番号j)のタプルをリストに格納
     group_of_convex,group_of_concavity = rough_grouping(p_rough_list)
-    print(group_of_convex)
-    print(group_of_concavity)
+    #print(group_of_convex)
+    #print(group_of_concavity)
 
     #p_edge_point_listを並進回転加えたやつ(類似度計算のときに引数としてp_edge_conv_point_list[i][j]を二つ渡してください)
     p_edge_point_conv_list = pointConv(p_edge_point_list,p_rough_list)
@@ -152,11 +152,16 @@ def main():
     #simPは416×(0 or p)のリスト，match_listは416×p×(piece_num,edge_num)
     p = 10
     simP , match_list = similarityPointView(data2,p_rough_list,p)
-    # W = calcW(data2,simP,p)
-    # L = calcL(W)
-    # np.savetxt("./output/CSV/data_matrix_W2.csv", W, fmt='%s', delimiter=',')
-    # np.savetxt("./output/CSV/data_matrix_L.csv", L, fmt='%s', delimiter=',')
+    W = calcW(data2,simP,p)
+    L = calcL(W)
+    #np.savetxt("./output/CSV/data_matrix_W2.csv", W, fmt='%s', delimiter=',')
+    #np.savetxt("./output/CSV/data_matrix_L.csv", L, fmt='%s', delimiter=',')
     
+    #マッチング
+    result,vertical,horizontal = Matching(p_edge_point_conv_list,p_rough_list,group1,group2,group3)
+
+    #マッチング結果のグラフを出力
+    Complete_graph("./output/40pieces.pdf",result,vertical,horizontal)
     
     #showImage(img_pieces[0])
     
@@ -738,7 +743,7 @@ def pointTransport(points):
     return dst
 
 #回転
-#rough = -1,0,1
+#edge_num = 0,1,2,3 , rough = -1,0,1
 def pointRot(points,rough):
     dst = []
     dx = points[-1][0] - points[0][0]
@@ -747,14 +752,15 @@ def pointRot(points,rough):
     cos = dx / math.sqrt(dx*dx + dy*dy)
     for a in range(len(points)):
         _x = points[a][0]*cos + points[a][1]*sin
-        _y = - points[a][0]*sin + points[a][1]*cos
+        _y = -points[a][0]*sin + points[a][1]*cos
         if rough == -1:
-            _y = -_y
-            _x = -_x
+            _x = -1*_x
+            _y = -1*_y
             _x = math.sqrt(dx*dx + dy*dy) + _x
-        _t = [_x,_y]
+        _t = (_x,_y)
         dst.append(_t)
     return dst
+
 
 #全ての辺を並進回転処理してそれを返す
 def pointConv(p_edge_point_list,p_rough_list):
@@ -862,20 +868,11 @@ def similarityPointView(data2,p_rough_list,p):
             for j in range(p):
                 p_num = sim5[i][j] // 4
                 e_num = sim5[i][j] % 4
-                k.append((p_num+1,e_num))
+                k.append((p_num,e_num))
         else:
             k.append(())
         match_list.append(k)
         print("上位p個　",(i//4,i%4)," >>> ",k)
-        rough_text=""
-        if p_rough_list[i//4][i%4] == 1:
-            rough_text = "凸"
-        elif p_rough_list[i//4][i%4] == -1:
-            rough_text = "凹"
-        else:
-            rough_text = "直線"
-        print("上位p個　",rough_text,(i//4+1,i%4)," >>> ",k)
-  
         # if(sim5[i] != ()):
         #     print("各類似度　",(i//4 , i%4) , " : " , data2[i][sim5[i]])
         # else:
@@ -907,12 +904,12 @@ def sampleMatrix(dataMat,p_rough_list,simP):
 def calcW(dataMat,simP,p):
     W = np.zeros_like(dataMat)
     #ta=[x1,x2,...,xi,...,xp]で0<xi<1の値を生成，high_rank個
-    #ta = (1/(p + 1))*np.arange(1,p + 1)
+    ta = (1/(p + 1))*np.arange(1,p + 1)
     uI = np.array([[0,1,1,1],[1,0,1,1],[1,1,0,1],[1,1,1,0]])
     for i in range(W.shape[0]):
         if len(simP[i]) != 0:
-            ta = (1/(len(simP[i]) + 1))*(np.arange(1,len(simP[i]) + 1))[::-1]
-            W[i][simP[i]] = ta
+             ta = (1/(len(simP[i]) + 1))*(np.arange(1,len(simP[i]) + 1))[::-1]
+             W[i][simP[i]] = ta
         if i%4 == 0:
             W[i:i+4,i:i+4] = uI
     return W
@@ -931,6 +928,227 @@ def calcL(W):
 def sigmoid(x):
    y = 1 / (1 + np.exp( -x ) )
    return y
+
+
+def Matching(p_edge_point_list,rough,group1,group2,group3):
+    #前処理
+    Attention_piece = group1[0]
+    group_outer = group1 + group2
+    del group_outer[0]
+    outer_scale = len(group_outer)
+    inner_scale = len(group3)
+    Candidate_piece = 0
+    Candidate_piece_value = 0
+    Detect_piece = 0
+    Detect_piece_value = 0
+    stock_number = 0
+    count = 0
+    edge = 0
+    edge_c = 0
+    t = 0
+    top = 0
+    Result_piece = []
+    Result_piece.append(Attention_piece+1)
+    corner = []
+    edge_list = []
+    edge_list.append(100)
+    thresh = []
+    th = []
+    s = 0
+    flag = 0
+    check = 1
+    
+    #外枠ピースのマッチング
+    #決定するピース分のループ
+    for i in range(outer_scale):
+        #注目ピースの辺の数だけ回すループ（4回）
+        for k in range(len(rough[0])):
+            #注目ピースの探索辺を発見するための条件文
+            if rough[Attention_piece][k] == 0 and rough[Attention_piece][(k+1)%4] != 0:
+                #一つの注目ピースに対するピースを決定するために回すループ
+                for j in range(len(group_outer)):
+                    Select_piece = group_outer[j]
+                    #候補ピースの辺の数だけ回すループ（4回）
+                    for l in range(len(rough[0])):
+                        #候補ピースの探索辺を発見するための条件文
+                        if rough[Select_piece][l] != 0 and rough[Select_piece][(l+1)%4] == 0:
+                            #注目ピースと候補ピースのマッチングする辺の凹凸判定による条件文
+                            if rough[Attention_piece][(k+1)%4] + rough[Select_piece][l] == 0:
+                                Candidate_piece_value = similarityCalc(p_edge_point_list[Attention_piece][(k+1)%4],p_edge_point_list[Select_piece][l])
+                                Candidate_piece = Select_piece
+                                t = (l+3)%4
+                                if count == 0:
+                                    count += 1
+                                if i == outer_scale - 1:
+                                    edge = (l+3)%4
+                                #print(Candidate_piece_value,Candidate_piece)
+                    if count == 1:
+                        Detect_piece_value = Candidate_piece_value
+                        Detect_piece = Candidate_piece
+                        stock_number = j
+                        count += 1
+                        top = t
+                    elif count != 0:
+                        if Detect_piece_value > Candidate_piece_value:
+                            Detect_piece_value = Candidate_piece_value
+                            Detect_piece = Candidate_piece
+                            stock_number = j
+                            top = t
+        Result_piece.append(Detect_piece+1) 
+        Attention_piece = Detect_piece
+        del group_outer[stock_number]
+        count = 0
+        edge_list.append(top)
+        for i in range(len(group1)):
+            if group1[i] == Detect_piece:
+                corner.append(len(Result_piece))
+        #print(Detect_piece)
+    print("外枠のピースのリスト")
+    print(Result_piece)
+
+    #コーナー間のピースの数を計算
+    thresh.append(corner[0]-2)
+    thresh.append(corner[1]-corner[0]-1)
+    th.append(thresh[0])
+    th.append(thresh[1])
+    vertical = thresh[1] + 2
+    horizontal = thresh[0] + 2
+
+
+    #内枠ピースのマッチング
+    #決定するピース分のループ
+    for i in range(inner_scale):
+        #一つの注目ピースに対するピースを決定するために回すループ
+        for j in range(len(group3)):
+            Select_piece = group3[j]
+            for l in range(len(rough[0])):
+                if thresh[s%2] == 1:
+                    #注目ピースと候補ピースのマッチングする辺の凹凸判定による条件文
+                    if rough[Attention_piece][edge] + rough[Select_piece][l] == 0 and rough[Result_piece[check]-1][edge_list[check]] + rough[Select_piece][(l+1)%4] == 0 and rough[Result_piece[check+2]-1][edge_list[check+2]] + rough[Select_piece][(l+2)%4] == 0:
+                        if flag == 0:
+                            Candidate_piece_value = similarityCalc(p_edge_point_list[Attention_piece][edge],p_edge_point_list[Select_piece][l])
+                            if Candidate_piece_value > similarityCalc(p_edge_point_list[Result_piece[check]-1][edge_list[check]],p_edge_point_list[Select_piece][(l+1)%4]):
+                                Candidate_piece_value = similarityCalc(p_edge_point_list[Result_piece[check]-1][edge_list[check]],p_edge_point_list[Select_piece][(l+1)%4])
+                            Candidate_piece = Select_piece
+                            flag = 1
+                        else:
+                            if Candidate_piece_value > similarityCalc(p_edge_point_list[Attention_piece][edge],p_edge_point_list[Select_piece][l]):
+                                Candidate_piece_value = similarityCalc(p_edge_point_list[Attention_piece][edge],p_edge_point_list[Select_piece][l])
+                                Candidate_piece = Select_piece                                                            
+                            if Candidate_piece_value > similarityCalc(p_edge_point_list[Result_piece[check]-1][edge_list[check]],p_edge_point_list[Select_piece][(l+1)%4]):
+                                Candidate_piece_value = similarityCalc(p_edge_point_list[Result_piece[check]-1][edge_list[check]],p_edge_point_list[Select_piece][(l+1)%4])
+                                Candidate_piece = Select_piece                                
+                        t = (l+3)%4
+                        if count == 0:
+                            count += 1
+                        print(Candidate_piece_value,Candidate_piece)
+                else:
+                    #注目ピースと候補ピースのマッチングする辺の凹凸判定による条件文
+                    if rough[Attention_piece][edge] + rough[Select_piece][l] == 0 and rough[Result_piece[check]-1][edge_list[check]] + rough[Select_piece][(l+1)%4] == 0:
+                        if flag == 0:
+                            Candidate_piece_value = similarityCalc(p_edge_point_list[Attention_piece][edge],p_edge_point_list[Select_piece][l])
+                            if Candidate_piece_value > similarityCalc(p_edge_point_list[Result_piece[check]-1][edge_list[check]],p_edge_point_list[Select_piece][(l+1)%4]):
+                                Candidate_piece_value = similarityCalc(p_edge_point_list[Result_piece[check]-1][edge_list[check]],p_edge_point_list[Select_piece][(l+1)%4])
+                            Candidate_piece = Select_piece
+                            flag = 1
+                        else:
+                            if Candidate_piece_value > similarityCalc(p_edge_point_list[Attention_piece][edge],p_edge_point_list[Select_piece][l]):
+                                Candidate_piece_value = similarityCalc(p_edge_point_list[Attention_piece][edge],p_edge_point_list[Select_piece][l])
+                                Candidate_piece = Select_piece
+                            if Candidate_piece_value > similarityCalc(p_edge_point_list[Result_piece[check]-1][edge_list[check]],p_edge_point_list[Select_piece][(l+1)%4]):
+                                Candidate_piece_value = similarityCalc(p_edge_point_list[Result_piece[check]-1][edge_list[check]],p_edge_point_list[Select_piece][(l+1)%4])
+                                Candidate_piece = Select_piece
+                        t = (l+3)%4
+                        if count == 0:
+                            count += 1
+                        print(Candidate_piece_value,Candidate_piece)
+            if count == 1:
+                Detect_piece_value = Candidate_piece_value
+                Detect_piece = Candidate_piece
+                print(Detect_piece)
+                stock_number = j
+                top = t
+                edge_c = (t+3)%4
+                count += 1
+                flag = 0
+            elif count != 0:
+                if Detect_piece_value > Candidate_piece_value:
+                    Detect_piece_value = Candidate_piece_value
+                    Detect_piece = Candidate_piece
+                    print(Detect_piece)
+                    stock_number = j
+                    top = t
+                    edge_c = (t+3)%4
+                flag = 0
+        Result_piece.append(Detect_piece + 1) 
+        Attention_piece = Detect_piece
+        del group3[stock_number]
+        count = 0
+        edge_list.append(top)
+        if thresh[s%2] == 1:
+            s += 1
+            thresh[s%2] = th[s%2]
+            if (s+1)%4 == 0:
+                th[s%2] = th[s%2] - 2
+                thresh[s%2] = th[s%2] + 1            
+            thresh[s%2] -= 1
+            edge = top
+            check += 3
+            print("corner")
+        else:
+            thresh[s%2] -= 1
+            edge = edge_c
+            check += 1
+        print(Detect_piece)
+        print("thresh:")
+        print(thresh[s%2])
+        print("\n")
+    print("ピース完成のリスト")
+    print(Result_piece)
+    return Result_piece,vertical,horizontal
+
+def Complete_graph(fn,Result_piece,vertical,horizontal):
+    h = 1
+    v = 1
+    x = horizontal
+    y = 1
+    flag = 0
+    plt.figure(num=None, figsize=(8, 4), dpi=80, facecolor='w', edgecolor='k')
+    plt.clf()
+    plt.xlabel("horizontal")
+    plt.ylabel("vertical")
+    for i in range(len(Result_piece)):
+        if y == v and flag%4 == 0:
+            plt.text(x,y,str(Result_piece[i]))
+            x -= 1
+            if x == h:
+                flag += 1
+                v += 1
+        elif x == h and flag%4 == 1:
+            plt.text(x,y,str(Result_piece[i]))
+            y += 1
+            if y == vertical:
+                flag += 1
+                h += 1
+        elif y == vertical and flag%4 == 2:
+            plt.text(x,y,str(Result_piece[i]))
+            x += 1
+            if x == horizontal:
+                flag += 1
+                vertical -= 1
+        elif x == horizontal and flag%4 == 3:
+            plt.text(x,y,str(Result_piece[i]))
+            y -= 1
+            if y == v-1:
+                flag += 1
+                horizontal -= 1
+                y += 1
+                x -= 1
+    plt.xlim(0,9)
+    plt.ylim(0,6)
+    #plt.show()
+    plt.savefig(fn)
+
 
 if __name__=='__main__':
     main()
