@@ -152,10 +152,10 @@ def main():
     #simPは416×(0 or p)のリスト，match_listは416×p×(piece_num,edge_num)
     p = 10
     simP , match_list = similarityPointView(data2,p_rough_list,p)
-    W = calcW(data2,simP,p)
-    L = calcL(W)
-    np.savetxt("./output/CSV/data_matrix_W2.csv", W, fmt='%s', delimiter=',')
-    np.savetxt("./output/CSV/data_matrix_L.csv", L, fmt='%s', delimiter=',')
+    # W = calcW(data2,simP,p)
+    # L = calcL(W)
+    # np.savetxt("./output/CSV/data_matrix_W2.csv", W, fmt='%s', delimiter=',')
+    # np.savetxt("./output/CSV/data_matrix_L.csv", L, fmt='%s', delimiter=',')
     
     
     #showImage(img_pieces[0])
@@ -862,11 +862,20 @@ def similarityPointView(data2,p_rough_list,p):
             for j in range(p):
                 p_num = sim5[i][j] // 4
                 e_num = sim5[i][j] % 4
-                k.append((p_num,e_num))
+                k.append((p_num+1,e_num))
         else:
             k.append(())
         match_list.append(k)
         print("上位p個　",(i//4,i%4)," >>> ",k)
+        rough_text=""
+        if p_rough_list[i//4][i%4] == 1:
+            rough_text = "凸"
+        elif p_rough_list[i//4][i%4] == -1:
+            rough_text = "凹"
+        else:
+            rough_text = "直線"
+        print("上位p個　",rough_text,(i//4+1,i%4)," >>> ",k)
+  
         # if(sim5[i] != ()):
         #     print("各類似度　",(i//4 , i%4) , " : " , data2[i][sim5[i]])
         # else:
@@ -898,10 +907,11 @@ def sampleMatrix(dataMat,p_rough_list,simP):
 def calcW(dataMat,simP,p):
     W = np.zeros_like(dataMat)
     #ta=[x1,x2,...,xi,...,xp]で0<xi<1の値を生成，high_rank個
-    ta = (1/(p + 1))*np.arange(1,p + 1)
+    #ta = (1/(p + 1))*np.arange(1,p + 1)
     uI = np.array([[0,1,1,1],[1,0,1,1],[1,1,0,1],[1,1,1,0]])
     for i in range(W.shape[0]):
         if len(simP[i]) != 0:
+            ta = (1/(len(simP[i]) + 1))*(np.arange(1,len(simP[i]) + 1))[::-1]
             W[i][simP[i]] = ta
         if i%4 == 0:
             W[i:i+4,i:i+4] = uI

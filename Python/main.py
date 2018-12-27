@@ -733,7 +733,7 @@ def pointTransport(points):
     return dst
 
 #回転
-#rough = -1,0,1
+#edge_num = 0,1,2,3 , rough = -1,0,1
 def pointRot(points,rough):
     dst = []
     dx = points[-1][0] - points[0][0]
@@ -742,9 +742,11 @@ def pointRot(points,rough):
     cos = dx / math.sqrt(dx*dx + dy*dy)
     for a in range(len(points)):
         _x = points[a][0]*cos + points[a][1]*sin
-        _y = - points[a][0]*sin + points[a][1]*cos
+        _y = -points[a][0]*sin + points[a][1]*cos
         if rough == -1:
-            _y = -_y
+            _x = -1*_x
+            _y = -1*_y
+            _x = math.sqrt(dx*dx + dy*dy) + _x
         _t = (_x,_y)
         dst.append(_t)
     return dst
@@ -891,10 +893,11 @@ def sampleMatrix(dataMat,p_rough_list,simP):
 def calcW(dataMat,simP,p):
     W = np.zeros_like(dataMat)
     #ta=[x1,x2,...,xi,...,xp]で0<xi<1の値を生成，high_rank個
-    ta = (1/(p + 1))*np.arange(1,p + 1)
+    # ta = (1/(p + 1))*np.arange(1,p + 1)
     uI = np.array([[0,1,1,1],[1,0,1,1],[1,1,0,1],[1,1,1,0]])
     for i in range(W.shape[0]):
         if len(simP[i]) != 0:
+            ta = (1/(len(simP[i]) + 1))*(np.arange(1,len(simP[i]) + 1))[::-1]
             W[i][simP[i]] = ta
         if i%4 == 0:
             W[i:i+4,i:i+4] = uI

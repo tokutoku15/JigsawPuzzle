@@ -903,10 +903,11 @@ def sampleMatrix(dataMat,p_rough_list,simP):
 def calcW(dataMat,simP,p):
     W = np.zeros_like(dataMat)
     #ta=[x1,x2,...,xi,...,xp]で0<xi<1の値を生成，high_rank個
-    ta = (1/(p + 1))*np.arange(1,p + 1)
+    #ta = (1/(p + 1))*np.arange(1,p + 1)
     uI = np.array([[0,1,1,1],[1,0,1,1],[1,1,0,1],[1,1,1,0]])
     for i in range(W.shape[0]):
         if len(simP[i]) != 0:
+            ta = (1/(len(simP[i]) + 1))*(np.arange(1,len(simP[i]) + 1))[::-1]
             W[i][simP[i]] = ta
         if i%4 == 0:
             W[i:i+4,i:i+4] = uI
