@@ -146,12 +146,13 @@ def main():
     data2 = np.loadtxt("./output/CSV/AlltoAll_match.csv",delimiter=",")
     #simPは416×(0 or p)のリスト，match_listは416×p×(piece_num,edge_num)
     p = 20
-    simP , match_list = similarityPointView(data2,p_rough_list,p)
+    simP , match_list = similarityPointView(p_edge_point_conv_list,data2,p_rough_list,p,group1,group2,grou3)
     W = calcW(data2,simP,p)
     L = calcL(W)
     #np.savetxt("./output/CSV/data_matrix_W2.csv", W, fmt='%s', delimiter=',')
     #np.savetxt("./output/CSV/data_matrix_L.csv", L, fmt='%s', delimiter=',')
     
+    print(rough_list)
     
     #showImage(img_pieces[0])
     
@@ -512,8 +513,8 @@ def newCornerDetection(degree,points,image,Number):
     img_shi = cv2.cvtColor(image,cv2.COLOR_GRAY2BGR)
     for i in range(len(corner_index_list)):
         corner_point_list.append(points[corner_index_list[i]])
-        # cv2.circle(img_shi,(int(points[corner_index_list[i]][0]),int(points[corner_index_list[i]][1])),10,(0,0,255),-1)
-    # cv2.imwrite("./output/Piece/Corner/" + str(Number) +"_corner.png",img_shi)
+        cv2.circle(img_shi,(int(points[corner_index_list[i]][0]),int(points[corner_index_list[i]][1])),10,(0,0,255),-1)
+    cv2.imwrite("./output/Piece/Corner/" + str(Number) +"_corner.png",img_shi)
     print("corner point is ",corner_point_list)
     return corner_point_list
 
@@ -599,7 +600,7 @@ def corner_dividing(corner_point_list,points):
             print("start ",new_point_list[2][0])
             print("start ",new_point_list[3][0])
     # print("process finish.")
-    # print(edge_list)
+    # print("edge_list = ",edge_list)
     print("new_corners_point_list = ",new_corners_point_list)
     return edge_list,new_corners_point_list,new_point_list
 
@@ -627,6 +628,7 @@ def judge_roughness(edge_list):
         else:
             print("直線")
             rough_list.append(0)
+    print(rough_list)
     return rough_list
 
 #簡易版曲率
@@ -828,7 +830,7 @@ def similarityMatrix(p_edge_point_conv_list,p_rough_list,fname):
 
 #類似度の高い上位p個のインデックスと(piece_num,edge_num)のタプルを返す
 #行列data2を受け取って(piece_num,edge_num)がどの(piece_num,edge_num)と類似度(距離)が近いかを高い順にp個表示する．
-def similarityPointView(data2,p_rough_list,p):
+def similarityPointView(p_edge_point_conv_list,data2,p_rough_list,p,group1,group2,group3):
     sim5 = []
     for i in range(data2.shape[0]):
         #i行目をソートして，小さい順にインデックス番号を格納した箱．416個入る．
@@ -837,16 +839,25 @@ def similarityPointView(data2,p_rough_list,p):
         sort_index2 = []
         c = 0
         for j in range(len(sort_index)):
-            if (data2[i][sort_index[j]] > 0.00000001):
-                c = c + 1
-                sort_index2.append(sort_index[j])
+            la = len(p_edge_point_conv_list[i//4][i%4]) -1
+            lb = len(p_edge_point_conv_list[sort_index[j] // 4][sort_index[j] % 4]) -1
+            dist = abs(p_edge_point_conv_list[i//4][i%4][la][0] - p_edge_point_conv_list[sort_index[j] // 4][sort_index[j] % 4][lb][0]) 
+            if (data2[i][sort_index[j]] > 0.00000001) and (dist < 10000):
+                if(i//4 in group1):
+                    if(sort_index[j]//4 in group1) or (sort_index[j]//4 in group2):
+                        c = c + 1
+                        sort_index2.append(sort_index[j])
+                else:
+                    c = c + 1
+                    sort_index2.append(sort_index[j])
             if c >= p:
                 break
         sort_index2 = (np.array(sort_index2))
         sim5.append(sort_index2)
-        if(p_rough_list[i//4][i%4] != 0):
-            print(i , " : " , sim5[i])
-            print(i , " : " , data2[i][sim5[i]])
+
+        #if(p_rough_list[i//4][i%4] != 0):
+            #print(i , " : " , sim5[i])
+            #print(i , " : " , data2[i][sim5[i]])
     #(piece num , edge num)
     match_list = []
     
@@ -854,7 +865,7 @@ def similarityPointView(data2,p_rough_list,p):
         k = []
         #cand個の(piece_num,edge_num)を生成
         if(p_rough_list[i//4][i%4] != 0):
-            for j in range(p):
+            for j in range(len(sim5[i])):
                 p_num = sim5[i][j] // 4
                 e_num = sim5[i][j] % 4
                 k.append((p_num,e_num))
@@ -862,10 +873,10 @@ def similarityPointView(data2,p_rough_list,p):
             k.append(())
         match_list.append(k)
         print("上位p個　",(i//4,i%4)," >>> ",k)
-        if(sim5[i] != ()):
-            print("各類似度　",(i//4 , i%4) , " : " , data2[i][sim5[i]])
+        if(sim5[i].size != 0):
+            print("各類似度　",(i//4, i%4) , " : " , data2[i][sim5[i]])
         else:
-            print((i//4 , i%4)," >>> Line")
+            print((i//4, i%4)," >>> Line")
         print("\n")
     
     return sim5,match_list
